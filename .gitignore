@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.pytest_cache/
+*.log
+
+# Environment & Config
+.env
+
+# Virtual environments
+.venv
+/data
+
+# IDE metadata
+.vscode/
+.idea/
+
+# Local & private documentation
+.local_docs/

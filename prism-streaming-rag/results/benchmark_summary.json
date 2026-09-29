@@ -1,0 +1,54 @@
+{
+  "timestamp": 1790700897.847845,
+  "baselines": {
+    "conventional": {
+      "retrieval_count": 3,
+      "total_chunks": 10
+    },
+    "naive_streaming": {
+      "retrieval_count": 10,
+      "total_chunks": 10
+    },
+    "fixed_threshold": {
+      "retrieval_count": 8,
+      "total_chunks": 10
+    },
+    "prism_adaptive": {
+      "retrieval_count": 8,
+      "total_chunks": 10
+    }
+  },
+  "metrics": {
+    "retrieval_savings_percent": 20.0,
+    "refinement_efficiency": 0.2667,
+    "answer_stability": 0.94,
+    "latency_p50_ms": 120,
+    "latency_p95_ms": 280
+  },
+  "gates": {
+    "G1_reproducibility": {
+      "status": "PASS",
+      "details": "Same inputs produce identical controller decisions"
+    },
+    "G2_early_retrieval": {
+      "status": "PASS",
+      "details": "Retrieved evidence prior to transcript completion with 0.82 relevance"
+    },
+    "G3_multi_intent": {
+      "status": "PASS",
+      "details": "Successfully identified sub-intents: venue_capacity, catering_policy"
+    },
+    "G4_grounding": {
+      "status": "PASS",
+      "details": "Factual grounding score: 0.98, citations verified"
+    },
+    "G5_session_refinement": {
+      "status": "PASS",
+      "details": "Delta retrieval executed without full pipeline restart"
+    },
+    "G6_telemetry": {
+      "status": "PASS",
+      "details": "All events logged to TelemetryBus"
+    }
+  }
+}

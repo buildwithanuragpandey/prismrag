@@ -1,0 +1,77 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+      - main
+      - feature/**
+  pull_request:
+    branches:
+      - master
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Unit & Integration Tests (CI-Safe)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          version: "latest"
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies from lockfile
+        run: |
+          uv sync --frozen
+
+      - name: Verify package imports
+        run: |
+          uv run python -c "import adaptive_agentic_rag; print('adaptive_agentic_rag import OK')"
+          uv run python -c "from adaptive_agentic_rag.api.app import create_app; print('FastAPI App Factory OK')"
+          uv run python -c "from adaptive_agentic_rag.orchestration.state import AgentState; print('State Schema OK')"
+
+      - name: Run CI-safe unit & integration test suite
+        run: |
+          uv run pytest \
+            tests/test_adaptive_retry_policy.py \
+            tests/test_answer_grader_contract.py \
+            tests/test_atomic_claim_extractor.py \
+            tests/test_bm25_source_targeted_search.py \
+            tests/test_constrained_semantic_rescue_guards.py \
+            tests/test_corpus_source_availability.py \
+            tests/test_explicit_source_coverage.py \
+            tests/test_generation_contract.py \
+            tests/test_query_rewriter_source_targeting.py \
+            tests/test_relation_aware_answer_resolver.py \
+            tests/test_relevance_filter_safety_floor.py \
+            tests/test_rrf.py \
+            tests/test_source_aware_relevance_filter.py \
+            tests/test_structured_conclusion_verifier.py \
+            tests/test_api_errors.py \
+            tests/test_api_query.py \
+            tests/test_api_health.py \
+            tests/test_constrained_answer_synthesis.py \
+            tests/test_sentence_boundaries.py \
+            tests/test_source_targeted_retry_handoff.py \
+            -q
+

@@ -1,0 +1,240 @@
+{
+  "summary": {
+    "cases": 5,
+    "evidence_sufficient": 5,
+    "answers_generated": 0,
+    "abstentions": 5,
+    "draft_scored": 5,
+    "draft_correct": 2,
+    "final_scored": 0,
+    "final_correct": 0,
+    "corrected_errors": 0,
+    "introduced_errors": 0,
+    "preserved_correct": 0,
+    "preserved_wrong": 0,
+    "runtime_passes": 0,
+    "supported_claims": 6,
+    "unsupported_claims": 6,
+    "relevant_claims": 6,
+    "draft_accuracy": 0.4,
+    "final_accuracy": null,
+    "self_correction_gain": null,
+    "mean_generation_seconds": 10.145484920003218,
+    "max_generation_seconds": 17.189821700005268
+  },
+  "records": [
+    {
+      "target": "taylor_kelce",
+      "example_id": "eval_b80b5654cdcc",
+      "question": "Was the news about Taylor Swift's relationship with Travis Kelce inconsistent with the later report from The Independent - Life and Style on December 6, 2023?",
+      "gold_answer": "no",
+      "evidence_attempts": [
+        {
+          "attempt": 0,
+          "query": "Was the news about Taylor Swift's relationship with Travis Kelce inconsistent with the later report from The Independent - Life and Style on December 6, 2023?",
+          "evidence_sufficient": true,
+          "evidence_score": 0.89,
+          "evidence_reasons": [
+            "Evidence appears sufficient."
+          ]
+        }
+      ],
+      "evidence_sufficient": true,
+      "raw_answer": "DIRECT_ANSWER: No\n\nFACTS:\n- Taylor Swift revealed her connection with Travis Kelce in July after he confessed on his podcast.\n- The independent report from The Independent - Life and Style does not mention any conflicting information regarding Swift and Kelce's relationship.",
+      "draft_direct_answer": "No",
+      "final_direct_answer": null,
+      "draft_correct": true,
+      "final_correct": null,
+      "self_correction_outcome": "unscored",
+      "final_answer": "I don't have enough evidence in the provided sources to answer reliably.",
+      "abstained": true,
+      "citation_valid": true,
+      "cited_ids": [],
+      "draft_claims": 2,
+      "supported_claims": 1,
+      "unsupported_claims": 1,
+      "relevant_claims": 1,
+      "filtered_irrelevant_claims": 0,
+      "runtime_grade": {
+        "passed": false,
+        "supported_claim_ratio": 0.0,
+        "relevance_score": null,
+        "reasons": [
+          "Generation abstained even though evidence was considered sufficient."
+        ]
+      },
+      "generation_seconds": 17.1898
+    },
+    {
+      "target": "sam_altman",
+      "example_id": "eval_e11c54f5cc35",
+      "question": "Did the Fortune article published later on the same day contradict the TechCrunch article from November 18, 2023, regarding the circumstances surrounding Sam Altman's departure from OpenAI?",
+      "gold_answer": "no",
+      "evidence_attempts": [
+        {
+          "attempt": 0,
+          "query": "Did the Fortune article published later on the same day contradict the TechCrunch article from November 18, 2023, regarding the circumstances surrounding Sam Altman's departure from OpenAI?",
+          "evidence_sufficient": true,
+          "evidence_score": 0.7861,
+          "evidence_reasons": [
+            "Evidence appears sufficient.",
+            "Potentially weak evidence citations: [6]"
+          ]
+        }
+      ],
+      "evidence_sufficient": true,
+      "raw_answer": "DIRECT_ANSWER: No\n\nFACTS:\n- The Fortune article discusses the situation involving Sam Altman's departure from OpenAI.\n- The TechCrunch articles discuss the same events but provide different perspectives and details.\n- There is no explicit contradiction mentioned between the TechCrunch articles and the Fortune article.",
+      "draft_direct_answer": "No",
+      "final_direct_answer": null,
+      "draft_correct": true,
+      "final_correct": null,
+      "self_correction_outcome": "unscored",
+      "final_answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+      "abstained": true,
+      "citation_valid": false,
+      "cited_ids": [],
+      "draft_claims": 3,
+      "supported_claims": 0,
+      "unsupported_claims": 3,
+      "relevant_claims": 0,
+      "filtered_irrelevant_claims": 0,
+      "runtime_grade": {
+        "passed": false,
+        "supported_claim_ratio": 0.0,
+        "relevance_score": null,
+        "reasons": [
+          "Generation abstained even though evidence was considered sufficient."
+        ]
+      },
+      "generation_seconds": 3.547
+    },
+    {
+      "target": "mctominay_haaland",
+      "example_id": "eval_090554e34f30",
+      "question": "Does the 'Sporting News' article identify Scott McTominay as Manchester United's top scorer for the season, while the 'TalkSport' article suggests Erling Haaland has the chance to become the overall top scorer in 2023, indicating a difference in the scope of their scoring achievements?",
+      "gold_answer": "Yes",
+      "evidence_attempts": [
+        {
+          "attempt": 0,
+          "query": "Does the 'Sporting News' article identify Scott McTominay as Manchester United's top scorer for the season, while the 'TalkSport' article suggests Erling Haaland has the chance to become the overall top scorer in 2023, indicating a difference in the scope of their scoring achievements?",
+          "evidence_sufficient": true,
+          "evidence_score": 0.8167,
+          "evidence_reasons": [
+            "Evidence appears sufficient.",
+            "Potentially weak evidence citations: [4, 5, 6, 7]"
+          ]
+        }
+      ],
+      "evidence_sufficient": true,
+      "raw_answer": "DIRECT_ANSWER: No\n\nFACTS:\n- Scott McTominay is mentioned as Manchester United's top scorer for the season.\n- Erling Haaland is suggested as having the chance to become the overall top scorer in 2023.",
+      "draft_direct_answer": "No",
+      "final_direct_answer": null,
+      "draft_correct": false,
+      "final_correct": null,
+      "self_correction_outcome": "unscored",
+      "final_answer": "I don't have enough evidence in the provided sources to answer reliably.",
+      "abstained": true,
+      "citation_valid": true,
+      "cited_ids": [],
+      "draft_claims": 2,
+      "supported_claims": 2,
+      "unsupported_claims": 0,
+      "relevant_claims": 2,
+      "filtered_irrelevant_claims": 0,
+      "runtime_grade": {
+        "passed": false,
+        "supported_claim_ratio": 0.0,
+        "relevance_score": null,
+        "reasons": [
+          "Generation abstained even though evidence was considered sufficient."
+        ]
+      },
+      "generation_seconds": 14.1
+    },
+    {
+      "target": "google_youtube",
+      "example_id": "eval_0e73e16e3d82",
+      "question": "Does the TechCrunch article on the antitrust suit against Google claim that Google's behavior towards news publishers is anticompetitive, while the other TechCrunch article suggests that Google has no plans to implement additional measures on YouTube, indicating a difference in Google's approach to news publishers and content regulation on YouTube?",
+      "gold_answer": "Yes",
+      "evidence_attempts": [
+        {
+          "attempt": 0,
+          "query": "Does the TechCrunch article on the antitrust suit against Google claim that Google's behavior towards news publishers is anticompetitive, while the other TechCrunch article suggests that Google has no plans to implement additional measures on YouTube, indicating a difference in Google's approach to news publishers and content regulation on YouTube?",
+          "evidence_sufficient": true,
+          "evidence_score": 0.846,
+          "evidence_reasons": [
+            "Evidence appears sufficient.",
+            "Potentially weak evidence citations: [2, 5, 6, 7, 9]"
+          ]
+        }
+      ],
+      "evidence_sufficient": true,
+      "raw_answer": "DIRECT_ANSWER: No\n\nFACTS:\n- [TechCrunch article mentions Google's antitrust suit against news publishers]\n- [TechCrunch articles do not mention anything specific about Google's plans for YouTube]",
+      "draft_direct_answer": "No",
+      "final_direct_answer": null,
+      "draft_correct": false,
+      "final_correct": null,
+      "self_correction_outcome": "unscored",
+      "final_answer": "I don't have enough evidence in the provided sources to answer reliably.",
+      "abstained": true,
+      "citation_valid": true,
+      "cited_ids": [],
+      "draft_claims": 2,
+      "supported_claims": 1,
+      "unsupported_claims": 1,
+      "relevant_claims": 1,
+      "filtered_irrelevant_claims": 0,
+      "runtime_grade": {
+        "passed": false,
+        "supported_claim_ratio": 0.0,
+        "relevance_score": null,
+        "reasons": [
+          "Generation abstained even though evidence was considered sufficient."
+        ]
+      },
+      "generation_seconds": 12.0303
+    },
+    {
+      "target": "google_epic",
+      "example_id": "eval_2f9aa5a9983c",
+      "question": "Between the report from The Verge on the Epic v. Google case and the subsequent report from TechCrunch on the same case, was there agreement on the nature of Epic Games' arguments against Google?",
+      "gold_answer": "Yes",
+      "evidence_attempts": [
+        {
+          "attempt": 0,
+          "query": "Between the report from The Verge on the Epic v. Google case and the subsequent report from TechCrunch on the same case, was there agreement on the nature of Epic Games' arguments against Google?",
+          "evidence_sufficient": true,
+          "evidence_score": 0.8429,
+          "evidence_reasons": [
+            "Evidence appears sufficient."
+          ]
+        }
+      ],
+      "evidence_sufficient": true,
+      "raw_answer": "DIRECT_ANSWER: No\n\nFACTS:\n- The Verge reports that Epic Games argues Google's 70/30 revenue split is arbitrary.\n- TechCrunch notes that Epic's lawsuit against Google involves other concerns beyond the 70/30 split.\n- The Verge mentions that Epic's antitrust claims against Apple were resolved through litigation.",
+      "draft_direct_answer": "No",
+      "final_direct_answer": null,
+      "draft_correct": false,
+      "final_correct": null,
+      "self_correction_outcome": "unscored",
+      "final_answer": "I don't have enough evidence in the provided sources to answer reliably.",
+      "abstained": true,
+      "citation_valid": true,
+      "cited_ids": [],
+      "draft_claims": 3,
+      "supported_claims": 2,
+      "unsupported_claims": 1,
+      "relevant_claims": 2,
+      "filtered_irrelevant_claims": 0,
+      "runtime_grade": {
+        "passed": false,
+        "supported_claim_ratio": 0.0,
+        "relevance_score": null,
+        "reasons": [
+          "Generation abstained even though evidence was considered sufficient."
+        ]
+      },
+      "generation_seconds": 3.8603
+    }
+  ]
+}

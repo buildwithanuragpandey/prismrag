@@ -1,0 +1,320 @@
+{
+  "configuration": {
+    "source_targeted_retrieval": true,
+    "top_k": 10,
+    "production_files_modified": false
+  },
+  "summary": {
+    "total_cases": 4,
+    "answerable_cases": 2,
+    "null_cases": 2,
+    "legacy_answerable_evidence_accepts": 1,
+    "v2_answerable_evidence_accepts": 2,
+    "legacy_null_evidence_accepts": 0,
+    "v2_null_evidence_accepts": 0,
+    "v2_retrieval_improved_cases": [
+      "eval_b34094b1e6c2",
+      "eval_be412cb54feb"
+    ],
+    "v2_retrieval_harmed_cases": [],
+    "v2_context_improved_cases": [
+      "eval_b34094b1e6c2",
+      "eval_be412cb54feb"
+    ],
+    "v2_context_harmed_cases": []
+  },
+  "records": [
+    {
+      "id": "eval_b34094b1e6c2",
+      "question_type": "inference_query",
+      "is_null": false,
+      "missing_sources": [
+        "CBSSports.com"
+      ],
+      "legacy_query": "Which NFL team, featured in articles from both 'Sporting News' and 'CBSSports.com', faced the potential of being closely followed in the wild card race by three other teams, might have opted for a field goal in a 'Monday Night Football' game, recently changed their passing game strategy, and has seen comparable offensive production from Josh Dobbs and Kirk Cousins? supporting evidence",
+      "v2_query": "CBSSports.com NFL team featured faced potential closely followed wild card race three teams opted field goal Monday Night Football game recently changed their passing strategy seen comparable offensiv offensive production Josh Dobbs Kirk Cousins",
+      "legacy": {
+        "retrieved_document_ids": [
+          "doc_0144",
+          "doc_0288",
+          "doc_0004",
+          "doc_0294",
+          "doc_0200",
+          "doc_0058",
+          "doc_0037",
+          "doc_0179",
+          "doc_0394",
+          "doc_0316"
+        ],
+        "context_document_ids": [
+          "doc_0144",
+          "doc_0288",
+          "doc_0004",
+          "doc_0294",
+          "doc_0200",
+          "doc_0058",
+          "doc_0037",
+          "doc_0179",
+          "doc_0394",
+          "doc_0316"
+        ],
+        "retrieval_gold_recall": 0.6666666666666666,
+        "context_gold_recall": 0.6666666666666666,
+        "evidence_sufficient": true,
+        "evidence_score": 0.8308
+      },
+      "v2": {
+        "retrieved_document_ids": [
+          "doc_0288",
+          "doc_0144",
+          "doc_0294",
+          "doc_0553",
+          "doc_0058",
+          "doc_0394",
+          "doc_0179",
+          "doc_0037",
+          "doc_0149",
+          "doc_0119"
+        ],
+        "context_document_ids": [
+          "doc_0288",
+          "doc_0144",
+          "doc_0294",
+          "doc_0553",
+          "doc_0058",
+          "doc_0394",
+          "doc_0179",
+          "doc_0037",
+          "doc_0149",
+          "doc_0119"
+        ],
+        "retrieval_gold_recall": 1.0,
+        "context_gold_recall": 1.0,
+        "evidence_sufficient": true,
+        "evidence_score": 0.8308
+      },
+      "retrieval_recall_delta_v2_minus_legacy": 0.33333333333333337,
+      "context_recall_delta_v2_minus_legacy": 0.33333333333333337,
+      "evidence_score_delta_v2_minus_legacy": 0.0,
+      "legacy_evidence_sufficient": true,
+      "v2_evidence_sufficient": true
+    },
+    {
+      "id": "eval_aa44caaeae76",
+      "question_type": "null_query",
+      "is_null": true,
+      "missing_sources": [
+        "The Guardian"
+      ],
+      "legacy_query": "Considering the information from an article in The New York Times about Zhemu Soda's recent environmental initiatives and a report by The Guardian on his political career, which political party, known for its green policies, did Zhemu Soda join according to The New York Times, and which committee did he chair that was mentioned in The Guardian, where the first letter of the party and the last letter of the committee are the same? supporting evidence",
+      "v2_query": "The Guardian Zhemu Soda's recent environmental initiatives his political career party known its green policies Soda join committee he chair mentioned first letter last",
+      "legacy": {
+        "retrieved_document_ids": [
+          "doc_0599",
+          "doc_0523",
+          "doc_0457",
+          "doc_0536",
+          "doc_0233",
+          "doc_0076",
+          "doc_0330",
+          "doc_0415",
+          "doc_0156",
+          "doc_0150"
+        ],
+        "context_document_ids": [
+          "doc_0599",
+          "doc_0523",
+          "doc_0457",
+          "doc_0536",
+          "doc_0233",
+          "doc_0076",
+          "doc_0330",
+          "doc_0415",
+          "doc_0156",
+          "doc_0150"
+        ],
+        "retrieval_gold_recall": null,
+        "context_gold_recall": null,
+        "evidence_sufficient": false,
+        "evidence_score": 0.7871
+      },
+      "v2": {
+        "retrieved_document_ids": [
+          "doc_0233",
+          "doc_0599",
+          "doc_0138",
+          "doc_0457",
+          "doc_0536",
+          "doc_0278",
+          "doc_0025",
+          "doc_0101",
+          "doc_0371",
+          "doc_0284"
+        ],
+        "context_document_ids": [
+          "doc_0233",
+          "doc_0599",
+          "doc_0138",
+          "doc_0457",
+          "doc_0536",
+          "doc_0278",
+          "doc_0025",
+          "doc_0101",
+          "doc_0371",
+          "doc_0284"
+        ],
+        "retrieval_gold_recall": null,
+        "context_gold_recall": null,
+        "evidence_sufficient": false,
+        "evidence_score": 0.7871
+      },
+      "retrieval_recall_delta_v2_minus_legacy": null,
+      "context_recall_delta_v2_minus_legacy": null,
+      "evidence_score_delta_v2_minus_legacy": 0.0,
+      "legacy_evidence_sufficient": false,
+      "v2_evidence_sufficient": false
+    },
+    {
+      "id": "eval_be412cb54feb",
+      "question_type": "temporal_query",
+      "is_null": false,
+      "missing_sources": [
+        "The Age"
+      ],
+      "legacy_query": "Has the portrayal of Google's market practices in reports by The Age after October 22, 2023, remained consistent with the depiction in The Verge's coverage of the Epic v. Google case, and with TechCrunch's report on the class action antitrust suit filed against Google? supporting evidence",
+      "v2_query": "The Age portrayal Google's market practices October 22 2023 remained consistent depiction Epic Google case class action antitrust suit filed against",
+      "legacy": {
+        "retrieved_document_ids": [
+          "doc_0033",
+          "doc_0355",
+          "doc_0015",
+          "doc_0170",
+          "doc_0299",
+          "doc_0237",
+          "doc_0042"
+        ],
+        "context_document_ids": [
+          "doc_0033",
+          "doc_0355",
+          "doc_0015",
+          "doc_0170",
+          "doc_0299",
+          "doc_0237",
+          "doc_0042"
+        ],
+        "retrieval_gold_recall": 0.6666666666666666,
+        "context_gold_recall": 0.6666666666666666,
+        "evidence_sufficient": false,
+        "evidence_score": 0.78
+      },
+      "v2": {
+        "retrieved_document_ids": [
+          "doc_0042",
+          "doc_0033",
+          "doc_0170",
+          "doc_0015",
+          "doc_0299",
+          "doc_0355",
+          "doc_0237",
+          "doc_0032",
+          "doc_0027"
+        ],
+        "context_document_ids": [
+          "doc_0042",
+          "doc_0033",
+          "doc_0170",
+          "doc_0015",
+          "doc_0299",
+          "doc_0355",
+          "doc_0237",
+          "doc_0032",
+          "doc_0027"
+        ],
+        "retrieval_gold_recall": 1.0,
+        "context_gold_recall": 1.0,
+        "evidence_sufficient": true,
+        "evidence_score": 0.802
+      },
+      "retrieval_recall_delta_v2_minus_legacy": 0.33333333333333337,
+      "context_recall_delta_v2_minus_legacy": 0.33333333333333337,
+      "evidence_score_delta_v2_minus_legacy": 0.02200000000000002,
+      "legacy_evidence_sufficient": false,
+      "v2_evidence_sufficient": true
+    },
+    {
+      "id": "eval_ffba71206ed9",
+      "question_type": "null_query",
+      "is_null": true,
+      "missing_sources": [
+        "New York Times"
+      ],
+      "legacy_query": "Considering the features discussed in a New York Times article and the performance benchmarks mentioned in a review by The Verge, which component of the latest iPad Pro, represented by a single letter, has seen the most significant upgrade in terms of speed and efficiency? supporting evidence",
+      "v2_query": "New York Times features discussed performance benchmarks mentioned review component latest iPad Pro represented single letter seen most significant upgrade terms speed efficiency",
+      "legacy": {
+        "retrieved_document_ids": [
+          "doc_0600",
+          "doc_0526",
+          "doc_0287",
+          "doc_0169",
+          "doc_0576",
+          "doc_0199",
+          "doc_0383",
+          "doc_0250",
+          "doc_0222",
+          "doc_0091"
+        ],
+        "context_document_ids": [
+          "doc_0600",
+          "doc_0526",
+          "doc_0287",
+          "doc_0169",
+          "doc_0576",
+          "doc_0199",
+          "doc_0383",
+          "doc_0250",
+          "doc_0222",
+          "doc_0091"
+        ],
+        "retrieval_gold_recall": null,
+        "context_gold_recall": null,
+        "evidence_sufficient": false,
+        "evidence_score": 0.7038
+      },
+      "v2": {
+        "retrieved_document_ids": [
+          "doc_0600",
+          "doc_0526",
+          "doc_0287",
+          "doc_0576",
+          "doc_0222",
+          "doc_0250",
+          "doc_0558",
+          "doc_0104",
+          "doc_0316",
+          "doc_0351"
+        ],
+        "context_document_ids": [
+          "doc_0600",
+          "doc_0526",
+          "doc_0287",
+          "doc_0576",
+          "doc_0222",
+          "doc_0250",
+          "doc_0558",
+          "doc_0104",
+          "doc_0316",
+          "doc_0351"
+        ],
+        "retrieval_gold_recall": null,
+        "context_gold_recall": null,
+        "evidence_sufficient": false,
+        "evidence_score": 0.7673
+      },
+      "retrieval_recall_delta_v2_minus_legacy": null,
+      "context_recall_delta_v2_minus_legacy": null,
+      "evidence_score_delta_v2_minus_legacy": 0.0635,
+      "legacy_evidence_sufficient": false,
+      "v2_evidence_sufficient": false
+    }
+  ]
+}

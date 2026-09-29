@@ -1,0 +1,5029 @@
+{
+  "num_examples": 30,
+  "num_evaluated": 25,
+  "skipped_no_evidence": 5,
+  "embedding_seconds": 0,
+  "avg_retrieval_ms": 429.52503199951025,
+  "metrics": {
+    "recall@1": 0.30666666666666664,
+    "hit@1": 0.72,
+    "complete_recall@1": 0.0,
+    "mrr@1": 0.72,
+    "ndcg@1": 0.72,
+    "unique_documents@1": 1,
+    "duplicate_rate@1": 0.0,
+    "recall@3": 0.5466666666666666,
+    "hit@3": 0.88,
+    "complete_recall@3": 0.28,
+    "mrr@3": 0.7933333333333333,
+    "ndcg@3": 0.5932438640326365,
+    "unique_documents@3": 2.16,
+    "duplicate_rate@3": 0.28,
+    "recall@5": 0.6633333333333333,
+    "hit@5": 1.0,
+    "complete_recall@5": 0.32,
+    "mrr@5": 0.8213333333333334,
+    "ndcg@5": 0.6476789458612197,
+    "unique_documents@5": 3.2,
+    "duplicate_rate@5": 0.36,
+    "recall@10": 0.7733333333333333,
+    "hit@10": 1.0,
+    "complete_recall@10": 0.52,
+    "mrr@10": 0.8213333333333334,
+    "ndcg@10": 0.6944300681927299,
+    "unique_documents@10": 5.36,
+    "duplicate_rate@10": 0.46399999999999997,
+    "recall@20": 0.8266666666666667,
+    "hit@20": 1.0,
+    "complete_recall@20": 0.64,
+    "mrr@20": 0.8213333333333334,
+    "ndcg@20": 0.7129387492722842,
+    "unique_documents@20": 11.6,
+    "duplicate_rate@20": 0.42
+  },
+  "per_query": [
+    {
+      "index": 0,
+      "query": "Who is the individual associated with the cryptocurrency industry facing a criminal trial on fraud and conspiracy charges, as reported by both The Verge and TechCrunch, and is accused by prosecutors of committing fraud for personal gain?",
+      "question_type": "inference_query",
+      "num_relevant_documents": 3,
+      "metrics": {
+        "1": {
+          "recall": 0.3333333333333333,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 0.6666666666666666,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.7653606369886217,
+          "unique_documents": 2,
+          "duplicate_rate": 0.33333333333333337
+        },
+        "5": {
+          "recall": 0.6666666666666666,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.7653606369886217,
+          "unique_documents": 4,
+          "duplicate_rate": 0.19999999999999996
+        },
+        "10": {
+          "recall": 0.6666666666666666,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.7653606369886217,
+          "unique_documents": 8,
+          "duplicate_rate": 0.19999999999999996
+        },
+        "20": {
+          "recall": 0.6666666666666666,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.7653606369886217,
+          "unique_documents": 14,
+          "duplicate_rate": 0.30000000000000004
+        }
+      },
+      "first_complete_evidence_rank": null,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 1.7238303422927856,
+          "document_id": "doc_0010",
+          "title": "SBF’s trial starts soon, but how did he — and FTX — get here?",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 2,
+          "score": 1.4525363445281982,
+          "document_id": "doc_0175",
+          "title": "The FTX trial is bigger than Sam Bankman-Fried",
+          "source": "The Verge"
+        },
+        {
+          "rank": 3,
+          "score": 1.3805545568466187,
+          "document_id": "doc_0010",
+          "title": "SBF’s trial starts soon, but how did he — and FTX — get here?",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 4,
+          "score": -0.348625510931015,
+          "document_id": "doc_0293",
+          "title": "How is it still getting worse for Sam Bankman-Fried?",
+          "source": "The Verge"
+        },
+        {
+          "rank": 5,
+          "score": -0.49664226174354553,
+          "document_id": "doc_0009",
+          "title": "SBF Trial: The latest updates from the FTX collapse’s courtroom drama",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 6,
+          "score": -1.1049448251724243,
+          "document_id": "doc_0375",
+          "title": "Coinbase rallies more than 60% in same month that FTX and Binance founders brace for prison",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 7,
+          "score": -1.11100435256958,
+          "document_id": "doc_0030",
+          "title": "SBF, riding high on FTX, reportedly offered $5B to Trump to cancel President re-run",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 8,
+          "score": -1.451375961303711,
+          "document_id": "doc_0083",
+          "title": "Sam Bankman-Fried didn’t ask where the $8 billion went",
+          "source": "The Verge"
+        },
+        {
+          "rank": 9,
+          "score": -1.475502848625183,
+          "document_id": "doc_0086",
+          "title": "Sam Bankman-Fried was a terrible boyfriend",
+          "source": "The Verge"
+        },
+        {
+          "rank": 10,
+          "score": -1.6542307138442993,
+          "document_id": "doc_0010",
+          "title": "SBF’s trial starts soon, but how did he — and FTX — get here?",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 11,
+          "score": -2.441997528076172,
+          "document_id": "doc_0175",
+          "title": "The FTX trial is bigger than Sam Bankman-Fried",
+          "source": "The Verge"
+        },
+        {
+          "rank": 12,
+          "score": -3.4896278381347656,
+          "document_id": "doc_0226",
+          "title": "Sex, Signal messages, and sabotaging FTX's code: SBF execs and Bahamas roommates tell all in court",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 13,
+          "score": -3.597670078277588,
+          "document_id": "doc_0226",
+          "title": "Sex, Signal messages, and sabotaging FTX's code: SBF execs and Bahamas roommates tell all in court",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 14,
+          "score": -3.7602407932281494,
+          "document_id": "doc_0226",
+          "title": "Sex, Signal messages, and sabotaging FTX's code: SBF execs and Bahamas roommates tell all in court",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 15,
+          "score": -3.886989116668701,
+          "document_id": "doc_0226",
+          "title": "Sex, Signal messages, and sabotaging FTX's code: SBF execs and Bahamas roommates tell all in court",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 16,
+          "score": -4.30305290222168,
+          "document_id": "doc_0031",
+          "title": "Is Sam Bankman-Fried a bad ‘man’ or a good ‘boy’? Lawyers swap opening statements before first witnesses take the stand",
+          "source": "Fortune"
+        },
+        {
+          "rank": 17,
+          "score": -5.067965030670166,
+          "document_id": "doc_0053",
+          "title": "The jury finally hears from Sam Bankman-Fried",
+          "source": "The Verge"
+        },
+        {
+          "rank": 18,
+          "score": -6.647861957550049,
+          "document_id": "doc_0121",
+          "title": "In the end, the FTX trial was about the friends screwed along the way",
+          "source": "The Verge"
+        },
+        {
+          "rank": 19,
+          "score": -7.800530433654785,
+          "document_id": "doc_0529",
+          "title": "Donald Trump defrauded banks with 'fantasy' to build his real estate empire, judge rules in a major repudiation against the former president",
+          "source": "Fortune"
+        },
+        {
+          "rank": 20,
+          "score": -8.000602722167969,
+          "document_id": "doc_0154",
+          "title": "The best shows to stream in December",
+          "source": "The Sydney Morning Herald"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "query": "Which individual is implicated in both inflating the value of a Manhattan apartment to a figure not yet achieved in New York City's real estate history, according to 'Fortune', and is also accused of adjusting this apartment's valuation to compensate for a loss in another asset's worth, as reported by 'The Age'?",
+      "question_type": "inference_query",
+      "num_relevant_documents": 2,
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 2,
+          "duplicate_rate": 0.33333333333333337
+        },
+        "5": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 2,
+          "duplicate_rate": 0.6
+        },
+        "10": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 4,
+          "duplicate_rate": 0.6
+        },
+        "20": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 9,
+          "duplicate_rate": 0.55
+        }
+      },
+      "first_complete_evidence_rank": 2,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 2.0815601348876953,
+          "document_id": "doc_0529",
+          "title": "Donald Trump defrauded banks with 'fantasy' to build his real estate empire, judge rules in a major repudiation against the former president",
+          "source": "Fortune"
+        },
+        {
+          "rank": 2,
+          "score": -0.6001839637756348,
+          "document_id": "doc_0530",
+          "title": "The $777 million surprise: Donald Trump is getting richer",
+          "source": "The Age"
+        },
+        {
+          "rank": 3,
+          "score": -3.073542594909668,
+          "document_id": "doc_0530",
+          "title": "The $777 million surprise: Donald Trump is getting richer",
+          "source": "The Age"
+        },
+        {
+          "rank": 4,
+          "score": -3.7421891689300537,
+          "document_id": "doc_0529",
+          "title": "Donald Trump defrauded banks with 'fantasy' to build his real estate empire, judge rules in a major repudiation against the former president",
+          "source": "Fortune"
+        },
+        {
+          "rank": 5,
+          "score": -4.861579895019531,
+          "document_id": "doc_0529",
+          "title": "Donald Trump defrauded banks with 'fantasy' to build his real estate empire, judge rules in a major repudiation against the former president",
+          "source": "Fortune"
+        },
+        {
+          "rank": 6,
+          "score": -5.756769180297852,
+          "document_id": "doc_0530",
+          "title": "The $777 million surprise: Donald Trump is getting richer",
+          "source": "The Age"
+        },
+        {
+          "rank": 7,
+          "score": -6.0611891746521,
+          "document_id": "doc_0529",
+          "title": "Donald Trump defrauded banks with 'fantasy' to build his real estate empire, judge rules in a major repudiation against the former president",
+          "source": "Fortune"
+        },
+        {
+          "rank": 8,
+          "score": -7.838223457336426,
+          "document_id": "doc_0530",
+          "title": "The $777 million surprise: Donald Trump is getting richer",
+          "source": "The Age"
+        },
+        {
+          "rank": 9,
+          "score": -8.301387786865234,
+          "document_id": "doc_0073",
+          "title": "Psagot worth 80% less since Rani Zim bought it",
+          "source": "Globes English | Israel Business Arena"
+        },
+        {
+          "rank": 10,
+          "score": -9.071870803833008,
+          "document_id": "doc_0226",
+          "title": "Sex, Signal messages, and sabotaging FTX's code: SBF execs and Bahamas roommates tell all in court",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 11,
+          "score": -9.314311027526855,
+          "document_id": "doc_0530",
+          "title": "The $777 million surprise: Donald Trump is getting richer",
+          "source": "The Age"
+        },
+        {
+          "rank": 12,
+          "score": -9.341588020324707,
+          "document_id": "doc_0418",
+          "title": "Fundamental Investing: The Art of Relative Valuation",
+          "source": "Business Line"
+        },
+        {
+          "rank": 13,
+          "score": -9.547552108764648,
+          "document_id": "doc_0263",
+          "title": "Hipgnosis Songs Fund’s board is concerned over Citrin Cooperman’s latest valuation of the company. What’s it going to do about it?",
+          "source": "Music Business Worldwide"
+        },
+        {
+          "rank": 14,
+          "score": -9.935747146606445,
+          "document_id": "doc_0582",
+          "title": "Looking for a book to read? Here are 14 tips for October",
+          "source": "The Sydney Morning Herald"
+        },
+        {
+          "rank": 15,
+          "score": -10.038418769836426,
+          "document_id": "doc_0530",
+          "title": "The $777 million surprise: Donald Trump is getting richer",
+          "source": "The Age"
+        },
+        {
+          "rank": 16,
+          "score": -10.161002159118652,
+          "document_id": "doc_0263",
+          "title": "Hipgnosis Songs Fund’s board is concerned over Citrin Cooperman’s latest valuation of the company. What’s it going to do about it?",
+          "source": "Music Business Worldwide"
+        },
+        {
+          "rank": 17,
+          "score": -10.185863494873047,
+          "document_id": "doc_0418",
+          "title": "Fundamental Investing: The Art of Relative Valuation",
+          "source": "Business Line"
+        },
+        {
+          "rank": 18,
+          "score": -10.188536643981934,
+          "document_id": "doc_0226",
+          "title": "Sex, Signal messages, and sabotaging FTX's code: SBF execs and Bahamas roommates tell all in court",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 19,
+          "score": -10.193751335144043,
+          "document_id": "doc_0162",
+          "title": "Is Sam Bankman-Fried’s defense even trying to win?",
+          "source": "The Verge"
+        },
+        {
+          "rank": 20,
+          "score": -10.196776390075684,
+          "document_id": "doc_0076",
+          "title": "How the conspiracy-fueled Epoch Times went mainstream and made millions",
+          "source": "Hacker News"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "query": "Who is the figure associated with generative AI technology whose departure from OpenAI was considered shocking according to Fortune, and is also the subject of a prevailing theory suggesting a lack of full truthfulness with the board as reported by TechCrunch?",
+      "question_type": "inference_query",
+      "num_relevant_documents": 2,
+      "metrics": {
+        "1": {
+          "recall": 0.0,
+          "hit": 0.0,
+          "complete_recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.3065735963827292,
+          "unique_documents": 3,
+          "duplicate_rate": 0.0
+        },
+        "5": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.5706417189553201,
+          "unique_documents": 4,
+          "duplicate_rate": 0.19999999999999996
+        },
+        "10": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.5706417189553201,
+          "unique_documents": 6,
+          "duplicate_rate": 0.4
+        },
+        "20": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.5706417189553201,
+          "unique_documents": 11,
+          "duplicate_rate": 0.44999999999999996
+        }
+      },
+      "first_complete_evidence_rank": 4,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 6.420724868774414,
+          "document_id": "doc_0415",
+          "title": "A timeline of Sam Altman’s firing from OpenAI — and the fallout",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 2,
+          "score": 5.398388385772705,
+          "document_id": "doc_0516",
+          "title": "Sam Altman ousted as OpenAI’s CEO",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 3,
+          "score": 4.0905680656433105,
+          "document_id": "doc_0332",
+          "title": "OpenAI's ex-chairman accuses board of going rogue in firing Altman: 'Sam and I are shocked and saddened by what the board did'",
+          "source": "Fortune"
+        },
+        {
+          "rank": 4,
+          "score": 3.1523895263671875,
+          "document_id": "doc_0333",
+          "title": "WTF is going on at OpenAI? We have theories",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 5,
+          "score": 2.3149900436401367,
+          "document_id": "doc_0415",
+          "title": "A timeline of Sam Altman’s firing from OpenAI — and the fallout",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 6,
+          "score": 2.24556040763855,
+          "document_id": "doc_0332",
+          "title": "OpenAI's ex-chairman accuses board of going rogue in firing Altman: 'Sam and I are shocked and saddened by what the board did'",
+          "source": "Fortune"
+        },
+        {
+          "rank": 7,
+          "score": 2.1936326026916504,
+          "document_id": "doc_0516",
+          "title": "Sam Altman ousted as OpenAI’s CEO",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 8,
+          "score": 0.3594192564487457,
+          "document_id": "doc_0027",
+          "title": "How ego and fear fuelled the rise of artificial intelligence",
+          "source": "The Age"
+        },
+        {
+          "rank": 9,
+          "score": 0.013182878494262695,
+          "document_id": "doc_0332",
+          "title": "OpenAI's ex-chairman accuses board of going rogue in firing Altman: 'Sam and I are shocked and saddened by what the board did'",
+          "source": "Fortune"
+        },
+        {
+          "rank": 10,
+          "score": -0.02950724959373474,
+          "document_id": "doc_0054",
+          "title": "How the OpenAI fiasco could bolster Meta and the ‘open AI’ movement",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 11,
+          "score": -1.0568814277648926,
+          "document_id": "doc_0333",
+          "title": "WTF is going on at OpenAI? We have theories",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 12,
+          "score": -1.338485836982727,
+          "document_id": "doc_0048",
+          "title": "ChatGPT: Everything you need to know about the AI-powered chatbot",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 13,
+          "score": -1.3761688470840454,
+          "document_id": "doc_0415",
+          "title": "A timeline of Sam Altman’s firing from OpenAI — and the fallout",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 14,
+          "score": -1.7132526636123657,
+          "document_id": "doc_0048",
+          "title": "ChatGPT: Everything you need to know about the AI-powered chatbot",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 15,
+          "score": -1.7753942012786865,
+          "document_id": "doc_0333",
+          "title": "WTF is going on at OpenAI? We have theories",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 16,
+          "score": -2.028404712677002,
+          "document_id": "doc_0027",
+          "title": "How ego and fear fuelled the rise of artificial intelligence",
+          "source": "The Age"
+        },
+        {
+          "rank": 17,
+          "score": -2.4243555068969727,
+          "document_id": "doc_0268",
+          "title": "Meta and IBM form an AI Alliance, but to what end?",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 18,
+          "score": -2.6652286052703857,
+          "document_id": "doc_0099",
+          "title": "How OpenAI's ChatGPT has changed the world in just a year",
+          "source": "Engadget"
+        },
+        {
+          "rank": 19,
+          "score": -3.4681191444396973,
+          "document_id": "doc_0525",
+          "title": "EU says incoming rules for general purpose AIs can evolve over time",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 20,
+          "score": -5.644104480743408,
+          "document_id": "doc_0380",
+          "title": "Sony Music has issued nearly 10,000 deepfake takedowns… and other things we learned from Dennis Kooker’s speech about AI",
+          "source": "Music Business Worldwide"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "query": "Do the TechCrunch article on software companies and the Hacker News article on The Epoch Times both report an increase in revenue related to payment and subscription models, respectively?",
+      "question_type": "comparison_query",
+      "num_relevant_documents": 2,
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 2,
+          "duplicate_rate": 0.33333333333333337
+        },
+        "5": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 2,
+          "duplicate_rate": 0.6
+        },
+        "10": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 3,
+          "duplicate_rate": 0.7
+        },
+        "20": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 13,
+          "duplicate_rate": 0.35
+        }
+      },
+      "first_complete_evidence_rank": 2,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": -1.7441281080245972,
+          "document_id": "doc_0076",
+          "title": "How the conspiracy-fueled Epoch Times went mainstream and made millions",
+          "source": "Hacker News"
+        },
+        {
+          "rank": 2,
+          "score": -2.0901246070861816,
+          "document_id": "doc_0075",
+          "title": "Here’s how Rainforest, a budding Stripe rival, aims to win over software companies",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 3,
+          "score": -3.561326026916504,
+          "document_id": "doc_0076",
+          "title": "How the conspiracy-fueled Epoch Times went mainstream and made millions",
+          "source": "Hacker News"
+        },
+        {
+          "rank": 4,
+          "score": -3.75718355178833,
+          "document_id": "doc_0076",
+          "title": "How the conspiracy-fueled Epoch Times went mainstream and made millions",
+          "source": "Hacker News"
+        },
+        {
+          "rank": 5,
+          "score": -3.9847893714904785,
+          "document_id": "doc_0076",
+          "title": "How the conspiracy-fueled Epoch Times went mainstream and made millions",
+          "source": "Hacker News"
+        },
+        {
+          "rank": 6,
+          "score": -4.362573623657227,
+          "document_id": "doc_0076",
+          "title": "How the conspiracy-fueled Epoch Times went mainstream and made millions",
+          "source": "Hacker News"
+        },
+        {
+          "rank": 7,
+          "score": -4.43381929397583,
+          "document_id": "doc_0076",
+          "title": "How the conspiracy-fueled Epoch Times went mainstream and made millions",
+          "source": "Hacker News"
+        },
+        {
+          "rank": 8,
+          "score": -5.641411304473877,
+          "document_id": "doc_0049",
+          "title": "A comprehensive list of 2023 tech layoffs",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 9,
+          "score": -6.269669055938721,
+          "document_id": "doc_0076",
+          "title": "How the conspiracy-fueled Epoch Times went mainstream and made millions",
+          "source": "Hacker News"
+        },
+        {
+          "rank": 10,
+          "score": -6.459206581115723,
+          "document_id": "doc_0076",
+          "title": "How the conspiracy-fueled Epoch Times went mainstream and made millions",
+          "source": "Hacker News"
+        },
+        {
+          "rank": 11,
+          "score": -7.136064052581787,
+          "document_id": "doc_0048",
+          "title": "ChatGPT: Everything you need to know about the AI-powered chatbot",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 12,
+          "score": -7.668335437774658,
+          "document_id": "doc_0598",
+          "title": "Palestine’s growing tech industry has been literally blown apart by Israel’s war on Hamas",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 13,
+          "score": -8.34915542602539,
+          "document_id": "doc_0401",
+          "title": "Twitch’s money guy talks about the revenue split controversy and its monetization long game",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 14,
+          "score": -9.414258003234863,
+          "document_id": "doc_0507",
+          "title": "Flipboard becomes a federated app with support for ActivityPub",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 15,
+          "score": -9.428974151611328,
+          "document_id": "doc_0085",
+          "title": "‘AfroFuture’s vision is to bring African art, cuisine, fashion, and music to a global audience.’",
+          "source": "Music Business Worldwide"
+        },
+        {
+          "rank": 16,
+          "score": -9.436491966247559,
+          "document_id": "doc_0299",
+          "title": "The Epic v. Google trial may come down to simple v. complicated",
+          "source": "The Verge"
+        },
+        {
+          "rank": 17,
+          "score": -9.543563842773438,
+          "document_id": "doc_0140",
+          "title": "European consumer groups band together to fight Meta’s self-serving ad-free sub — branding it ‘unfair’ and ‘illegal’",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 18,
+          "score": -10.183369636535645,
+          "document_id": "doc_0043",
+          "title": "Founders, are events useful?",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 19,
+          "score": -10.195528984069824,
+          "document_id": "doc_0033",
+          "title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 20,
+          "score": -10.1958589553833,
+          "document_id": "doc_0099",
+          "title": "How OpenAI's ChatGPT has changed the world in just a year",
+          "source": "Engadget"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "query": "Which online betting platform provides a welcome bonus of up to $1000 in bonus bets for new customers' first losses, runs NBA betting promotions, and is anticipated to extend the same sign-up offer to new users in Vermont, as reported by both CBSSports.com and Sporting News?",
+      "question_type": "inference_query",
+      "num_relevant_documents": 3,
+      "metrics": {
+        "1": {
+          "recall": 0.3333333333333333,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 0.6666666666666666,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.7653606369886217,
+          "unique_documents": 2,
+          "duplicate_rate": 0.33333333333333337
+        },
+        "5": {
+          "recall": 0.6666666666666666,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.7653606369886217,
+          "unique_documents": 3,
+          "duplicate_rate": 0.4
+        },
+        "10": {
+          "recall": 0.6666666666666666,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.7653606369886217,
+          "unique_documents": 5,
+          "duplicate_rate": 0.5
+        },
+        "20": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.885476292786673,
+          "unique_documents": 7,
+          "duplicate_rate": 0.65
+        }
+      },
+      "first_complete_evidence_rank": 14,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 3.101261854171753,
+          "document_id": "doc_0071",
+          "title": "2023 Kentucky online sports betting sites: Best legal sportsbooks, promos, bonuses, mobile apps, how to bet",
+          "source": "CBSSports.com"
+        },
+        {
+          "rank": 2,
+          "score": 2.6164209842681885,
+          "document_id": "doc_0072",
+          "title": "Vermont Sportsbook Promos and Sports Betting Launch News",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 3,
+          "score": 1.6082189083099365,
+          "document_id": "doc_0072",
+          "title": "Vermont Sportsbook Promos and Sports Betting Launch News",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 4,
+          "score": 0.7305232286453247,
+          "document_id": "doc_0202",
+          "title": "Best sportsbook bonus offers for NFL Monday Night Football Eagles vs. Seahawks: Claim over $5,000 in bonuses from Bet365, BetMGM, BetRivers, Caesars Sportsbook, DraftKings and FanDuel ",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 5,
+          "score": 0.6392163038253784,
+          "document_id": "doc_0202",
+          "title": "Best sportsbook bonus offers for NFL Monday Night Football Eagles vs. Seahawks: Claim over $5,000 in bonuses from Bet365, BetMGM, BetRivers, Caesars Sportsbook, DraftKings and FanDuel ",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 6,
+          "score": 0.354633092880249,
+          "document_id": "doc_0368",
+          "title": "The Best NBA Betting Sites and Apps for the 2023-24 Season",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 7,
+          "score": 0.23831000924110413,
+          "document_id": "doc_0432",
+          "title": "Best sports betting promo codes for college basketball: Claim $5,000+ in bonuses from Caesars Sportsbook, BetMGM, Bet365, FanDuel, DraftKings, BetRivers",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 8,
+          "score": 0.16645056009292603,
+          "document_id": "doc_0072",
+          "title": "Vermont Sportsbook Promos and Sports Betting Launch News",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 9,
+          "score": -0.8508872985839844,
+          "document_id": "doc_0072",
+          "title": "Vermont Sportsbook Promos and Sports Betting Launch News",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 10,
+          "score": -1.4611507654190063,
+          "document_id": "doc_0072",
+          "title": "Vermont Sportsbook Promos and Sports Betting Launch News",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 11,
+          "score": -1.7440341711044312,
+          "document_id": "doc_0072",
+          "title": "Vermont Sportsbook Promos and Sports Betting Launch News",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 12,
+          "score": -2.126373767852783,
+          "document_id": "doc_0368",
+          "title": "The Best NBA Betting Sites and Apps for the 2023-24 Season",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 13,
+          "score": -2.214212417602539,
+          "document_id": "doc_0072",
+          "title": "Vermont Sportsbook Promos and Sports Betting Launch News",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 14,
+          "score": -2.2775542736053467,
+          "document_id": "doc_0062",
+          "title": "NBA Rookie of the Year Odds - Wembanyama the early favorite",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 15,
+          "score": -2.2997796535491943,
+          "document_id": "doc_0072",
+          "title": "Vermont Sportsbook Promos and Sports Betting Launch News",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 16,
+          "score": -3.5041654109954834,
+          "document_id": "doc_0072",
+          "title": "Vermont Sportsbook Promos and Sports Betting Launch News",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 17,
+          "score": -3.767648220062256,
+          "document_id": "doc_0368",
+          "title": "The Best NBA Betting Sites and Apps for the 2023-24 Season",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 18,
+          "score": -3.9439544677734375,
+          "document_id": "doc_0072",
+          "title": "Vermont Sportsbook Promos and Sports Betting Launch News",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 19,
+          "score": -4.2909393310546875,
+          "document_id": "doc_0589",
+          "title": "NBA MVP Odds 2024 Season - Jokic and Giannis early favorites",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 20,
+          "score": -4.370629787445068,
+          "document_id": "doc_0432",
+          "title": "Best sports betting promo codes for college basketball: Claim $5,000+ in bonuses from Caesars Sportsbook, BetMGM, Bet365, FanDuel, DraftKings, BetRivers",
+          "source": "Sporting News"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "query": "Who is the individual alleged to have built a thriving crypto exchange on falsehoods and is accused by the prosecution of committing fraud for personal gain, as reported by both Fortune and TechCrunch?",
+      "question_type": "inference_query",
+      "num_relevant_documents": 2,
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.6131471927654584,
+          "unique_documents": 3,
+          "duplicate_rate": 0.0
+        },
+        "5": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.6131471927654584,
+          "unique_documents": 5,
+          "duplicate_rate": 0.0
+        },
+        "10": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.6131471927654584,
+          "unique_documents": 9,
+          "duplicate_rate": 0.09999999999999998
+        },
+        "20": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.6131471927654584,
+          "unique_documents": 14,
+          "duplicate_rate": 0.30000000000000004
+        }
+      },
+      "first_complete_evidence_rank": null,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 3.5661706924438477,
+          "document_id": "doc_0031",
+          "title": "Is Sam Bankman-Fried a bad ‘man’ or a good ‘boy’? Lawyers swap opening statements before first witnesses take the stand",
+          "source": "Fortune"
+        },
+        {
+          "rank": 2,
+          "score": 0.6251220703125,
+          "document_id": "doc_0009",
+          "title": "SBF Trial: The latest updates from the FTX collapse’s courtroom drama",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 3,
+          "score": 0.052839502692222595,
+          "document_id": "doc_0030",
+          "title": "SBF, riding high on FTX, reportedly offered $5B to Trump to cancel President re-run",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 4,
+          "score": 0.0023377016186714172,
+          "document_id": "doc_0010",
+          "title": "SBF’s trial starts soon, but how did he — and FTX — get here?",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 5,
+          "score": -1.818037986755371,
+          "document_id": "doc_0375",
+          "title": "Coinbase rallies more than 60% in same month that FTX and Binance founders brace for prison",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 6,
+          "score": -2.1224606037139893,
+          "document_id": "doc_0226",
+          "title": "Sex, Signal messages, and sabotaging FTX's code: SBF execs and Bahamas roommates tell all in court",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 7,
+          "score": -2.382683038711548,
+          "document_id": "doc_0175",
+          "title": "The FTX trial is bigger than Sam Bankman-Fried",
+          "source": "The Verge"
+        },
+        {
+          "rank": 8,
+          "score": -2.949664831161499,
+          "document_id": "doc_0053",
+          "title": "The jury finally hears from Sam Bankman-Fried",
+          "source": "The Verge"
+        },
+        {
+          "rank": 9,
+          "score": -3.0079660415649414,
+          "document_id": "doc_0226",
+          "title": "Sex, Signal messages, and sabotaging FTX's code: SBF execs and Bahamas roommates tell all in court",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 10,
+          "score": -3.3078489303588867,
+          "document_id": "doc_0162",
+          "title": "Is Sam Bankman-Fried’s defense even trying to win?",
+          "source": "The Verge"
+        },
+        {
+          "rank": 11,
+          "score": -3.3460168838500977,
+          "document_id": "doc_0031",
+          "title": "Is Sam Bankman-Fried a bad ‘man’ or a good ‘boy’? Lawyers swap opening statements before first witnesses take the stand",
+          "source": "Fortune"
+        },
+        {
+          "rank": 12,
+          "score": -3.536268949508667,
+          "document_id": "doc_0083",
+          "title": "Sam Bankman-Fried didn’t ask where the $8 billion went",
+          "source": "The Verge"
+        },
+        {
+          "rank": 13,
+          "score": -3.7986350059509277,
+          "document_id": "doc_0226",
+          "title": "Sex, Signal messages, and sabotaging FTX's code: SBF execs and Bahamas roommates tell all in court",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 14,
+          "score": -3.9587111473083496,
+          "document_id": "doc_0031",
+          "title": "Is Sam Bankman-Fried a bad ‘man’ or a good ‘boy’? Lawyers swap opening statements before first witnesses take the stand",
+          "source": "Fortune"
+        },
+        {
+          "rank": 15,
+          "score": -4.147246360778809,
+          "document_id": "doc_0086",
+          "title": "Sam Bankman-Fried was a terrible boyfriend",
+          "source": "The Verge"
+        },
+        {
+          "rank": 16,
+          "score": -4.468536853790283,
+          "document_id": "doc_0175",
+          "title": "The FTX trial is bigger than Sam Bankman-Fried",
+          "source": "The Verge"
+        },
+        {
+          "rank": 17,
+          "score": -4.80945348739624,
+          "document_id": "doc_0375",
+          "title": "Coinbase rallies more than 60% in same month that FTX and Binance founders brace for prison",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 18,
+          "score": -6.417948246002197,
+          "document_id": "doc_0121",
+          "title": "In the end, the FTX trial was about the friends screwed along the way",
+          "source": "The Verge"
+        },
+        {
+          "rank": 19,
+          "score": -8.64999008178711,
+          "document_id": "doc_0054",
+          "title": "How the OpenAI fiasco could bolster Meta and the ‘open AI’ movement",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 20,
+          "score": -10.178998947143555,
+          "document_id": "doc_0180",
+          "title": "Michigan sign-stealing scandal news: Latest updates on possible Jim Harbaugh suspension from NCAA cheating investigation",
+          "source": "Sporting News"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "query": "Does the TechCrunch article on Twitch's subscription revenue split policy indicate a different monetization strategy compared to the TechCrunch article on Beeper's plans for Beeper Mini subscriptions?",
+      "question_type": "comparison_query",
+      "num_relevant_documents": 2,
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.6131471927654584,
+          "unique_documents": 3,
+          "duplicate_rate": 0.0
+        },
+        "5": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.6131471927654584,
+          "unique_documents": 3,
+          "duplicate_rate": 0.4
+        },
+        "10": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8175295903539445,
+          "unique_documents": 4,
+          "duplicate_rate": 0.6
+        },
+        "20": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8175295903539445,
+          "unique_documents": 12,
+          "duplicate_rate": 0.4
+        }
+      },
+      "first_complete_evidence_rank": 7,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 3.395364761352539,
+          "document_id": "doc_0401",
+          "title": "Twitch’s money guy talks about the revenue split controversy and its monetization long game",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 2,
+          "score": 1.1995604038238525,
+          "document_id": "doc_0540",
+          "title": "Beeper reversed engineered iMessage to bring blue bubble texts to Android users",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 3,
+          "score": 0.6062824726104736,
+          "document_id": "doc_0405",
+          "title": "Kick streamers consider leaving over CEO’s comments in a sex worker ‘prank’ stream",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 4,
+          "score": -0.06493595987558365,
+          "document_id": "doc_0401",
+          "title": "Twitch’s money guy talks about the revenue split controversy and its monetization long game",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 5,
+          "score": -0.25053325295448303,
+          "document_id": "doc_0540",
+          "title": "Beeper reversed engineered iMessage to bring blue bubble texts to Android users",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 6,
+          "score": -0.6266055107116699,
+          "document_id": "doc_0401",
+          "title": "Twitch’s money guy talks about the revenue split controversy and its monetization long game",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 7,
+          "score": -0.7606712579727173,
+          "document_id": "doc_0402",
+          "title": "Beeper Mini is back in operation after Apple’s attempt to shut it down",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 8,
+          "score": -0.9185961484909058,
+          "document_id": "doc_0540",
+          "title": "Beeper reversed engineered iMessage to bring blue bubble texts to Android users",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 9,
+          "score": -0.9925628900527954,
+          "document_id": "doc_0401",
+          "title": "Twitch’s money guy talks about the revenue split controversy and its monetization long game",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 10,
+          "score": -1.0842641592025757,
+          "document_id": "doc_0402",
+          "title": "Beeper Mini is back in operation after Apple’s attempt to shut it down",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 11,
+          "score": -1.4814300537109375,
+          "document_id": "doc_0405",
+          "title": "Kick streamers consider leaving over CEO’s comments in a sex worker ‘prank’ stream",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 12,
+          "score": -4.514439105987549,
+          "document_id": "doc_0401",
+          "title": "Twitch’s money guy talks about the revenue split controversy and its monetization long game",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 13,
+          "score": -4.863016605377197,
+          "document_id": "doc_0456",
+          "title": "French soccer players back African mobile video network StarNews Mobile in $3M round",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 14,
+          "score": -5.977597713470459,
+          "document_id": "doc_0545",
+          "title": "Can anyone survive Fortnite as a job?",
+          "source": "Polygon"
+        },
+        {
+          "rank": 15,
+          "score": -6.504575729370117,
+          "document_id": "doc_0196",
+          "title": "With Amo, the founder of Zenly wants to make social apps social again",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 16,
+          "score": -7.06378173828125,
+          "document_id": "doc_0243",
+          "title": "8 authors and their 8 gift book picks for this holiday season",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 17,
+          "score": -9.941696166992188,
+          "document_id": "doc_0507",
+          "title": "Flipboard becomes a federated app with support for ActivityPub",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 18,
+          "score": -10.089743614196777,
+          "document_id": "doc_0509",
+          "title": "The new American Dream is to get MrBeast to pay off your debt",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 19,
+          "score": -10.19359302520752,
+          "document_id": "doc_0078",
+          "title": "Israel's defense undone by reliance on technology",
+          "source": "Globes English | Israel Business Arena"
+        },
+        {
+          "rank": 20,
+          "score": -10.196663856506348,
+          "document_id": "doc_0363",
+          "title": "62% of TikTok users in the United States pay for a music streaming service (report)",
+          "source": "Music Business Worldwide"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "query": "Does 'The New York Times' article attribute the success of the Buffalo Bills' defense to the contributions of Jordan Poyer, while the 'Sporting News' article suggests that the Baltimore Ravens' defense needs to improve before their game against the Cincinnati Bengals?",
+      "question_type": "comparison_query",
+      "num_relevant_documents": 2,
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 2,
+          "duplicate_rate": 0.33333333333333337
+        },
+        "5": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 4,
+          "duplicate_rate": 0.19999999999999996
+        },
+        "10": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 4,
+          "duplicate_rate": 0.6
+        },
+        "20": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 9,
+          "duplicate_rate": 0.55
+        }
+      },
+      "first_complete_evidence_rank": 2,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 4.094106674194336,
+          "document_id": "doc_0119",
+          "title": "NFL power rankings: Lions, 49ers level up; Texans jump Bengals, Bills; Jets, Patriots sink to bottom for Week 11",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 2,
+          "score": 0.8747822046279907,
+          "document_id": "doc_0322",
+          "title": "Alcoholism, Ayahuasca and the Enlightenment of an N.F.L. Player",
+          "source": "The New York Times"
+        },
+        {
+          "rank": 3,
+          "score": -0.44659993052482605,
+          "document_id": "doc_0322",
+          "title": "Alcoholism, Ayahuasca and the Enlightenment of an N.F.L. Player",
+          "source": "The New York Times"
+        },
+        {
+          "rank": 4,
+          "score": -1.145168662071228,
+          "document_id": "doc_0149",
+          "title": "NFL Fantasy Football Week 6 Lineup Decisions: Starts, Sits, Sleepers, Busts to know for every game",
+          "source": "CBSSports.com"
+        },
+        {
+          "rank": 5,
+          "score": -2.783977508544922,
+          "document_id": "doc_0294",
+          "title": "Bills vs. Bengals live score, updates, highlights from NFL 'Sunday Night Football' game",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 6,
+          "score": -2.848881721496582,
+          "document_id": "doc_0294",
+          "title": "Bills vs. Bengals live score, updates, highlights from NFL 'Sunday Night Football' game",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 7,
+          "score": -2.913175344467163,
+          "document_id": "doc_0119",
+          "title": "NFL power rankings: Lions, 49ers level up; Texans jump Bengals, Bills; Jets, Patriots sink to bottom for Week 11",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 8,
+          "score": -2.9987545013427734,
+          "document_id": "doc_0294",
+          "title": "Bills vs. Bengals live score, updates, highlights from NFL 'Sunday Night Football' game",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 9,
+          "score": -3.163801431655884,
+          "document_id": "doc_0294",
+          "title": "Bills vs. Bengals live score, updates, highlights from NFL 'Sunday Night Football' game",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 10,
+          "score": -3.5744240283966064,
+          "document_id": "doc_0294",
+          "title": "Bills vs. Bengals live score, updates, highlights from NFL 'Sunday Night Football' game",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 11,
+          "score": -3.650390148162842,
+          "document_id": "doc_0294",
+          "title": "Bills vs. Bengals live score, updates, highlights from NFL 'Sunday Night Football' game",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 12,
+          "score": -3.761355400085449,
+          "document_id": "doc_0316",
+          "title": "N.F.L. Executives on the Biggest Questions Facing Super Bowl Contenders",
+          "source": "The New York Times"
+        },
+        {
+          "rank": 13,
+          "score": -5.8671746253967285,
+          "document_id": "doc_0316",
+          "title": "N.F.L. Executives on the Biggest Questions Facing Super Bowl Contenders",
+          "source": "The New York Times"
+        },
+        {
+          "rank": 14,
+          "score": -6.249114990234375,
+          "document_id": "doc_0343",
+          "title": "Prisco's Week 12 NFL picks: Jaguars beat Texans in AFC South battle, Saints get key divisional win vs. Falcons",
+          "source": "CBSSports.com"
+        },
+        {
+          "rank": 15,
+          "score": -6.41645622253418,
+          "document_id": "doc_0515",
+          "title": "MVPs for all 16 AFC teams at the midpoint",
+          "source": "Yardbarker"
+        },
+        {
+          "rank": 16,
+          "score": -8.049412727355957,
+          "document_id": "doc_0376",
+          "title": "Bills vs. Chargers odds, props, predictions: Buffalo faces struggling L.A. with eyes on AFC playoff picture",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 17,
+          "score": -8.443662643432617,
+          "document_id": "doc_0003",
+          "title": "Christmas Day preview: 49ers, Ravens square off in potential Super Bowl sneak peek",
+          "source": "Yardbarker"
+        },
+        {
+          "rank": 18,
+          "score": -9.109030723571777,
+          "document_id": "doc_0119",
+          "title": "NFL power rankings: Lions, 49ers level up; Texans jump Bengals, Bills; Jets, Patriots sink to bottom for Week 11",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 19,
+          "score": -9.125797271728516,
+          "document_id": "doc_0343",
+          "title": "Prisco's Week 12 NFL picks: Jaguars beat Texans in AFC South battle, Saints get key divisional win vs. Falcons",
+          "source": "CBSSports.com"
+        },
+        {
+          "rank": 20,
+          "score": -9.595791816711426,
+          "document_id": "doc_0119",
+          "title": "NFL power rankings: Lions, 49ers level up; Texans jump Bengals, Bills; Jets, Patriots sink to bottom for Week 11",
+          "source": "Sporting News"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "query": "What is the name of the organization discussed in TechCrunch articles that, despite its financial instability, is recognized for creating ChatGPT, which is both a priority and a platform for ongoing innovations, and is planning to enhance its capabilities with the release of GPT-4 and associated APIs?",
+      "question_type": "inference_query",
+      "num_relevant_documents": 4,
+      "metrics": {
+        "1": {
+          "recall": 0.25,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.7653606369886217,
+          "unique_documents": 2,
+          "duplicate_rate": 0.33333333333333337
+        },
+        "5": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.6366824387328317,
+          "unique_documents": 3,
+          "duplicate_rate": 0.4
+        },
+        "10": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.6366824387328317,
+          "unique_documents": 4,
+          "duplicate_rate": 0.6
+        },
+        "20": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.6366824387328317,
+          "unique_documents": 11,
+          "duplicate_rate": 0.44999999999999996
+        }
+      },
+      "first_complete_evidence_rank": null,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 5.683253765106201,
+          "document_id": "doc_0047",
+          "title": "One year later, ChatGPT is still alive and kicking",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 2,
+          "score": 5.307528972625732,
+          "document_id": "doc_0048",
+          "title": "ChatGPT: Everything you need to know about the AI-powered chatbot",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 3,
+          "score": 4.599318504333496,
+          "document_id": "doc_0048",
+          "title": "ChatGPT: Everything you need to know about the AI-powered chatbot",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 4,
+          "score": 3.4022433757781982,
+          "document_id": "doc_0099",
+          "title": "How OpenAI's ChatGPT has changed the world in just a year",
+          "source": "Engadget"
+        },
+        {
+          "rank": 5,
+          "score": 2.0200581550598145,
+          "document_id": "doc_0048",
+          "title": "ChatGPT: Everything you need to know about the AI-powered chatbot",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 6,
+          "score": 1.7857578992843628,
+          "document_id": "doc_0048",
+          "title": "ChatGPT: Everything you need to know about the AI-powered chatbot",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 7,
+          "score": 1.1414004564285278,
+          "document_id": "doc_0048",
+          "title": "ChatGPT: Everything you need to know about the AI-powered chatbot",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 8,
+          "score": 0.5209072828292847,
+          "document_id": "doc_0048",
+          "title": "ChatGPT: Everything you need to know about the AI-powered chatbot",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 9,
+          "score": 0.4696284830570221,
+          "document_id": "doc_0048",
+          "title": "ChatGPT: Everything you need to know about the AI-powered chatbot",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 10,
+          "score": -0.3840193450450897,
+          "document_id": "doc_0027",
+          "title": "How ego and fear fuelled the rise of artificial intelligence",
+          "source": "The Age"
+        },
+        {
+          "rank": 11,
+          "score": -1.0414063930511475,
+          "document_id": "doc_0048",
+          "title": "ChatGPT: Everything you need to know about the AI-powered chatbot",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 12,
+          "score": -1.3138506412506104,
+          "document_id": "doc_0048",
+          "title": "ChatGPT: Everything you need to know about the AI-powered chatbot",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 13,
+          "score": -4.778659343719482,
+          "document_id": "doc_0301",
+          "title": "Deft is building e-commerce search to help you find the right product quickly",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 14,
+          "score": -6.008294105529785,
+          "document_id": "doc_0332",
+          "title": "OpenAI's ex-chairman accuses board of going rogue in firing Altman: 'Sam and I are shocked and saddened by what the board did'",
+          "source": "Fortune"
+        },
+        {
+          "rank": 15,
+          "score": -7.064756870269775,
+          "document_id": "doc_0099",
+          "title": "How OpenAI's ChatGPT has changed the world in just a year",
+          "source": "Engadget"
+        },
+        {
+          "rank": 16,
+          "score": -9.042410850524902,
+          "document_id": "doc_0465",
+          "title": "Meet Alliance DAO’s latest accelerator cohort of startups building in crypto winter",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 17,
+          "score": -9.634517669677734,
+          "document_id": "doc_0097",
+          "title": "Sen. Robert Menendez, facing bribery charges, stumps bank CEOs by asking how much their firms paid in settlements for allegedly ripping off consumers",
+          "source": "Fortune"
+        },
+        {
+          "rank": 18,
+          "score": -10.196298599243164,
+          "document_id": "doc_0125",
+          "title": "\"There are no sacred numbers\"",
+          "source": "Globes English | Israel Business Arena"
+        },
+        {
+          "rank": 19,
+          "score": -10.196412086486816,
+          "document_id": "doc_0486",
+          "title": "Israel thwarts Hamas on the financial battlefield",
+          "source": "Globes English | Israel Business Arena"
+        },
+        {
+          "rank": 20,
+          "score": -10.196475982666016,
+          "document_id": "doc_0390",
+          "title": "5 myths about ketamine, the drug tied to Matthew Perry's death, according to doctors",
+          "source": "FOX News - Health"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "query": "Which company, as reported by both TechCrunch and The Verge, has spent billions to maintain its default search engine status on various platforms and is also accused of harming news publishers’ revenue through its business practices?",
+      "question_type": "inference_query",
+      "num_relevant_documents": 3,
+      "metrics": {
+        "1": {
+          "recall": 0.3333333333333333,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 0.3333333333333333,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.46927872602275644,
+          "unique_documents": 2,
+          "duplicate_rate": 0.33333333333333337
+        },
+        "5": {
+          "recall": 0.6666666666666666,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.6508205185601091,
+          "unique_documents": 4,
+          "duplicate_rate": 0.19999999999999996
+        },
+        "10": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7988614740430418,
+          "unique_documents": 6,
+          "duplicate_rate": 0.4
+        },
+        "20": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7988614740430418,
+          "unique_documents": 8,
+          "duplicate_rate": 0.6
+        }
+      },
+      "first_complete_evidence_rank": 8,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 4.173954963684082,
+          "document_id": "doc_0237",
+          "title": "5 things we learned so far about the Google antitrust case",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 2,
+          "score": 2.7656972408294678,
+          "document_id": "doc_0015",
+          "title": "More from the US v Google trial: vertical search, pre-installs and the case of Firefox/Yahoo",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 3,
+          "score": 1.839919090270996,
+          "document_id": "doc_0237",
+          "title": "5 things we learned so far about the Google antitrust case",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 4,
+          "score": -0.4095056354999542,
+          "document_id": "doc_0514",
+          "title": "Tesla ‘digs its own grave with the Cybertruck,’ Convoy collapses and Rivian scores a win at Rebelle",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 5,
+          "score": -0.5095891952514648,
+          "document_id": "doc_0014",
+          "title": "Apple defends Google Search deal in court: ‘There wasn’t a valid alternative’",
+          "source": "The Verge"
+        },
+        {
+          "rank": 6,
+          "score": -1.609732747077942,
+          "document_id": "doc_0301",
+          "title": "Deft is building e-commerce search to help you find the right product quickly",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 7,
+          "score": -2.6358723640441895,
+          "document_id": "doc_0015",
+          "title": "More from the US v Google trial: vertical search, pre-installs and the case of Firefox/Yahoo",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 8,
+          "score": -2.7682676315307617,
+          "document_id": "doc_0033",
+          "title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 9,
+          "score": -3.045725107192993,
+          "document_id": "doc_0301",
+          "title": "Deft is building e-commerce search to help you find the right product quickly",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 10,
+          "score": -3.2334964275360107,
+          "document_id": "doc_0014",
+          "title": "Apple defends Google Search deal in court: ‘There wasn’t a valid alternative’",
+          "source": "The Verge"
+        },
+        {
+          "rank": 11,
+          "score": -3.433879852294922,
+          "document_id": "doc_0033",
+          "title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 12,
+          "score": -4.183623313903809,
+          "document_id": "doc_0237",
+          "title": "5 things we learned so far about the Google antitrust case",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 13,
+          "score": -5.001070499420166,
+          "document_id": "doc_0033",
+          "title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 14,
+          "score": -5.349175930023193,
+          "document_id": "doc_0032",
+          "title": "Is Google Search better than the rest? And is that fair?",
+          "source": "The Age"
+        },
+        {
+          "rank": 15,
+          "score": -5.524742603302002,
+          "document_id": "doc_0015",
+          "title": "More from the US v Google trial: vertical search, pre-installs and the case of Firefox/Yahoo",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 16,
+          "score": -5.820801734924316,
+          "document_id": "doc_0032",
+          "title": "Is Google Search better than the rest? And is that fair?",
+          "source": "The Age"
+        },
+        {
+          "rank": 17,
+          "score": -5.92900276184082,
+          "document_id": "doc_0033",
+          "title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 18,
+          "score": -6.687909126281738,
+          "document_id": "doc_0115",
+          "title": "The people who ruined the internet",
+          "source": "The Verge"
+        },
+        {
+          "rank": 19,
+          "score": -6.934393405914307,
+          "document_id": "doc_0115",
+          "title": "The people who ruined the internet",
+          "source": "The Verge"
+        },
+        {
+          "rank": 20,
+          "score": -7.179089069366455,
+          "document_id": "doc_0032",
+          "title": "Is Google Search better than the rest? And is that fair?",
+          "source": "The Age"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "query": "Does 'The Age' article suggest that Australia's Davis Cup team is aiming for an improvement in their performance compared to the previous year, while the 'Sporting News' article indicates that the South Africa national rugby team has already achieved an improvement to reach the Rugby World Cup semi-finals?",
+      "question_type": "comparison_query",
+      "num_relevant_documents": 2,
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.6131471927654584,
+          "unique_documents": 1,
+          "duplicate_rate": 0.6666666666666667
+        },
+        "5": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.6131471927654584,
+          "unique_documents": 2,
+          "duplicate_rate": 0.6
+        },
+        "10": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7977228895450266,
+          "unique_documents": 6,
+          "duplicate_rate": 0.4
+        },
+        "20": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7977228895450266,
+          "unique_documents": 12,
+          "duplicate_rate": 0.4
+        }
+      },
+      "first_complete_evidence_rank": 9,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 1.0464762449264526,
+          "document_id": "doc_0167",
+          "title": "Where to watch England vs South Africa: Live stream, TV channel, lineups, odds for 2023 Rugby World Cup semifinal",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 2,
+          "score": 0.13655248284339905,
+          "document_id": "doc_0167",
+          "title": "Where to watch England vs South Africa: Live stream, TV channel, lineups, odds for 2023 Rugby World Cup semifinal",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 3,
+          "score": -0.41382601857185364,
+          "document_id": "doc_0167",
+          "title": "Where to watch England vs South Africa: Live stream, TV channel, lineups, odds for 2023 Rugby World Cup semifinal",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 4,
+          "score": -0.6089491844177246,
+          "document_id": "doc_0167",
+          "title": "Where to watch England vs South Africa: Live stream, TV channel, lineups, odds for 2023 Rugby World Cup semifinal",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 5,
+          "score": -1.0121484994888306,
+          "document_id": "doc_0300",
+          "title": "Liverpool vs Everton begins epic Saturday with World Cup semi-final as well as Chelsea vs Arsenal – and it could end with a bang",
+          "source": "TalkSport"
+        },
+        {
+          "rank": 6,
+          "score": -1.4975507259368896,
+          "document_id": "doc_0167",
+          "title": "Where to watch England vs South Africa: Live stream, TV channel, lineups, odds for 2023 Rugby World Cup semifinal",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 7,
+          "score": -2.8560070991516113,
+          "document_id": "doc_0538",
+          "title": "Thirty-seven phases of agony define Ireland’s greatest heartbreak as curse continues",
+          "source": "The Independent - Sports"
+        },
+        {
+          "rank": 8,
+          "score": -4.082241058349609,
+          "document_id": "doc_0176",
+          "title": "Legacy vs ego: The Springboks are playing for South Africa, the All Blacks are playing for themselves",
+          "source": "The Roar | Sports Writers Blog"
+        },
+        {
+          "rank": 9,
+          "score": -4.732583522796631,
+          "document_id": "doc_0451",
+          "title": "‘Biggest win of my career’: De Minaur, Popyrin power Australia into Davis Cup final",
+          "source": "The Age"
+        },
+        {
+          "rank": 10,
+          "score": -4.773016452789307,
+          "document_id": "doc_0492",
+          "title": "‘Right people in right roles’: QRU breaks silence on RA’s reform hopes, backs review into Wallabies’ RWC flop",
+          "source": "The Roar | Sports Writers Blog"
+        },
+        {
+          "rank": 11,
+          "score": -4.794511318206787,
+          "document_id": "doc_0407",
+          "title": "Eddie Jones says he needs to ‘give myself an uppercut’ but ‘100 percent’ committed to coaching Wallabies",
+          "source": "The Roar | Sports Writers Blog"
+        },
+        {
+          "rank": 12,
+          "score": -5.229731559753418,
+          "document_id": "doc_0451",
+          "title": "‘Biggest win of my career’: De Minaur, Popyrin power Australia into Davis Cup final",
+          "source": "The Age"
+        },
+        {
+          "rank": 13,
+          "score": -5.788853168487549,
+          "document_id": "doc_0451",
+          "title": "‘Biggest win of my career’: De Minaur, Popyrin power Australia into Davis Cup final",
+          "source": "The Age"
+        },
+        {
+          "rank": 14,
+          "score": -5.972620487213135,
+          "document_id": "doc_0168",
+          "title": "The story behind anguished Wallabies star's photo",
+          "source": "Wide World Of Sports"
+        },
+        {
+          "rank": 15,
+          "score": -6.075212001800537,
+          "document_id": "doc_0168",
+          "title": "The story behind anguished Wallabies star's photo",
+          "source": "Wide World Of Sports"
+        },
+        {
+          "rank": 16,
+          "score": -6.942502021789551,
+          "document_id": "doc_0492",
+          "title": "‘Right people in right roles’: QRU breaks silence on RA’s reform hopes, backs review into Wallabies’ RWC flop",
+          "source": "The Roar | Sports Writers Blog"
+        },
+        {
+          "rank": 17,
+          "score": -7.283380031585693,
+          "document_id": "doc_0440",
+          "title": "‘So used to seeing us winning’: Healy denies Aussie era ending after India loss, calls for more Tests",
+          "source": "The Roar | Sports Writers Blog"
+        },
+        {
+          "rank": 18,
+          "score": -7.3091349601745605,
+          "document_id": "doc_0409",
+          "title": "When was the first Cricket World Cup? History, winners' list and tournament details ahead of 2023 men's ODI showpiece",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 19,
+          "score": -7.780545711517334,
+          "document_id": "doc_0482",
+          "title": "ICC World Cup 2023 Most Runs and Wickets: Full List of top 10 batsmen and bowlers in 2023 edition of cricket World Cup, Know where Virat Kohli, Rohit Sharma, Shami, Bumrah, rank",
+          "source": "Zee Business"
+        },
+        {
+          "rank": 20,
+          "score": -9.58072566986084,
+          "document_id": "doc_0231",
+          "title": "USA squad for October friendlies 2023: USMNT roster for friendly matches vs Germany, Ghana",
+          "source": "Sporting News"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "query": "After the TechCrunch report on October 7, 2023, concerning Dave Clark's comments on Flexport, and the subsequent TechCrunch article on October 30, 2023, regarding Ryan Petersen's actions at Flexport, was there a change in the nature of the events reported?",
+      "question_type": "temporal_query",
+      "num_relevant_documents": 2,
+      "metrics": {
+        "1": {
+          "recall": 0.0,
+          "hit": 0.0,
+          "complete_recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 0.0,
+          "hit": 0.0,
+          "complete_recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.6666666666666667
+        },
+        "5": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 0.2,
+          "ndcg": 0.23719771276929622,
+          "unique_documents": 2,
+          "duplicate_rate": 0.6
+        },
+        "10": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 0.2,
+          "ndcg": 0.23719771276929622,
+          "unique_documents": 2,
+          "duplicate_rate": 0.8
+        },
+        "20": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 0.2,
+          "ndcg": 0.23719771276929622,
+          "unique_documents": 8,
+          "duplicate_rate": 0.6
+        }
+      },
+      "first_complete_evidence_rank": null,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 5.328903675079346,
+          "document_id": "doc_0536",
+          "title": "The inside story of Dave Clark's tumultuous last days at Flexport",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 2,
+          "score": 4.301441669464111,
+          "document_id": "doc_0536",
+          "title": "The inside story of Dave Clark's tumultuous last days at Flexport",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 3,
+          "score": 3.1795554161071777,
+          "document_id": "doc_0536",
+          "title": "The inside story of Dave Clark's tumultuous last days at Flexport",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 4,
+          "score": 2.994891405105591,
+          "document_id": "doc_0536",
+          "title": "The inside story of Dave Clark's tumultuous last days at Flexport",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 5,
+          "score": 2.602693796157837,
+          "document_id": "doc_0011",
+          "title": "Sam Altman backs teens’ startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 6,
+          "score": 2.4299869537353516,
+          "document_id": "doc_0536",
+          "title": "The inside story of Dave Clark's tumultuous last days at Flexport",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 7,
+          "score": 1.9426614046096802,
+          "document_id": "doc_0536",
+          "title": "The inside story of Dave Clark's tumultuous last days at Flexport",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 8,
+          "score": 1.7371891736984253,
+          "document_id": "doc_0536",
+          "title": "The inside story of Dave Clark's tumultuous last days at Flexport",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 9,
+          "score": 1.5929079055786133,
+          "document_id": "doc_0536",
+          "title": "The inside story of Dave Clark's tumultuous last days at Flexport",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 10,
+          "score": 1.223219394683838,
+          "document_id": "doc_0536",
+          "title": "The inside story of Dave Clark's tumultuous last days at Flexport",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 11,
+          "score": 1.111545443534851,
+          "document_id": "doc_0536",
+          "title": "The inside story of Dave Clark's tumultuous last days at Flexport",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 12,
+          "score": 0.541775107383728,
+          "document_id": "doc_0536",
+          "title": "The inside story of Dave Clark's tumultuous last days at Flexport",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 13,
+          "score": -0.8668813705444336,
+          "document_id": "doc_0536",
+          "title": "The inside story of Dave Clark's tumultuous last days at Flexport",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 14,
+          "score": -6.3315887451171875,
+          "document_id": "doc_0124",
+          "title": "People are turning to Snap Map for firsthand perspectives from Gaza",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 15,
+          "score": -9.081525802612305,
+          "document_id": "doc_0025",
+          "title": "EU fires urgent warning at Elon Musk’s X over illegal content and disinformation following Hamas attacks",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 16,
+          "score": -9.146037101745605,
+          "document_id": "doc_0271",
+          "title": "NMPA: Generative AI is ‘the greatest risk to the human creative class that has ever existed’",
+          "source": "Music Business Worldwide"
+        },
+        {
+          "rank": 17,
+          "score": -9.146928787231445,
+          "document_id": "doc_0226",
+          "title": "Sex, Signal messages, and sabotaging FTX's code: SBF execs and Bahamas roommates tell all in court",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 18,
+          "score": -9.337324142456055,
+          "document_id": "doc_0226",
+          "title": "Sex, Signal messages, and sabotaging FTX's code: SBF execs and Bahamas roommates tell all in court",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 19,
+          "score": -9.827534675598145,
+          "document_id": "doc_0048",
+          "title": "ChatGPT: Everything you need to know about the AI-powered chatbot",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 20,
+          "score": -10.13481330871582,
+          "document_id": "doc_0153",
+          "title": "Elon Musk’s X faces first DSA probe in EU over illegal content risks, moderation, transparency and deceptive UX design",
+          "source": "TechCrunch"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "query": "Does 'The Independent - Life and Style' article suggesting Prince William's emotional state regarding Princess Diana's death align with the same publication's depiction of the events leading up to her death in 'The Crown season six'?",
+      "question_type": "comparison_query",
+      "num_relevant_documents": 2,
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 2,
+          "duplicate_rate": 0.33333333333333337
+        },
+        "5": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 2,
+          "duplicate_rate": 0.6
+        },
+        "10": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 3,
+          "duplicate_rate": 0.7
+        },
+        "20": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 11,
+          "duplicate_rate": 0.44999999999999996
+        }
+      },
+      "first_complete_evidence_rank": 2,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 3.238126516342163,
+          "document_id": "doc_0265",
+          "title": "The Crown: What is fact and what is fiction on season 6?",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 2,
+          "score": 1.747499704360962,
+          "document_id": "doc_0266",
+          "title": "Fans react to most ‘heartbreaking’ scene in The Crown",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 3,
+          "score": 1.3738614320755005,
+          "document_id": "doc_0266",
+          "title": "Fans react to most ‘heartbreaking’ scene in The Crown",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 4,
+          "score": 1.2139252424240112,
+          "document_id": "doc_0265",
+          "title": "The Crown: What is fact and what is fiction on season 6?",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 5,
+          "score": -1.2390574216842651,
+          "document_id": "doc_0265",
+          "title": "The Crown: What is fact and what is fiction on season 6?",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 6,
+          "score": -1.3967970609664917,
+          "document_id": "doc_0265",
+          "title": "The Crown: What is fact and what is fiction on season 6?",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 7,
+          "score": -2.5191593170166016,
+          "document_id": "doc_0266",
+          "title": "Fans react to most ‘heartbreaking’ scene in The Crown",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 8,
+          "score": -2.836636543273926,
+          "document_id": "doc_0392",
+          "title": "Every movie and show coming to Netflix in November",
+          "source": "Polygon"
+        },
+        {
+          "rank": 9,
+          "score": -3.229457378387451,
+          "document_id": "doc_0265",
+          "title": "The Crown: What is fact and what is fiction on season 6?",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 10,
+          "score": -5.06873083114624,
+          "document_id": "doc_0265",
+          "title": "The Crown: What is fact and what is fiction on season 6?",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 11,
+          "score": -6.19198751449585,
+          "document_id": "doc_0265",
+          "title": "The Crown: What is fact and what is fiction on season 6?",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 12,
+          "score": -6.845762729644775,
+          "document_id": "doc_0159",
+          "title": "Will Smith speaks to crowd about ‘tumultuous’ relationship with Jada Pinkett Smith",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 13,
+          "score": -9.545852661132812,
+          "document_id": "doc_0036",
+          "title": "Jada Pinkett Smith and Will Smith have been separated since 2016 - when should couples just get divorced?",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 14,
+          "score": -10.009013175964355,
+          "document_id": "doc_0360",
+          "title": "Jada Pinkett Smith reveals why she and Will Smith never signed a prenup",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 15,
+          "score": -10.071497917175293,
+          "document_id": "doc_0108",
+          "title": "How U.S. Women’s Soccer Team Lured Emma Hayes Away From Chelsea",
+          "source": "The New York Times"
+        },
+        {
+          "rank": 16,
+          "score": -10.16675853729248,
+          "document_id": "doc_0036",
+          "title": "Jada Pinkett Smith and Will Smith have been separated since 2016 - when should couples just get divorced?",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 17,
+          "score": -10.19417953491211,
+          "document_id": "doc_0079",
+          "title": "Michigan sign-stealing scandal winners and losers, from Jim Harbaugh to Tony Petitti",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 18,
+          "score": -10.195755958557129,
+          "document_id": "doc_0012",
+          "title": "Leaky defence ‘isn’t good enough’ and ‘scars’ grow from throwing away leads – It’s all going wrong for Manchester United in Europe",
+          "source": "TalkSport"
+        },
+        {
+          "rank": 19,
+          "score": -10.196282386779785,
+          "document_id": "doc_0098",
+          "title": "Biden’s AI EO hailed as broad, but not deep without legislation to match",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 20,
+          "score": -10.196784019470215,
+          "document_id": "doc_0335",
+          "title": "Meta says it’s prioritizing livestreaming checks during Israel-Hamas war",
+          "source": "TechCrunch"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "query": "Which entity is currently engaged with Amazon to address competition concerns, facilitating dialogue with consumer groups against Meta, deploying staff within its AI Office for future regulations, and has previously focused on illegal content and disinformation issues related to the Israel-Hamas war, as reported by TechCrunch?",
+      "question_type": "inference_query",
+      "num_relevant_documents": 4,
+      "metrics": {
+        "1": {
+          "recall": 0.0,
+          "hit": 0.0,
+          "complete_recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 0.25,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 0.5,
+          "ndcg": 0.2960819109658652,
+          "unique_documents": 3,
+          "duplicate_rate": 0.0
+        },
+        "5": {
+          "recall": 0.25,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 0.5,
+          "ndcg": 0.24630238874073,
+          "unique_documents": 4,
+          "duplicate_rate": 0.19999999999999996
+        },
+        "10": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 0.5,
+          "ndcg": 0.369453583111095,
+          "unique_documents": 6,
+          "duplicate_rate": 0.4
+        },
+        "20": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 0.5,
+          "ndcg": 0.369453583111095,
+          "unique_documents": 10,
+          "duplicate_rate": 0.5
+        }
+      },
+      "first_complete_evidence_rank": null,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 4.957789421081543,
+          "document_id": "doc_0024",
+          "title": "After warning, the EU opens investigation into X over alleged disinformation",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 2,
+          "score": 0.8613698482513428,
+          "document_id": "doc_0153",
+          "title": "Elon Musk’s X faces first DSA probe in EU over illegal content risks, moderation, transparency and deceptive UX design",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 3,
+          "score": -0.45831361413002014,
+          "document_id": "doc_0106",
+          "title": "Meta has a moderation bias problem, not just a ‘bug,’ that’s suppressing Palestinian voices",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 4,
+          "score": -1.5404316186904907,
+          "document_id": "doc_0025",
+          "title": "EU fires urgent warning at Elon Musk’s X over illegal content and disinformation following Hamas attacks",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 5,
+          "score": -1.6484297513961792,
+          "document_id": "doc_0025",
+          "title": "EU fires urgent warning at Elon Musk’s X over illegal content and disinformation following Hamas attacks",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 6,
+          "score": -2.0093774795532227,
+          "document_id": "doc_0335",
+          "title": "Meta says it’s prioritizing livestreaming checks during Israel-Hamas war",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 7,
+          "score": -2.1887412071228027,
+          "document_id": "doc_0025",
+          "title": "EU fires urgent warning at Elon Musk’s X over illegal content and disinformation following Hamas attacks",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 8,
+          "score": -2.622330665588379,
+          "document_id": "doc_0039",
+          "title": "Amazon’s iRobot purchase sucks up formal competition concerns in EU",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 9,
+          "score": -2.8696060180664062,
+          "document_id": "doc_0106",
+          "title": "Meta has a moderation bias problem, not just a ‘bug,’ that’s suppressing Palestinian voices",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 10,
+          "score": -2.960986614227295,
+          "document_id": "doc_0106",
+          "title": "Meta has a moderation bias problem, not just a ‘bug,’ that’s suppressing Palestinian voices",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 11,
+          "score": -3.286374568939209,
+          "document_id": "doc_0106",
+          "title": "Meta has a moderation bias problem, not just a ‘bug,’ that’s suppressing Palestinian voices",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 12,
+          "score": -3.2929575443267822,
+          "document_id": "doc_0335",
+          "title": "Meta says it’s prioritizing livestreaming checks during Israel-Hamas war",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 13,
+          "score": -4.250262260437012,
+          "document_id": "doc_0335",
+          "title": "Meta says it’s prioritizing livestreaming checks during Israel-Hamas war",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 14,
+          "score": -4.626728057861328,
+          "document_id": "doc_0188",
+          "title": "Amazon brings conversational AI to kids with launch of ‘Explore with Alexa’",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 15,
+          "score": -5.819077968597412,
+          "document_id": "doc_0335",
+          "title": "Meta says it’s prioritizing livestreaming checks during Israel-Hamas war",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 16,
+          "score": -5.84527587890625,
+          "document_id": "doc_0248",
+          "title": "Deepfake election risks trigger EU call for more generative AI safeguards",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 17,
+          "score": -7.281278133392334,
+          "document_id": "doc_0248",
+          "title": "Deepfake election risks trigger EU call for more generative AI safeguards",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 18,
+          "score": -8.270282745361328,
+          "document_id": "doc_0248",
+          "title": "Deepfake election risks trigger EU call for more generative AI safeguards",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 19,
+          "score": -9.797676086425781,
+          "document_id": "doc_0486",
+          "title": "Israel thwarts Hamas on the financial battlefield",
+          "source": "Globes English | Israel Business Arena"
+        },
+        {
+          "rank": 20,
+          "score": -10.080647468566895,
+          "document_id": "doc_0189",
+          "title": "‘Mass breach of privacy’: TikTok under fire for tracking users online",
+          "source": "The Age"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "query": "Which company, known for its dominance in the e-reader space and for offering exclusive invite-only deals during sales events, faced a stock decline due to an antitrust lawsuit reported by 'The Sydney Morning Herald' and discussed by sellers in a 'Cnbc | World Business News Leader' article?",
+      "question_type": "inference_query",
+      "num_relevant_documents": 4,
+      "metrics": {
+        "1": {
+          "recall": 0.25,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 0.25,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.46927872602275644,
+          "unique_documents": 3,
+          "duplicate_rate": 0.0
+        },
+        "5": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.5585075862632192,
+          "unique_documents": 5,
+          "duplicate_rate": 0.0
+        },
+        "10": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.5585075862632192,
+          "unique_documents": 9,
+          "duplicate_rate": 0.09999999999999998
+        },
+        "20": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.5585075862632192,
+          "unique_documents": 15,
+          "duplicate_rate": 0.25
+        }
+      },
+      "first_complete_evidence_rank": null,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": -1.7432093620300293,
+          "document_id": "doc_0521",
+          "title": "Here are the best Kindle deals right now",
+          "source": "The Verge"
+        },
+        {
+          "rank": 2,
+          "score": -2.297060966491699,
+          "document_id": "doc_0237",
+          "title": "5 things we learned so far about the Google antitrust case",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 3,
+          "score": -2.676694869995117,
+          "document_id": "doc_0015",
+          "title": "More from the US v Google trial: vertical search, pre-installs and the case of Firefox/Yahoo",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 4,
+          "score": -3.458240270614624,
+          "document_id": "doc_0002",
+          "title": "Amazon sellers sound off on the FTC's 'long-overdue' antitrust case",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 5,
+          "score": -4.065854549407959,
+          "document_id": "doc_0039",
+          "title": "Amazon’s iRobot purchase sucks up formal competition concerns in EU",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 6,
+          "score": -4.068272590637207,
+          "document_id": "doc_0075",
+          "title": "Here’s how Rainforest, a budding Stripe rival, aims to win over software companies",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 7,
+          "score": -4.1939921379089355,
+          "document_id": "doc_0355",
+          "title": "Epic v. Google, explained",
+          "source": "The Verge"
+        },
+        {
+          "rank": 8,
+          "score": -4.859097957611084,
+          "document_id": "doc_0042",
+          "title": "What to know about Fortnite maker Epic Games’ antitrust battle with Google, starting today",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 9,
+          "score": -4.870473861694336,
+          "document_id": "doc_0002",
+          "title": "Amazon sellers sound off on the FTC's 'long-overdue' antitrust case",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 10,
+          "score": -4.918879508972168,
+          "document_id": "doc_0170",
+          "title": "Tim Sweeney on Epic’s victory royale over Google",
+          "source": "The Verge"
+        },
+        {
+          "rank": 11,
+          "score": -4.956764221191406,
+          "document_id": "doc_0033",
+          "title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 12,
+          "score": -5.476010799407959,
+          "document_id": "doc_0170",
+          "title": "Tim Sweeney on Epic’s victory royale over Google",
+          "source": "The Verge"
+        },
+        {
+          "rank": 13,
+          "score": -5.668271064758301,
+          "document_id": "doc_0011",
+          "title": "Sam Altman backs teens’ startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 14,
+          "score": -5.872223377227783,
+          "document_id": "doc_0033",
+          "title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 15,
+          "score": -6.063985347747803,
+          "document_id": "doc_0075",
+          "title": "Here’s how Rainforest, a budding Stripe rival, aims to win over software companies",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 16,
+          "score": -7.842623233795166,
+          "document_id": "doc_0096",
+          "title": "Discogs’ vibrant vinyl community is shattering",
+          "source": "The Verge"
+        },
+        {
+          "rank": 17,
+          "score": -8.055662155151367,
+          "document_id": "doc_0002",
+          "title": "Amazon sellers sound off on the FTC's 'long-overdue' antitrust case",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 18,
+          "score": -8.142328262329102,
+          "document_id": "doc_0456",
+          "title": "French soccer players back African mobile video network StarNews Mobile in $3M round",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 19,
+          "score": -8.659893035888672,
+          "document_id": "doc_0239",
+          "title": "Merck, Novo Nordisk, Gilead, Biogen and more: Here are the investment opportunities in global Big Pharma",
+          "source": "Business Line"
+        },
+        {
+          "rank": 20,
+          "score": -9.883821487426758,
+          "document_id": "doc_0246",
+          "title": "IND vs AUS Head-to-Head Record in ODI World Cup: Check India vs Australia match stats in World Cup Finals and ODI series",
+          "source": "Zee Business"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "query": "Was there no change in the portrayal of Google's influence on the digital ecosystem between the report from The Verge on Google's impact on the internet's appearance published on November 1, 2023, and the report from TechCrunch on a class action antitrust suit against Google published later?",
+      "question_type": "temporal_query",
+      "num_relevant_documents": 3,
+      "metrics": {
+        "1": {
+          "recall": 0.0,
+          "hit": 0.0,
+          "complete_recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 0.0,
+          "hit": 0.0,
+          "complete_recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "unique_documents": 3,
+          "duplicate_rate": 0.0
+        },
+        "5": {
+          "recall": 0.3333333333333333,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 0.25,
+          "ndcg": 0.20210734650054757,
+          "unique_documents": 4,
+          "duplicate_rate": 0.19999999999999996
+        },
+        "10": {
+          "recall": 0.3333333333333333,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 0.25,
+          "ndcg": 0.20210734650054757,
+          "unique_documents": 6,
+          "duplicate_rate": 0.4
+        },
+        "20": {
+          "recall": 0.6666666666666666,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 0.25,
+          "ndcg": 0.312579741459645,
+          "unique_documents": 13,
+          "duplicate_rate": 0.35
+        }
+      },
+      "first_complete_evidence_rank": null,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": -0.9527368545532227,
+          "document_id": "doc_0237",
+          "title": "5 things we learned so far about the Google antitrust case",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 2,
+          "score": -1.928128719329834,
+          "document_id": "doc_0042",
+          "title": "What to know about Fortnite maker Epic Games’ antitrust battle with Google, starting today",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 3,
+          "score": -2.810823440551758,
+          "document_id": "doc_0015",
+          "title": "More from the US v Google trial: vertical search, pre-installs and the case of Firefox/Yahoo",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 4,
+          "score": -2.9127566814422607,
+          "document_id": "doc_0033",
+          "title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 5,
+          "score": -3.2301530838012695,
+          "document_id": "doc_0237",
+          "title": "5 things we learned so far about the Google antitrust case",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 6,
+          "score": -3.8345999717712402,
+          "document_id": "doc_0033",
+          "title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 7,
+          "score": -4.334836959838867,
+          "document_id": "doc_0033",
+          "title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 8,
+          "score": -4.4618048667907715,
+          "document_id": "doc_0170",
+          "title": "Tim Sweeney on Epic’s victory royale over Google",
+          "source": "The Verge"
+        },
+        {
+          "rank": 9,
+          "score": -4.829643249511719,
+          "document_id": "doc_0032",
+          "title": "Is Google Search better than the rest? And is that fair?",
+          "source": "The Age"
+        },
+        {
+          "rank": 10,
+          "score": -4.96364164352417,
+          "document_id": "doc_0015",
+          "title": "More from the US v Google trial: vertical search, pre-installs and the case of Firefox/Yahoo",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 11,
+          "score": -6.6344218254089355,
+          "document_id": "doc_0033",
+          "title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 12,
+          "score": -7.7109694480896,
+          "document_id": "doc_0170",
+          "title": "Tim Sweeney on Epic’s victory royale over Google",
+          "source": "The Verge"
+        },
+        {
+          "rank": 13,
+          "score": -7.729965686798096,
+          "document_id": "doc_0015",
+          "title": "More from the US v Google trial: vertical search, pre-installs and the case of Firefox/Yahoo",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 14,
+          "score": -7.740153789520264,
+          "document_id": "doc_0010",
+          "title": "SBF’s trial starts soon, but how did he — and FTX — get here?",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 15,
+          "score": -7.77023458480835,
+          "document_id": "doc_0248",
+          "title": "Deepfake election risks trigger EU call for more generative AI safeguards",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 16,
+          "score": -8.370864868164062,
+          "document_id": "doc_0048",
+          "title": "ChatGPT: Everything you need to know about the AI-powered chatbot",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 17,
+          "score": -8.44150161743164,
+          "document_id": "doc_0457",
+          "title": "EU commissioner sidesteps MEPs’ questions about CSAM microtargeting",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 18,
+          "score": -8.920185089111328,
+          "document_id": "doc_0115",
+          "title": "The people who ruined the internet",
+          "source": "The Verge"
+        },
+        {
+          "rank": 19,
+          "score": -10.194011688232422,
+          "document_id": "doc_0567",
+          "title": "The 26 best Amazon Prime Day deals you can still shop for today",
+          "source": "Engadget"
+        },
+        {
+          "rank": 20,
+          "score": -10.19659423828125,
+          "document_id": "doc_0106",
+          "title": "Meta has a moderation bias problem, not just a ‘bug,’ that’s suppressing Palestinian voices",
+          "source": "TechCrunch"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "query": "Does the Sporting News article suggest that streaming services do not require a subscription for viewing the Cowboys vs. 49ers game, in contrast to the Polygon article's claim about film availability on streaming platforms without a subscription?",
+      "question_type": "comparison_query",
+      "num_relevant_documents": 2,
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.6131471927654584,
+          "unique_documents": 1,
+          "duplicate_rate": 0.6666666666666667
+        },
+        "5": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.6131471927654584,
+          "unique_documents": 1,
+          "duplicate_rate": 0.8
+        },
+        "10": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.6131471927654584,
+          "unique_documents": 5,
+          "duplicate_rate": 0.5
+        },
+        "20": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.6131471927654584,
+          "unique_documents": 15,
+          "duplicate_rate": 0.25
+        }
+      },
+      "first_complete_evidence_rank": null,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 2.2741644382476807,
+          "document_id": "doc_0275",
+          "title": "Cowboys vs. 49ers live score, updates, highlights from NFL 'Sunday Night Football' game",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 2,
+          "score": -0.2632100284099579,
+          "document_id": "doc_0275",
+          "title": "Cowboys vs. 49ers live score, updates, highlights from NFL 'Sunday Night Football' game",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 3,
+          "score": -1.1898159980773926,
+          "document_id": "doc_0275",
+          "title": "Cowboys vs. 49ers live score, updates, highlights from NFL 'Sunday Night Football' game",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 4,
+          "score": -1.5035277605056763,
+          "document_id": "doc_0275",
+          "title": "Cowboys vs. 49ers live score, updates, highlights from NFL 'Sunday Night Football' game",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 5,
+          "score": -1.8091331720352173,
+          "document_id": "doc_0275",
+          "title": "Cowboys vs. 49ers live score, updates, highlights from NFL 'Sunday Night Football' game",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 6,
+          "score": -1.9595924615859985,
+          "document_id": "doc_0275",
+          "title": "Cowboys vs. 49ers live score, updates, highlights from NFL 'Sunday Night Football' game",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 7,
+          "score": -3.4876034259796143,
+          "document_id": "doc_0290",
+          "title": "Seahawks vs. Giants live score, updates, highlights from NFL 'Monday Night Football' game",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 8,
+          "score": -3.9318995475769043,
+          "document_id": "doc_0586",
+          "title": "Dropout’s dropping CollegeHumor on its 5th anniversary — here’s why and what the future holds",
+          "source": "Polygon"
+        },
+        {
+          "rank": 9,
+          "score": -4.6139678955078125,
+          "document_id": "doc_0331",
+          "title": "DraftKings Picks Week 14: Best NFL DFS lineup advice for daily fantasy football tournaments",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 10,
+          "score": -4.730141639709473,
+          "document_id": "doc_0154",
+          "title": "The best shows to stream in December",
+          "source": "The Sydney Morning Herald"
+        },
+        {
+          "rank": 11,
+          "score": -6.809337139129639,
+          "document_id": "doc_0455",
+          "title": "Warner Music Group boss Robert Kyncl on AI, why labels still exist, and 2 other things we learned from his Q&A at the Code Conference",
+          "source": "Music Business Worldwide"
+        },
+        {
+          "rank": 12,
+          "score": -6.853909969329834,
+          "document_id": "doc_0435",
+          "title": "Twitch is the best way to watch sports, when you can actually watch sports on Twitch",
+          "source": "Polygon"
+        },
+        {
+          "rank": 13,
+          "score": -6.953162670135498,
+          "document_id": "doc_0363",
+          "title": "62% of TikTok users in the United States pay for a music streaming service (report)",
+          "source": "Music Business Worldwide"
+        },
+        {
+          "rank": 14,
+          "score": -6.969313144683838,
+          "document_id": "doc_0200",
+          "title": "Chiefs vs. Jets live score, updates, highlights from NFL 'Sunday Night Football' game",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 15,
+          "score": -8.495019912719727,
+          "document_id": "doc_0025",
+          "title": "EU fires urgent warning at Elon Musk’s X over illegal content and disinformation following Hamas attacks",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 16,
+          "score": -8.579026222229004,
+          "document_id": "doc_0085",
+          "title": "‘AfroFuture’s vision is to bring African art, cuisine, fashion, and music to a global audience.’",
+          "source": "Music Business Worldwide"
+        },
+        {
+          "rank": 17,
+          "score": -9.078156471252441,
+          "document_id": "doc_0144",
+          "title": "Bears vs. Vikings live score, updates, highlights from NFL 'Monday Night Football' game",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 18,
+          "score": -10.047861099243164,
+          "document_id": "doc_0567",
+          "title": "The 26 best Amazon Prime Day deals you can still shop for today",
+          "source": "Engadget"
+        },
+        {
+          "rank": 19,
+          "score": -10.077690124511719,
+          "document_id": "doc_0059",
+          "title": "Taylor Swift-Travis Kelce timeline: Everything to know about rumored romance between pop star, Chiefs TE",
+          "source": "CBSSports.com"
+        },
+        {
+          "rank": 20,
+          "score": -10.175658226013184,
+          "document_id": "doc_0004",
+          "title": "Raiders vs. Lions live score, updates, highlights from NFL 'Monday Night Football' game",
+          "source": "Sporting News"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "query": "Has the advice provided by Sporting News to bettors regarding the evaluation of betting opportunities and offers involved reading requirements, going with the favored Eagles, and focusing on hype between the reports published on September 28, 2023, and December 18, 2023?",
+      "question_type": "temporal_query",
+      "num_relevant_documents": 3,
+      "metrics": {
+        "1": {
+          "recall": 0.3333333333333333,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 0.3333333333333333,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.46927872602275644,
+          "unique_documents": 3,
+          "duplicate_rate": 0.0
+        },
+        "5": {
+          "recall": 0.3333333333333333,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.46927872602275644,
+          "unique_documents": 4,
+          "duplicate_rate": 0.19999999999999996
+        },
+        "10": {
+          "recall": 0.3333333333333333,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.46927872602275644,
+          "unique_documents": 8,
+          "duplicate_rate": 0.19999999999999996
+        },
+        "20": {
+          "recall": 0.3333333333333333,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.46927872602275644,
+          "unique_documents": 14,
+          "duplicate_rate": 0.30000000000000004
+        }
+      },
+      "first_complete_evidence_rank": null,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": -2.1968538761138916,
+          "document_id": "doc_0202",
+          "title": "Best sportsbook bonus offers for NFL Monday Night Football Eagles vs. Seahawks: Claim over $5,000 in bonuses from Bet365, BetMGM, BetRivers, Caesars Sportsbook, DraftKings and FanDuel ",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 2,
+          "score": -3.7567853927612305,
+          "document_id": "doc_0554",
+          "title": "Totals Betting - What is an Over/Under Bet?",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 3,
+          "score": -4.190337181091309,
+          "document_id": "doc_0143",
+          "title": "Dolphins vs. Eagles live score, updates, highlights from NFL 'Sunday Night Football' game",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 4,
+          "score": -4.272269248962402,
+          "document_id": "doc_0202",
+          "title": "Best sportsbook bonus offers for NFL Monday Night Football Eagles vs. Seahawks: Claim over $5,000 in bonuses from Bet365, BetMGM, BetRivers, Caesars Sportsbook, DraftKings and FanDuel ",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 5,
+          "score": -4.423087120056152,
+          "document_id": "doc_0314",
+          "title": "NFL Best Bets Week 9: Colts clobber Panthers, Dolphins drop Chiefs in Germany",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 6,
+          "score": -4.54216194152832,
+          "document_id": "doc_0343",
+          "title": "Prisco's Week 12 NFL picks: Jaguars beat Texans in AFC South battle, Saints get key divisional win vs. Falcons",
+          "source": "CBSSports.com"
+        },
+        {
+          "rank": 7,
+          "score": -4.564600944519043,
+          "document_id": "doc_0386",
+          "title": "Monday Night Football DraftKings Picks: NFL DFS lineup advice for Week 15 Eagles-Seahawks Showdown tournaments",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 8,
+          "score": -4.623891353607178,
+          "document_id": "doc_0314",
+          "title": "NFL Best Bets Week 9: Colts clobber Panthers, Dolphins drop Chiefs in Germany",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 9,
+          "score": -5.198044300079346,
+          "document_id": "doc_0071",
+          "title": "2023 Kentucky online sports betting sites: Best legal sportsbooks, promos, bonuses, mobile apps, how to bet",
+          "source": "CBSSports.com"
+        },
+        {
+          "rank": 10,
+          "score": -5.2463507652282715,
+          "document_id": "doc_0057",
+          "title": "Fantasy Football Week 13 Lineup Decisions: Starts, Sits, Sleepers, Busts to know for every game",
+          "source": "CBSSports.com"
+        },
+        {
+          "rank": 11,
+          "score": -5.89776611328125,
+          "document_id": "doc_0316",
+          "title": "N.F.L. Executives on the Biggest Questions Facing Super Bowl Contenders",
+          "source": "The New York Times"
+        },
+        {
+          "rank": 12,
+          "score": -6.409650802612305,
+          "document_id": "doc_0264",
+          "title": "MLB Betting Sites & Apps - The Best Baseball Sportsbooks 2023",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 13,
+          "score": -6.473904609680176,
+          "document_id": "doc_0523",
+          "title": "‘Is this worth it?’: The difficult questions the Shameless founders have had to ask each other",
+          "source": "The Age"
+        },
+        {
+          "rank": 14,
+          "score": -7.013235569000244,
+          "document_id": "doc_0202",
+          "title": "Best sportsbook bonus offers for NFL Monday Night Football Eagles vs. Seahawks: Claim over $5,000 in bonuses from Bet365, BetMGM, BetRivers, Caesars Sportsbook, DraftKings and FanDuel ",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 15,
+          "score": -7.027961254119873,
+          "document_id": "doc_0359",
+          "title": "Point Spread Betting - What is a Point Spread Bet?",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 16,
+          "score": -7.108639240264893,
+          "document_id": "doc_0108",
+          "title": "How U.S. Women’s Soccer Team Lured Emma Hayes Away From Chelsea",
+          "source": "The New York Times"
+        },
+        {
+          "rank": 17,
+          "score": -7.698578357696533,
+          "document_id": "doc_0071",
+          "title": "2023 Kentucky online sports betting sites: Best legal sportsbooks, promos, bonuses, mobile apps, how to bet",
+          "source": "CBSSports.com"
+        },
+        {
+          "rank": 18,
+          "score": -8.255219459533691,
+          "document_id": "doc_0264",
+          "title": "MLB Betting Sites & Apps - The Best Baseball Sportsbooks 2023",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 19,
+          "score": -8.893692016601562,
+          "document_id": "doc_0071",
+          "title": "2023 Kentucky online sports betting sites: Best legal sportsbooks, promos, bonuses, mobile apps, how to bet",
+          "source": "CBSSports.com"
+        },
+        {
+          "rank": 20,
+          "score": -9.583934783935547,
+          "document_id": "doc_0405",
+          "title": "Kick streamers consider leaving over CEO’s comments in a sex worker ‘prank’ stream",
+          "source": "TechCrunch"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "query": "Which company, covered by Engadget and Polygon, is set to release an updated gaming hardware with over 300 improvements on November 16, emphasizing a singular performance target for developers?",
+      "question_type": "inference_query",
+      "num_relevant_documents": 3,
+      "metrics": {
+        "1": {
+          "recall": 0.3333333333333333,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 0.3333333333333333,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.46927872602275644,
+          "unique_documents": 2,
+          "duplicate_rate": 0.33333333333333337
+        },
+        "5": {
+          "recall": 0.3333333333333333,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.46927872602275644,
+          "unique_documents": 4,
+          "duplicate_rate": 0.19999999999999996
+        },
+        "10": {
+          "recall": 0.6666666666666666,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.6364391809889587,
+          "unique_documents": 8,
+          "duplicate_rate": 0.19999999999999996
+        },
+        "20": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7512484757149765,
+          "unique_documents": 16,
+          "duplicate_rate": 0.19999999999999996
+        }
+      },
+      "first_complete_evidence_rank": 16,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": -2.4037601947784424,
+          "document_id": "doc_0354",
+          "title": "The Steam Deck OLED improves much more than its screen",
+          "source": "Polygon"
+        },
+        {
+          "rank": 2,
+          "score": -2.5011398792266846,
+          "document_id": "doc_0354",
+          "title": "The Steam Deck OLED improves much more than its screen",
+          "source": "Polygon"
+        },
+        {
+          "rank": 3,
+          "score": -2.6873056888580322,
+          "document_id": "doc_0308",
+          "title": "Save on the winners from the 2023 Game Awards this weekend",
+          "source": "Polygon"
+        },
+        {
+          "rank": 4,
+          "score": -3.55322527885437,
+          "document_id": "doc_0404",
+          "title": "The best Black Friday headphone deals from Sony, Apple, Bose, Beats and more",
+          "source": "Engadget"
+        },
+        {
+          "rank": 5,
+          "score": -3.7681734561920166,
+          "document_id": "doc_0567",
+          "title": "The 26 best Amazon Prime Day deals you can still shop for today",
+          "source": "Engadget"
+        },
+        {
+          "rank": 6,
+          "score": -4.277170658111572,
+          "document_id": "doc_0524",
+          "title": "The Steam Deck OLED arrives November 16 with an improved screen and longer battery life",
+          "source": "Engadget"
+        },
+        {
+          "rank": 7,
+          "score": -4.616125583648682,
+          "document_id": "doc_0524",
+          "title": "The Steam Deck OLED arrives November 16 with an improved screen and longer battery life",
+          "source": "Engadget"
+        },
+        {
+          "rank": 8,
+          "score": -5.72976541519165,
+          "document_id": "doc_0592",
+          "title": "Rogue Trader’s role-playing embraces the brutality and freedom of Warhammer 40K",
+          "source": "Polygon"
+        },
+        {
+          "rank": 9,
+          "score": -6.030583381652832,
+          "document_id": "doc_0213",
+          "title": "The best video games of the year so far",
+          "source": "Polygon"
+        },
+        {
+          "rank": 10,
+          "score": -7.231942653656006,
+          "document_id": "doc_0526",
+          "title": "Apple 16-inch M3 Max MacBook Pro review: A desktop among laptops",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 11,
+          "score": -7.822140216827393,
+          "document_id": "doc_0213",
+          "title": "The best video games of the year so far",
+          "source": "Polygon"
+        },
+        {
+          "rank": 12,
+          "score": -7.910243988037109,
+          "document_id": "doc_0489",
+          "title": "Bears vs. Panthers live score, updates, highlights from NFL 'Thursday Night Football' game",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 13,
+          "score": -8.541152000427246,
+          "document_id": "doc_0011",
+          "title": "Sam Altman backs teens’ startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 14,
+          "score": -8.61931324005127,
+          "document_id": "doc_0287",
+          "title": "What we expect at Apple's Scary Fast event: M3-powered MacBook Pros and new iMacs",
+          "source": "Engadget"
+        },
+        {
+          "rank": 15,
+          "score": -8.62688159942627,
+          "document_id": "doc_0213",
+          "title": "The best video games of the year so far",
+          "source": "Polygon"
+        },
+        {
+          "rank": 16,
+          "score": -8.665925025939941,
+          "document_id": "doc_0169",
+          "title": "Steam Deck OLED review: It's just better",
+          "source": "Engadget"
+        },
+        {
+          "rank": 17,
+          "score": -9.1344575881958,
+          "document_id": "doc_0320",
+          "title": "These Are Our Favorite Walmart Cyber Monday Deals",
+          "source": "Wired"
+        },
+        {
+          "rank": 18,
+          "score": -9.731929779052734,
+          "document_id": "doc_0301",
+          "title": "Deft is building e-commerce search to help you find the right product quickly",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 19,
+          "score": -10.173917770385742,
+          "document_id": "doc_0229",
+          "title": "The best VPN services for 2023",
+          "source": "Engadget"
+        },
+        {
+          "rank": 20,
+          "score": -10.19651985168457,
+          "document_id": "doc_0250",
+          "title": "The 30 best Amazon Prime Day deals for October 2023",
+          "source": "Engadget"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "query": "Was there inconsistency in Jada Pinkett Smith's statements regarding what she learned from her children after The Independent - Life and Style's report on her views on self-acceptance published at 13:41:30, and before The Independent - Life and Style's subsequent report on the same topic published at 15:48:10 on the same day?",
+      "question_type": "temporal_query",
+      "num_relevant_documents": 2,
+      "metrics": {
+        "1": {
+          "recall": 0.0,
+          "hit": 0.0,
+          "complete_recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6934264036172708,
+          "unique_documents": 3,
+          "duplicate_rate": 0.0
+        },
+        "5": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6934264036172708,
+          "unique_documents": 4,
+          "duplicate_rate": 0.19999999999999996
+        },
+        "10": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6934264036172708,
+          "unique_documents": 5,
+          "duplicate_rate": 0.5
+        },
+        "20": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6934264036172708,
+          "unique_documents": 9,
+          "duplicate_rate": 0.55
+        }
+      },
+      "first_complete_evidence_rank": 3,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 2.732905864715576,
+          "document_id": "doc_0018",
+          "title": "A timeline of Will Smith and Jada Pinkett Smith’s relationship amid separation",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 2,
+          "score": 1.2514338493347168,
+          "document_id": "doc_0036",
+          "title": "Jada Pinkett Smith and Will Smith have been separated since 2016 - when should couples just get divorced?",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 3,
+          "score": 0.10584582388401031,
+          "document_id": "doc_0360",
+          "title": "Jada Pinkett Smith reveals why she and Will Smith never signed a prenup",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 4,
+          "score": -1.9076732397079468,
+          "document_id": "doc_0036",
+          "title": "Jada Pinkett Smith and Will Smith have been separated since 2016 - when should couples just get divorced?",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 5,
+          "score": -2.5186634063720703,
+          "document_id": "doc_0159",
+          "title": "Will Smith speaks to crowd about ‘tumultuous’ relationship with Jada Pinkett Smith",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 6,
+          "score": -2.5622003078460693,
+          "document_id": "doc_0360",
+          "title": "Jada Pinkett Smith reveals why she and Will Smith never signed a prenup",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 7,
+          "score": -3.019491195678711,
+          "document_id": "doc_0036",
+          "title": "Jada Pinkett Smith and Will Smith have been separated since 2016 - when should couples just get divorced?",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 8,
+          "score": -3.0880510807037354,
+          "document_id": "doc_0159",
+          "title": "Will Smith speaks to crowd about ‘tumultuous’ relationship with Jada Pinkett Smith",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 9,
+          "score": -3.6968581676483154,
+          "document_id": "doc_0254",
+          "title": "Bride defended after asking mother to walk her down the aisle instead of stepfather",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 10,
+          "score": -4.120792388916016,
+          "document_id": "doc_0018",
+          "title": "A timeline of Will Smith and Jada Pinkett Smith’s relationship amid separation",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 11,
+          "score": -4.244021415710449,
+          "document_id": "doc_0360",
+          "title": "Jada Pinkett Smith reveals why she and Will Smith never signed a prenup",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 12,
+          "score": -4.2958784103393555,
+          "document_id": "doc_0159",
+          "title": "Will Smith speaks to crowd about ‘tumultuous’ relationship with Jada Pinkett Smith",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 13,
+          "score": -4.7669901847839355,
+          "document_id": "doc_0036",
+          "title": "Jada Pinkett Smith and Will Smith have been separated since 2016 - when should couples just get divorced?",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 14,
+          "score": -5.88364839553833,
+          "document_id": "doc_0018",
+          "title": "A timeline of Will Smith and Jada Pinkett Smith’s relationship amid separation",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 15,
+          "score": -6.995605945587158,
+          "document_id": "doc_0052",
+          "title": "‘I was being ritually tortured’: the most shocking moments in Britney Spears’ memoir",
+          "source": "The Guardian"
+        },
+        {
+          "rank": 16,
+          "score": -9.770575523376465,
+          "document_id": "doc_0523",
+          "title": "‘Is this worth it?’: The difficult questions the Shameless founders have had to ask each other",
+          "source": "The Age"
+        },
+        {
+          "rank": 17,
+          "score": -10.023075103759766,
+          "document_id": "doc_0136",
+          "title": "The obsessive tormenter who made professors’ lives miserable",
+          "source": "The Verge"
+        },
+        {
+          "rank": 18,
+          "score": -10.080089569091797,
+          "document_id": "doc_0052",
+          "title": "‘I was being ritually tortured’: the most shocking moments in Britney Spears’ memoir",
+          "source": "The Guardian"
+        },
+        {
+          "rank": 19,
+          "score": -10.16254711151123,
+          "document_id": "doc_0502",
+          "title": "Emily Ratajkowski’s latest photo shoot sparks fury",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 20,
+          "score": -10.189794540405273,
+          "document_id": "doc_0136",
+          "title": "The obsessive tormenter who made professors’ lives miserable",
+          "source": "The Verge"
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "query": "Was the news about Taylor Swift's relationship with Travis Kelce inconsistent with the later report from The Independent - Life and Style on December 6, 2023?",
+      "question_type": "temporal_query",
+      "num_relevant_documents": 3,
+      "metrics": {
+        "1": {
+          "recall": 0.0,
+          "hit": 0.0,
+          "complete_recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 0.0,
+          "hit": 0.0,
+          "complete_recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "unique_documents": 2,
+          "duplicate_rate": 0.33333333333333337
+        },
+        "5": {
+          "recall": 0.6666666666666666,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 0.25,
+          "ndcg": 0.38364913903790027,
+          "unique_documents": 4,
+          "duplicate_rate": 0.19999999999999996
+        },
+        "10": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 0.25,
+          "ndcg": 0.5316900945208328,
+          "unique_documents": 6,
+          "duplicate_rate": 0.4
+        },
+        "20": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 0.25,
+          "ndcg": 0.5316900945208328,
+          "unique_documents": 11,
+          "duplicate_rate": 0.44999999999999996
+        }
+      },
+      "first_complete_evidence_rank": 8,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 6.622808933258057,
+          "document_id": "doc_0295",
+          "title": "Taylor Swift reveals secret start to her relationship with Travis Kelce",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 2,
+          "score": 6.5759358406066895,
+          "document_id": "doc_0295",
+          "title": "Taylor Swift reveals secret start to her relationship with Travis Kelce",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 3,
+          "score": 6.25992488861084,
+          "document_id": "doc_0174",
+          "title": "Travis Kelce faces backlash after comments about ‘finding a breeder’ resurface amid Taylor Swift romance",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 4,
+          "score": 5.366431713104248,
+          "document_id": "doc_0046",
+          "title": "Taylor Swift is Time’s Person of the Year",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 5,
+          "score": 5.350602149963379,
+          "document_id": "doc_0059",
+          "title": "Taylor Swift-Travis Kelce timeline: Everything to know about rumored romance between pop star, Chiefs TE",
+          "source": "CBSSports.com"
+        },
+        {
+          "rank": 6,
+          "score": 5.290578842163086,
+          "document_id": "doc_0059",
+          "title": "Taylor Swift-Travis Kelce timeline: Everything to know about rumored romance between pop star, Chiefs TE",
+          "source": "CBSSports.com"
+        },
+        {
+          "rank": 7,
+          "score": 4.550967216491699,
+          "document_id": "doc_0059",
+          "title": "Taylor Swift-Travis Kelce timeline: Everything to know about rumored romance between pop star, Chiefs TE",
+          "source": "CBSSports.com"
+        },
+        {
+          "rank": 8,
+          "score": 4.046664237976074,
+          "document_id": "doc_0045",
+          "title": "Travis Kelce says he tried to delete his ‘nonsense’ tweets before they went viral",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 9,
+          "score": 3.9576926231384277,
+          "document_id": "doc_0044",
+          "title": "When pop culture and sport collide: A timeline of Taylor Swift’s NFL takeover",
+          "source": "The Age"
+        },
+        {
+          "rank": 10,
+          "score": 3.6076560020446777,
+          "document_id": "doc_0045",
+          "title": "Travis Kelce says he tried to delete his ‘nonsense’ tweets before they went viral",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 11,
+          "score": 3.5476574897766113,
+          "document_id": "doc_0174",
+          "title": "Travis Kelce faces backlash after comments about ‘finding a breeder’ resurface amid Taylor Swift romance",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 12,
+          "score": 1.9156414270401,
+          "document_id": "doc_0174",
+          "title": "Travis Kelce faces backlash after comments about ‘finding a breeder’ resurface amid Taylor Swift romance",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 13,
+          "score": 1.9151889085769653,
+          "document_id": "doc_0311",
+          "title": "FanDuel 'Prop Stars' Picks: Best bets for Travis Kelce & Taylor Swift-inspired props for Chiefs-Jets Week 4",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 14,
+          "score": 0.9139195680618286,
+          "document_id": "doc_0021",
+          "title": "Fans spot Travis Kelce wearing Taylor Swift-themed friendship bracelet before she attended his game",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 15,
+          "score": 0.8025333881378174,
+          "document_id": "doc_0059",
+          "title": "Taylor Swift-Travis Kelce timeline: Everything to know about rumored romance between pop star, Chiefs TE",
+          "source": "CBSSports.com"
+        },
+        {
+          "rank": 16,
+          "score": -0.17525628209114075,
+          "document_id": "doc_0021",
+          "title": "Fans spot Travis Kelce wearing Taylor Swift-themed friendship bracelet before she attended his game",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 17,
+          "score": -0.3766627013683319,
+          "document_id": "doc_0559",
+          "title": "Travis Kelce admits the NFL is overdoing it with their Taylor Swift coverage",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 18,
+          "score": -2.266441583633423,
+          "document_id": "doc_0034",
+          "title": "Chiefs vs. Packers live score, updates, highlights from NFL 'Sunday Night Football' game",
+          "source": "Sporting News"
+        },
+        {
+          "rank": 19,
+          "score": -2.8715665340423584,
+          "document_id": "doc_0257",
+          "title": "Taylor Swift's 1989: The stories behind her biggest album",
+          "source": "BBC News - Entertainment & Arts"
+        },
+        {
+          "rank": 20,
+          "score": -5.493089199066162,
+          "document_id": "doc_0257",
+          "title": "Taylor Swift's 1989: The stories behind her biggest album",
+          "source": "BBC News - Entertainment & Arts"
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "query": "Has the portrayal of Google's market practices in reports by The Age before October 22, 2023, remained consistent with the depiction in The Verge's coverage of the Epic v. Google case, and with TechCrunch's report on the class action antitrust suit filed against Google?",
+      "question_type": "temporal_query",
+      "num_relevant_documents": 3,
+      "metrics": {
+        "1": {
+          "recall": 0.0,
+          "hit": 0.0,
+          "complete_recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 0.3333333333333333,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 0.5,
+          "ndcg": 0.2960819109658652,
+          "unique_documents": 2,
+          "duplicate_rate": 0.33333333333333337
+        },
+        "5": {
+          "recall": 0.6666666666666666,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 0.5,
+          "ndcg": 0.4776237035032179,
+          "unique_documents": 4,
+          "duplicate_rate": 0.19999999999999996
+        },
+        "10": {
+          "recall": 0.6666666666666666,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 0.5,
+          "ndcg": 0.4776237035032179,
+          "unique_documents": 6,
+          "duplicate_rate": 0.4
+        },
+        "20": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.594943385008907,
+          "unique_documents": 11,
+          "duplicate_rate": 0.44999999999999996
+        }
+      },
+      "first_complete_evidence_rank": 15,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.5770890712738037,
+          "document_id": "doc_0042",
+          "title": "What to know about Fortnite maker Epic Games’ antitrust battle with Google, starting today",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 2,
+          "score": 0.4135914146900177,
+          "document_id": "doc_0355",
+          "title": "Epic v. Google, explained",
+          "source": "The Verge"
+        },
+        {
+          "rank": 3,
+          "score": -1.2853524684906006,
+          "document_id": "doc_0042",
+          "title": "What to know about Fortnite maker Epic Games’ antitrust battle with Google, starting today",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 4,
+          "score": -1.628678798675537,
+          "document_id": "doc_0237",
+          "title": "5 things we learned so far about the Google antitrust case",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 5,
+          "score": -1.7469004392623901,
+          "document_id": "doc_0033",
+          "title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 6,
+          "score": -1.8291147947311401,
+          "document_id": "doc_0015",
+          "title": "More from the US v Google trial: vertical search, pre-installs and the case of Firefox/Yahoo",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 7,
+          "score": -2.098837375640869,
+          "document_id": "doc_0355",
+          "title": "Epic v. Google, explained",
+          "source": "The Verge"
+        },
+        {
+          "rank": 8,
+          "score": -2.1919336318969727,
+          "document_id": "doc_0355",
+          "title": "Epic v. Google, explained",
+          "source": "The Verge"
+        },
+        {
+          "rank": 9,
+          "score": -3.040506601333618,
+          "document_id": "doc_0170",
+          "title": "Tim Sweeney on Epic’s victory royale over Google",
+          "source": "The Verge"
+        },
+        {
+          "rank": 10,
+          "score": -3.1449813842773438,
+          "document_id": "doc_0033",
+          "title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 11,
+          "score": -3.877638339996338,
+          "document_id": "doc_0170",
+          "title": "Tim Sweeney on Epic’s victory royale over Google",
+          "source": "The Verge"
+        },
+        {
+          "rank": 12,
+          "score": -3.9554710388183594,
+          "document_id": "doc_0033",
+          "title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 13,
+          "score": -4.285101413726807,
+          "document_id": "doc_0170",
+          "title": "Tim Sweeney on Epic’s victory royale over Google",
+          "source": "The Verge"
+        },
+        {
+          "rank": 14,
+          "score": -5.329102039337158,
+          "document_id": "doc_0299",
+          "title": "The Epic v. Google trial may come down to simple v. complicated",
+          "source": "The Verge"
+        },
+        {
+          "rank": 15,
+          "score": -5.7681474685668945,
+          "document_id": "doc_0032",
+          "title": "Is Google Search better than the rest? And is that fair?",
+          "source": "The Age"
+        },
+        {
+          "rank": 16,
+          "score": -5.8058085441589355,
+          "document_id": "doc_0015",
+          "title": "More from the US v Google trial: vertical search, pre-installs and the case of Firefox/Yahoo",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 17,
+          "score": -6.0124359130859375,
+          "document_id": "doc_0014",
+          "title": "Apple defends Google Search deal in court: ‘There wasn’t a valid alternative’",
+          "source": "The Verge"
+        },
+        {
+          "rank": 18,
+          "score": -8.35949420928955,
+          "document_id": "doc_0015",
+          "title": "More from the US v Google trial: vertical search, pre-installs and the case of Firefox/Yahoo",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 19,
+          "score": -10.13747501373291,
+          "document_id": "doc_0009",
+          "title": "SBF Trial: The latest updates from the FTX collapse’s courtroom drama",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 20,
+          "score": -10.196859359741211,
+          "document_id": "doc_0367",
+          "title": "Uber sexual assault survivors call for in-car cameras, tech upgrades",
+          "source": "TechCrunch"
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "query": "Does the TechCrunch article suggest that Amazon's large language model (LLM) is not trained on kids' responses, while The Age article raises concerns about TikTok's pixel collecting data without consent?",
+      "question_type": "comparison_query",
+      "num_relevant_documents": 2,
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 2,
+          "duplicate_rate": 0.33333333333333337
+        },
+        "5": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 2,
+          "duplicate_rate": 0.6
+        },
+        "10": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 4,
+          "duplicate_rate": 0.6
+        },
+        "20": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 14,
+          "duplicate_rate": 0.30000000000000004
+        }
+      },
+      "first_complete_evidence_rank": 2,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 2.845332622528076,
+          "document_id": "doc_0188",
+          "title": "Amazon brings conversational AI to kids with launch of ‘Explore with Alexa’",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 2,
+          "score": 1.0376559495925903,
+          "document_id": "doc_0189",
+          "title": "‘Mass breach of privacy’: TikTok under fire for tracking users online",
+          "source": "The Age"
+        },
+        {
+          "rank": 3,
+          "score": 0.5388880968093872,
+          "document_id": "doc_0189",
+          "title": "‘Mass breach of privacy’: TikTok under fire for tracking users online",
+          "source": "The Age"
+        },
+        {
+          "rank": 4,
+          "score": -0.45012834668159485,
+          "document_id": "doc_0189",
+          "title": "‘Mass breach of privacy’: TikTok under fire for tracking users online",
+          "source": "The Age"
+        },
+        {
+          "rank": 5,
+          "score": -0.6560045480728149,
+          "document_id": "doc_0189",
+          "title": "‘Mass breach of privacy’: TikTok under fire for tracking users online",
+          "source": "The Age"
+        },
+        {
+          "rank": 6,
+          "score": -1.1923426389694214,
+          "document_id": "doc_0188",
+          "title": "Amazon brings conversational AI to kids with launch of ‘Explore with Alexa’",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 7,
+          "score": -2.3745083808898926,
+          "document_id": "doc_0188",
+          "title": "Amazon brings conversational AI to kids with launch of ‘Explore with Alexa’",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 8,
+          "score": -3.4186477661132812,
+          "document_id": "doc_0189",
+          "title": "‘Mass breach of privacy’: TikTok under fire for tracking users online",
+          "source": "The Age"
+        },
+        {
+          "rank": 9,
+          "score": -4.057445526123047,
+          "document_id": "doc_0161",
+          "title": "6 VCs explain how startups can capture and defend marketshare in the AI era",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 10,
+          "score": -5.131598949432373,
+          "document_id": "doc_0196",
+          "title": "With Amo, the founder of Zenly wants to make social apps social again",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 11,
+          "score": -5.847492218017578,
+          "document_id": "doc_0313",
+          "title": "Sweeping White House AI executive order takes aim at the technology's toughest challenges",
+          "source": "Engadget"
+        },
+        {
+          "rank": 12,
+          "score": -5.92749547958374,
+          "document_id": "doc_0304",
+          "title": "Meta turned a blind eye to kids on its platforms for years, unredacted lawsuit alleges",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 13,
+          "score": -7.177587985992432,
+          "document_id": "doc_0038",
+          "title": "There’s something going on with AI startups in France",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 14,
+          "score": -7.654787540435791,
+          "document_id": "doc_0243",
+          "title": "8 authors and their 8 gift book picks for this holiday season",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 15,
+          "score": -8.60006046295166,
+          "document_id": "doc_0054",
+          "title": "How the OpenAI fiasco could bolster Meta and the ‘open AI’ movement",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 16,
+          "score": -8.951089859008789,
+          "document_id": "doc_0033",
+          "title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 17,
+          "score": -9.548419952392578,
+          "document_id": "doc_0380",
+          "title": "Sony Music has issued nearly 10,000 deepfake takedowns… and other things we learned from Dennis Kooker’s speech about AI",
+          "source": "Music Business Worldwide"
+        },
+        {
+          "rank": 18,
+          "score": -9.557073593139648,
+          "document_id": "doc_0106",
+          "title": "Meta has a moderation bias problem, not just a ‘bug,’ that’s suppressing Palestinian voices",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 19,
+          "score": -9.70884895324707,
+          "document_id": "doc_0507",
+          "title": "Flipboard becomes a federated app with support for ActivityPub",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 20,
+          "score": -9.779109954833984,
+          "document_id": "doc_0032",
+          "title": "Is Google Search better than the rest? And is that fair?",
+          "source": "The Age"
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "query": "Did the report from Cnbc | World Business News Leader on \"Nike's Latin America and Asia Pacific unit\" or the article from Fortune on the \"U.S. home sales price\" both report a decrease in their respective financial figures?",
+      "question_type": "comparison_query",
+      "num_relevant_documents": 2,
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.6131471927654584,
+          "unique_documents": 1,
+          "duplicate_rate": 0.6666666666666667
+        },
+        "5": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 0.6131471927654584,
+          "unique_documents": 2,
+          "duplicate_rate": 0.6
+        },
+        "10": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8065735963827293,
+          "unique_documents": 5,
+          "duplicate_rate": 0.5
+        },
+        "20": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8065735963827293,
+          "unique_documents": 14,
+          "duplicate_rate": 0.30000000000000004
+        }
+      },
+      "first_complete_evidence_rank": 8,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 4.072470664978027,
+          "document_id": "doc_0215",
+          "title": "Nike misses revenue expectations for the first time in two years, beats on earnings and gross margin",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 2,
+          "score": -0.6591546535491943,
+          "document_id": "doc_0215",
+          "title": "Nike misses revenue expectations for the first time in two years, beats on earnings and gross margin",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 3,
+          "score": -1.2809772491455078,
+          "document_id": "doc_0215",
+          "title": "Nike misses revenue expectations for the first time in two years, beats on earnings and gross margin",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 4,
+          "score": -1.9433149099349976,
+          "document_id": "doc_0215",
+          "title": "Nike misses revenue expectations for the first time in two years, beats on earnings and gross margin",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 5,
+          "score": -4.293627738952637,
+          "document_id": "doc_0479",
+          "title": "The housing winter arrives early as existing home sales crash to Great Recession levels and the long-feared ‘deep freeze’ sets in",
+          "source": "Fortune"
+        },
+        {
+          "rank": 6,
+          "score": -4.743975639343262,
+          "document_id": "doc_0215",
+          "title": "Nike misses revenue expectations for the first time in two years, beats on earnings and gross margin",
+          "source": "Cnbc | World Business News Leader"
+        },
+        {
+          "rank": 7,
+          "score": -5.334827899932861,
+          "document_id": "doc_0479",
+          "title": "The housing winter arrives early as existing home sales crash to Great Recession levels and the long-feared ‘deep freeze’ sets in",
+          "source": "Fortune"
+        },
+        {
+          "rank": 8,
+          "score": -5.691473960876465,
+          "document_id": "doc_0112",
+          "title": "Buckle up for more ‘turbulence’ in the housing market, BofA says—it’s a housing recession, 1980s style",
+          "source": "Fortune"
+        },
+        {
+          "rank": 9,
+          "score": -6.414243221282959,
+          "document_id": "doc_0074",
+          "title": "ASX to open lower; Wall Street falls as the clamp tightens from rising bond yields",
+          "source": "The Age"
+        },
+        {
+          "rank": 10,
+          "score": -6.600793838500977,
+          "document_id": "doc_0357",
+          "title": "ASX to rise after interest rate hopes boost US shares",
+          "source": "The Sydney Morning Herald"
+        },
+        {
+          "rank": 11,
+          "score": -6.626615047454834,
+          "document_id": "doc_0074",
+          "title": "ASX to open lower; Wall Street falls as the clamp tightens from rising bond yields",
+          "source": "The Age"
+        },
+        {
+          "rank": 12,
+          "score": -6.635111331939697,
+          "document_id": "doc_0028",
+          "title": "ASX set for bright start despite Wall Street slip; $A drops",
+          "source": "The Sydney Morning Herald"
+        },
+        {
+          "rank": 13,
+          "score": -7.240528583526611,
+          "document_id": "doc_0049",
+          "title": "A comprehensive list of 2023 tech layoffs",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 14,
+          "score": -7.333609104156494,
+          "document_id": "doc_0457",
+          "title": "EU commissioner sidesteps MEPs’ questions about CSAM microtargeting",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 15,
+          "score": -7.823601245880127,
+          "document_id": "doc_0338",
+          "title": "Earnings week ahead: Amazon, Microsoft, Alphabet, Meta, Ford, GM and more",
+          "source": "Seeking Alpha"
+        },
+        {
+          "rank": 16,
+          "score": -9.094650268554688,
+          "document_id": "doc_0559",
+          "title": "Travis Kelce admits the NFL is overdoing it with their Taylor Swift coverage",
+          "source": "The Independent - Life and Style"
+        },
+        {
+          "rank": 17,
+          "score": -9.217756271362305,
+          "document_id": "doc_0033",
+          "title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 18,
+          "score": -10.06466007232666,
+          "document_id": "doc_0450",
+          "title": "Adobe: Thanksgiving US online sales nudge up to $5.6B; Salesforce: $31.7B spent globally",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 19,
+          "score": -10.169032096862793,
+          "document_id": "doc_0190",
+          "title": "Tires are saving us — and killing us, too",
+          "source": "The Verge"
+        },
+        {
+          "rank": 20,
+          "score": -10.187654495239258,
+          "document_id": "doc_0105",
+          "title": "Watch Argentina vs Paraguay live stream, TV channel, lineups, betting odds for World Cup qualifying match",
+          "source": "Sporting News"
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "query": "Did the coverage of ski resorts by 'The Independent - Travel' change after their report on the 'Swiss slopes of Zermatt and pistes of Vail in Colorado' on October 13th, 2023, compared to their subsequent report on 'Tremblant Ski Resort' on October 25th, 2023?",
+      "question_type": "temporal_query",
+      "num_relevant_documents": 2,
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "hit": 1.0,
+          "complete_recall": 0.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 1,
+          "duplicate_rate": 0.0
+        },
+        "3": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 2,
+          "duplicate_rate": 0.33333333333333337
+        },
+        "5": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 2,
+          "duplicate_rate": 0.6
+        },
+        "10": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 2,
+          "duplicate_rate": 0.8
+        },
+        "20": {
+          "recall": 1.0,
+          "hit": 1.0,
+          "complete_recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "unique_documents": 9,
+          "duplicate_rate": 0.55
+        }
+      },
+      "first_complete_evidence_rank": 2,
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.555363655090332,
+          "document_id": "doc_0573",
+          "title": "7 of the best luxury ski resorts for a five-star experience",
+          "source": "The Independent - Travel"
+        },
+        {
+          "rank": 2,
+          "score": -0.05235360562801361,
+          "document_id": "doc_0572",
+          "title": "7 of the best ski holidays in Canada",
+          "source": "The Independent - Travel"
+        },
+        {
+          "rank": 3,
+          "score": -1.618035912513733,
+          "document_id": "doc_0573",
+          "title": "7 of the best luxury ski resorts for a five-star experience",
+          "source": "The Independent - Travel"
+        },
+        {
+          "rank": 4,
+          "score": -2.274775266647339,
+          "document_id": "doc_0572",
+          "title": "7 of the best ski holidays in Canada",
+          "source": "The Independent - Travel"
+        },
+        {
+          "rank": 5,
+          "score": -2.656008720397949,
+          "document_id": "doc_0573",
+          "title": "7 of the best luxury ski resorts for a five-star experience",
+          "source": "The Independent - Travel"
+        },
+        {
+          "rank": 6,
+          "score": -4.121668338775635,
+          "document_id": "doc_0572",
+          "title": "7 of the best ski holidays in Canada",
+          "source": "The Independent - Travel"
+        },
+        {
+          "rank": 7,
+          "score": -5.616021156311035,
+          "document_id": "doc_0572",
+          "title": "7 of the best ski holidays in Canada",
+          "source": "The Independent - Travel"
+        },
+        {
+          "rank": 8,
+          "score": -5.775205135345459,
+          "document_id": "doc_0572",
+          "title": "7 of the best ski holidays in Canada",
+          "source": "The Independent - Travel"
+        },
+        {
+          "rank": 9,
+          "score": -6.294442653656006,
+          "document_id": "doc_0572",
+          "title": "7 of the best ski holidays in Canada",
+          "source": "The Independent - Travel"
+        },
+        {
+          "rank": 10,
+          "score": -6.763600826263428,
+          "document_id": "doc_0572",
+          "title": "7 of the best ski holidays in Canada",
+          "source": "The Independent - Travel"
+        },
+        {
+          "rank": 11,
+          "score": -6.924435138702393,
+          "document_id": "doc_0573",
+          "title": "7 of the best luxury ski resorts for a five-star experience",
+          "source": "The Independent - Travel"
+        },
+        {
+          "rank": 12,
+          "score": -9.094487190246582,
+          "document_id": "doc_0585",
+          "title": "Who Are Mikaela Shiffrin’s Parents? All You Need to Know About Skiing Legend’s Family",
+          "source": "Essentially Sports"
+        },
+        {
+          "rank": 13,
+          "score": -9.589344024658203,
+          "document_id": "doc_0573",
+          "title": "7 of the best luxury ski resorts for a five-star experience",
+          "source": "The Independent - Travel"
+        },
+        {
+          "rank": 14,
+          "score": -10.061365127563477,
+          "document_id": "doc_0572",
+          "title": "7 of the best ski holidays in Canada",
+          "source": "The Independent - Travel"
+        },
+        {
+          "rank": 15,
+          "score": -10.193704605102539,
+          "document_id": "doc_0025",
+          "title": "EU fires urgent warning at Elon Musk’s X over illegal content and disinformation following Hamas attacks",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 16,
+          "score": -10.194462776184082,
+          "document_id": "doc_0486",
+          "title": "Israel thwarts Hamas on the financial battlefield",
+          "source": "Globes English | Israel Business Arena"
+        },
+        {
+          "rank": 17,
+          "score": -10.194738388061523,
+          "document_id": "doc_0336",
+          "title": "How Chinese firm linked to repression of Uyghurs aids Israeli surveillance in West Bank",
+          "source": "The Guardian"
+        },
+        {
+          "rank": 18,
+          "score": -10.19592571258545,
+          "document_id": "doc_0153",
+          "title": "Elon Musk’s X faces first DSA probe in EU over illegal content risks, moderation, transparency and deceptive UX design",
+          "source": "TechCrunch"
+        },
+        {
+          "rank": 19,
+          "score": -10.196282386779785,
+          "document_id": "doc_0191",
+          "title": "Digital twin market: Analyzing growth and 4 emerging trends",
+          "source": "Iot Business News"
+        },
+        {
+          "rank": 20,
+          "score": -10.19665241241455,
+          "document_id": "doc_0357",
+          "title": "ASX to rise after interest rate hopes boost US shares",
+          "source": "The Sydney Morning Herald"
+        }
+      ]
+    }
+  ],
+  "per_question_type": {
+    "inference_query": {
+      "recall@1": 0.2833333333333333,
+      "complete_recall@1": 0.0,
+      "mrr@1": 0.8,
+      "ndcg@1": 0.8,
+      "duplicate_rate@1": 0.0,
+      "recall@3": 0.5,
+      "complete_recall@3": 0.1,
+      "mrr@3": 0.8833333333333333,
+      "ndcg@3": 0.5919720789148187,
+      "duplicate_rate@3": 0.2,
+      "recall@5": 0.6083333333333333,
+      "complete_recall@5": 0.2,
+      "mrr@5": 0.8833333333333333,
+      "ndcg@5": 0.6276101844017669,
+      "duplicate_rate@5": 0.24,
+      "recall@10": 0.7,
+      "complete_recall@10": 0.3,
+      "mrr@10": 0.8833333333333333,
+      "ndcg@10": 0.6714454448837168,
+      "duplicate_rate@10": 0.35,
+      "recall@20": 0.7666666666666666,
+      "complete_recall@20": 0.5,
+      "mrr@20": 0.8833333333333333,
+      "ndcg@20": 0.6949379399361237,
+      "duplicate_rate@20": 0.425
+    },
+    "comparison_query": {
+      "recall@1": 0.5,
+      "complete_recall@1": 0.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "duplicate_rate@1": 0.0,
+      "recall@3": 0.75,
+      "complete_recall@3": 0.5,
+      "mrr@3": 1.0,
+      "ndcg@3": 0.8065735963827292,
+      "duplicate_rate@3": 0.41666666666666674,
+      "recall@5": 0.75,
+      "complete_recall@5": 0.5,
+      "mrr@5": 1.0,
+      "ndcg@5": 0.8065735963827292,
+      "duplicate_rate@5": 0.55,
+      "recall@10": 0.9375,
+      "complete_recall@10": 0.875,
+      "mrr@10": 1.0,
+      "ndcg@10": 0.8793716586308948,
+      "duplicate_rate@10": 0.575,
+      "recall@20": 0.9375,
+      "complete_recall@20": 0.875,
+      "mrr@20": 1.0,
+      "ndcg@20": 0.8793716586308948,
+      "duplicate_rate@20": 0.375
+    },
+    "temporal_query": {
+      "recall@1": 0.11904761904761904,
+      "complete_recall@1": 0.0,
+      "mrr@1": 0.2857142857142857,
+      "ndcg@1": 0.2857142857142857,
+      "duplicate_rate@1": 0.0,
+      "recall@3": 0.38095238095238093,
+      "complete_recall@3": 0.2857142857142857,
+      "mrr@3": 0.42857142857142855,
+      "ndcg@3": 0.3512552915151275,
+      "duplicate_rate@3": 0.2380952380952381,
+      "recall@5": 0.6428571428571428,
+      "complete_recall@5": 0.2857142857142857,
+      "mrr@5": 0.5285714285714286,
+      "ndcg@5": 0.49475471877871274,
+      "duplicate_rate@5": 0.3142857142857142,
+      "recall@10": 0.6904761904761905,
+      "complete_recall@10": 0.42857142857142855,
+      "mrr@10": 0.5285714285714286,
+      "ndcg@10": 0.515903426704846,
+      "duplicate_rate@10": 0.5,
+      "recall@20": 0.7857142857142857,
+      "complete_recall@20": 0.5714285714285714,
+      "mrr@20": 0.5285714285714286,
+      "ndcg@20": 0.5484451519141011,
+      "duplicate_rate@20": 0.4642857142857143
+    }
+  }
+}

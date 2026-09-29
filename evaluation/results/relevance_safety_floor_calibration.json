@@ -1,0 +1,143 @@
+{
+  "selected": {
+    "threshold": -6.311376452445984,
+    "positive_total": 5,
+    "positive_kept": 5,
+    "positive_keep_rate": 1.0,
+    "negative_total": 3,
+    "negative_rejected": 3,
+    "negative_reject_rate": 1.0
+  },
+  "positive_scores": [
+    {
+      "id": "positive_altman_candor",
+      "score": -3.7592427730560303
+    },
+    {
+      "id": "positive_taylor_bracelet",
+      "score": -1.6562429666519165
+    },
+    {
+      "id": "positive_taylor_connection",
+      "score": 0.1334403157234192
+    },
+    {
+      "id": "positive_mctominay",
+      "score": 9.970109939575195
+    },
+    {
+      "id": "positive_haaland",
+      "score": 10.307547569274902
+    }
+  ],
+  "negative_scores": [
+    {
+      "id": "negative_sbf_trial_title",
+      "score": -10.191692352294922
+    },
+    {
+      "id": "negative_nigeria_starnews",
+      "score": -10.162639617919922
+    },
+    {
+      "id": "negative_valve_future",
+      "score": -8.863510131835938
+    }
+  ],
+  "records": [
+    {
+      "id": "positive_taylor_connection",
+      "label": 1,
+      "query": "Was the news about Taylor Swift's relationship with Travis Kelce inconsistent with the later report from The Independent - Life and Style on December 6, 2023?",
+      "claim": "Taylor Swift revealed her connection with Travis Kelce in July after he confessed on his podcast.",
+      "score": 0.1334403157234192
+    },
+    {
+      "id": "positive_taylor_bracelet",
+      "label": 1,
+      "query": "Was the news about Taylor Swift's relationship with Travis Kelce inconsistent with the later report from The Independent - Life and Style on December 6, 2023?",
+      "claim": "Fans spotted Travis Kelce wearing a friendship bracelet with Taylor Swift lyrics on it days before she attended his game.",
+      "score": -1.6562429666519165
+    },
+    {
+      "id": "positive_altman_candor",
+      "label": 1,
+      "query": "Did the Fortune article published later on the same day contradict the TechCrunch article from November 18, 2023, regarding the circumstances surrounding Sam Altman's departure from OpenAI?",
+      "claim": "Altman's perceived lack of candor.",
+      "score": -3.7592427730560303
+    },
+    {
+      "id": "positive_mctominay",
+      "label": 1,
+      "query": "Does the Sporting News article identify Scott McTominay as Manchester United's top scorer for the season, while the TalkSport article suggests Erling Haaland has the chance to become the overall top scorer in 2023?",
+      "claim": "Scott McTominay is identified as Manchester United's top scorer for the season according to the Sporting News article.",
+      "score": 9.970109939575195
+    },
+    {
+      "id": "positive_haaland",
+      "label": 1,
+      "query": "Does the Sporting News article identify Scott McTominay as Manchester United's top scorer for the season, while the TalkSport article suggests Erling Haaland has the chance to become the overall top scorer in 2023?",
+      "claim": "Erling Haaland is mentioned as having the potential to become the overall top scorer in 2023 based on the TalkSport article.",
+      "score": 10.307547569274902
+    },
+    {
+      "id": "negative_nigeria_starnews",
+      "label": 0,
+      "query": "Considering the economic forecast from a Bloomberg article and the agricultural developments discussed in a Reuters report, which country in West Africa, expected to see a significant growth in its GDP, also launched an initiative to become self-sufficient in rice production by 2025?",
+      "claim": "France backs African mobile video startup StarNews Mobile in a $3 million round.",
+      "score": -10.162639617919922
+    },
+    {
+      "id": "negative_sbf_trial_title",
+      "label": 0,
+      "query": "Who is the individual whose legal team and the government's attorneys are presenting conflicting narratives in court, who acknowledged being aware of a significant financial discrepancy, and is accused of instructing a subordinate to use billions of customer funds to settle debts?",
+      "claim": "The FTX trial is bigger than Sam Bankman-Fried - The Verge.",
+      "score": -10.191692352294922
+    },
+    {
+      "id": "negative_valve_future",
+      "label": 0,
+      "query": "Which company, covered by Engadget and Polygon, is set to release updated gaming hardware with over 300 improvements on November 16, emphasizing a singular performance target for developers?",
+      "claim": "Valve plans for successive generations of handhelds, indicating ongoing development efforts beyond the current Steam Deck.",
+      "score": -8.863510131835938
+    }
+  ],
+  "safe_candidates": [
+    {
+      "threshold": -6.311376452445984,
+      "positive_total": 5,
+      "positive_kept": 5,
+      "positive_keep_rate": 1.0,
+      "negative_total": 3,
+      "negative_rejected": 3,
+      "negative_reject_rate": 1.0
+    },
+    {
+      "threshold": -9.51307487487793,
+      "positive_total": 5,
+      "positive_kept": 5,
+      "positive_keep_rate": 1.0,
+      "negative_total": 3,
+      "negative_rejected": 2,
+      "negative_reject_rate": 0.6666666666666666
+    },
+    {
+      "threshold": -10.177165985107422,
+      "positive_total": 5,
+      "positive_kept": 5,
+      "positive_keep_rate": 1.0,
+      "negative_total": 3,
+      "negative_rejected": 1,
+      "negative_reject_rate": 0.3333333333333333
+    },
+    {
+      "threshold": -10.192692352294921,
+      "positive_total": 5,
+      "positive_kept": 5,
+      "positive_keep_rate": 1.0,
+      "negative_total": 3,
+      "negative_rejected": 0,
+      "negative_reject_rate": 0.0
+    }
+  ]
+}

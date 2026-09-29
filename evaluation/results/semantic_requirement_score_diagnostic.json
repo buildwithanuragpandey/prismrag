@@ -1,0 +1,3504 @@
+{
+  "summary": {
+    "answerable": {
+      "count": 15,
+      "mean_requirement_mean_best_score": 1.62068,
+      "mean_requirement_min_best_score": -1.3656666666666666,
+      "mean_requirement_median_best_score": 1.7092266666666667,
+      "mean_anchor_ok_fraction": 0.87778,
+      "mean_best_document_gold_fraction": 0.5444466666666667,
+      "mean_top1_top2_margin": 2.7873666666666663
+    },
+    "null": {
+      "count": 5,
+      "mean_requirement_mean_best_score": -5.62484,
+      "mean_requirement_min_best_score": -6.76758,
+      "mean_requirement_median_best_score": -5.87042,
+      "mean_anchor_ok_fraction": 0.4,
+      "mean_best_document_gold_fraction": null,
+      "mean_top1_top2_margin": 1.05946
+    },
+    "complete_gold_answerable": {
+      "count": 9,
+      "mean_requirement_mean_best_score": 1.7547555555555556,
+      "mean_requirement_min_best_score": -1.7273,
+      "mean_requirement_median_best_score": 1.873588888888889,
+      "mean_anchor_ok_fraction": 0.9074111111111112,
+      "mean_best_document_gold_fraction": 0.6296333333333333,
+      "mean_top1_top2_margin": 3.4397888888888892
+    },
+    "v2_false_reject_complete_gold": {
+      "count": 3,
+      "mean_requirement_mean_best_score": 0.2612333333333333,
+      "mean_requirement_min_best_score": -2.275233333333333,
+      "mean_requirement_median_best_score": 0.4592,
+      "mean_anchor_ok_fraction": 0.8889,
+      "mean_best_document_gold_fraction": 0.7222333333333334,
+      "mean_top1_top2_margin": 2.9492333333333334
+    },
+    "exploratory_best_semantic_policies": [
+      {
+        "threshold": -4.5814,
+        "required_fraction": 0.5,
+        "mode": "semantic_only",
+        "answerable_accepts": 15,
+        "answerable_accept_rate": 1.0,
+        "null_false_accepts": 1,
+        "null_rejects": 4,
+        "complete_gold_context_rejected": 0,
+        "high_gold_context_rejected": 0
+      },
+      {
+        "threshold": -4.3735,
+        "required_fraction": 0.5,
+        "mode": "semantic_only",
+        "answerable_accepts": 15,
+        "answerable_accept_rate": 1.0,
+        "null_false_accepts": 1,
+        "null_rejects": 4,
+        "complete_gold_context_rejected": 0,
+        "high_gold_context_rejected": 0
+      },
+      {
+        "threshold": -4.1959,
+        "required_fraction": 0.5,
+        "mode": "semantic_only",
+        "answerable_accepts": 15,
+        "answerable_accept_rate": 1.0,
+        "null_false_accepts": 1,
+        "null_rejects": 4,
+        "complete_gold_context_rejected": 0,
+        "high_gold_context_rejected": 0
+      },
+      {
+        "threshold": -3.9242,
+        "required_fraction": 0.5,
+        "mode": "semantic_only",
+        "answerable_accepts": 14,
+        "answerable_accept_rate": 0.9333,
+        "null_false_accepts": 0,
+        "null_rejects": 5,
+        "complete_gold_context_rejected": 0,
+        "high_gold_context_rejected": 0
+      },
+      {
+        "threshold": -3.7725,
+        "required_fraction": 0.5,
+        "mode": "semantic_only",
+        "answerable_accepts": 14,
+        "answerable_accept_rate": 0.9333,
+        "null_false_accepts": 0,
+        "null_rejects": 5,
+        "complete_gold_context_rejected": 0,
+        "high_gold_context_rejected": 0
+      },
+      {
+        "threshold": -3.5808,
+        "required_fraction": 0.5,
+        "mode": "semantic_only",
+        "answerable_accepts": 14,
+        "answerable_accept_rate": 0.9333,
+        "null_false_accepts": 0,
+        "null_rejects": 5,
+        "complete_gold_context_rejected": 0,
+        "high_gold_context_rejected": 0
+      },
+      {
+        "threshold": -3.4845,
+        "required_fraction": 0.5,
+        "mode": "semantic_only",
+        "answerable_accepts": 14,
+        "answerable_accept_rate": 0.9333,
+        "null_false_accepts": 0,
+        "null_rejects": 5,
+        "complete_gold_context_rejected": 0,
+        "high_gold_context_rejected": 0
+      },
+      {
+        "threshold": -3.0403,
+        "required_fraction": 0.5,
+        "mode": "semantic_only",
+        "answerable_accepts": 14,
+        "answerable_accept_rate": 0.9333,
+        "null_false_accepts": 0,
+        "null_rejects": 5,
+        "complete_gold_context_rejected": 0,
+        "high_gold_context_rejected": 0
+      },
+      {
+        "threshold": -2.5823,
+        "required_fraction": 0.5,
+        "mode": "semantic_only",
+        "answerable_accepts": 14,
+        "answerable_accept_rate": 0.9333,
+        "null_false_accepts": 0,
+        "null_rejects": 5,
+        "complete_gold_context_rejected": 0,
+        "high_gold_context_rejected": 0
+      },
+      {
+        "threshold": -1.9581,
+        "required_fraction": 0.5,
+        "mode": "semantic_only",
+        "answerable_accepts": 14,
+        "answerable_accept_rate": 0.9333,
+        "null_false_accepts": 0,
+        "null_rejects": 5,
+        "complete_gold_context_rejected": 0,
+        "high_gold_context_rejected": 0
+      },
+      {
+        "threshold": -1.2898,
+        "required_fraction": 0.5,
+        "mode": "semantic_only",
+        "answerable_accepts": 14,
+        "answerable_accept_rate": 0.9333,
+        "null_false_accepts": 0,
+        "null_rejects": 5,
+        "complete_gold_context_rejected": 0,
+        "high_gold_context_rejected": 0
+      },
+      {
+        "threshold": -5.8725,
+        "required_fraction": 0.5,
+        "mode": "semantic_plus_local_anchor",
+        "answerable_accepts": 14,
+        "answerable_accept_rate": 0.9333,
+        "null_false_accepts": 1,
+        "null_rejects": 4,
+        "complete_gold_context_rejected": 0,
+        "high_gold_context_rejected": 0
+      },
+      {
+        "threshold": -5.5274,
+        "required_fraction": 0.5,
+        "mode": "semantic_plus_local_anchor",
+        "answerable_accepts": 14,
+        "answerable_accept_rate": 0.9333,
+        "null_false_accepts": 1,
+        "null_rejects": 4,
+        "complete_gold_context_rejected": 0,
+        "high_gold_context_rejected": 0
+      },
+      {
+        "threshold": -5.0149,
+        "required_fraction": 0.5,
+        "mode": "semantic_plus_local_anchor",
+        "answerable_accepts": 14,
+        "answerable_accept_rate": 0.9333,
+        "null_false_accepts": 1,
+        "null_rejects": 4,
+        "complete_gold_context_rejected": 0,
+        "high_gold_context_rejected": 0
+      },
+      {
+        "threshold": -4.5814,
+        "required_fraction": 0.5,
+        "mode": "semantic_plus_local_anchor",
+        "answerable_accepts": 14,
+        "answerable_accept_rate": 0.9333,
+        "null_false_accepts": 1,
+        "null_rejects": 4,
+        "complete_gold_context_rejected": 0,
+        "high_gold_context_rejected": 0
+      },
+      {
+        "threshold": -4.3735,
+        "required_fraction": 0.5,
+        "mode": "semantic_plus_local_anchor",
+        "answerable_accepts": 14,
+        "answerable_accept_rate": 0.9333,
+        "null_false_accepts": 1,
+        "null_rejects": 4,
+        "complete_gold_context_rejected": 0,
+        "high_gold_context_rejected": 0
+      },
+      {
+        "threshold": -4.1959,
+        "required_fraction": 0.5,
+        "mode": "semantic_plus_local_anchor",
+        "answerable_accepts": 14,
+        "answerable_accept_rate": 0.9333,
+        "null_false_accepts": 1,
+        "null_rejects": 4,
+        "complete_gold_context_rejected": 0,
+        "high_gold_context_rejected": 0
+      },
+      {
+        "threshold": -4.0256,
+        "required_fraction": 0.5,
+        "mode": "semantic_only",
+        "answerable_accepts": 14,
+        "answerable_accept_rate": 0.9333,
+        "null_false_accepts": 1,
+        "null_rejects": 4,
+        "complete_gold_context_rejected": 0,
+        "high_gold_context_rejected": 0
+      },
+      {
+        "threshold": -3.9242,
+        "required_fraction": 0.5,
+        "mode": "semantic_plus_local_anchor",
+        "answerable_accepts": 13,
+        "answerable_accept_rate": 0.8667,
+        "null_false_accepts": 0,
+        "null_rejects": 5,
+        "complete_gold_context_rejected": 0,
+        "high_gold_context_rejected": 0
+      },
+      {
+        "threshold": -3.7725,
+        "required_fraction": 0.5,
+        "mode": "semantic_plus_local_anchor",
+        "answerable_accepts": 13,
+        "answerable_accept_rate": 0.8667,
+        "null_false_accepts": 0,
+        "null_rejects": 5,
+        "complete_gold_context_rejected": 0,
+        "high_gold_context_rejected": 0
+      }
+    ]
+  },
+  "records": [
+    {
+      "id": "eval_1679afa42c30",
+      "question": "Who is the individual under 30 who was once considered the trustworthy face of the cryptocurrency industry according to The Verge, and is alleged by the prosecution for committing fraud for wealth and influence as reported by TechCrunch, and was also reported by The Verge to have permitted withdrawals from a trading account up to the limit of total trading revenue?",
+      "question_type": "inference_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Sam Bankman-Fried",
+      "gold_document_ids": [
+        "doc_0121",
+        "doc_0175",
+        "doc_0030",
+        "doc_0011"
+      ],
+      "context_document_ids": [
+        "doc_0031",
+        "doc_0030",
+        "doc_0226",
+        "doc_0175",
+        "doc_0162",
+        "doc_0009",
+        "doc_0086",
+        "doc_0375",
+        "doc_0010",
+        "doc_0121"
+      ],
+      "context_gold_recall": 0.75,
+      "context_gold_complete": false,
+      "v2_sufficient": false,
+      "v2_score": 0.7643,
+      "v2_query_term_coverage": 0.5714,
+      "requirement_count": 3,
+      "requirement_mean_best_score": -0.588,
+      "requirement_min_best_score": -3.4603,
+      "requirement_median_best_score": -1.2078,
+      "requirement_max_best_score": 2.904,
+      "mean_top1_top2_margin": 2.0172,
+      "anchor_ok_fraction": 1.0,
+      "best_document_gold_fraction": 0.6667,
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "requirements": [
+        {
+          "requirement": "Who is the individual under 30 who was once considered the trustworthy face of the cryptocurrency industry according to The Verge",
+          "critical_terms": [
+            "verge"
+          ],
+          "required_critical_coverage": 1.0,
+          "best_score": 2.904,
+          "second_score": -0.4148,
+          "score_margin": 3.3188,
+          "best_document_id": "doc_0175",
+          "best_chunk_id": "doc_0175_chunk_5",
+          "best_source": "The Verge",
+          "best_title": "The FTX trial is bigger than Sam Bankman-Fried",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": true,
+          "top3": [
+            {
+              "document_id": "doc_0175",
+              "chunk_id": "doc_0175_chunk_5",
+              "citation_id": 4,
+              "source": "The Verge",
+              "title": "The FTX trial is bigger than Sam Bankman-Fried",
+              "score": 2.904,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0162",
+              "chunk_id": "doc_0162_chunk_9",
+              "citation_id": 5,
+              "source": "The Verge",
+              "title": "Is Sam Bankman-Fried’s defense even trying to win?",
+              "score": -0.4148,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0086",
+              "chunk_id": "doc_0086_chunk_1",
+              "citation_id": 7,
+              "source": "The Verge",
+              "title": "Sam Bankman-Fried was a terrible boyfriend",
+              "score": -1.0601,
+              "is_gold_document": false
+            }
+          ]
+        },
+        {
+          "requirement": "is alleged by the prosecution for committing fraud for wealth and influence as reported by TechCrunch",
+          "critical_terms": [
+            "techcrunch"
+          ],
+          "required_critical_coverage": 1.0,
+          "best_score": -3.4603,
+          "second_score": -3.7594,
+          "score_margin": 0.2991,
+          "best_document_id": "doc_0010",
+          "best_chunk_id": "doc_0010_chunk_0",
+          "best_source": "TechCrunch",
+          "best_title": "SBF’s trial starts soon, but how did he — and FTX — get here?",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": false,
+          "top3": [
+            {
+              "document_id": "doc_0010",
+              "chunk_id": "doc_0010_chunk_0",
+              "citation_id": 9,
+              "source": "TechCrunch",
+              "title": "SBF’s trial starts soon, but how did he — and FTX — get here?",
+              "score": -3.4603,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0030",
+              "chunk_id": "doc_0030_chunk_7",
+              "citation_id": 2,
+              "source": "TechCrunch",
+              "title": "SBF, riding high on FTX, reportedly offered $5B to Trump to cancel President re-run",
+              "score": -3.7594,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0009",
+              "chunk_id": "doc_0009_chunk_7",
+              "citation_id": 6,
+              "source": "TechCrunch",
+              "title": "SBF Trial: The latest updates from the FTX collapse’s courtroom drama",
+              "score": -4.5484,
+              "is_gold_document": false
+            }
+          ]
+        },
+        {
+          "requirement": "was also reported by The Verge to have permitted withdrawals from a trading account up to the limit of total trading revenue",
+          "critical_terms": [
+            "verge"
+          ],
+          "required_critical_coverage": 1.0,
+          "best_score": -1.2078,
+          "second_score": -3.6415,
+          "score_margin": 2.4338,
+          "best_document_id": "doc_0121",
+          "best_chunk_id": "doc_0121_chunk_7",
+          "best_source": "The Verge",
+          "best_title": "In the end, the FTX trial was about the friends screwed along the way",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": true,
+          "top3": [
+            {
+              "document_id": "doc_0121",
+              "chunk_id": "doc_0121_chunk_7",
+              "citation_id": 10,
+              "source": "The Verge",
+              "title": "In the end, the FTX trial was about the friends screwed along the way",
+              "score": -1.2078,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0086",
+              "chunk_id": "doc_0086_chunk_1",
+              "citation_id": 7,
+              "source": "The Verge",
+              "title": "Sam Bankman-Fried was a terrible boyfriend",
+              "score": -3.6415,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0162",
+              "chunk_id": "doc_0162_chunk_9",
+              "citation_id": 5,
+              "source": "The Verge",
+              "title": "Is Sam Bankman-Fried’s defense even trying to win?",
+              "score": -4.4703,
+              "is_gold_document": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eval_59af1023e6cf",
+      "question": "Who is the individual whose legal team and the government's attorneys are presenting conflicting narratives in court, who acknowledged being aware of a significant financial discrepancy post a judge's inquiry, and is accused of instructing a subordinate to use billions of customer funds to settle debts, all while facing allegations of committing fraud for personal gain?",
+      "question_type": "inference_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Sam Bankman-Fried",
+      "gold_document_ids": [
+        "doc_0031",
+        "doc_0083",
+        "doc_0009",
+        "doc_0011"
+      ],
+      "context_document_ids": [
+        "doc_0226",
+        "doc_0529",
+        "doc_0031",
+        "doc_0097",
+        "doc_0175",
+        "doc_0293",
+        "doc_0121",
+        "doc_0030",
+        "doc_0053",
+        "doc_0086"
+      ],
+      "context_gold_recall": 0.25,
+      "context_gold_complete": false,
+      "v2_sufficient": false,
+      "v2_score": 0.6603,
+      "v2_query_term_coverage": 0.3824,
+      "requirement_count": 4,
+      "requirement_mean_best_score": -3.8466,
+      "requirement_min_best_score": -4.4502,
+      "requirement_median_best_score": -4.1959,
+      "requirement_max_best_score": -2.5443,
+      "mean_top1_top2_margin": 0.959,
+      "anchor_ok_fraction": 1.0,
+      "best_document_gold_fraction": 0.0,
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.0,
+      "global_anchor_ok": true,
+      "requirements": [
+        {
+          "requirement": "Who is the individual whose legal team and the government's attorneys are presenting conflicting narratives in court",
+          "critical_terms": [],
+          "required_critical_coverage": 0.0,
+          "best_score": -4.2968,
+          "second_score": -6.1132,
+          "score_margin": 1.8164,
+          "best_document_id": "doc_0226",
+          "best_chunk_id": "doc_0226_chunk_7",
+          "best_source": "Cnbc | World Business News Leader",
+          "best_title": "Sex, Signal messages, and sabotaging FTX's code: SBF execs and Bahamas roommates tell all in court",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": false,
+          "top3": [
+            {
+              "document_id": "doc_0226",
+              "chunk_id": "doc_0226_chunk_7",
+              "citation_id": 1,
+              "source": "Cnbc | World Business News Leader",
+              "title": "Sex, Signal messages, and sabotaging FTX's code: SBF execs and Bahamas roommates tell all in court",
+              "score": -4.2968,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0175",
+              "chunk_id": "doc_0175_chunk_6",
+              "citation_id": 5,
+              "source": "The Verge",
+              "title": "The FTX trial is bigger than Sam Bankman-Fried",
+              "score": -6.1132,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0053",
+              "chunk_id": "doc_0053_chunk_0",
+              "citation_id": 9,
+              "source": "The Verge",
+              "title": "The jury finally hears from Sam Bankman-Fried",
+              "score": -6.2617,
+              "is_gold_document": false
+            }
+          ]
+        },
+        {
+          "requirement": "who acknowledged being aware of a significant financial discrepancy post a judge's inquiry",
+          "critical_terms": [],
+          "required_critical_coverage": 0.0,
+          "best_score": -4.4502,
+          "second_score": -4.8059,
+          "score_margin": 0.3557,
+          "best_document_id": "doc_0529",
+          "best_chunk_id": "doc_0529_chunk_1",
+          "best_source": "Fortune",
+          "best_title": "Donald Trump defrauded banks with 'fantasy' to build his real estate empire, judge rules in a major repudiation against the former president",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": false,
+          "top3": [
+            {
+              "document_id": "doc_0529",
+              "chunk_id": "doc_0529_chunk_1",
+              "citation_id": 2,
+              "source": "Fortune",
+              "title": "Donald Trump defrauded banks with 'fantasy' to build his real estate empire, judge rules in a major repudiation against the former president",
+              "score": -4.4502,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0053",
+              "chunk_id": "doc_0053_chunk_0",
+              "citation_id": 9,
+              "source": "The Verge",
+              "title": "The jury finally hears from Sam Bankman-Fried",
+              "score": -4.8059,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0097",
+              "chunk_id": "doc_0097_chunk_2",
+              "citation_id": 4,
+              "source": "Fortune",
+              "title": "Sen. Robert Menendez, facing bribery charges, stumps bank CEOs by asking how much their firms paid in settlements for allegedly ripping off consumers",
+              "score": -4.8479,
+              "is_gold_document": false
+            }
+          ]
+        },
+        {
+          "requirement": "is accused of instructing a subordinate to use billions of customer funds to settle debts",
+          "critical_terms": [],
+          "required_critical_coverage": 0.0,
+          "best_score": -2.5443,
+          "second_score": -4.1763,
+          "score_margin": 1.632,
+          "best_document_id": "doc_0053",
+          "best_chunk_id": "doc_0053_chunk_0",
+          "best_source": "The Verge",
+          "best_title": "The jury finally hears from Sam Bankman-Fried",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": false,
+          "top3": [
+            {
+              "document_id": "doc_0053",
+              "chunk_id": "doc_0053_chunk_0",
+              "citation_id": 9,
+              "source": "The Verge",
+              "title": "The jury finally hears from Sam Bankman-Fried",
+              "score": -2.5443,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0293",
+              "chunk_id": "doc_0293_chunk_9",
+              "citation_id": 6,
+              "source": "The Verge",
+              "title": "How is it still getting worse for Sam Bankman-Fried?",
+              "score": -4.1763,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0031",
+              "chunk_id": "doc_0031_chunk_2",
+              "citation_id": 3,
+              "source": "Fortune",
+              "title": "Is Sam Bankman-Fried a bad ‘man’ or a good ‘boy’? Lawyers swap opening statements before first witnesses take the stand",
+              "score": -5.1517,
+              "is_gold_document": true
+            }
+          ]
+        },
+        {
+          "requirement": "all while facing allegations of committing fraud for personal gain",
+          "critical_terms": [],
+          "required_critical_coverage": 0.0,
+          "best_score": -4.0951,
+          "second_score": -4.127,
+          "score_margin": 0.0318,
+          "best_document_id": "doc_0053",
+          "best_chunk_id": "doc_0053_chunk_0",
+          "best_source": "The Verge",
+          "best_title": "The jury finally hears from Sam Bankman-Fried",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": false,
+          "top3": [
+            {
+              "document_id": "doc_0053",
+              "chunk_id": "doc_0053_chunk_0",
+              "citation_id": 9,
+              "source": "The Verge",
+              "title": "The jury finally hears from Sam Bankman-Fried",
+              "score": -4.0951,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0226",
+              "chunk_id": "doc_0226_chunk_7",
+              "citation_id": 1,
+              "source": "Cnbc | World Business News Leader",
+              "title": "Sex, Signal messages, and sabotaging FTX's code: SBF execs and Bahamas roommates tell all in court",
+              "score": -4.127,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0086",
+              "chunk_id": "doc_0086_chunk_5",
+              "citation_id": 10,
+              "source": "The Verge",
+              "title": "Sam Bankman-Fried was a terrible boyfriend",
+              "score": -4.5142,
+              "is_gold_document": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eval_5cd0e3b824db",
+      "question": "Which company, covered by The Verge and TechCrunch, has influenced the internet's appearance, local search result rankings, and is accused of harming news publishers' bottom lines through its practices?",
+      "question_type": "inference_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Google",
+      "gold_document_ids": [
+        "doc_0127",
+        "doc_0115",
+        "doc_0033"
+      ],
+      "context_document_ids": [
+        "doc_0033",
+        "doc_0115",
+        "doc_0076",
+        "doc_0032",
+        "doc_0237",
+        "doc_0026",
+        "doc_0608",
+        "doc_0015",
+        "doc_0170"
+      ],
+      "context_gold_recall": 0.6666666666666666,
+      "context_gold_complete": false,
+      "v2_sufficient": false,
+      "v2_score": 0.7395,
+      "v2_query_term_coverage": 0.5263,
+      "requirement_count": 1,
+      "requirement_mean_best_score": 0.6711,
+      "requirement_min_best_score": 0.6711,
+      "requirement_median_best_score": 0.6711,
+      "requirement_max_best_score": 0.6711,
+      "mean_top1_top2_margin": 3.4862,
+      "anchor_ok_fraction": 0.0,
+      "best_document_gold_fraction": 1.0,
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "requirements": [
+        {
+          "requirement": "covered by The Verge and TechCrunch is accused of harming news publishers' bottom lines through its practices",
+          "critical_terms": [
+            "techcrunch",
+            "verge"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": 0.6711,
+          "second_score": -2.8151,
+          "score_margin": 3.4862,
+          "best_document_id": "doc_0033",
+          "best_chunk_id": "doc_0033_chunk_0",
+          "best_source": "TechCrunch",
+          "best_title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+          "best_critical_coverage": 0.5,
+          "best_anchor_ok": false,
+          "best_document_is_gold": true,
+          "top3": [
+            {
+              "document_id": "doc_0033",
+              "chunk_id": "doc_0033_chunk_0",
+              "citation_id": 1,
+              "source": "TechCrunch",
+              "title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+              "score": 0.6711,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0608",
+              "chunk_id": "doc_0608_chunk_3",
+              "citation_id": 7,
+              "source": "TechCrunch",
+              "title": "Meta to offer ad-free subscription in Europe in bid to keep tracking other users",
+              "score": -2.8151,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0170",
+              "chunk_id": "doc_0170_chunk_5",
+              "citation_id": 9,
+              "source": "The Verge",
+              "title": "Tim Sweeney on Epic’s victory royale over Google",
+              "score": -3.3011,
+              "is_gold_document": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eval_c5a0d98021ee",
+      "question": "Which organization, discussed in articles from 'The Roar | Sports Writers Blog', is likely to receive support from Super Rugby franchises for a potential coaching appointment and is also being encouraged to reinstate annual funding of $1.7 million to these franchises?",
+      "question_type": "inference_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Rugby Australia",
+      "gold_document_ids": [
+        "doc_0493",
+        "doc_0492"
+      ],
+      "context_document_ids": [
+        "doc_0492",
+        "doc_0316",
+        "doc_0493",
+        "doc_0108",
+        "doc_0545",
+        "doc_0344",
+        "doc_0407",
+        "doc_0008"
+      ],
+      "context_gold_recall": 1.0,
+      "context_gold_complete": true,
+      "v2_sufficient": true,
+      "v2_score": 0.85,
+      "v2_query_term_coverage": 0.7273,
+      "requirement_count": 2,
+      "requirement_mean_best_score": 4.7886,
+      "requirement_min_best_score": 2.0178,
+      "requirement_median_best_score": 4.7886,
+      "requirement_max_best_score": 7.5594,
+      "mean_top1_top2_margin": 5.1721,
+      "anchor_ok_fraction": 1.0,
+      "best_document_gold_fraction": 1.0,
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "requirements": [
+        {
+          "requirement": "discussed in articles from 'The Roar | Sports Writers Blog'",
+          "critical_terms": [
+            "blog",
+            "roar",
+            "sports",
+            "writers"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": 2.0178,
+          "second_score": 1.8667,
+          "score_margin": 0.1512,
+          "best_document_id": "doc_0492",
+          "best_chunk_id": "doc_0492_chunk_0",
+          "best_source": "The Roar | Sports Writers Blog",
+          "best_title": "‘Right people in right roles’: QRU breaks silence on RA’s reform hopes, backs review into Wallabies’ RWC flop",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": true,
+          "top3": [
+            {
+              "document_id": "doc_0492",
+              "chunk_id": "doc_0492_chunk_0",
+              "citation_id": 1,
+              "source": "The Roar | Sports Writers Blog",
+              "title": "‘Right people in right roles’: QRU breaks silence on RA’s reform hopes, backs review into Wallabies’ RWC flop",
+              "score": 2.0178,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0493",
+              "chunk_id": "doc_0493_chunk_2",
+              "citation_id": 3,
+              "source": "The Roar | Sports Writers Blog",
+              "title": "RA set to announce local as high-performance director – and how it could help land Schmidt as Wallabies coach",
+              "score": 1.8667,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0407",
+              "chunk_id": "doc_0407_chunk_1",
+              "citation_id": 7,
+              "source": "The Roar | Sports Writers Blog",
+              "title": "Eddie Jones says he needs to ‘give myself an uppercut’ but ‘100 percent’ committed to coaching Wallabies",
+              "score": 1.7492,
+              "is_gold_document": false
+            }
+          ]
+        },
+        {
+          "requirement": "is likely to receive support from Super Rugby franchises for a potential coaching appointment and is also being encouraged to reinstate annual funding of $1.7 million to these franchises",
+          "critical_terms": [
+            "rugby",
+            "super"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": 7.5594,
+          "second_score": -2.6336,
+          "score_margin": 10.193,
+          "best_document_id": "doc_0492",
+          "best_chunk_id": "doc_0492_chunk_0",
+          "best_source": "The Roar | Sports Writers Blog",
+          "best_title": "‘Right people in right roles’: QRU breaks silence on RA’s reform hopes, backs review into Wallabies’ RWC flop",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": true,
+          "top3": [
+            {
+              "document_id": "doc_0492",
+              "chunk_id": "doc_0492_chunk_0",
+              "citation_id": 1,
+              "source": "The Roar | Sports Writers Blog",
+              "title": "‘Right people in right roles’: QRU breaks silence on RA’s reform hopes, backs review into Wallabies’ RWC flop",
+              "score": 7.5594,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0493",
+              "chunk_id": "doc_0493_chunk_2",
+              "citation_id": 3,
+              "source": "The Roar | Sports Writers Blog",
+              "title": "RA set to announce local as high-performance director – and how it could help land Schmidt as Wallabies coach",
+              "score": -2.6336,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0108",
+              "chunk_id": "doc_0108_chunk_9",
+              "citation_id": 4,
+              "source": "The New York Times",
+              "title": "How U.S. Women’s Soccer Team Lured Emma Hayes Away From Chelsea",
+              "score": -5.8035,
+              "is_gold_document": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eval_ff33914e9156",
+      "question": "Which leading AI development company, known as the generative AI poster child behind ChatGPT and mentioned by TechCrunch, is expected to release GPT-4 with vision alongside the launch of GPT-4 Turbo API?",
+      "question_type": "inference_query",
+      "router_query_type": "multihop",
+      "gold_answer": "OpenAI",
+      "gold_document_ids": [
+        "doc_0117",
+        "doc_0054",
+        "doc_0048"
+      ],
+      "context_document_ids": [
+        "doc_0048",
+        "doc_0047",
+        "doc_0525",
+        "doc_0116",
+        "doc_0099",
+        "doc_0516",
+        "doc_0054"
+      ],
+      "context_gold_recall": 0.6666666666666666,
+      "context_gold_complete": false,
+      "v2_sufficient": true,
+      "v2_score": 0.8625,
+      "v2_query_term_coverage": 0.75,
+      "requirement_count": 2,
+      "requirement_mean_best_score": 5.2386,
+      "requirement_min_best_score": 1.679,
+      "requirement_median_best_score": 5.2386,
+      "requirement_max_best_score": 8.7983,
+      "mean_top1_top2_margin": 2.3042,
+      "anchor_ok_fraction": 1.0,
+      "best_document_gold_fraction": 0.5,
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "requirements": [
+        {
+          "requirement": "Which leading AI development company known as the generative AI poster child behind ChatGPT and mentioned by TechCrunch",
+          "critical_terms": [
+            "ai",
+            "chatgpt",
+            "techcrunch"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": 8.7983,
+          "second_score": 6.2185,
+          "score_margin": 2.5797,
+          "best_document_id": "doc_0054",
+          "best_chunk_id": "doc_0054_chunk_0",
+          "best_source": "TechCrunch",
+          "best_title": "How the OpenAI fiasco could bolster Meta and the ‘open AI’ movement",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": true,
+          "top3": [
+            {
+              "document_id": "doc_0054",
+              "chunk_id": "doc_0054_chunk_0",
+              "citation_id": 7,
+              "source": "TechCrunch",
+              "title": "How the OpenAI fiasco could bolster Meta and the ‘open AI’ movement",
+              "score": 8.7983,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0516",
+              "chunk_id": "doc_0516_chunk_0",
+              "citation_id": 6,
+              "source": "TechCrunch",
+              "title": "Sam Altman ousted as OpenAI’s CEO",
+              "score": 6.2185,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0525",
+              "chunk_id": "doc_0525_chunk_1",
+              "citation_id": 3,
+              "source": "TechCrunch",
+              "title": "EU says incoming rules for general purpose AIs can evolve over time",
+              "score": 5.0597,
+              "is_gold_document": false
+            }
+          ]
+        },
+        {
+          "requirement": "is expected to release GPT-4 with vision alongside the launch of GPT-4 Turbo API",
+          "critical_terms": [
+            "api",
+            "gpt-4",
+            "turbo"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": 1.679,
+          "second_score": -0.3497,
+          "score_margin": 2.0287,
+          "best_document_id": "doc_0116",
+          "best_chunk_id": "doc_0116_chunk_1",
+          "best_source": "TechCrunch",
+          "best_title": "OpenAI hosts a dev day, TechCrunch reviews the M3 iMac and MacBook Pro, and Bumble gets a new CEO",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": false,
+          "top3": [
+            {
+              "document_id": "doc_0116",
+              "chunk_id": "doc_0116_chunk_1",
+              "citation_id": 4,
+              "source": "TechCrunch",
+              "title": "OpenAI hosts a dev day, TechCrunch reviews the M3 iMac and MacBook Pro, and Bumble gets a new CEO",
+              "score": 1.679,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0048",
+              "chunk_id": "doc_0048_chunk_45",
+              "citation_id": 1,
+              "source": "TechCrunch",
+              "title": "ChatGPT: Everything you need to know about the AI-powered chatbot",
+              "score": -0.3497,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0525",
+              "chunk_id": "doc_0525_chunk_1",
+              "citation_id": 3,
+              "source": "TechCrunch",
+              "title": "EU says incoming rules for general purpose AIs can evolve over time",
+              "score": -2.2006,
+              "is_gold_document": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eval_1e7d390adde0",
+      "question": "Does the article from The Verge suggest that Google's influence on the internet's appearance is a different aspect of its impact compared to the financial influence on platforms described in the TechCrunch article about Google's spending, and is the anticompetitive behavior towards news publishers mentioned in another TechCrunch article a separate issue from these influences?",
+      "question_type": "comparison_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Yes",
+      "gold_document_ids": [
+        "doc_0115",
+        "doc_0015",
+        "doc_0033"
+      ],
+      "context_document_ids": [
+        "doc_0033",
+        "doc_0115",
+        "doc_0032",
+        "doc_0237",
+        "doc_0015",
+        "doc_0299",
+        "doc_0042"
+      ],
+      "context_gold_recall": 1.0,
+      "context_gold_complete": true,
+      "v2_sufficient": false,
+      "v2_score": 0.7556,
+      "v2_query_term_coverage": 0.5556,
+      "requirement_count": 2,
+      "requirement_mean_best_score": 0.4755,
+      "requirement_min_best_score": -0.5526,
+      "requirement_median_best_score": 0.4755,
+      "requirement_max_best_score": 1.5036,
+      "mean_top1_top2_margin": 2.0563,
+      "anchor_ok_fraction": 1.0,
+      "best_document_gold_fraction": 0.5,
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "requirements": [
+        {
+          "requirement": "Does the article from The Verge suggest that Google's influence on the internet's appearance is a different aspect of its impact compared to the financial influence on platforms described in the TechCrunch article about Google's spending",
+          "critical_terms": [
+            "google",
+            "techcrunch",
+            "verge"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": -0.5526,
+          "second_score": -1.0917,
+          "score_margin": 0.5391,
+          "best_document_id": "doc_0237",
+          "best_chunk_id": "doc_0237_chunk_1",
+          "best_source": "TechCrunch",
+          "best_title": "5 things we learned so far about the Google antitrust case",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": false,
+          "top3": [
+            {
+              "document_id": "doc_0237",
+              "chunk_id": "doc_0237_chunk_1",
+              "citation_id": 4,
+              "source": "TechCrunch",
+              "title": "5 things we learned so far about the Google antitrust case",
+              "score": -0.5526,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0115",
+              "chunk_id": "doc_0115_chunk_61",
+              "citation_id": 2,
+              "source": "The Verge",
+              "title": "The people who ruined the internet",
+              "score": -1.0917,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0299",
+              "chunk_id": "doc_0299_chunk_4",
+              "citation_id": 6,
+              "source": "The Verge",
+              "title": "The Epic v. Google trial may come down to simple v. complicated",
+              "score": -2.851,
+              "is_gold_document": false
+            }
+          ]
+        },
+        {
+          "requirement": "is the anticompetitive behavior towards news publishers mentioned in another TechCrunch article a separate issue from these influences",
+          "critical_terms": [
+            "techcrunch"
+          ],
+          "required_critical_coverage": 1.0,
+          "best_score": 1.5036,
+          "second_score": -2.0699,
+          "score_margin": 3.5735,
+          "best_document_id": "doc_0033",
+          "best_chunk_id": "doc_0033_chunk_0",
+          "best_source": "TechCrunch",
+          "best_title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": true,
+          "top3": [
+            {
+              "document_id": "doc_0033",
+              "chunk_id": "doc_0033_chunk_0",
+              "citation_id": 1,
+              "source": "TechCrunch",
+              "title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+              "score": 1.5036,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0042",
+              "chunk_id": "doc_0042_chunk_0",
+              "citation_id": 7,
+              "source": "TechCrunch",
+              "title": "What to know about Fortnite maker Epic Games’ antitrust battle with Google, starting today",
+              "score": -2.0699,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0015",
+              "chunk_id": "doc_0015_chunk_1",
+              "citation_id": 5,
+              "source": "TechCrunch",
+              "title": "More from the US v Google trial: vertical search, pre-installs and the case of Firefox/Yahoo",
+              "score": -2.901,
+              "is_gold_document": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eval_4e23afea1f81",
+      "question": "Does the article from Wired suggest that Sony headphones offer the best value in their class during the Walmart Cyber Monday Deals, while the article from Music Business Worldwide indicates that Artists are seeking deals that offer more control and better economics, or do both articles suggest a common trend in seeking value and control in their respective fields?",
+      "question_type": "comparison_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Yes",
+      "gold_document_ids": [
+        "doc_0320",
+        "doc_0211"
+      ],
+      "context_document_ids": [
+        "doc_0404",
+        "doc_0455",
+        "doc_0595",
+        "doc_0320",
+        "doc_0584",
+        "doc_0211",
+        "doc_0250",
+        "doc_0369",
+        "doc_0558",
+        "doc_0222"
+      ],
+      "context_gold_recall": 1.0,
+      "context_gold_complete": true,
+      "v2_sufficient": true,
+      "v2_score": 0.835,
+      "v2_query_term_coverage": 0.7,
+      "requirement_count": 3,
+      "requirement_mean_best_score": 0.5795,
+      "requirement_min_best_score": -7.3217,
+      "requirement_median_best_score": 0.5015,
+      "requirement_max_best_score": 8.5586,
+      "mean_top1_top2_margin": 5.2323,
+      "anchor_ok_fraction": 1.0,
+      "best_document_gold_fraction": 1.0,
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "requirements": [
+        {
+          "requirement": "Does the article from Wired suggest that Sony headphones offer the best value in their class during the Walmart Cyber Monday Deals",
+          "critical_terms": [
+            "cyber",
+            "deals",
+            "monday",
+            "sony",
+            "walmart",
+            "wired"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": 0.5015,
+          "second_score": -2.4035,
+          "score_margin": 2.905,
+          "best_document_id": "doc_0320",
+          "best_chunk_id": "doc_0320_chunk_0",
+          "best_source": "Wired",
+          "best_title": "These Are Our Favorite Walmart Cyber Monday Deals",
+          "best_critical_coverage": 0.8333,
+          "best_anchor_ok": true,
+          "best_document_is_gold": true,
+          "top3": [
+            {
+              "document_id": "doc_0320",
+              "chunk_id": "doc_0320_chunk_0",
+              "citation_id": 4,
+              "source": "Wired",
+              "title": "These Are Our Favorite Walmart Cyber Monday Deals",
+              "score": 0.5015,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0222",
+              "chunk_id": "doc_0222_chunk_33",
+              "citation_id": 10,
+              "source": "Engadget",
+              "title": "The 53 best Black Friday deals we could find at Amazon, Walmart, Target and more",
+              "score": -2.4035,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0558",
+              "chunk_id": "doc_0558_chunk_3",
+              "citation_id": 9,
+              "source": "Mashable",
+              "title": "Shop 200+ Walmart doorbuster deals for Black Friday",
+              "score": -3.2588,
+              "is_gold_document": false
+            }
+          ]
+        },
+        {
+          "requirement": "the article from Music Business Worldwide indicates that Artists are seeking deals that offer more control and better economics",
+          "critical_terms": [
+            "artists",
+            "business",
+            "music",
+            "worldwide"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": 8.5586,
+          "second_score": -1.3814,
+          "score_margin": 9.94,
+          "best_document_id": "doc_0211",
+          "best_chunk_id": "doc_0211_chunk_9",
+          "best_source": "Music Business Worldwide",
+          "best_title": "‘Latin artists have been paving the way for deals that offer more control, transparency, and better economics.’",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": true,
+          "top3": [
+            {
+              "document_id": "doc_0211",
+              "chunk_id": "doc_0211_chunk_9",
+              "citation_id": 6,
+              "source": "Music Business Worldwide",
+              "title": "‘Latin artists have been paving the way for deals that offer more control, transparency, and better economics.’",
+              "score": 8.5586,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0455",
+              "chunk_id": "doc_0455_chunk_0",
+              "citation_id": 2,
+              "source": "Music Business Worldwide",
+              "title": "Warner Music Group boss Robert Kyncl on AI, why labels still exist, and 2 other things we learned from his Q&A at the Code Conference",
+              "score": -1.3814,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0369",
+              "chunk_id": "doc_0369_chunk_23",
+              "citation_id": 8,
+              "source": "The Verge",
+              "title": "Here are the best deals on headphones and wireless earbuds we could find",
+              "score": -9.2692,
+              "is_gold_document": false
+            }
+          ]
+        },
+        {
+          "requirement": "or do both articles suggest a common trend in seeking value and control in their respective fields",
+          "critical_terms": [],
+          "required_critical_coverage": 0.0,
+          "best_score": -7.3217,
+          "second_score": -10.1736,
+          "score_margin": 2.8519,
+          "best_document_id": "doc_0211",
+          "best_chunk_id": "doc_0211_chunk_9",
+          "best_source": "Music Business Worldwide",
+          "best_title": "‘Latin artists have been paving the way for deals that offer more control, transparency, and better economics.’",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": true,
+          "top3": [
+            {
+              "document_id": "doc_0211",
+              "chunk_id": "doc_0211_chunk_9",
+              "citation_id": 6,
+              "source": "Music Business Worldwide",
+              "title": "‘Latin artists have been paving the way for deals that offer more control, transparency, and better economics.’",
+              "score": -7.3217,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0455",
+              "chunk_id": "doc_0455_chunk_0",
+              "citation_id": 2,
+              "source": "Music Business Worldwide",
+              "title": "Warner Music Group boss Robert Kyncl on AI, why labels still exist, and 2 other things we learned from his Q&A at the Code Conference",
+              "score": -10.1736,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0320",
+              "chunk_id": "doc_0320_chunk_0",
+              "citation_id": 4,
+              "source": "Wired",
+              "title": "These Are Our Favorite Walmart Cyber Monday Deals",
+              "score": -10.1874,
+              "is_gold_document": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eval_5c7fab04046b",
+      "question": "Does 'The Guardian' article about the 'Everton team' suggest they are in a worse position in the Premier League compared to 'Bayern Munich' as discussed in another 'The Guardian' article, based on their respective league standings and points?",
+      "question_type": "comparison_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Yes",
+      "gold_document_ids": [
+        "doc_0092",
+        "doc_0093"
+      ],
+      "context_document_ids": [
+        "doc_0315",
+        "doc_0300",
+        "doc_0542",
+        "doc_0093",
+        "doc_0092",
+        "doc_0541",
+        "doc_0012",
+        "doc_0370",
+        "doc_0352",
+        "doc_0546"
+      ],
+      "context_gold_recall": 1.0,
+      "context_gold_complete": true,
+      "v2_sufficient": true,
+      "v2_score": 0.7974,
+      "v2_query_term_coverage": 0.6316,
+      "requirement_count": 2,
+      "requirement_mean_best_score": -0.0847,
+      "requirement_min_best_score": -1.3719,
+      "requirement_median_best_score": -0.0847,
+      "requirement_max_best_score": 1.2026,
+      "mean_top1_top2_margin": 0.7769,
+      "anchor_ok_fraction": 0.5,
+      "best_document_gold_fraction": 0.0,
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "requirements": [
+        {
+          "requirement": "Does 'The Guardian' article about the 'Everton team' suggest they are in a worse position in the Premier League compared to 'Bayern Munich' as discussed in another 'The Guardian' article",
+          "critical_terms": [
+            "bayern",
+            "everton",
+            "guardian",
+            "league",
+            "munich",
+            "premier"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": 1.2026,
+          "second_score": 1.1711,
+          "score_margin": 0.0315,
+          "best_document_id": "doc_0542",
+          "best_chunk_id": "doc_0542_chunk_3",
+          "best_source": "The Guardian",
+          "best_title": "Liverpool enjoy home comforts but Dyche’s Everton offer derby danger | Andy Hunter",
+          "best_critical_coverage": 0.5,
+          "best_anchor_ok": false,
+          "best_document_is_gold": false,
+          "top3": [
+            {
+              "document_id": "doc_0542",
+              "chunk_id": "doc_0542_chunk_3",
+              "citation_id": 3,
+              "source": "The Guardian",
+              "title": "Liverpool enjoy home comforts but Dyche’s Everton offer derby danger | Andy Hunter",
+              "score": 1.2026,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0092",
+              "chunk_id": "doc_0092_chunk_7",
+              "citation_id": 5,
+              "source": "The Guardian",
+              "title": "Everton players and fans will be fired up by points penalty, asserts Sean Dyche",
+              "score": 1.1711,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0370",
+              "chunk_id": "doc_0370_chunk_3",
+              "citation_id": 8,
+              "source": "The Guardian",
+              "title": "Ten Hag’s Manchester United stand up and die at club stuck in the past tense | Barney Ronay",
+              "score": 0.1363,
+              "is_gold_document": false
+            }
+          ]
+        },
+        {
+          "requirement": "based on their respective league standings and points",
+          "critical_terms": [],
+          "required_critical_coverage": 0.0,
+          "best_score": -1.3719,
+          "second_score": -2.8941,
+          "score_margin": 1.5222,
+          "best_document_id": "doc_0315",
+          "best_chunk_id": "doc_0315_chunk_0",
+          "best_source": "Sporting News",
+          "best_title": "Man United next manager: Assessing candidates to replace Erik ten Hag if Red Devils sack Dutch boss",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": false,
+          "top3": [
+            {
+              "document_id": "doc_0315",
+              "chunk_id": "doc_0315_chunk_0",
+              "citation_id": 1,
+              "source": "Sporting News",
+              "title": "Man United next manager: Assessing candidates to replace Erik ten Hag if Red Devils sack Dutch boss",
+              "score": -1.3719,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0352",
+              "chunk_id": "doc_0352_chunk_0",
+              "citation_id": 9,
+              "source": "The Guardian",
+              "title": "European roundup: Bellingham helps Real Madrid go top while Bayern draw",
+              "score": -2.8941,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0012",
+              "chunk_id": "doc_0012_chunk_1",
+              "citation_id": 7,
+              "source": "TalkSport",
+              "title": "Leaky defence ‘isn’t good enough’ and ‘scars’ grow from throwing away leads – It’s all going wrong for Manchester United in Europe",
+              "score": -3.1665,
+              "is_gold_document": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eval_eb1a6bb45cb4",
+      "question": "Does the Fortune article suggest that Sam Bankman-Fried was responsible for the alleged deceit behind FTX's success, while the TechCrunch article focuses on Gary Wang and Caroline Ellison's admission of guilt to federal criminal charges in relation to the FTX collapse?",
+      "question_type": "comparison_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Yes",
+      "gold_document_ids": [
+        "doc_0031",
+        "doc_0010"
+      ],
+      "context_document_ids": [
+        "doc_0226",
+        "doc_0010",
+        "doc_0293",
+        "doc_0375",
+        "doc_0305",
+        "doc_0175",
+        "doc_0086",
+        "doc_0083",
+        "doc_0030",
+        "doc_0031"
+      ],
+      "context_gold_recall": 1.0,
+      "context_gold_complete": true,
+      "v2_sufficient": true,
+      "v2_score": 0.846,
+      "v2_query_term_coverage": 0.72,
+      "requirement_count": 2,
+      "requirement_mean_best_score": 5.0537,
+      "requirement_min_best_score": 2.2801,
+      "requirement_median_best_score": 5.0537,
+      "requirement_max_best_score": 7.8273,
+      "mean_top1_top2_margin": 3.5585,
+      "anchor_ok_fraction": 1.0,
+      "best_document_gold_fraction": 0.5,
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "requirements": [
+        {
+          "requirement": "Does the Fortune article suggest that Sam Bankman-Fried was responsible for the alleged deceit behind FTX's success",
+          "critical_terms": [
+            "bankman-fried",
+            "fortune",
+            "ftx",
+            "sam"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": 2.2801,
+          "second_score": 2.0114,
+          "score_margin": 0.2687,
+          "best_document_id": "doc_0293",
+          "best_chunk_id": "doc_0293_chunk_2",
+          "best_source": "The Verge",
+          "best_title": "How is it still getting worse for Sam Bankman-Fried?",
+          "best_critical_coverage": 0.75,
+          "best_anchor_ok": true,
+          "best_document_is_gold": false,
+          "top3": [
+            {
+              "document_id": "doc_0293",
+              "chunk_id": "doc_0293_chunk_2",
+              "citation_id": 3,
+              "source": "The Verge",
+              "title": "How is it still getting worse for Sam Bankman-Fried?",
+              "score": 2.2801,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0086",
+              "chunk_id": "doc_0086_chunk_1",
+              "citation_id": 7,
+              "source": "The Verge",
+              "title": "Sam Bankman-Fried was a terrible boyfriend",
+              "score": 2.0114,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0083",
+              "chunk_id": "doc_0083_chunk_6",
+              "citation_id": 8,
+              "source": "The Verge",
+              "title": "Sam Bankman-Fried didn’t ask where the $8 billion went",
+              "score": 1.8026,
+              "is_gold_document": false
+            }
+          ]
+        },
+        {
+          "requirement": "the TechCrunch article focuses on Gary Wang and Caroline Ellison's admission of guilt to federal criminal charges in relation to the FTX collapse",
+          "critical_terms": [
+            "caroline",
+            "ellison",
+            "ftx",
+            "gary",
+            "techcrunch",
+            "wang"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": 7.8273,
+          "second_score": 0.9789,
+          "score_margin": 6.8484,
+          "best_document_id": "doc_0010",
+          "best_chunk_id": "doc_0010_chunk_5",
+          "best_source": "TechCrunch",
+          "best_title": "SBF’s trial starts soon, but how did he — and FTX — get here?",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": true,
+          "top3": [
+            {
+              "document_id": "doc_0010",
+              "chunk_id": "doc_0010_chunk_5",
+              "citation_id": 2,
+              "source": "TechCrunch",
+              "title": "SBF’s trial starts soon, but how did he — and FTX — get here?",
+              "score": 7.8273,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0226",
+              "chunk_id": "doc_0226_chunk_1",
+              "citation_id": 1,
+              "source": "Cnbc | World Business News Leader",
+              "title": "Sex, Signal messages, and sabotaging FTX's code: SBF execs and Bahamas roommates tell all in court",
+              "score": 0.9789,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0030",
+              "chunk_id": "doc_0030_chunk_0",
+              "citation_id": 9,
+              "source": "TechCrunch",
+              "title": "SBF, riding high on FTX, reportedly offered $5B to Trump to cancel President re-run",
+              "score": -1.1617,
+              "is_gold_document": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eval_f3e9235ece5a",
+      "question": "Does the Mashable article suggest that Amazon's Cyber Monday includes both continued and new deals, while The Sydney Morning Herald article focuses on the impact of an antitrust lawsuit on Amazon's stock price, and the Cnbc | World Business News Leader article discusses the opportunity of selling on Amazon, without mentioning any legal or promotional events?",
+      "question_type": "comparison_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Yes",
+      "gold_document_ids": [
+        "doc_0000",
+        "doc_0001",
+        "doc_0002"
+      ],
+      "context_document_ids": [
+        "doc_0000",
+        "doc_0002",
+        "doc_0338",
+        "doc_0222",
+        "doc_0091",
+        "doc_0520",
+        "doc_0574",
+        "doc_0584",
+        "doc_0558",
+        "doc_0001"
+      ],
+      "context_gold_recall": 1.0,
+      "context_gold_complete": true,
+      "v2_sufficient": true,
+      "v2_score": 0.8221,
+      "v2_query_term_coverage": 0.6765,
+      "requirement_count": 4,
+      "requirement_mean_best_score": 2.1663,
+      "requirement_min_best_score": -3.5087,
+      "requirement_median_best_score": 3.492,
+      "requirement_max_best_score": 5.1899,
+      "mean_top1_top2_margin": 5.0957,
+      "anchor_ok_fraction": 1.0,
+      "best_document_gold_fraction": 0.75,
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "requirements": [
+        {
+          "requirement": "Does the Mashable article suggest that Amazon's Cyber Monday includes both continued and new deals",
+          "critical_terms": [
+            "amazon",
+            "cyber",
+            "mashable",
+            "monday"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": 3.2534,
+          "second_score": -2.1425,
+          "score_margin": 5.3959,
+          "best_document_id": "doc_0000",
+          "best_chunk_id": "doc_0000_chunk_1",
+          "best_source": "Mashable",
+          "best_title": "200+ of the best deals from Amazon's Cyber Monday sale",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": true,
+          "top3": [
+            {
+              "document_id": "doc_0000",
+              "chunk_id": "doc_0000_chunk_1",
+              "citation_id": 1,
+              "source": "Mashable",
+              "title": "200+ of the best deals from Amazon's Cyber Monday sale",
+              "score": 3.2534,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0574",
+              "chunk_id": "doc_0574_chunk_0",
+              "citation_id": 7,
+              "source": "Polygon",
+              "title": "How to tackle Black Friday shopping like a boss",
+              "score": -2.1425,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0520",
+              "chunk_id": "doc_0520_chunk_88",
+              "citation_id": 6,
+              "source": "Wired",
+              "title": "78 Absolute Best October Prime Day Deals (2023)",
+              "score": -3.4591,
+              "is_gold_document": false
+            }
+          ]
+        },
+        {
+          "requirement": "The Sydney Morning Herald article focuses on the impact of an antitrust lawsuit on Amazon's stock price",
+          "critical_terms": [
+            "amazon",
+            "herald",
+            "morning",
+            "sydney"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": 3.7306,
+          "second_score": -1.7245,
+          "score_margin": 5.4551,
+          "best_document_id": "doc_0001",
+          "best_chunk_id": "doc_0001_chunk_6",
+          "best_source": "The Sydney Morning Herald",
+          "best_title": "ASX set to drop as Wall Street’s September slump deepens",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": true,
+          "top3": [
+            {
+              "document_id": "doc_0001",
+              "chunk_id": "doc_0001_chunk_6",
+              "citation_id": 10,
+              "source": "The Sydney Morning Herald",
+              "title": "ASX set to drop as Wall Street’s September slump deepens",
+              "score": 3.7306,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0002",
+              "chunk_id": "doc_0002_chunk_7",
+              "citation_id": 2,
+              "source": "Cnbc | World Business News Leader",
+              "title": "Amazon sellers sound off on the FTC's 'long-overdue' antitrust case",
+              "score": -1.7245,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0338",
+              "chunk_id": "doc_0338_chunk_9",
+              "citation_id": 3,
+              "source": "Seeking Alpha",
+              "title": "Earnings week ahead: Amazon, Microsoft, Alphabet, Meta, Ford, GM and more",
+              "score": -1.997,
+              "is_gold_document": false
+            }
+          ]
+        },
+        {
+          "requirement": "the Cnbc | World Business News Leader article discusses the opportunity of selling on Amazon",
+          "critical_terms": [
+            "amazon",
+            "business",
+            "cnbc",
+            "leader",
+            "world"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": 5.1899,
+          "second_score": -2.8429,
+          "score_margin": 8.0328,
+          "best_document_id": "doc_0002",
+          "best_chunk_id": "doc_0002_chunk_7",
+          "best_source": "Cnbc | World Business News Leader",
+          "best_title": "Amazon sellers sound off on the FTC's 'long-overdue' antitrust case",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": true,
+          "top3": [
+            {
+              "document_id": "doc_0002",
+              "chunk_id": "doc_0002_chunk_7",
+              "citation_id": 2,
+              "source": "Cnbc | World Business News Leader",
+              "title": "Amazon sellers sound off on the FTC's 'long-overdue' antitrust case",
+              "score": 5.1899,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0338",
+              "chunk_id": "doc_0338_chunk_9",
+              "citation_id": 3,
+              "source": "Seeking Alpha",
+              "title": "Earnings week ahead: Amazon, Microsoft, Alphabet, Meta, Ford, GM and more",
+              "score": -2.8429,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0001",
+              "chunk_id": "doc_0001_chunk_6",
+              "citation_id": 10,
+              "source": "The Sydney Morning Herald",
+              "title": "ASX set to drop as Wall Street’s September slump deepens",
+              "score": -3.6807,
+              "is_gold_document": true
+            }
+          ]
+        },
+        {
+          "requirement": "without mentioning any legal or promotional events",
+          "critical_terms": [],
+          "required_critical_coverage": 0.0,
+          "best_score": -3.5087,
+          "second_score": -5.0079,
+          "score_margin": 1.4992,
+          "best_document_id": "doc_0338",
+          "best_chunk_id": "doc_0338_chunk_9",
+          "best_source": "Seeking Alpha",
+          "best_title": "Earnings week ahead: Amazon, Microsoft, Alphabet, Meta, Ford, GM and more",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": false,
+          "top3": [
+            {
+              "document_id": "doc_0338",
+              "chunk_id": "doc_0338_chunk_9",
+              "citation_id": 3,
+              "source": "Seeking Alpha",
+              "title": "Earnings week ahead: Amazon, Microsoft, Alphabet, Meta, Ford, GM and more",
+              "score": -3.5087,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0001",
+              "chunk_id": "doc_0001_chunk_6",
+              "citation_id": 10,
+              "source": "The Sydney Morning Herald",
+              "title": "ASX set to drop as Wall Street’s September slump deepens",
+              "score": -5.0079,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0520",
+              "chunk_id": "doc_0520_chunk_88",
+              "citation_id": 6,
+              "source": "Wired",
+              "title": "78 Absolute Best October Prime Day Deals (2023)",
+              "score": -6.3597,
+              "is_gold_document": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eval_093af83d0219",
+      "question": "Between the report from 'The Roar | Sports Writers Blog' on October 19, 2023, detailing the Tasmania JackJumpers' lead over the Sydney Kings, and the update from 'Sporting News' on October 31, 2023, about the Texas Rangers' lead over the Arizona Diamondbacks, which news source reported a larger point/lead difference in a game, 'The Roar | Sports Writers Blog' or 'Sporting News'?",
+      "question_type": "temporal_query",
+      "router_query_type": "complex",
+      "gold_answer": "The Roar | Sports Writers Blog",
+      "gold_document_ids": [
+        "doc_0406",
+        "doc_0408"
+      ],
+      "context_document_ids": [
+        "doc_0406",
+        "doc_0495",
+        "doc_0408",
+        "doc_0240",
+        "doc_0512",
+        "doc_0505",
+        "doc_0492",
+        "doc_0180"
+      ],
+      "context_gold_recall": 1.0,
+      "context_gold_complete": true,
+      "v2_sufficient": true,
+      "v2_score": 0.8581,
+      "v2_query_term_coverage": 0.7419,
+      "requirement_count": 4,
+      "requirement_mean_best_score": 2.5057,
+      "requirement_min_best_score": -0.8156,
+      "requirement_median_best_score": 1.7336,
+      "requirement_max_best_score": 7.3713,
+      "mean_top1_top2_margin": 2.2749,
+      "anchor_ok_fraction": 1.0,
+      "best_document_gold_fraction": 0.25,
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "requirements": [
+        {
+          "requirement": "Between the report from 'The Roar | Sports Writers Blog' on October 19",
+          "critical_terms": [
+            "blog",
+            "roar",
+            "sports",
+            "writers"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": -0.8156,
+          "second_score": -1.0461,
+          "score_margin": 0.2304,
+          "best_document_id": "doc_0240",
+          "best_chunk_id": "doc_0240_chunk_4",
+          "best_source": "The Roar | Sports Writers Blog",
+          "best_title": "NBL Round 5: Harvey hits Hail Mary for Hawks to topple Taipans at the buzzer, Cheatham injured as Sixers upset Breakers",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": false,
+          "top3": [
+            {
+              "document_id": "doc_0240",
+              "chunk_id": "doc_0240_chunk_4",
+              "citation_id": 4,
+              "source": "The Roar | Sports Writers Blog",
+              "title": "NBL Round 5: Harvey hits Hail Mary for Hawks to topple Taipans at the buzzer, Cheatham injured as Sixers upset Breakers",
+              "score": -0.8156,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0406",
+              "chunk_id": "doc_0406_chunk_0",
+              "citation_id": 1,
+              "source": "The Roar | Sports Writers Blog",
+              "title": "NBL Round 4: Creek pours in points as Phoenix swamp Sixers, CJ claims Kings didn’t look after DJ",
+              "score": -1.0461,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0492",
+              "chunk_id": "doc_0492_chunk_7",
+              "citation_id": 7,
+              "source": "The Roar | Sports Writers Blog",
+              "title": "‘Right people in right roles’: QRU breaks silence on RA’s reform hopes, backs review into Wallabies’ RWC flop",
+              "score": -1.5016,
+              "is_gold_document": false
+            }
+          ]
+        },
+        {
+          "requirement": "detailing the Tasmania JackJumpers' lead over the Sydney Kings",
+          "critical_terms": [
+            "jackjumpers",
+            "kings",
+            "sydney",
+            "tasmania"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": 7.3713,
+          "second_score": 1.523,
+          "score_margin": 5.8483,
+          "best_document_id": "doc_0406",
+          "best_chunk_id": "doc_0406_chunk_0",
+          "best_source": "The Roar | Sports Writers Blog",
+          "best_title": "NBL Round 4: Creek pours in points as Phoenix swamp Sixers, CJ claims Kings didn’t look after DJ",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": true,
+          "top3": [
+            {
+              "document_id": "doc_0406",
+              "chunk_id": "doc_0406_chunk_0",
+              "citation_id": 1,
+              "source": "The Roar | Sports Writers Blog",
+              "title": "NBL Round 4: Creek pours in points as Phoenix swamp Sixers, CJ claims Kings didn’t look after DJ",
+              "score": 7.3713,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0240",
+              "chunk_id": "doc_0240_chunk_4",
+              "citation_id": 4,
+              "source": "The Roar | Sports Writers Blog",
+              "title": "NBL Round 5: Harvey hits Hail Mary for Hawks to topple Taipans at the buzzer, Cheatham injured as Sixers upset Breakers",
+              "score": 1.523,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0495",
+              "chunk_id": "doc_0495_chunk_1",
+              "citation_id": 2,
+              "source": "Sporting News",
+              "title": "World Series 2023 live score: Rangers vs. Diamondbacks updates, highlights, results from Game 3",
+              "score": -8.1026,
+              "is_gold_document": false
+            }
+          ]
+        },
+        {
+          "requirement": "the update from 'Sporting News' on October 31",
+          "critical_terms": [
+            "sporting"
+          ],
+          "required_critical_coverage": 1.0,
+          "best_score": -0.3529,
+          "second_score": -2.9049,
+          "score_margin": 2.552,
+          "best_document_id": "doc_0180",
+          "best_chunk_id": "doc_0180_chunk_0",
+          "best_source": "Sporting News",
+          "best_title": "Michigan sign-stealing scandal news: Latest updates on possible Jim Harbaugh suspension from NCAA cheating investigation",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": false,
+          "top3": [
+            {
+              "document_id": "doc_0180",
+              "chunk_id": "doc_0180_chunk_0",
+              "citation_id": 8,
+              "source": "Sporting News",
+              "title": "Michigan sign-stealing scandal news: Latest updates on possible Jim Harbaugh suspension from NCAA cheating investigation",
+              "score": -0.3529,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0495",
+              "chunk_id": "doc_0495_chunk_1",
+              "citation_id": 2,
+              "source": "Sporting News",
+              "title": "World Series 2023 live score: Rangers vs. Diamondbacks updates, highlights, results from Game 3",
+              "score": -2.9049,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0408",
+              "chunk_id": "doc_0408_chunk_0",
+              "citation_id": 3,
+              "source": "Sporting News",
+              "title": "World Series 2023 live score: Rangers vs. Diamondbacks updates, highlights, results from Game 4",
+              "score": -3.1316,
+              "is_gold_document": true
+            }
+          ]
+        },
+        {
+          "requirement": "about the Texas Rangers' lead over the Arizona Diamondbacks",
+          "critical_terms": [
+            "arizona",
+            "diamondbacks",
+            "rangers",
+            "texas"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": 3.8201,
+          "second_score": 3.3511,
+          "score_margin": 0.4689,
+          "best_document_id": "doc_0495",
+          "best_chunk_id": "doc_0495_chunk_1",
+          "best_source": "Sporting News",
+          "best_title": "World Series 2023 live score: Rangers vs. Diamondbacks updates, highlights, results from Game 3",
+          "best_critical_coverage": 0.75,
+          "best_anchor_ok": true,
+          "best_document_is_gold": false,
+          "top3": [
+            {
+              "document_id": "doc_0495",
+              "chunk_id": "doc_0495_chunk_1",
+              "citation_id": 2,
+              "source": "Sporting News",
+              "title": "World Series 2023 live score: Rangers vs. Diamondbacks updates, highlights, results from Game 3",
+              "score": 3.8201,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0408",
+              "chunk_id": "doc_0408_chunk_0",
+              "citation_id": 3,
+              "source": "Sporting News",
+              "title": "World Series 2023 live score: Rangers vs. Diamondbacks updates, highlights, results from Game 4",
+              "score": 3.3511,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0512",
+              "chunk_id": "doc_0512_chunk_6",
+              "citation_id": 5,
+              "source": "The Guardian",
+              "title": "World Series Game 2: Arizona Diamondbacks v Texas Rangers – live",
+              "score": 1.0199,
+              "is_gold_document": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eval_5f40fab8ea55",
+      "question": "Has the reporting style regarding live score updates and highlights from NFL games by Sporting News remained consistent between the article featuring \"Jaguars vs. Saints\" on October 19, 2023, and the one covering \"Chiefs vs. Packers\" on December 3, 2023, considering the excerpts mentioning a player achieving a first down?",
+      "question_type": "temporal_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Yes",
+      "gold_document_ids": [
+        "doc_0034",
+        "doc_0035"
+      ],
+      "context_document_ids": [
+        "doc_0035",
+        "doc_0034",
+        "doc_0294",
+        "doc_0489",
+        "doc_0439"
+      ],
+      "context_gold_recall": 1.0,
+      "context_gold_complete": true,
+      "v2_sufficient": false,
+      "v2_score": 0.7412,
+      "v2_query_term_coverage": 0.5294,
+      "requirement_count": 3,
+      "requirement_mean_best_score": 0.3026,
+      "requirement_min_best_score": -2.6203,
+      "requirement_median_best_score": -0.1641,
+      "requirement_max_best_score": 3.6921,
+      "mean_top1_top2_margin": 3.0973,
+      "anchor_ok_fraction": 1.0,
+      "best_document_gold_fraction": 0.6667,
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "requirements": [
+        {
+          "requirement": "Has the reporting style regarding live score updates and highlights from NFL games by Sporting News remained consistent between the article featuring \"Jaguars vs. Saints\" on October 19",
+          "critical_terms": [
+            "jaguars",
+            "nfl",
+            "saints",
+            "sporting"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": 3.6921,
+          "second_score": 0.8064,
+          "score_margin": 2.8857,
+          "best_document_id": "doc_0035",
+          "best_chunk_id": "doc_0035_chunk_2",
+          "best_source": "Sporting News",
+          "best_title": "Jaguars vs. Saints live score, updates, highlights from NFL 'Thursday Night Football' game",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": true,
+          "top3": [
+            {
+              "document_id": "doc_0035",
+              "chunk_id": "doc_0035_chunk_2",
+              "citation_id": 1,
+              "source": "Sporting News",
+              "title": "Jaguars vs. Saints live score, updates, highlights from NFL 'Thursday Night Football' game",
+              "score": 3.6921,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0439",
+              "chunk_id": "doc_0439_chunk_5",
+              "citation_id": 5,
+              "source": "Sporting News",
+              "title": "Jets vs. Raiders live score, updates, highlights from NFL 'Sunday Night Football' game",
+              "score": 0.8064,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0294",
+              "chunk_id": "doc_0294_chunk_24",
+              "citation_id": 3,
+              "source": "Sporting News",
+              "title": "Bills vs. Bengals live score, updates, highlights from NFL 'Sunday Night Football' game",
+              "score": -0.646,
+              "is_gold_document": false
+            }
+          ]
+        },
+        {
+          "requirement": "the one covering \"Chiefs vs. Packers\" on December 3",
+          "critical_terms": [
+            "chiefs",
+            "packers"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": -2.6203,
+          "second_score": -7.9933,
+          "score_margin": 5.3731,
+          "best_document_id": "doc_0034",
+          "best_chunk_id": "doc_0034_chunk_6",
+          "best_source": "Sporting News",
+          "best_title": "Chiefs vs. Packers live score, updates, highlights from NFL 'Sunday Night Football' game",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": true,
+          "top3": [
+            {
+              "document_id": "doc_0034",
+              "chunk_id": "doc_0034_chunk_6",
+              "citation_id": 2,
+              "source": "Sporting News",
+              "title": "Chiefs vs. Packers live score, updates, highlights from NFL 'Sunday Night Football' game",
+              "score": -2.6203,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0489",
+              "chunk_id": "doc_0489_chunk_16",
+              "citation_id": 4,
+              "source": "Sporting News",
+              "title": "Bears vs. Panthers live score, updates, highlights from NFL 'Thursday Night Football' game",
+              "score": -7.9933,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0294",
+              "chunk_id": "doc_0294_chunk_24",
+              "citation_id": 3,
+              "source": "Sporting News",
+              "title": "Bills vs. Bengals live score, updates, highlights from NFL 'Sunday Night Football' game",
+              "score": -9.0355,
+              "is_gold_document": false
+            }
+          ]
+        },
+        {
+          "requirement": "considering the excerpts mentioning a player achieving a first down",
+          "critical_terms": [],
+          "required_critical_coverage": 0.0,
+          "best_score": -0.1641,
+          "second_score": -1.1972,
+          "score_margin": 1.0331,
+          "best_document_id": "doc_0489",
+          "best_chunk_id": "doc_0489_chunk_16",
+          "best_source": "Sporting News",
+          "best_title": "Bears vs. Panthers live score, updates, highlights from NFL 'Thursday Night Football' game",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": false,
+          "top3": [
+            {
+              "document_id": "doc_0489",
+              "chunk_id": "doc_0489_chunk_16",
+              "citation_id": 4,
+              "source": "Sporting News",
+              "title": "Bears vs. Panthers live score, updates, highlights from NFL 'Thursday Night Football' game",
+              "score": -0.1641,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0439",
+              "chunk_id": "doc_0439_chunk_5",
+              "citation_id": 5,
+              "source": "Sporting News",
+              "title": "Jets vs. Raiders live score, updates, highlights from NFL 'Sunday Night Football' game",
+              "score": -1.1972,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0294",
+              "chunk_id": "doc_0294_chunk_24",
+              "citation_id": 3,
+              "source": "Sporting News",
+              "title": "Bills vs. Bengals live score, updates, highlights from NFL 'Sunday Night Football' game",
+              "score": -2.0522,
+              "is_gold_document": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eval_733c08d301e8",
+      "question": "After the report by The Age on October 22, 2023, suggesting people suspect Google of foul play, did TechCrunch's reporting on October 31, 2023, and December 15, 2023, regarding Google's antitrust issues and the impact on news publishers show a consistent perspective on Google's market behavior?",
+      "question_type": "temporal_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Yes",
+      "gold_document_ids": [
+        "doc_0032",
+        "doc_0237",
+        "doc_0033"
+      ],
+      "context_document_ids": [
+        "doc_0033",
+        "doc_0170",
+        "doc_0015",
+        "doc_0032",
+        "doc_0237",
+        "doc_0042"
+      ],
+      "context_gold_recall": 1.0,
+      "context_gold_complete": true,
+      "v2_sufficient": false,
+      "v2_score": 0.6857,
+      "v2_query_term_coverage": 0.4286,
+      "requirement_count": 3,
+      "requirement_mean_best_score": 0.0056,
+      "requirement_min_best_score": -3.6528,
+      "requirement_median_best_score": 1.0662,
+      "requirement_max_best_score": 2.6034,
+      "mean_top1_top2_margin": 3.6941,
+      "anchor_ok_fraction": 0.6667,
+      "best_document_gold_fraction": 1.0,
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "requirements": [
+        {
+          "requirement": "After the report by The Age on October 22",
+          "critical_terms": [],
+          "required_critical_coverage": 0.0,
+          "best_score": -3.6528,
+          "second_score": -6.8936,
+          "score_margin": 3.2409,
+          "best_document_id": "doc_0032",
+          "best_chunk_id": "doc_0032_chunk_5",
+          "best_source": "The Age",
+          "best_title": "Is Google Search better than the rest? And is that fair?",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": true,
+          "top3": [
+            {
+              "document_id": "doc_0032",
+              "chunk_id": "doc_0032_chunk_5",
+              "citation_id": 4,
+              "source": "The Age",
+              "title": "Is Google Search better than the rest? And is that fair?",
+              "score": -3.6528,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0015",
+              "chunk_id": "doc_0015_chunk_2",
+              "citation_id": 3,
+              "source": "TechCrunch",
+              "title": "More from the US v Google trial: vertical search, pre-installs and the case of Firefox/Yahoo",
+              "score": -6.8936,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0170",
+              "chunk_id": "doc_0170_chunk_6",
+              "citation_id": 2,
+              "source": "The Verge",
+              "title": "Tim Sweeney on Epic’s victory royale over Google",
+              "score": -7.7145,
+              "is_gold_document": false
+            }
+          ]
+        },
+        {
+          "requirement": "suggesting people suspect Google of foul play did TechCrunch's reporting on October 31 December 15",
+          "critical_terms": [
+            "google",
+            "techcrunch"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": 1.0662,
+          "second_score": -5.2134,
+          "score_margin": 6.2796,
+          "best_document_id": "doc_0032",
+          "best_chunk_id": "doc_0032_chunk_5",
+          "best_source": "The Age",
+          "best_title": "Is Google Search better than the rest? And is that fair?",
+          "best_critical_coverage": 0.5,
+          "best_anchor_ok": false,
+          "best_document_is_gold": true,
+          "top3": [
+            {
+              "document_id": "doc_0032",
+              "chunk_id": "doc_0032_chunk_5",
+              "citation_id": 4,
+              "source": "The Age",
+              "title": "Is Google Search better than the rest? And is that fair?",
+              "score": 1.0662,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0033",
+              "chunk_id": "doc_0033_chunk_0",
+              "citation_id": 1,
+              "source": "TechCrunch",
+              "title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+              "score": -5.2134,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0237",
+              "chunk_id": "doc_0237_chunk_0",
+              "citation_id": 5,
+              "source": "TechCrunch",
+              "title": "5 things we learned so far about the Google antitrust case",
+              "score": -5.5148,
+              "is_gold_document": true
+            }
+          ]
+        },
+        {
+          "requirement": "regarding Google's antitrust issues and the impact on news publishers show a consistent perspective on Google's market behavior",
+          "critical_terms": [
+            "google"
+          ],
+          "required_critical_coverage": 1.0,
+          "best_score": 2.6034,
+          "second_score": 1.0415,
+          "score_margin": 1.5619,
+          "best_document_id": "doc_0033",
+          "best_chunk_id": "doc_0033_chunk_0",
+          "best_source": "TechCrunch",
+          "best_title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": true,
+          "top3": [
+            {
+              "document_id": "doc_0033",
+              "chunk_id": "doc_0033_chunk_0",
+              "citation_id": 1,
+              "source": "TechCrunch",
+              "title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+              "score": 2.6034,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0237",
+              "chunk_id": "doc_0237_chunk_0",
+              "citation_id": 5,
+              "source": "TechCrunch",
+              "title": "5 things we learned so far about the Google antitrust case",
+              "score": 1.0415,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0170",
+              "chunk_id": "doc_0170_chunk_6",
+              "citation_id": 2,
+              "source": "The Verge",
+              "title": "Tim Sweeney on Epic’s victory royale over Google",
+              "score": -1.2059,
+              "is_gold_document": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eval_b80b5654cdcc",
+      "question": "Was the news about Taylor Swift's relationship with Travis Kelce inconsistent with the later report from The Independent - Life and Style on December 6, 2023?",
+      "question_type": "temporal_query",
+      "router_query_type": "multihop",
+      "gold_answer": "no",
+      "gold_document_ids": [
+        "doc_0045",
+        "doc_0059",
+        "doc_0046"
+      ],
+      "context_document_ids": [
+        "doc_0295",
+        "doc_0021",
+        "doc_0311",
+        "doc_0174",
+        "doc_0059",
+        "doc_0045",
+        "doc_0559",
+        "doc_0044"
+      ],
+      "context_gold_recall": 0.6666666666666666,
+      "context_gold_complete": false,
+      "v2_sufficient": true,
+      "v2_score": 0.89,
+      "v2_query_term_coverage": 0.8,
+      "requirement_count": 1,
+      "requirement_mean_best_score": 6.6433,
+      "requirement_min_best_score": 6.6433,
+      "requirement_median_best_score": 6.6433,
+      "requirement_max_best_score": 6.6433,
+      "mean_top1_top2_margin": 0.8892,
+      "anchor_ok_fraction": 1.0,
+      "best_document_gold_fraction": 0.0,
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "requirements": [
+        {
+          "requirement": "Was the news about Taylor Swift's relationship with Travis Kelce inconsistent with the later report from The Independent - Life and Style on December 6",
+          "critical_terms": [
+            "independent",
+            "kelce",
+            "swift",
+            "taylor",
+            "travis"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": 6.6433,
+          "second_score": 5.7541,
+          "score_margin": 0.8892,
+          "best_document_id": "doc_0295",
+          "best_chunk_id": "doc_0295_chunk_1",
+          "best_source": "The Independent - Life and Style",
+          "best_title": "Taylor Swift reveals secret start to her relationship with Travis Kelce",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": false,
+          "top3": [
+            {
+              "document_id": "doc_0295",
+              "chunk_id": "doc_0295_chunk_1",
+              "citation_id": 1,
+              "source": "The Independent - Life and Style",
+              "title": "Taylor Swift reveals secret start to her relationship with Travis Kelce",
+              "score": 6.6433,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0174",
+              "chunk_id": "doc_0174_chunk_4",
+              "citation_id": 4,
+              "source": "The Independent - Life and Style",
+              "title": "Travis Kelce faces backlash after comments about ‘finding a breeder’ resurface amid Taylor Swift romance",
+              "score": 5.7541,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0059",
+              "chunk_id": "doc_0059_chunk_0",
+              "citation_id": 5,
+              "source": "CBSSports.com",
+              "title": "Taylor Swift-Travis Kelce timeline: Everything to know about rumored romance between pop star, Chiefs TE",
+              "score": 4.6465,
+              "is_gold_document": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eval_be412cb54feb",
+      "question": "Has the portrayal of Google's market practices in reports by The Age after October 22, 2023, remained consistent with the depiction in The Verge's coverage of the Epic v. Google case, and with TechCrunch's report on the class action antitrust suit filed against Google?",
+      "question_type": "temporal_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Yes",
+      "gold_document_ids": [
+        "doc_0355",
+        "doc_0032",
+        "doc_0033"
+      ],
+      "context_document_ids": [
+        "doc_0033",
+        "doc_0355",
+        "doc_0015",
+        "doc_0170",
+        "doc_0299",
+        "doc_0237",
+        "doc_0042",
+        "doc_0014"
+      ],
+      "context_gold_recall": 0.6666666666666666,
+      "context_gold_complete": false,
+      "v2_sufficient": true,
+      "v2_score": 0.78,
+      "v2_query_term_coverage": 0.6,
+      "requirement_count": 3,
+      "requirement_mean_best_score": 0.399,
+      "requirement_min_best_score": -6.0222,
+      "requirement_median_best_score": 1.6268,
+      "requirement_max_best_score": 5.5923,
+      "mean_top1_top2_margin": 1.1966,
+      "anchor_ok_fraction": 1.0,
+      "best_document_gold_fraction": 0.3333,
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "requirements": [
+        {
+          "requirement": "Has the portrayal of Google's market practices in reports by The Age after October 22",
+          "critical_terms": [
+            "google"
+          ],
+          "required_critical_coverage": 1.0,
+          "best_score": -6.0222,
+          "second_score": -7.7253,
+          "score_margin": 1.7031,
+          "best_document_id": "doc_0237",
+          "best_chunk_id": "doc_0237_chunk_0",
+          "best_source": "TechCrunch",
+          "best_title": "5 things we learned so far about the Google antitrust case",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": false,
+          "top3": [
+            {
+              "document_id": "doc_0237",
+              "chunk_id": "doc_0237_chunk_0",
+              "citation_id": 6,
+              "source": "TechCrunch",
+              "title": "5 things we learned so far about the Google antitrust case",
+              "score": -6.0222,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0033",
+              "chunk_id": "doc_0033_chunk_0",
+              "citation_id": 1,
+              "source": "TechCrunch",
+              "title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+              "score": -7.7253,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0015",
+              "chunk_id": "doc_0015_chunk_3",
+              "citation_id": 3,
+              "source": "TechCrunch",
+              "title": "More from the US v Google trial: vertical search, pre-installs and the case of Firefox/Yahoo",
+              "score": -8.062,
+              "is_gold_document": false
+            }
+          ]
+        },
+        {
+          "requirement": "remained consistent with the depiction in The Verge's coverage of the Epic v. Google case",
+          "critical_terms": [
+            "epic",
+            "google",
+            "verge"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": 1.6268,
+          "second_score": 0.9122,
+          "score_margin": 0.7146,
+          "best_document_id": "doc_0299",
+          "best_chunk_id": "doc_0299_chunk_9",
+          "best_source": "The Verge",
+          "best_title": "The Epic v. Google trial may come down to simple v. complicated",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": false,
+          "top3": [
+            {
+              "document_id": "doc_0299",
+              "chunk_id": "doc_0299_chunk_9",
+              "citation_id": 5,
+              "source": "The Verge",
+              "title": "The Epic v. Google trial may come down to simple v. complicated",
+              "score": 1.6268,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0355",
+              "chunk_id": "doc_0355_chunk_0",
+              "citation_id": 2,
+              "source": "The Verge",
+              "title": "Epic v. Google, explained",
+              "score": 0.9122,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0170",
+              "chunk_id": "doc_0170_chunk_6",
+              "citation_id": 4,
+              "source": "The Verge",
+              "title": "Tim Sweeney on Epic’s victory royale over Google",
+              "score": -1.3272,
+              "is_gold_document": false
+            }
+          ]
+        },
+        {
+          "requirement": "with TechCrunch's report on the class action antitrust suit filed against Google",
+          "critical_terms": [
+            "google",
+            "techcrunch"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": 5.5923,
+          "second_score": 4.4201,
+          "score_margin": 1.1722,
+          "best_document_id": "doc_0033",
+          "best_chunk_id": "doc_0033_chunk_0",
+          "best_source": "TechCrunch",
+          "best_title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": true,
+          "top3": [
+            {
+              "document_id": "doc_0033",
+              "chunk_id": "doc_0033_chunk_0",
+              "citation_id": 1,
+              "source": "TechCrunch",
+              "title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+              "score": 5.5923,
+              "is_gold_document": true
+            },
+            {
+              "document_id": "doc_0237",
+              "chunk_id": "doc_0237_chunk_0",
+              "citation_id": 6,
+              "source": "TechCrunch",
+              "title": "5 things we learned so far about the Google antitrust case",
+              "score": 4.4201,
+              "is_gold_document": false
+            },
+            {
+              "document_id": "doc_0042",
+              "chunk_id": "doc_0042_chunk_9",
+              "citation_id": 7,
+              "source": "TechCrunch",
+              "title": "What to know about Fortnite maker Epic Games’ antitrust battle with Google, starting today",
+              "score": 0.6963,
+              "is_gold_document": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eval_2fa0f63fd209",
+      "question": "Considering the environmental initiatives discussed in a Bloomberg article and the new seasonal drink flavors introduced according to a CNN report, which letter represents both the first character of the initiative aimed at reducing waste at Starbucks and the initial of the primary spice used in Starbucks' latest autumn-themed beverage?",
+      "question_type": "null_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Insufficient information.",
+      "gold_document_ids": [],
+      "context_document_ids": [
+        "doc_0526",
+        "doc_0190",
+        "doc_0045",
+        "doc_0533",
+        "doc_0323",
+        "doc_0469",
+        "doc_0285",
+        "doc_0257",
+        "doc_0549",
+        "doc_0415"
+      ],
+      "context_gold_recall": null,
+      "context_gold_complete": null,
+      "v2_sufficient": false,
+      "v2_score": 0.5703,
+      "v2_query_term_coverage": 0.2188,
+      "requirement_count": 2,
+      "requirement_mean_best_score": -7.8313,
+      "requirement_min_best_score": -9.0901,
+      "requirement_median_best_score": -7.8313,
+      "requirement_max_best_score": -6.5725,
+      "mean_top1_top2_margin": 0.8327,
+      "anchor_ok_fraction": 0.5,
+      "best_document_gold_fraction": null,
+      "global_critical_coverage": 0.6667,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": false,
+      "requirements": [
+        {
+          "requirement": "Considering the environmental initiatives discussed in a Bloomberg article and the new seasonal drink flavors introduced according to a CNN report",
+          "critical_terms": [
+            "bloomberg",
+            "cnn"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": -9.0901,
+          "second_score": -9.5,
+          "score_margin": 0.4099,
+          "best_document_id": "doc_0285",
+          "best_chunk_id": "doc_0285_chunk_0",
+          "best_source": "Science News For Students",
+          "best_title": "A new hydrogel could help pull drinking water from the air",
+          "best_critical_coverage": 0.0,
+          "best_anchor_ok": false,
+          "best_document_is_gold": null,
+          "top3": [
+            {
+              "document_id": "doc_0285",
+              "chunk_id": "doc_0285_chunk_0",
+              "citation_id": 7,
+              "source": "Science News For Students",
+              "title": "A new hydrogel could help pull drinking water from the air",
+              "score": -9.0901,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0415",
+              "chunk_id": "doc_0415_chunk_6",
+              "citation_id": 10,
+              "source": "TechCrunch",
+              "title": "A timeline of Sam Altman’s firing from OpenAI — and the fallout",
+              "score": -9.5,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0469",
+              "chunk_id": "doc_0469_chunk_4",
+              "citation_id": 6,
+              "source": "TechCrunch",
+              "title": "Gag City is a viral win for Nicki Minaj",
+              "score": -10.0872,
+              "is_gold_document": null
+            }
+          ]
+        },
+        {
+          "requirement": "which letter represents both the first character of the initiative aimed at reducing waste at Starbucks and the initial of the primary spice used in Starbucks' latest autumn-themed beverage",
+          "critical_terms": [
+            "starbucks"
+          ],
+          "required_critical_coverage": 1.0,
+          "best_score": -6.5725,
+          "second_score": -7.828,
+          "score_margin": 1.2554,
+          "best_document_id": "doc_0257",
+          "best_chunk_id": "doc_0257_chunk_4",
+          "best_source": "BBC News - Entertainment & Arts",
+          "best_title": "Taylor Swift's 1989: The stories behind her biggest album",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": null,
+          "top3": [
+            {
+              "document_id": "doc_0257",
+              "chunk_id": "doc_0257_chunk_4",
+              "citation_id": 8,
+              "source": "BBC News - Entertainment & Arts",
+              "title": "Taylor Swift's 1989: The stories behind her biggest album",
+              "score": -6.5725,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0323",
+              "chunk_id": "doc_0323_chunk_4",
+              "citation_id": 5,
+              "source": "The Independent - Life and Style",
+              "title": "Thanksgiving 2023: What stores will be open on the holiday?",
+              "score": -7.828,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0549",
+              "chunk_id": "doc_0549_chunk_1",
+              "citation_id": 9,
+              "source": "TechCrunch",
+              "title": "Fortnite is the latest game to entice players with a portal to the past",
+              "score": -10.0391,
+              "is_gold_document": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eval_36827e3d0adf",
+      "question": "Considering the economic forecast from a Bloomberg article and the agricultural developments discussed in a Reuters report, which country in West Africa, expected to see a significant growth in its GDP, also launched an initiative to become self-sufficient in rice production by 2025?",
+      "question_type": "null_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Insufficient information.",
+      "gold_document_ids": [],
+      "context_document_ids": [
+        "doc_0456",
+        "doc_0532",
+        "doc_0410",
+        "doc_0218",
+        "doc_0298",
+        "doc_0306",
+        "doc_0216",
+        "doc_0125",
+        "doc_0215",
+        "doc_0087"
+      ],
+      "context_gold_recall": null,
+      "context_gold_complete": null,
+      "v2_sufficient": true,
+      "v2_score": 0.7963,
+      "v2_query_term_coverage": 0.6296,
+      "requirement_count": 3,
+      "requirement_mean_best_score": -3.9146,
+      "requirement_min_best_score": -6.0072,
+      "requirement_median_best_score": -4.7126,
+      "requirement_max_best_score": -1.0239,
+      "mean_top1_top2_margin": 1.1493,
+      "anchor_ok_fraction": 0.6667,
+      "best_document_gold_fraction": null,
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "requirements": [
+        {
+          "requirement": "Considering the economic forecast from a Bloomberg article and the agricultural developments discussed in a Reuters report which country in West Africa",
+          "critical_terms": [
+            "africa",
+            "bloomberg",
+            "reuters",
+            "west"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": -4.7126,
+          "second_score": -6.5191,
+          "score_margin": 1.8065,
+          "best_document_id": "doc_0298",
+          "best_chunk_id": "doc_0298_chunk_6",
+          "best_source": "The Sydney Morning Herald",
+          "best_title": "ASX rises after Wall Street gains on rate optimism; Oil drops",
+          "best_critical_coverage": 0.25,
+          "best_anchor_ok": false,
+          "best_document_is_gold": null,
+          "top3": [
+            {
+              "document_id": "doc_0298",
+              "chunk_id": "doc_0298_chunk_6",
+              "citation_id": 5,
+              "source": "The Sydney Morning Herald",
+              "title": "ASX rises after Wall Street gains on rate optimism; Oil drops",
+              "score": -4.7126,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0215",
+              "chunk_id": "doc_0215_chunk_3",
+              "citation_id": 9,
+              "source": "Cnbc | World Business News Leader",
+              "title": "Nike misses revenue expectations for the first time in two years, beats on earnings and gross margin",
+              "score": -6.5191,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0532",
+              "chunk_id": "doc_0532_chunk_9",
+              "citation_id": 2,
+              "source": "Zee Business",
+              "title": "India to be one of world's fastest growing economies over next decade",
+              "score": -7.0681,
+              "is_gold_document": null
+            }
+          ]
+        },
+        {
+          "requirement": "expected to see a significant growth in its GDP",
+          "critical_terms": [
+            "gdp"
+          ],
+          "required_critical_coverage": 1.0,
+          "best_score": -1.0239,
+          "second_score": -2.2072,
+          "score_margin": 1.1833,
+          "best_document_id": "doc_0532",
+          "best_chunk_id": "doc_0532_chunk_9",
+          "best_source": "Zee Business",
+          "best_title": "India to be one of world's fastest growing economies over next decade",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": null,
+          "top3": [
+            {
+              "document_id": "doc_0532",
+              "chunk_id": "doc_0532_chunk_9",
+              "citation_id": 2,
+              "source": "Zee Business",
+              "title": "India to be one of world's fastest growing economies over next decade",
+              "score": -1.0239,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0410",
+              "chunk_id": "doc_0410_chunk_1",
+              "citation_id": 3,
+              "source": "Business World",
+              "title": "Strategizing for sustainable development",
+              "score": -2.2072,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0456",
+              "chunk_id": "doc_0456_chunk_12",
+              "citation_id": 1,
+              "source": "TechCrunch",
+              "title": "French soccer players back African mobile video network StarNews Mobile in $3M round",
+              "score": -3.8844,
+              "is_gold_document": null
+            }
+          ]
+        },
+        {
+          "requirement": "also launched an initiative to become self-sufficient in rice production by 2025",
+          "critical_terms": [],
+          "required_critical_coverage": 0.0,
+          "best_score": -6.0072,
+          "second_score": -6.4654,
+          "score_margin": 0.4581,
+          "best_document_id": "doc_0410",
+          "best_chunk_id": "doc_0410_chunk_1",
+          "best_source": "Business World",
+          "best_title": "Strategizing for sustainable development",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": null,
+          "top3": [
+            {
+              "document_id": "doc_0410",
+              "chunk_id": "doc_0410_chunk_1",
+              "citation_id": 3,
+              "source": "Business World",
+              "title": "Strategizing for sustainable development",
+              "score": -6.0072,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0532",
+              "chunk_id": "doc_0532_chunk_9",
+              "citation_id": 2,
+              "source": "Zee Business",
+              "title": "India to be one of world's fastest growing economies over next decade",
+              "score": -6.4654,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0125",
+              "chunk_id": "doc_0125_chunk_2",
+              "citation_id": 8,
+              "source": "Globes English | Israel Business Arena",
+              "title": "\"There are no sacred numbers\"",
+              "score": -6.9084,
+              "is_gold_document": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eval_52bfece07a6c",
+      "question": "Considering the economic reforms discussed in a Bloomberg article and the cultural festival highlighted by Reuters, which letter of the alphabet begins the name of the Bahraini city that is both a focal point for these economic changes and the host of the cultural event?",
+      "question_type": "null_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Insufficient information.",
+      "gold_document_ids": [],
+      "context_document_ids": [
+        "doc_0469",
+        "doc_0532",
+        "doc_0410",
+        "doc_0462",
+        "doc_0448",
+        "doc_0218",
+        "doc_0385",
+        "doc_0298",
+        "doc_0135",
+        "doc_0488"
+      ],
+      "context_gold_recall": null,
+      "context_gold_complete": null,
+      "v2_sufficient": false,
+      "v2_score": 0.675,
+      "v2_query_term_coverage": 0.4091,
+      "requirement_count": 2,
+      "requirement_mean_best_score": -4.6366,
+      "requirement_min_best_score": -5.3171,
+      "requirement_median_best_score": -4.6366,
+      "requirement_max_best_score": -3.9561,
+      "mean_top1_top2_margin": 1.0731,
+      "anchor_ok_fraction": 0.5,
+      "best_document_gold_fraction": null,
+      "global_critical_coverage": 0.6667,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": false,
+      "requirements": [
+        {
+          "requirement": "Considering the economic reforms discussed in a Bloomberg article and the cultural festival highlighted by Reuters",
+          "critical_terms": [
+            "bloomberg",
+            "reuters"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": -3.9561,
+          "second_score": -4.1178,
+          "score_margin": 0.1617,
+          "best_document_id": "doc_0298",
+          "best_chunk_id": "doc_0298_chunk_8",
+          "best_source": "The Sydney Morning Herald",
+          "best_title": "ASX rises after Wall Street gains on rate optimism; Oil drops",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": null,
+          "top3": [
+            {
+              "document_id": "doc_0298",
+              "chunk_id": "doc_0298_chunk_8",
+              "citation_id": 8,
+              "source": "The Sydney Morning Herald",
+              "title": "ASX rises after Wall Street gains on rate optimism; Oil drops",
+              "score": -3.9561,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0218",
+              "chunk_id": "doc_0218_chunk_2",
+              "citation_id": 6,
+              "source": "Fortune",
+              "title": "'Too big to fail' Egypt faces economic crisis but has an anti-Gaza refugee policy. Israel and the U.S. hope that will change",
+              "score": -4.1178,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0410",
+              "chunk_id": "doc_0410_chunk_7",
+              "citation_id": 3,
+              "source": "Business World",
+              "title": "Strategizing for sustainable development",
+              "score": -7.3796,
+              "is_gold_document": null
+            }
+          ]
+        },
+        {
+          "requirement": "which letter of the alphabet begins the name of the Bahraini city that is both a focal point for these economic changes and the host of the cultural event",
+          "critical_terms": [
+            "bahraini"
+          ],
+          "required_critical_coverage": 1.0,
+          "best_score": -5.3171,
+          "second_score": -7.3015,
+          "score_margin": 1.9844,
+          "best_document_id": "doc_0385",
+          "best_chunk_id": "doc_0385_chunk_9",
+          "best_source": "Cnbc | World Business News Leader",
+          "best_title": "U.S.-China relations are now more about crisis prevention",
+          "best_critical_coverage": 0.0,
+          "best_anchor_ok": false,
+          "best_document_is_gold": null,
+          "top3": [
+            {
+              "document_id": "doc_0385",
+              "chunk_id": "doc_0385_chunk_9",
+              "citation_id": 7,
+              "source": "Cnbc | World Business News Leader",
+              "title": "U.S.-China relations are now more about crisis prevention",
+              "score": -5.3171,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0218",
+              "chunk_id": "doc_0218_chunk_2",
+              "citation_id": 6,
+              "source": "Fortune",
+              "title": "'Too big to fail' Egypt faces economic crisis but has an anti-Gaza refugee policy. Israel and the U.S. hope that will change",
+              "score": -7.3015,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0298",
+              "chunk_id": "doc_0298_chunk_8",
+              "citation_id": 8,
+              "source": "The Sydney Morning Herald",
+              "title": "ASX rises after Wall Street gains on rate optimism; Oil drops",
+              "score": -7.5508,
+              "is_gold_document": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eval_5457d2a4c687",
+      "question": "Considering the information from an article by Forbes about Min Kao's philanthropic efforts and another by Bloomberg discussing his business strategies, which university, known for its engineering program and having received significant donations from Min Kao, is also the institution where a business school case study was developed based on his company's market expansion tactics?",
+      "question_type": "null_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Insufficient information.",
+      "gold_document_ids": [],
+      "context_document_ids": [
+        "doc_0027",
+        "doc_0463",
+        "doc_0321",
+        "doc_0216",
+        "doc_0030",
+        "doc_0374",
+        "doc_0530",
+        "doc_0418",
+        "doc_0397",
+        "doc_0417"
+      ],
+      "context_gold_recall": null,
+      "context_gold_complete": null,
+      "v2_sufficient": false,
+      "v2_score": 0.7735,
+      "v2_query_term_coverage": 0.5882,
+      "requirement_count": 3,
+      "requirement_mean_best_score": -6.2905,
+      "requirement_min_best_score": -7.109,
+      "requirement_median_best_score": -6.0247,
+      "requirement_max_best_score": -5.7377,
+      "mean_top1_top2_margin": 1.8864,
+      "anchor_ok_fraction": 0.3333,
+      "best_document_gold_fraction": null,
+      "global_critical_coverage": 0.5,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": false,
+      "requirements": [
+        {
+          "requirement": "Considering the information from an article by Forbes about Min Kao's philanthropic efforts and another by Bloomberg discussing his business strategies",
+          "critical_terms": [
+            "bloomberg",
+            "forbes",
+            "kao",
+            "min"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": -6.0247,
+          "second_score": -8.5987,
+          "score_margin": 2.5739,
+          "best_document_id": "doc_0321",
+          "best_chunk_id": "doc_0321_chunk_7",
+          "best_source": "Fortune",
+          "best_title": "The shipping industry’s boom-and-bust cycle is so severe carriers face going from bumper profits to losing money in the space of a few years: 'I'm certainly concerned'",
+          "best_critical_coverage": 0.25,
+          "best_anchor_ok": false,
+          "best_document_is_gold": null,
+          "top3": [
+            {
+              "document_id": "doc_0321",
+              "chunk_id": "doc_0321_chunk_7",
+              "citation_id": 3,
+              "source": "Fortune",
+              "title": "The shipping industry’s boom-and-bust cycle is so severe carriers face going from bumper profits to losing money in the space of a few years: 'I'm certainly concerned'",
+              "score": -6.0247,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0418",
+              "chunk_id": "doc_0418_chunk_8",
+              "citation_id": 8,
+              "source": "Business Line",
+              "title": "Fundamental Investing: The Art of Relative Valuation",
+              "score": -8.5987,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0463",
+              "chunk_id": "doc_0463_chunk_3",
+              "citation_id": 2,
+              "source": "Business World",
+              "title": "From FAPE/PEAC to PhilEd",
+              "score": -8.8881,
+              "is_gold_document": null
+            }
+          ]
+        },
+        {
+          "requirement": "known for its engineering program and having received significant donations from Min Kao",
+          "critical_terms": [
+            "kao",
+            "min"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": -7.109,
+          "second_score": -9.282,
+          "score_margin": 2.1729,
+          "best_document_id": "doc_0027",
+          "best_chunk_id": "doc_0027_chunk_13",
+          "best_source": "The Age",
+          "best_title": "How ego and fear fuelled the rise of artificial intelligence",
+          "best_critical_coverage": 0.0,
+          "best_anchor_ok": false,
+          "best_document_is_gold": null,
+          "top3": [
+            {
+              "document_id": "doc_0027",
+              "chunk_id": "doc_0027_chunk_13",
+              "citation_id": 1,
+              "source": "The Age",
+              "title": "How ego and fear fuelled the rise of artificial intelligence",
+              "score": -7.109,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0417",
+              "chunk_id": "doc_0417_chunk_1",
+              "citation_id": 10,
+              "source": "Engadget",
+              "title": "Teenage Engineering's K.O. II sampler proves the company can do cost-friendly cool",
+              "score": -9.282,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0374",
+              "chunk_id": "doc_0374_chunk_3",
+              "citation_id": 6,
+              "source": "TechCrunch",
+              "title": "Binance to pay $4.3B in fines and CEO ‘CZ’ to step down, plead guilty to anti-money laundering charges",
+              "score": -9.4553,
+              "is_gold_document": null
+            }
+          ]
+        },
+        {
+          "requirement": "is also the institution where a business school case study was developed based on his company's market expansion tactics",
+          "critical_terms": [],
+          "required_critical_coverage": 0.0,
+          "best_score": -5.7377,
+          "second_score": -6.65,
+          "score_margin": 0.9123,
+          "best_document_id": "doc_0216",
+          "best_chunk_id": "doc_0216_chunk_0",
+          "best_source": "TechCrunch",
+          "best_title": "Why Gogoro picked India as its new go-to market",
+          "best_critical_coverage": 1.0,
+          "best_anchor_ok": true,
+          "best_document_is_gold": null,
+          "top3": [
+            {
+              "document_id": "doc_0216",
+              "chunk_id": "doc_0216_chunk_0",
+              "citation_id": 4,
+              "source": "TechCrunch",
+              "title": "Why Gogoro picked India as its new go-to market",
+              "score": -5.7377,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0027",
+              "chunk_id": "doc_0027_chunk_13",
+              "citation_id": 1,
+              "source": "The Age",
+              "title": "How ego and fear fuelled the rise of artificial intelligence",
+              "score": -6.65,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0374",
+              "chunk_id": "doc_0374_chunk_3",
+              "citation_id": 6,
+              "source": "TechCrunch",
+              "title": "Binance to pay $4.3B in fines and CEO ‘CZ’ to step down, plead guilty to anti-money laundering charges",
+              "score": -7.5486,
+              "is_gold_document": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eval_f1e3e6ebe75c",
+      "question": "Considering the information from a Times of India article stating that Zoya Akhtar's film was selected for an international film festival, and a Hindustan Times report detailing her collaboration with a famous Hollywood actor for her next project, which character from the English alphabet is common to the initials of the international film festival and the first name of the Hollywood actor?",
+      "question_type": "null_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Insufficient information.",
+      "gold_document_ids": [],
+      "context_document_ids": [
+        "doc_0347",
+        "doc_0597",
+        "doc_0419",
+        "doc_0154",
+        "doc_0265",
+        "doc_0165",
+        "doc_0578",
+        "doc_0094",
+        "doc_0192",
+        "doc_0532"
+      ],
+      "context_gold_recall": null,
+      "context_gold_complete": null,
+      "v2_sufficient": false,
+      "v2_score": 0.7345,
+      "v2_query_term_coverage": 0.5172,
+      "requirement_count": 3,
+      "requirement_mean_best_score": -5.4512,
+      "requirement_min_best_score": -6.3145,
+      "requirement_median_best_score": -6.1469,
+      "requirement_max_best_score": -3.8922,
+      "mean_top1_top2_margin": 0.3558,
+      "anchor_ok_fraction": 0.0,
+      "best_document_gold_fraction": null,
+      "global_critical_coverage": 0.4286,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": false,
+      "requirements": [
+        {
+          "requirement": "Considering the information from a Times of India article stating that Zoya Akhtar's film was selected for an international film festival",
+          "critical_terms": [
+            "akhtar",
+            "india",
+            "times",
+            "zoya"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": -6.1469,
+          "second_score": -6.9731,
+          "score_margin": 0.8262,
+          "best_document_id": "doc_0165",
+          "best_chunk_id": "doc_0165_chunk_20",
+          "best_source": "Polygon",
+          "best_title": "The Halloween Countdown: 31 days of horror to watch",
+          "best_critical_coverage": 0.0,
+          "best_anchor_ok": false,
+          "best_document_is_gold": null,
+          "top3": [
+            {
+              "document_id": "doc_0165",
+              "chunk_id": "doc_0165_chunk_20",
+              "citation_id": 6,
+              "source": "Polygon",
+              "title": "The Halloween Countdown: 31 days of horror to watch",
+              "score": -6.1469,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0532",
+              "chunk_id": "doc_0532_chunk_4",
+              "citation_id": 10,
+              "source": "Zee Business",
+              "title": "India to be one of world's fastest growing economies over next decade",
+              "score": -6.9731,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0347",
+              "chunk_id": "doc_0347_chunk_0",
+              "citation_id": 1,
+              "source": "The Guardian",
+              "title": "Shayda director Noora Niasari on family violence, Iranian liberation and taking her first film to the Oscars",
+              "score": -7.5671,
+              "is_gold_document": null
+            }
+          ]
+        },
+        {
+          "requirement": "a Hindustan Times report detailing her collaboration with a famous Hollywood actor for her next project",
+          "critical_terms": [
+            "hindustan",
+            "hollywood",
+            "times"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": -6.3145,
+          "second_score": -6.4074,
+          "score_margin": 0.0929,
+          "best_document_id": "doc_0419",
+          "best_chunk_id": "doc_0419_chunk_4",
+          "best_source": "Fortune",
+          "best_title": "Taylor Swift has already sold over $100 million of tickets for her concert movie. Theaters nationwide brace for impact",
+          "best_critical_coverage": 0.6667,
+          "best_anchor_ok": false,
+          "best_document_is_gold": null,
+          "top3": [
+            {
+              "document_id": "doc_0419",
+              "chunk_id": "doc_0419_chunk_4",
+              "citation_id": 3,
+              "source": "Fortune",
+              "title": "Taylor Swift has already sold over $100 million of tickets for her concert movie. Theaters nationwide brace for impact",
+              "score": -6.3145,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0154",
+              "chunk_id": "doc_0154_chunk_3",
+              "citation_id": 4,
+              "source": "The Sydney Morning Herald",
+              "title": "The best shows to stream in December",
+              "score": -6.4074,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0192",
+              "chunk_id": "doc_0192_chunk_8",
+              "citation_id": 9,
+              "source": "Polygon",
+              "title": "Martin Scorsese’s late-stage career has proved Quentin Tarantino wrong",
+              "score": -6.4906,
+              "is_gold_document": null
+            }
+          ]
+        },
+        {
+          "requirement": "which character from the English alphabet is common to the initials of the international film festival and the first name of the Hollywood actor",
+          "critical_terms": [
+            "english",
+            "hollywood"
+          ],
+          "required_critical_coverage": 0.75,
+          "best_score": -3.8922,
+          "second_score": -4.0404,
+          "score_margin": 0.1482,
+          "best_document_id": "doc_0154",
+          "best_chunk_id": "doc_0154_chunk_3",
+          "best_source": "The Sydney Morning Herald",
+          "best_title": "The best shows to stream in December",
+          "best_critical_coverage": 0.5,
+          "best_anchor_ok": false,
+          "best_document_is_gold": null,
+          "top3": [
+            {
+              "document_id": "doc_0154",
+              "chunk_id": "doc_0154_chunk_3",
+              "citation_id": 4,
+              "source": "The Sydney Morning Herald",
+              "title": "The best shows to stream in December",
+              "score": -3.8922,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0347",
+              "chunk_id": "doc_0347_chunk_0",
+              "citation_id": 1,
+              "source": "The Guardian",
+              "title": "Shayda director Noora Niasari on family violence, Iranian liberation and taking her first film to the Oscars",
+              "score": -4.0404,
+              "is_gold_document": null
+            },
+            {
+              "document_id": "doc_0597",
+              "chunk_id": "doc_0597_chunk_9",
+              "citation_id": 2,
+              "source": "Polygon",
+              "title": "The best comedies you’ll find on streaming right now",
+              "score": -4.2889,
+              "is_gold_document": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

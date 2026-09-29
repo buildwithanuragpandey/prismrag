@@ -1,0 +1,16 @@
+{
+  "dataset_name": "yixuantt/MultiHopRAG",
+  "dataset_config": "MultiHopRAG",
+  "dataset_revision": "71ac0d0bd1f951d2d6b70311f7d2ae404e1ffa82",
+  "source_dataset_size": 2556,
+  "frozen_eval_size": 500,
+  "seed": 42,
+  "quotas": {
+    "inference_query": 140,
+    "comparison_query": 140,
+    "temporal_query": 140,
+    "null_query": 80
+  },
+  "processed_corpus_path": "data\\processed\\processed_corpus.json",
+  "selection_method": "SHA256(seed + question) rank within question_type, then deterministic shuffle"
+}

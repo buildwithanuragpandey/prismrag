@@ -1,0 +1,2292 @@
+[
+  {
+    "id": "test_902d9dbe4562",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.6462302129493456,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 2.112259300000005,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 2.199358600000096
+  },
+  {
+    "id": "test_b318075a526b",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.8772153153380493,
+    "direct_answer": "Uber",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0367"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.4205954999999904,
+    "latency_generation_sec": 14.128562699999975,
+    "latency_total_sec": 15.550681399999917
+  },
+  {
+    "id": "test_b65ae8525976",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.6934264036172708,
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.2632911000000604,
+    "latency_generation_sec": 3.543895300000031,
+    "latency_total_sec": 4.808892600000036
+  },
+  {
+    "id": "test_a3fd5df2936c",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.5,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.1,
+    "ndcg@10": 0.17723928678404774,
+    "direct_answer": "No, there was no significant change in the portrayal of Tyreek Hill's performance.",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.5574810000000525,
+    "latency_generation_sec": 6.297531499999991,
+    "latency_total_sec": 7.857327199999986
+  },
+  {
+    "id": "test_4b7f7d493622",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.75,
+      "recall@20": 0.75
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.715696758318853,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.3159275000000434,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.318408399999953
+  },
+  {
+    "id": "test_147a5b35ad3f",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "recall@20": 0.5
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.6131471927654584,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0194"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.4992786999999907,
+    "latency_generation_sec": 3.317804199999955,
+    "latency_total_sec": 4.819375100000002
+  },
+  {
+    "id": "test_49ecc0090a79",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.6750055999999631,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.677481900000089
+  },
+  {
+    "id": "test_d9a664e7bd64",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.3333333333333333,
+      "recall@10": 0.6666666666666666,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.6105456988825855,
+    "direct_answer": "Sam Altman",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0332"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.3333333333333333,
+    "latency_retrieval_sec": 1.5930925000000116,
+    "latency_generation_sec": 3.0803568999999698,
+    "latency_total_sec": 4.675069399999984
+  },
+  {
+    "id": "test_58e06aeee450",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.75,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.6975637657739948,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.6178724000000102,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.7245699999999715
+  },
+  {
+    "id": "test_8b3f2dded59b",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 0.6666666666666666,
+      "recall@20": 0.6666666666666666
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.7653606369886217,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.2916585000000396,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.293408099999965
+  },
+  {
+    "id": "test_5c800232f8f9",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.6597367000000531,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.6627644999999802
+  },
+  {
+    "id": "test_5a061a4998b2",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.5,
+      "recall@20": 0.5
+    },
+    "mrr@10": 0.1,
+    "ndcg@10": 0.17723928678404774,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.594980400000054,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.7245440000000372
+  },
+  {
+    "id": "test_1ccaa5c864ab",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "recall@20": 0.75
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.5855700749881525,
+    "direct_answer": "Sam Bankman-Fried",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0031"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.25,
+    "latency_retrieval_sec": 1.4895348000000013,
+    "latency_generation_sec": 4.888205800000037,
+    "latency_total_sec": 6.379346499999997
+  },
+  {
+    "id": "test_f607616b59ce",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.9217868789962071,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 0.7107153000000608,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 0.7129342999999153
+  },
+  {
+    "id": "test_2d3beb381073",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.638492299999939,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.6401117999999997
+  },
+  {
+    "id": "test_6833d3555cd1",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.75,
+      "recall@10": 0.75,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.8318724637288826,
+    "direct_answer": "Google",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0033",
+      "doc_0237"
+    ],
+    "dataset_evidence_citation_precision": 0.5,
+    "dataset_evidence_citation_recall": 0.25,
+    "latency_retrieval_sec": 1.6158493000000362,
+    "latency_generation_sec": 3.843908400000032,
+    "latency_total_sec": 5.461436800000001
+  },
+  {
+    "id": "test_e728c9d5ecda",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.3333333333333333,
+    "ndcg@10": 0.5706417189553201,
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0146"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 0.7541091000000506,
+    "latency_generation_sec": 5.05697280000004,
+    "latency_total_sec": 5.812458600000014
+  },
+  {
+    "id": "test_610e0f68430a",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.3623810999999932,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.437472400000047
+  },
+  {
+    "id": "test_63906019ced3",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.61701800000003,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.7032412000000932
+  },
+  {
+    "id": "test_5f596b10e595",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.8194270280062366,
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.0951776000000564,
+    "latency_generation_sec": 2.768297799999914,
+    "latency_total_sec": 3.8648346999999603
+  },
+  {
+    "id": "test_ef246814bfc4",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 0.6666666666666666,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.3333333333333333,
+    "ndcg@10": 0.4367467095119258,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.8486273000000892,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.9717368999999962
+  },
+  {
+    "id": "test_d0422f4b87fc",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.6934264036172708,
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0202"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.137723699999924,
+    "latency_generation_sec": 4.241765400000077,
+    "latency_total_sec": 5.3812370999999075
+  },
+  {
+    "id": "test_4b0dbf27f169",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.8031310000001213,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.8074805999999626
+  },
+  {
+    "id": "test_b917c1268dc8",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.3333333333333333,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.2,
+    "ndcg@10": 0.4967432029864875,
+    "direct_answer": "Epic Games",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0355",
+      "doc_0237"
+    ],
+    "dataset_evidence_citation_precision": 0.5,
+    "dataset_evidence_citation_recall": 0.3333333333333333,
+    "latency_retrieval_sec": 1.7485365999998521,
+    "latency_generation_sec": 2.428779000000077,
+    "latency_total_sec": 4.179001499999913
+  },
+  {
+    "id": "test_603d3b2573bf",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.3333333333333333,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.2,
+    "ndcg@10": 0.5051284895111403,
+    "direct_answer": "Zay Jones",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.4927399000000605,
+    "latency_generation_sec": 3.8365398999999343,
+    "latency_total_sec": 5.330981000000065
+  },
+  {
+    "id": "test_5a71b684a834",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.1287846999998692,
+    "latency_generation_sec": 2.7664334000000963,
+    "latency_total_sec": 3.9146175000000767
+  },
+  {
+    "id": "test_4092ab36cb3f",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.8710785440003369,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.5656062000000475,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.6257857000000513
+  },
+  {
+    "id": "test_f4778f710c6d",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.7648403999999118,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.7668473999999605
+  },
+  {
+    "id": "test_233e08a081e8",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0194"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.3116514999999254,
+    "latency_generation_sec": 3.6866935000000467,
+    "latency_total_sec": 5.000115800000003
+  },
+  {
+    "id": "test_b8aa36b4cb61",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0144"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 0.8077820000000884,
+    "latency_generation_sec": 5.573114299999816,
+    "latency_total_sec": 6.382981900000004
+  },
+  {
+    "id": "test_112e014e82ee",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 0.5925701999999546,
+    "latency_generation_sec": 2.2397249999999076,
+    "latency_total_sec": 2.8335162999999284
+  },
+  {
+    "id": "test_1a69c136767d",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0023",
+      "doc_0176"
+    ],
+    "dataset_evidence_citation_precision": 0.5,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.438257399999884,
+    "latency_generation_sec": 3.0767505000001165,
+    "latency_total_sec": 4.517159200000151
+  },
+  {
+    "id": "test_f3420990a23e",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 0.42374070000005304,
+    "latency_generation_sec": 2.428265300000021,
+    "latency_total_sec": 2.8529900000000907
+  },
+  {
+    "id": "test_1340470503a6",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.3333333333333333,
+      "recall@10": 0.3333333333333333,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.3333333333333333,
+    "ndcg@10": 0.23463936301137822,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.4294466999999713,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.5632137000000057
+  },
+  {
+    "id": "test_647a865ffb8d",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.3333333333333333,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.619668607939653,
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0033",
+      "doc_0127"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.6666666666666666,
+    "latency_retrieval_sec": 1.235336999999845,
+    "latency_generation_sec": 3.7497551999999814,
+    "latency_total_sec": 4.986933399999998
+  },
+  {
+    "id": "test_0be3cb068450",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.837890199999947,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.8397829999998976
+  },
+  {
+    "id": "test_addc2db5c8e4",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 2.0344658000001345,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 2.036838699999862
+  },
+  {
+    "id": "test_67b0342ea1a2",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.585012400000096,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.5879718999999568
+  },
+  {
+    "id": "test_ddfb7ced4c4d",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.9197207891481876,
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0018"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 0.5871400000000904,
+    "latency_generation_sec": 2.650002500000028,
+    "latency_total_sec": 3.2643381999998837
+  },
+  {
+    "id": "test_aed1519f6180",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.25,
+      "recall@10": 0.5,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.35914753008966527,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.1785009000000173,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.2441221000001406
+  },
+  {
+    "id": "test_462650b29f61",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.7328286204777911,
+    "direct_answer": "Both articles suggest Caroline Ellison engaged in mismanagement during her tenure at Alameda Research.",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 0.8587098000000424,
+    "latency_generation_sec": 4.343685699999924,
+    "latency_total_sec": 5.20419250000009
+  },
+  {
+    "id": "test_4b519d81af30",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 0.6666666666666666,
+      "recall@20": 0.6666666666666666
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.49818925746641285,
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 0.82138759999998,
+    "latency_generation_sec": 4.076398500000096,
+    "latency_total_sec": 4.9232286999999815
+  },
+  {
+    "id": "test_f6e8a1150b7a",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.593648099999882,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.606115900000077
+  },
+  {
+    "id": "test_1411ae219ac5",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.6934264036172708,
+    "direct_answer": "Google",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0015",
+      "doc_0033"
+    ],
+    "dataset_evidence_citation_precision": 0.5,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.1854816000000028,
+    "latency_generation_sec": 2.800237799999877,
+    "latency_total_sec": 3.9869876999998723
+  },
+  {
+    "id": "test_26f57c3e7832",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.25,
+      "recall@10": 0.5,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.2,
+    "ndcg@10": 0.29007579773858083,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.435780799999975,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.564652600000045
+  },
+  {
+    "id": "test_b2d2b1421c30",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 0.6666666666666666,
+      "recall@20": 0.6666666666666666
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.49818925746641285,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.7424677999999858,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.7456002000001263
+  },
+  {
+    "id": "test_0fcd2729c084",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.8072467605676945,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0033"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.3333333333333333,
+    "latency_retrieval_sec": 1.4335688000001028,
+    "latency_generation_sec": 4.276382099999864,
+    "latency_total_sec": 5.711558599999989
+  },
+  {
+    "id": "test_9674a9da97ea",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.4295050000000629,
+    "latency_generation_sec": 4.156968200000165,
+    "latency_total_sec": 5.588303799999949
+  },
+  {
+    "id": "test_16257649fa17",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.75,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.9178287402913377,
+    "direct_answer": "Taylor Swift",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0021",
+      "doc_0046"
+    ],
+    "dataset_evidence_citation_precision": 0.5,
+    "dataset_evidence_citation_recall": 0.25,
+    "latency_retrieval_sec": 0.8519632999998521,
+    "latency_generation_sec": 3.2643026999999165,
+    "latency_total_sec": 4.117694699999902
+  },
+  {
+    "id": "test_fe16afe10883",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.5659132000000682,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.5685085000000072
+  },
+  {
+    "id": "test_287855839292",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 0.6666666666666666,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.6713860725233041,
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.228899100000035,
+    "latency_generation_sec": 4.378276300000152,
+    "latency_total_sec": 5.681908799999974
+  },
+  {
+    "id": "test_a693488a5cce",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.3333333333333333,
+      "recall@10": 0.3333333333333333,
+      "recall@20": 0.6666666666666666
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.46927872602275644,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.9664975000000595,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 2.1954800000000887
+  },
+  {
+    "id": "test_0ac164a31eac",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.3333333333333333,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.2,
+    "ndcg@10": 0.4967432029864875,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0295"
+    ],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.7062115999999605,
+    "latency_generation_sec": 4.220631500000081,
+    "latency_total_sec": 5.92873910000003
+  },
+  {
+    "id": "test_328be2867854",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0377",
+      "doc_0223"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 1.0,
+    "latency_retrieval_sec": 0.8989649999998619,
+    "latency_generation_sec": 3.212340099999892,
+    "latency_total_sec": 4.113331499999958
+  },
+  {
+    "id": "test_fd1a35b2f67f",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 0.9460968999999295,
+    "latency_generation_sec": 3.4226315999999315,
+    "latency_total_sec": 4.372034100000064
+  },
+  {
+    "id": "test_1ecd1f05ee04",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 0.6666666666666666,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.5307212739772434,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.6566918000000896,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.6588937000001351
+  },
+  {
+    "id": "test_07811c8b55a6",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.25,
+    "ndcg@10": 0.45749452618986164,
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.4048905000001923,
+    "latency_generation_sec": 3.614759499999991,
+    "latency_total_sec": 5.02168370000004
+  },
+  {
+    "id": "test_b2ef33c347b8",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.3333333333333333,
+      "recall@10": 0.6666666666666666,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.431733884398313,
+    "direct_answer": "There was no significant change in the portrayal of Sam Bankman-Fried's actions related to the FTX situation between the TechCrunch reports.",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.3647551999999905,
+    "latency_generation_sec": 5.026488200000131,
+    "latency_total_sec": 6.3932159000000865
+  },
+  {
+    "id": "test_0e624a603de6",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.7122630665145961,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0031"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.3333333333333333,
+    "latency_retrieval_sec": 0.7746743000000151,
+    "latency_generation_sec": 4.311363300000039,
+    "latency_total_sec": 5.087965500000109
+  },
+  {
+    "id": "test_ba2b63ddf126",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.9197207891481876,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.2683537000000342,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.3834991999999602
+  },
+  {
+    "id": "test_e3f3b15c5172",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.4179063999999926,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.4884945000001153
+  },
+  {
+    "id": "test_bc225b00b250",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.3333333333333333,
+    "ndcg@10": 0.3065735963827292,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.2863929000000098,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.3691885000000639
+  },
+  {
+    "id": "test_4960847cea24",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.8772153153380493,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 0.8000908999999865,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 0.8012908000000607
+  },
+  {
+    "id": "test_1e8744dc316d",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.75,
+      "recall@20": 0.75
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.7541985434892589,
+    "direct_answer": "Google",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0033"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.25,
+    "latency_retrieval_sec": 1.573621699999876,
+    "latency_generation_sec": 2.6964973000001464,
+    "latency_total_sec": 4.271370899999965
+  },
+  {
+    "id": "test_ee0ce0192a07",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0138",
+      "doc_0139"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 1.0,
+    "latency_retrieval_sec": 1.1265209000000596,
+    "latency_generation_sec": 2.3918517000001884,
+    "latency_total_sec": 3.520197699999926
+  },
+  {
+    "id": "test_6375f422ab9b",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "direct_answer": "The Australian Rugby Union (ARU), reported by 'The Roar | Sports Writers Blog', is attempting to centralize Super Rugby's high-performance programs, supports franchises for a potential coaching appointment, and urges reinstatement of annual funding to these franchises.",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0493",
+      "doc_0492"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 1.0,
+    "latency_retrieval_sec": 1.2872227000000294,
+    "latency_generation_sec": 6.621626399999968,
+    "latency_total_sec": 7.9107365999998365
+  },
+  {
+    "id": "test_58a0669f7d95",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.572693500000014,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.6393691999999191
+  },
+  {
+    "id": "test_2c37fd107825",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.5,
+      "recall@20": 0.5
+    },
+    "mrr@10": 0.16666666666666666,
+    "ndcg@10": 0.21840743681816419,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.3185203999998976,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.4120351999999912
+  },
+  {
+    "id": "test_dd27cdbff6d8",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0483"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 0.978742400000101,
+    "latency_generation_sec": 5.385536600000023,
+    "latency_total_sec": 6.366031399999883
+  },
+  {
+    "id": "test_cb2885e8d14e",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0022",
+      "doc_0176"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.6666666666666666,
+    "latency_retrieval_sec": 1.583977200000163,
+    "latency_generation_sec": 4.7696538999998666,
+    "latency_total_sec": 6.447817499999928
+  },
+  {
+    "id": "test_8e108f9683db",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "recall@20": 0.5
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.38685280723454163,
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0207"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.0779247999998915,
+    "latency_generation_sec": 3.0424021000001176,
+    "latency_total_sec": 4.121681999999964
+  },
+  {
+    "id": "test_ad187b6f2edb",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.6934264036172708,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0307"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.1066843999999492,
+    "latency_generation_sec": 3.4334541000000627,
+    "latency_total_sec": 4.5425021000000925
+  },
+  {
+    "id": "test_322a8f748a1a",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "direct_answer": "The Houston Astros",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 0.8750988000001598,
+    "latency_generation_sec": 3.3297417999999652,
+    "latency_total_sec": 4.206546399999979
+  },
+  {
+    "id": "test_22a01d8c6325",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.7915698000001612,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.793657499999881
+  },
+  {
+    "id": "test_525d0fb2717a",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.5545196000000487,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.5571529999999711
+  },
+  {
+    "id": "test_704706a923fd",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.6131471927654584,
+    "direct_answer": "Flexport",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.587385999999924,
+    "latency_generation_sec": 3.1895765000001575,
+    "latency_total_sec": 4.778693100000055
+  },
+  {
+    "id": "test_2de53b1adeee",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.14285714285714285,
+    "ndcg@10": 0.39780880120575696,
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0196",
+      "doc_0195"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 1.0,
+    "latency_retrieval_sec": 0.7897396999999273,
+    "latency_generation_sec": 3.5366070999998556,
+    "latency_total_sec": 4.328487600000017
+  },
+  {
+    "id": "test_5c3750b07224",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 0.6666666666666666,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.6508205185601091,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.4636950999999954,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.5292070000000422
+  },
+  {
+    "id": "test_eb09f70a1154",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.38685280723454163,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0118"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.6175376999999571,
+    "latency_generation_sec": 3.857441599999902,
+    "latency_total_sec": 5.476874500000122
+  },
+  {
+    "id": "test_678f22a9c545",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.7106752765782569,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.2528156999999283,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.2788959000001796
+  },
+  {
+    "id": "test_d879b62b46e1",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.3333333333333333,
+      "recall@10": 0.3333333333333333,
+      "recall@20": 0.6666666666666666
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.2960819109658652,
+    "direct_answer": "OpenAI",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0116"
+    ],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.1709379999999783,
+    "latency_generation_sec": 3.9205157000001236,
+    "latency_total_sec": 5.128186700000015
+  },
+  {
+    "id": "test_3cd12236dc2b",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0243"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.627824500000088,
+    "latency_generation_sec": 3.021558099999993,
+    "latency_total_sec": 4.65074709999999
+  },
+  {
+    "id": "test_ee9b19084238",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.25,
+    "ndcg@10": 0.2640681225725909,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.5495324999999411,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.618652500000053
+  },
+  {
+    "id": "test_e18b56a833fb",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.0338490999999976,
+    "latency_generation_sec": 3.663432499999999,
+    "latency_total_sec": 4.699084699999958
+  },
+  {
+    "id": "test_75e32829a971",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0421",
+      "doc_0420"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 1.0,
+    "latency_retrieval_sec": 1.2320044000000507,
+    "latency_generation_sec": 2.9194351000001006,
+    "latency_total_sec": 4.152883199999906
+  },
+  {
+    "id": "test_a6ece7a4e961",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0060"
+    ],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.5047905999999784,
+    "latency_generation_sec": 3.321737799999937,
+    "latency_total_sec": 4.972962099999904
+  },
+  {
+    "id": "test_0328220123da",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.6978817289434457,
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0014",
+      "doc_0033"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.6666666666666666,
+    "latency_retrieval_sec": 1.2053077000000485,
+    "latency_generation_sec": 3.340178000000151,
+    "latency_total_sec": 4.639339699999937
+  },
+  {
+    "id": "test_5d64d1ba76af",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 0.6666666666666666,
+      "recall@20": 0.6666666666666666
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.6508205185601091,
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 0.9077732999999171,
+    "latency_generation_sec": 2.4684608000000026,
+    "latency_total_sec": 3.3772831000001133
+  },
+  {
+    "id": "test_133ae3c6cc93",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.9197207891481876,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 0.7751826999999594,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 0.7777753999998822
+  },
+  {
+    "id": "test_2a6fabb5a0a5",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "recall@20": 0.5
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.38685280723454163,
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.2438864999999169,
+    "latency_generation_sec": 3.3627970000000005,
+    "latency_total_sec": 4.647421099999974
+  },
+  {
+    "id": "test_da30dcc77963",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.9674679834891693,
+    "direct_answer": "There was inconsistency in the portrayal of Google's legal challenges related to anticompetitive practices.",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0042"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.3333333333333333,
+    "latency_retrieval_sec": 1.2498471000001246,
+    "latency_generation_sec": 5.346465800000033,
+    "latency_total_sec": 6.59772780000003
+  },
+  {
+    "id": "test_7210ac5ab116",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.86034433104172,
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.5707551000000421,
+    "latency_generation_sec": 4.007520399999976,
+    "latency_total_sec": 5.580134000000044
+  },
+  {
+    "id": "test_80b154bb9352",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "direct_answer": "The role of social media as highlighted by FOX News - Health in the \"Save Lucas\" campaign by The Goeller family on December 9, 2023, remained consistent with the importance of social media's role as mentioned in the TechCrunch article.",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0593"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.6237745000000814,
+    "latency_generation_sec": 5.799205400000119,
+    "latency_total_sec": 7.424832300000162
+  },
+  {
+    "id": "test_9e581faca239",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.8065735963827293,
+    "direct_answer": "Uber",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.672860799999853,
+    "latency_generation_sec": 5.803838599999835,
+    "latency_total_sec": 7.478140800000119
+  },
+  {
+    "id": "test_22233cbac36a",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.3333333333333333,
+    "ndcg@10": 0.610960349354296,
+    "direct_answer": "Amazon",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0001",
+      "doc_0521"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.3707580000000235,
+    "latency_generation_sec": 2.216807000000017,
+    "latency_total_sec": 3.5900455000000875
+  },
+  {
+    "id": "test_b5efaf5625b6",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "recall@20": 0.5
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.6131471927654584,
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0554"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 0.815364099999897,
+    "latency_generation_sec": 4.130175300000019,
+    "latency_total_sec": 4.946345199999996
+  },
+  {
+    "id": "test_aa1ca9de397d",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "direct_answer": "Consistent",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0604"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.4766022000001158,
+    "latency_generation_sec": 3.1605565000002116,
+    "latency_total_sec": 4.638848100000132
+  },
+  {
+    "id": "test_7318ae1f54f1",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.2,
+    "ndcg@10": 0.45560514958746035,
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 0.6690582999999606,
+    "latency_generation_sec": 3.7355705999998463,
+    "latency_total_sec": 4.406618299999991
+  },
+  {
+    "id": "test_ee318558c165",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.9197207891481876,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.2082490999998754,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.2203405000000203
+  },
+  {
+    "id": "test_0a4f65f3afdb",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.75,
+      "recall@20": 0.75
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.7598336331031966,
+    "direct_answer": "UNKNOWN",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.4469793000000664,
+    "latency_generation_sec": 0.0,
+    "latency_total_sec": 1.5818108000000848
+  }
+]

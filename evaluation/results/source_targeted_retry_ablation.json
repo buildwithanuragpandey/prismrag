@@ -1,0 +1,274 @@
+{
+  "configuration": {
+    "final_top_k": 10,
+    "base_candidate_k": 40,
+    "source_candidate_k_per_source": 20,
+    "rerank_candidate_k": 20,
+    "production_files_modified": false
+  },
+  "summary": {
+    "total_cases": 4,
+    "answerable_cases": 2,
+    "null_cases": 2,
+    "retrieval_improved_cases": [
+      "eval_b34094b1e6c2",
+      "eval_be412cb54feb"
+    ],
+    "retrieval_harmed_cases": [],
+    "context_improved_cases": [
+      "eval_b34094b1e6c2",
+      "eval_be412cb54feb"
+    ],
+    "context_harmed_cases": [],
+    "baseline_answerable_evidence_accepts": 1,
+    "targeted_answerable_evidence_accepts": 2,
+    "baseline_null_evidence_accepts": 0,
+    "targeted_null_evidence_accepts": 0,
+    "missing_source_reached_results_baseline": 3,
+    "missing_source_reached_results_targeted": 4,
+    "missing_source_reached_context_baseline": 3,
+    "missing_source_reached_context_targeted": 4
+  },
+  "records": [
+    {
+      "id": "eval_b34094b1e6c2",
+      "dataset_question_type": "inference_query",
+      "production_query_type": "multihop",
+      "question": "Which NFL team, featured in articles from both 'Sporting News' and 'CBSSports.com', faced the potential of being closely followed in the wild card race by three other teams, might have opted for a field goal in a 'Monday Night Football' game, recently changed their passing game strategy, and has seen comparable offensive production from Josh Dobbs and Kirk Cousins?",
+      "required_sources": [
+        "Sporting News",
+        "CBSSports.com"
+      ],
+      "covered_sources": [
+        "Sporting News"
+      ],
+      "missing_sources": [
+        "CBSSports.com"
+      ],
+      "rewritten_query": "CBSSports.com NFL team featured faced potential closely followed wild card race three teams opted field goal Monday Night Football game recently changed their passing strategy seen comparable offensiv offensive production Josh Dobbs Kirk Cousins",
+      "baseline_candidate_count": 20,
+      "targeted_candidate_count": 20,
+      "injected_candidate_count": 40,
+      "targeted_candidate_sources": [
+        "CBSSports.com"
+      ],
+      "baseline_retrieval_gold_recall": 0.6666666666666666,
+      "targeted_retrieval_gold_recall": 1.0,
+      "baseline_context_gold_recall": 0.6666666666666666,
+      "targeted_context_gold_recall": 1.0,
+      "baseline_missing_source_in_results": true,
+      "targeted_missing_source_in_results": true,
+      "baseline_missing_source_in_context": true,
+      "targeted_missing_source_in_context": true,
+      "baseline_result_sources": [
+        "Sporting News",
+        "CBSSports.com"
+      ],
+      "targeted_result_sources": [
+        "Sporting News",
+        "CBSSports.com"
+      ],
+      "baseline_context_sources": [
+        "Sporting News",
+        "CBSSports.com"
+      ],
+      "targeted_context_sources": [
+        "Sporting News",
+        "CBSSports.com"
+      ],
+      "baseline_evidence_sufficient": true,
+      "targeted_evidence_sufficient": true,
+      "baseline_evidence_score": 0.8449,
+      "targeted_evidence_score": 0.8308
+    },
+    {
+      "id": "eval_aa44caaeae76",
+      "dataset_question_type": "null_query",
+      "production_query_type": "multihop",
+      "question": "Considering the information from an article in The New York Times about Zhemu Soda's recent environmental initiatives and a report by The Guardian on his political career, which political party, known for its green policies, did Zhemu Soda join according to The New York Times, and which committee did he chair that was mentioned in The Guardian, where the first letter of the party and the last letter of the committee are the same?",
+      "required_sources": [
+        "The Guardian",
+        "The New York Times"
+      ],
+      "covered_sources": [
+        "The New York Times"
+      ],
+      "missing_sources": [
+        "The Guardian"
+      ],
+      "rewritten_query": "The Guardian Zhemu Soda's recent environmental initiatives his political career party known its green policies Soda join committee he chair mentioned first letter last",
+      "baseline_candidate_count": 20,
+      "targeted_candidate_count": 20,
+      "injected_candidate_count": 38,
+      "targeted_candidate_sources": [
+        "The Guardian"
+      ],
+      "baseline_retrieval_gold_recall": null,
+      "targeted_retrieval_gold_recall": null,
+      "baseline_context_gold_recall": null,
+      "targeted_context_gold_recall": null,
+      "baseline_missing_source_in_results": true,
+      "targeted_missing_source_in_results": true,
+      "baseline_missing_source_in_context": true,
+      "targeted_missing_source_in_context": true,
+      "baseline_result_sources": [
+        "Yahoo News",
+        "TechCrunch",
+        "Fortune",
+        "Cnbc | World Business News Leader",
+        "Sporting News",
+        "The Guardian",
+        "The Verge"
+      ],
+      "targeted_result_sources": [
+        "Yahoo News",
+        "TechCrunch",
+        "Fortune",
+        "Cnbc | World Business News Leader",
+        "The Guardian"
+      ],
+      "baseline_context_sources": [
+        "Yahoo News",
+        "TechCrunch",
+        "Fortune",
+        "Cnbc | World Business News Leader",
+        "Sporting News",
+        "The Guardian",
+        "The Verge"
+      ],
+      "targeted_context_sources": [
+        "Yahoo News",
+        "TechCrunch",
+        "Fortune",
+        "Cnbc | World Business News Leader",
+        "The Guardian"
+      ],
+      "baseline_evidence_sufficient": false,
+      "targeted_evidence_sufficient": false,
+      "baseline_evidence_score": 0.7871,
+      "targeted_evidence_score": 0.7871
+    },
+    {
+      "id": "eval_be412cb54feb",
+      "dataset_question_type": "temporal_query",
+      "production_query_type": "multihop",
+      "question": "Has the portrayal of Google's market practices in reports by The Age after October 22, 2023, remained consistent with the depiction in The Verge's coverage of the Epic v. Google case, and with TechCrunch's report on the class action antitrust suit filed against Google?",
+      "required_sources": [
+        "The Age",
+        "The Verge",
+        "TechCrunch"
+      ],
+      "covered_sources": [
+        "The Verge",
+        "TechCrunch"
+      ],
+      "missing_sources": [
+        "The Age"
+      ],
+      "rewritten_query": "The Age portrayal Google's market practices October 22 2023 remained consistent depiction Epic Google case class action antitrust suit filed against",
+      "baseline_candidate_count": 20,
+      "targeted_candidate_count": 20,
+      "injected_candidate_count": 40,
+      "targeted_candidate_sources": [
+        "The Age"
+      ],
+      "baseline_retrieval_gold_recall": 0.6666666666666666,
+      "targeted_retrieval_gold_recall": 1.0,
+      "baseline_context_gold_recall": 0.6666666666666666,
+      "targeted_context_gold_recall": 1.0,
+      "baseline_missing_source_in_results": false,
+      "targeted_missing_source_in_results": true,
+      "baseline_missing_source_in_context": false,
+      "targeted_missing_source_in_context": true,
+      "baseline_result_sources": [
+        "TechCrunch",
+        "The Verge"
+      ],
+      "targeted_result_sources": [
+        "TechCrunch",
+        "The Verge",
+        "The Age"
+      ],
+      "baseline_context_sources": [
+        "TechCrunch",
+        "The Verge"
+      ],
+      "targeted_context_sources": [
+        "TechCrunch",
+        "The Verge",
+        "The Age"
+      ],
+      "baseline_evidence_sufficient": false,
+      "targeted_evidence_sufficient": true,
+      "baseline_evidence_score": 0.78,
+      "targeted_evidence_score": 0.802
+    },
+    {
+      "id": "eval_ffba71206ed9",
+      "dataset_question_type": "null_query",
+      "production_query_type": "multihop",
+      "question": "Considering the features discussed in a New York Times article and the performance benchmarks mentioned in a review by The Verge, which component of the latest iPad Pro, represented by a single letter, has seen the most significant upgrade in terms of speed and efficiency?",
+      "required_sources": [
+        "New York Times",
+        "The Verge"
+      ],
+      "covered_sources": [
+        "The Verge"
+      ],
+      "missing_sources": [
+        "New York Times"
+      ],
+      "rewritten_query": "New York Times features discussed performance benchmarks mentioned review component latest iPad Pro represented single letter seen most significant upgrade terms speed efficiency",
+      "baseline_candidate_count": 20,
+      "targeted_candidate_count": 20,
+      "injected_candidate_count": 39,
+      "targeted_candidate_sources": [
+        "The New York Times"
+      ],
+      "baseline_retrieval_gold_recall": null,
+      "targeted_retrieval_gold_recall": null,
+      "baseline_context_gold_recall": null,
+      "targeted_context_gold_recall": null,
+      "baseline_missing_source_in_results": true,
+      "targeted_missing_source_in_results": true,
+      "baseline_missing_source_in_context": true,
+      "targeted_missing_source_in_context": true,
+      "baseline_result_sources": [
+        "Wired",
+        "TechCrunch",
+        "Engadget",
+        "Mashable",
+        "The Verge",
+        "The New York Times"
+      ],
+      "targeted_result_sources": [
+        "Wired",
+        "TechCrunch",
+        "Engadget",
+        "Mashable",
+        "The New York Times",
+        "The Verge"
+      ],
+      "baseline_context_sources": [
+        "Wired",
+        "TechCrunch",
+        "Engadget",
+        "Mashable",
+        "The Verge",
+        "The New York Times"
+      ],
+      "targeted_context_sources": [
+        "Wired",
+        "TechCrunch",
+        "Engadget",
+        "Mashable",
+        "The New York Times",
+        "The Verge"
+      ],
+      "baseline_evidence_sufficient": false,
+      "targeted_evidence_sufficient": false,
+      "baseline_evidence_score": 0.7673,
+      "targeted_evidence_score": 0.7673
+    }
+  ]
+}

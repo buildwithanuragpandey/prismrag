@@ -1,0 +1,365 @@
+{
+  "diagnostic_path": "evaluation\\results\\adaptive_retry_frozen500_diagnostic.json",
+  "corpus_path": "data\\processed\\processed_corpus_v2.json",
+  "summary": {
+    "total_retry_candidates": 12,
+    "answerable_retry_candidates": 2,
+    "null_retry_candidates": 10,
+    "retry_all_missing_sources_available": 4,
+    "retry_missing_source_unavailable": 8,
+    "answerable_source_available": 2,
+    "answerable_source_unavailable": 0,
+    "null_source_available": 2,
+    "null_source_unavailable": 8,
+    "rewrite_rescues": 1,
+    "rescues_where_source_available": 1,
+    "missing_source_frequency": {
+      "Forbes": 3,
+      "Bloomberg": 2,
+      "CBSSports.com": 1,
+      "Gizmodo": 1,
+      "Wall Street Journal": 1,
+      "The Guardian": 1,
+      "The Age": 1,
+      "CNET": 1,
+      "New York Times": 1
+    },
+    "available_missing_source_frequency": {
+      "CBSSports.com": 1,
+      "The Guardian": 1,
+      "The Age": 1,
+      "New York Times": 1
+    },
+    "unavailable_missing_source_frequency": {
+      "Forbes": 3,
+      "Bloomberg": 2,
+      "Gizmodo": 1,
+      "Wall Street Journal": 1,
+      "CNET": 1
+    }
+  },
+  "records": [
+    {
+      "id": "eval_d940ff230963",
+      "question_type": "null_query",
+      "question": "Based on a report by Bloomberg and an analysis by The Verge, which company's executive, known for leading a significant shift in software strategy as per Bloomberg, was also highlighted by The Verge for their involvement in a controversial decision affecting user privacy?",
+      "initial_required_sources": [
+        "Bloomberg",
+        "The Verge"
+      ],
+      "initial_covered_sources": [
+        "The Verge"
+      ],
+      "initial_missing_sources": [
+        "Bloomberg"
+      ],
+      "rewrite_rescued": false,
+      "source_checks": [
+        {
+          "required_source": "Bloomberg",
+          "available_in_corpus": false,
+          "matched_corpus_sources": [],
+          "matched_chunk_count": 0
+        }
+      ],
+      "all_missing_sources_available_in_corpus": false,
+      "any_missing_source_available_in_corpus": false
+    },
+    {
+      "id": "eval_b34094b1e6c2",
+      "question_type": "inference_query",
+      "question": "Which NFL team, featured in articles from both 'Sporting News' and 'CBSSports.com', faced the potential of being closely followed in the wild card race by three other teams, might have opted for a field goal in a 'Monday Night Football' game, recently changed their passing game strategy, and has seen comparable offensive production from Josh Dobbs and Kirk Cousins?",
+      "initial_required_sources": [
+        "Sporting News",
+        "CBSSports.com"
+      ],
+      "initial_covered_sources": [
+        "Sporting News"
+      ],
+      "initial_missing_sources": [
+        "CBSSports.com"
+      ],
+      "rewrite_rescued": true,
+      "source_checks": [
+        {
+          "required_source": "CBSSports.com",
+          "available_in_corpus": true,
+          "matched_corpus_sources": [
+            "CBSSports.com"
+          ],
+          "matched_chunk_count": 352
+        }
+      ],
+      "all_missing_sources_available_in_corpus": true,
+      "any_missing_source_available_in_corpus": true
+    },
+    {
+      "id": "eval_5be6ab82527f",
+      "question_type": "null_query",
+      "question": "Considering the information from a CNBC article discussing the growth strategy of CareCredit and a Forbes article analyzing the impact of CareCredit's partnerships on the healthcare financing market, which company, beginning with the letter 'S', is both a strategic partner of CareCredit mentioned in the CNBC article and is also highlighted in the Forbes article for its innovative approach to patient financing?",
+      "initial_required_sources": [
+        "Cnbc | World Business News Leader",
+        "Forbes"
+      ],
+      "initial_covered_sources": [
+        "Cnbc | World Business News Leader"
+      ],
+      "initial_missing_sources": [
+        "Forbes"
+      ],
+      "rewrite_rescued": false,
+      "source_checks": [
+        {
+          "required_source": "Forbes",
+          "available_in_corpus": false,
+          "matched_corpus_sources": [],
+          "matched_chunk_count": 0
+        }
+      ],
+      "all_missing_sources_available_in_corpus": false,
+      "any_missing_source_available_in_corpus": false
+    },
+    {
+      "id": "eval_ea1a339e39dc",
+      "question_type": "null_query",
+      "question": "Considering the features highlighted in the Gizmodo article and the pricing details mentioned in the Engadget article, what is the first letter of the model name of Garmin's dive computer that is solar-powered and specifically designed for underwater explorers?",
+      "initial_required_sources": [
+        "Gizmodo",
+        "Engadget"
+      ],
+      "initial_covered_sources": [
+        "Engadget"
+      ],
+      "initial_missing_sources": [
+        "Gizmodo"
+      ],
+      "rewrite_rescued": false,
+      "source_checks": [
+        {
+          "required_source": "Gizmodo",
+          "available_in_corpus": false,
+          "matched_corpus_sources": [],
+          "matched_chunk_count": 0
+        }
+      ],
+      "all_missing_sources_available_in_corpus": false,
+      "any_missing_source_available_in_corpus": false
+    },
+    {
+      "id": "eval_0d388d0ff3c3",
+      "question_type": "null_query",
+      "question": "What is the name of the company that Anthony Melone joined as a CTO, according to a TechCrunch article, and later became the CEO, as reported by a Wall Street Journal article?",
+      "initial_required_sources": [
+        "TechCrunch",
+        "Wall Street Journal"
+      ],
+      "initial_covered_sources": [
+        "TechCrunch"
+      ],
+      "initial_missing_sources": [
+        "Wall Street Journal"
+      ],
+      "rewrite_rescued": false,
+      "source_checks": [
+        {
+          "required_source": "Wall Street Journal",
+          "available_in_corpus": false,
+          "matched_corpus_sources": [],
+          "matched_chunk_count": 0
+        }
+      ],
+      "all_missing_sources_available_in_corpus": false,
+      "any_missing_source_available_in_corpus": false
+    },
+    {
+      "id": "eval_aa44caaeae76",
+      "question_type": "null_query",
+      "question": "Considering the information from an article in The New York Times about Zhemu Soda's recent environmental initiatives and a report by The Guardian on his political career, which political party, known for its green policies, did Zhemu Soda join according to The New York Times, and which committee did he chair that was mentioned in The Guardian, where the first letter of the party and the last letter of the committee are the same?",
+      "initial_required_sources": [
+        "The Guardian",
+        "The New York Times"
+      ],
+      "initial_covered_sources": [
+        "The New York Times"
+      ],
+      "initial_missing_sources": [
+        "The Guardian"
+      ],
+      "rewrite_rescued": false,
+      "source_checks": [
+        {
+          "required_source": "The Guardian",
+          "available_in_corpus": true,
+          "matched_corpus_sources": [
+            "The Guardian"
+          ],
+          "matched_chunk_count": 289
+        }
+      ],
+      "all_missing_sources_available_in_corpus": true,
+      "any_missing_source_available_in_corpus": true
+    },
+    {
+      "id": "eval_be412cb54feb",
+      "question_type": "temporal_query",
+      "question": "Has the portrayal of Google's market practices in reports by The Age after October 22, 2023, remained consistent with the depiction in The Verge's coverage of the Epic v. Google case, and with TechCrunch's report on the class action antitrust suit filed against Google?",
+      "initial_required_sources": [
+        "The Age",
+        "The Verge",
+        "TechCrunch"
+      ],
+      "initial_covered_sources": [
+        "The Verge",
+        "TechCrunch"
+      ],
+      "initial_missing_sources": [
+        "The Age"
+      ],
+      "rewrite_rescued": false,
+      "source_checks": [
+        {
+          "required_source": "The Age",
+          "available_in_corpus": true,
+          "matched_corpus_sources": [
+            "The Age"
+          ],
+          "matched_chunk_count": 224
+        }
+      ],
+      "all_missing_sources_available_in_corpus": true,
+      "any_missing_source_available_in_corpus": true
+    },
+    {
+      "id": "eval_7e434c4c2bfc",
+      "question_type": "null_query",
+      "question": "Considering the information from an article by The Verge on the latest iCloud security features and a report by Bloomberg on the recent iCloud service outages, which character from the CEO's name of the company responsible for iCloud would be common to both the security feature's codename and the name of the city where the most significant server disruption occurred?",
+      "initial_required_sources": [
+        "The Verge",
+        "Bloomberg"
+      ],
+      "initial_covered_sources": [
+        "The Verge"
+      ],
+      "initial_missing_sources": [
+        "Bloomberg"
+      ],
+      "rewrite_rescued": false,
+      "source_checks": [
+        {
+          "required_source": "Bloomberg",
+          "available_in_corpus": false,
+          "matched_corpus_sources": [],
+          "matched_chunk_count": 0
+        }
+      ],
+      "all_missing_sources_available_in_corpus": false,
+      "any_missing_source_available_in_corpus": false
+    },
+    {
+      "id": "eval_d89f3a989156",
+      "question_type": "null_query",
+      "question": "Considering the information from a CNET article discussing the latest Chromebook security features and a separate Engadget article reviewing the performance of the newest Chromebook model, which letter represents the shared key feature highlighted for its importance in both security and performance?",
+      "initial_required_sources": [
+        "CNET",
+        "Engadget"
+      ],
+      "initial_covered_sources": [
+        "Engadget"
+      ],
+      "initial_missing_sources": [
+        "CNET"
+      ],
+      "rewrite_rescued": false,
+      "source_checks": [
+        {
+          "required_source": "CNET",
+          "available_in_corpus": false,
+          "matched_corpus_sources": [],
+          "matched_chunk_count": 0
+        }
+      ],
+      "all_missing_sources_available_in_corpus": false,
+      "any_missing_source_available_in_corpus": false
+    },
+    {
+      "id": "eval_5cb31599cd9e",
+      "question_type": "null_query",
+      "question": "Considering the information from a CNBC article detailing Sweatcoin's partnership strategies and a Forbes article discussing the app's user engagement metrics, which letter, representing a feature that both articles attribute to contributing significantly to Sweatcoin's growth, is shared by the names of the companies that Sweatcoin has reportedly partnered with for rewards?",
+      "initial_required_sources": [
+        "Cnbc | World Business News Leader",
+        "Forbes"
+      ],
+      "initial_covered_sources": [
+        "Cnbc | World Business News Leader"
+      ],
+      "initial_missing_sources": [
+        "Forbes"
+      ],
+      "rewrite_rescued": false,
+      "source_checks": [
+        {
+          "required_source": "Forbes",
+          "available_in_corpus": false,
+          "matched_corpus_sources": [],
+          "matched_chunk_count": 0
+        }
+      ],
+      "all_missing_sources_available_in_corpus": false,
+      "any_missing_source_available_in_corpus": false
+    },
+    {
+      "id": "eval_ffba71206ed9",
+      "question_type": "null_query",
+      "question": "Considering the features discussed in a New York Times article and the performance benchmarks mentioned in a review by The Verge, which component of the latest iPad Pro, represented by a single letter, has seen the most significant upgrade in terms of speed and efficiency?",
+      "initial_required_sources": [
+        "New York Times",
+        "The Verge"
+      ],
+      "initial_covered_sources": [
+        "The Verge"
+      ],
+      "initial_missing_sources": [
+        "New York Times"
+      ],
+      "rewrite_rescued": false,
+      "source_checks": [
+        {
+          "required_source": "New York Times",
+          "available_in_corpus": true,
+          "matched_corpus_sources": [
+            "The New York Times"
+          ],
+          "matched_chunk_count": 149
+        }
+      ],
+      "all_missing_sources_available_in_corpus": true,
+      "any_missing_source_available_in_corpus": true
+    },
+    {
+      "id": "eval_9751f307e484",
+      "question_type": "null_query",
+      "question": "Considering the updates from a CNBC article on the latest Google Workspace features and the implications for remote work discussed in a Forbes article, which single letter represents the new keyboard shortcut introduced by Google Workspace for quickly starting a new document, as mentioned in both articles?",
+      "initial_required_sources": [
+        "Cnbc | World Business News Leader",
+        "Forbes"
+      ],
+      "initial_covered_sources": [
+        "Cnbc | World Business News Leader"
+      ],
+      "initial_missing_sources": [
+        "Forbes"
+      ],
+      "rewrite_rescued": false,
+      "source_checks": [
+        {
+          "required_source": "Forbes",
+          "available_in_corpus": false,
+          "matched_corpus_sources": [],
+          "matched_chunk_count": 0
+        }
+      ],
+      "all_missing_sources_available_in_corpus": false,
+      "any_missing_source_available_in_corpus": false
+    }
+  ]
+}

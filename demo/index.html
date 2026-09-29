@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adaptive Agentic RAG — Live API Demo & Showcase</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+      <div class="nav-brand">
+        <div class="brand-logo">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="brand-title">Adaptive Agentic RAG</h1>
+          <p class="brand-subtitle">Production Multi-Hop RAG with Hybrid Retrieval, Cross-Encoder Reranking & NLI Verification</p>
+        </div>
+      </div>
+      
+      <!-- System Telemetry Badges -->
+      <div class="system-status-group">
+        <div class="status-pill" id="pill-api-status">
+          <span class="status-dot status-ready"></span>
+          <span class="status-label">API: <strong id="val-api-status">READY (200 OK)</strong></span>
+        </div>
+        <div class="status-pill">
+          <span class="status-label">Arch: <strong id="val-arch">V2-A</strong></span>
+        </div>
+        <div class="status-pill">
+          <span class="status-label">Collection: <strong id="val-collection">multihop_chunks_v2</strong></span>
+        </div>
+        <div class="status-pill">
+          <span class="status-label">Chunks: <strong id="val-chunks">8,173</strong></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Offline Alert Banner (hidden by default) -->
+    <div class="offline-banner" id="offline-banner" style="display: none;">
+      <div class="alert-icon">⚠️</div>
+      <div class="alert-content">
+        <strong>FastAPI service is not reachable at <span id="target-api-url">http://127.0.0.1:8000</span></strong>
+        <p>Start the API server in your terminal: <code>uvicorn adaptive_agentic_rag.api.app:create_app --factory --host 127.0.0.1 --port 8000</code></p>
+      </div>
+      <button class="btn btn-sm btn-outline" id="btn-retry-health">Retry Connection</button>
+    </div>
+
+    <!-- Main Content Grid -->
+    <main class="main-layout">
+      
+      <!-- Left Column: Query & Controls -->
+      <section class="left-pane">
+        
+        <!-- Preset Demo Scenarios -->
+        <div class="panel-card">
+          <div class="panel-header">
+            <span class="panel-title">Preset Scenarios</span>
+            <span class="badge badge-neutral">Curated Demo Scenarios</span>
+          </div>
+          <div class="scenario-buttons">
+            <button class="scenario-btn" id="btn-scenario-a">
+              <span class="scenario-badge badge-success">Scenario A</span>
+              <span class="scenario-text">Answered Multi-Hop Query</span>
+            </button>
+            <button class="scenario-btn" id="btn-scenario-b">
+              <span class="scenario-badge badge-primary">Scenario B</span>
+              <span class="scenario-text">Observability & Trace Mode</span>
+            </button>
+            <button class="scenario-btn" id="btn-scenario-c">
+              <span class="scenario-badge badge-warning">Scenario C</span>
+              <span class="scenario-text">Fail-Closed Safe Abstention</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Query Input Card -->
+        <div class="panel-card">
+          <div class="panel-header">
+            <span class="panel-title">Inference Query</span>
+            <span class="panel-endpoint">POST /v1/query</span>
+          </div>
+          <form id="query-form" class="query-form">
+            <textarea 
+              id="query-input" 
+              class="query-textarea" 
+              rows="4" 
+              placeholder="Enter a multi-hop question or select a preset scenario above..."
+              required
+            ></textarea>
+            
+            <div class="query-options">
+              <label class="toggle-label" title="Returns full routing strategy, candidate counts, and citation validation telemetry">
+                <input type="checkbox" id="check-include-trace" checked>
+                <span class="toggle-slider"></span>
+                <span class="toggle-text">Include Trace Telemetry</span>
+              </label>
+
+              <div class="form-actions">
+                <button type="button" class="btn btn-secondary btn-sm" id="btn-clear">Clear</button>
+                <button type="submit" class="btn btn-primary" id="btn-submit">
+                  <span id="btn-text">Execute Query</span>
+                  <span id="btn-spinner" class="spinner" style="display: none;"></span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Frozen Pipeline Invariants Card -->
+        <div class="panel-card system-spec-card">
+          <div class="panel-header">
+            <span class="panel-title">Frozen Pipeline Invariants</span>
+            <span class="badge badge-info">Canonical V2-A</span>
+          </div>
+          <div class="spec-grid">
+            <div class="spec-item">
+              <span class="spec-key">Embedding</span>
+              <span class="spec-val">Qwen3-Embedding-0.6B (1024d)</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-key">Sparse Lexical</span>
+              <span class="spec-val">BM25Okapi (k1=1.5, b=0.75)</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-key">Hybrid Fusion</span>
+              <span class="spec-val">Reciprocal Rank Fusion (k=60)</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-key">Reranker & MMR</span>
+              <span class="spec-val">bge-reranker-base (MMR λ=0.7)</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-key">Single-Pass LLM</span>
+              <span class="spec-val">Qwen2.5-1.5B-Instruct</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-key">NLI Grounder</span>
+              <span class="spec-val">DeBERTa-v3-small (P ≥ 0.70)</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Right Column: Pipeline State & Results -->
+      <section class="right-pane">
+        
+        <!-- Interactive Pipeline Execution Tracker -->
+        <div class="panel-card">
+          <div class="panel-header">
+            <span class="panel-title">LangGraph Execution Flow</span>
+            <span id="pipeline-status-badge" class="badge badge-neutral">Idle</span>
+          </div>
+          
+          <div class="pipeline-track">
+            <!-- Node 1: Router -->
+            <div class="pipeline-node" id="node-router">
+              <div class="node-header">
+                <span class="node-icon">🧭</span>
+                <span class="node-name">1. Router</span>
+              </div>
+              <span class="node-meta" id="meta-router">Pending</span>
+            </div>
+
+            <!-- Node 2: Retrieval -->
+            <div class="pipeline-node" id="node-retrieval">
+              <div class="node-header">
+                <span class="node-icon">⚡</span>
+                <span class="node-name">2. Hybrid RRF</span>
+              </div>
+              <span class="node-meta" id="meta-retrieval">Pending</span>
+            </div>
+
+            <!-- Node 3: Reranking -->
+            <div class="pipeline-node" id="node-reranker">
+              <div class="node-header">
+                <span class="node-icon">🎯</span>
+                <span class="node-name">3. Rerank/MMR</span>
+              </div>
+              <span class="node-meta" id="meta-reranker">Pending</span>
+            </div>
+
+            <!-- Node 4: Evidence & Recovery -->
+            <div class="pipeline-node" id="node-evidence">
+              <div class="node-header">
+                <span class="node-icon">🛡️</span>
+                <span class="node-name">4. Evidence Gate</span>
+              </div>
+              <span class="node-meta" id="meta-evidence">Pending</span>
+            </div>
+
+            <!-- Node 5: Generator -->
+            <div class="pipeline-node" id="node-generator">
+              <div class="node-header">
+                <span class="node-icon">🤖</span>
+                <span class="node-name">5. Generation</span>
+              </div>
+              <span class="node-meta" id="meta-generator">Pending</span>
+            </div>
+
+            <!-- Node 6: Grounding -->
+            <div class="pipeline-node" id="node-grounding">
+              <div class="node-header">
+                <span class="node-icon">🔬</span>
+                <span class="node-name">6. Grounding</span>
+              </div>
+              <span class="node-meta" id="meta-grounding">Pending</span>
+            </div>
+
+            <!-- Node 7: Semantic Safety Verifier -->
+            <div class="pipeline-node" id="node-verifier">
+              <div class="node-header">
+                <span class="node-icon">⚖️</span>
+                <span class="node-name">7. Safety Verifier</span>
+              </div>
+              <span class="node-meta" id="meta-verifier">Pending</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Result Output Card -->
+        <div class="panel-card result-panel">
+          <div class="panel-header">
+            <span class="panel-title">Synthesized Answer & Attributions</span>
+            <div class="timing-badge" id="timing-badge" style="display: none;">
+              Demo HTTP Latency: <strong id="val-latency">0 ms</strong>
+            </div>
+          </div>
+
+          <!-- Empty / Initial State -->
+          <div class="result-placeholder" id="result-placeholder">
+            <div class="placeholder-icon">💬</div>
+            <h3>No query executed yet</h3>
+            <p>Select a preset scenario above or enter a multi-hop query and click "Execute Query" to inspect the live RAG pipeline.</p>
+          </div>
+
+          <!-- Active Answer Output -->
+          <div class="result-content" id="result-content" style="display: none;">
+            <!-- Injected via JavaScript -->
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <div>Adaptive Agentic RAG • Canonical V2-A Production Stack • FastAPI + Qdrant + Qwen + DeBERTa</div>
+      <div class="footer-links">
+        <a href="/docs" target="_blank" rel="noopener">FastAPI Swagger UI</a> •
+        <a href="/redoc" target="_blank" rel="noopener">ReDoc</a> •
+        <a href="https://github.com/mmnsrti/adaptive-agentic-rag" target="_blank" rel="noopener">GitHub Repository</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

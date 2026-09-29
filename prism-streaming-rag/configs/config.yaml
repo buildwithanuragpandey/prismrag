@@ -1,0 +1,166 @@
+# PRISM Adaptive Streaming RAG — Configuration
+# All secrets must be set in .env; never hardcode credentials here.
+
+project:
+  name: "prism-streaming-rag"
+  version: "0.1.0"
+  description: "Adaptive Streaming RAG with Utility-Aware Retrieval and Incremental Evidence Refinement"
+
+# ──────────────────────────────────────────────────────────────
+# Models
+# ──────────────────────────────────────────────────────────────
+models:
+  embedding:
+    # Options: "sentence-transformers/all-MiniLM-L6-v2"  (fast, no GPU)
+    #          "Qwen/Qwen3-Embedding-0.6B"
+    #          "BAAI/bge-m3"
+    name: "sentence-transformers/all-MiniLM-L6-v2"
+    device: "cpu"          # "cpu" | "cuda" | "mps"
+    batch_size: 32
+
+  reranker:
+    # Options: "BAAI/bge-reranker-base"
+    #          "BAAI/bge-reranker-v2-m3"
+    name: "BAAI/bge-reranker-base"
+    device: "cpu"
+    enabled: true
+
+  llm:
+    # provider: "ollama" | "openai" | "azure" | "anthropic"
+    provider: "ollama"
+    model: "llama3.2:3b"     # local via Ollama
+    temperature: 0.1
+    max_tokens: 1024
+    # For OpenAI-compatible: set OPENAI_API_KEY and OPENAI_BASE_URL in .env
+
+  intent_classifier:
+    # provider: "llm" (uses the LLM above) | "local_classifier"
+    provider: "llm"
+
+# ──────────────────────────────────────────────────────────────
+# Retrieval
+# ──────────────────────────────────────────────────────────────
+retrieval:
+  top_k_dense: 20
+  top_k_bm25: 20
+  top_k_rrf: 20
+  top_k_reranked: 5
+  rrf_k: 60                   # RRF constant
+  mmr_lambda: 0.7
+  mmr_top_k: 5
+  parallel_subqueries: true
+
+# ──────────────────────────────────────────────────────────────
+# Vector Store
+# ──────────────────────────────────────────────────────────────
+vectorstore:
+  # backend: "faiss" | "qdrant"
+  backend: "faiss"
+  faiss:
+    index_path: "data/faiss_index/index.faiss"
+    metadata_path: "data/faiss_index/metadata.json"
+  qdrant:
+    host: "localhost"
+    port: 6333
+    collection: "prism_chunks_v1"
+
+# ──────────────────────────────────────────────────────────────
+# Corpus
+# ──────────────────────────────────────────────────────────────
+corpus:
+  # Source dataset for ingestion (MultiHopRAG)
+  dataset_name: "yixuantt/MultiHopRAG"
+  dataset_revision: "71ac0d0bd1f951d2d6b70311f7d2ae404e1ffa82"
+  processed_corpus_path: "data/processed/corpus.json"
+  bm25_index_path: "data/processed/bm25_index.pkl"
+  chunk_size: 1000
+  chunk_overlap: 100
+  min_chunk_words: 20
+
+# ──────────────────────────────────────────────────────────────
+# Adaptive Controller (Research Component)
+# ──────────────────────────────────────────────────────────────
+controller:
+  # WAIT / RETRIEVE / SUPPRESS thresholds
+  retrieve_threshold: 0.55    # utility >= this → RETRIEVE
+  suppress_threshold: 0.20    # utility < this → SUPPRESS; in between → WAIT
+  min_completeness_to_retrieve: 0.40
+  min_intent_stability_to_retrieve: 0.50
+
+  # Weights for retrieval utility formula:
+  # utility = w1*novelty + w2*stability + w3*completeness + w4*evidence_gap - w5*cost
+  utility_weights:
+    novelty: 0.30
+    intent_stability: 0.25
+    completeness: 0.20
+    evidence_gap: 0.20
+    retrieval_cost: 0.05
+
+  # Semantic novelty
+  novelty:
+    # cosine distance threshold for "novel"
+    high_novelty_threshold: 0.30
+    low_novelty_threshold: 0.05
+
+  # Intent stability: number of consecutive identical intents needed
+  intent_stability:
+    stable_window: 2           # require intent to remain same for N chunks
+    max_intents: 5
+
+  # Evidence coverage
+  evidence:
+    sufficient_coverage_threshold: 0.70  # if coverage >= this → SUPPRESS
+    max_evidence_age_chunks: 10          # evidence older than N chunks → stale
+
+  # Minimum time between retrievals (seconds)
+  min_retrieval_interval_s: 2.0
+
+# ──────────────────────────────────────────────────────────────
+# Streaming Simulator
+# ──────────────────────────────────────────────────────────────
+streaming:
+  chunk_interval_s: 1.0       # seconds between transcript chunks
+  websocket_host: "0.0.0.0"
+  websocket_port: 8001
+
+# ──────────────────────────────────────────────────────────────
+# API
+# ──────────────────────────────────────────────────────────────
+api:
+  host: "0.0.0.0"
+  port: 8000
+  cors_origins:
+    - "http://localhost:5173"
+    - "http://localhost:3000"
+
+# ──────────────────────────────────────────────────────────────
+# Database (Evidence Store, Sessions, Telemetry)
+# ──────────────────────────────────────────────────────────────
+database:
+  url: "sqlite:///data/prism.db"   # Override via DATABASE_URL in .env
+
+# ──────────────────────────────────────────────────────────────
+# Telemetry
+# ──────────────────────────────────────────────────────────────
+telemetry:
+  log_dir: "results/telemetry"
+  log_to_file: true
+  log_to_db: true
+  log_level: "INFO"
+
+# ──────────────────────────────────────────────────────────────
+# Baselines
+# ──────────────────────────────────────────────────────────────
+baselines:
+  fixed_threshold:
+    completeness_threshold: 0.60    # retrieve when completeness passes this
+
+# ──────────────────────────────────────────────────────────────
+# Evaluation / Benchmarks
+# ──────────────────────────────────────────────────────────────
+evaluation:
+  test_dataset: "evaluation/datasets/frozen_e2e_smoke_20.json"
+  full_test_dataset: "evaluation/datasets/final_untouched_test.json"
+  results_dir: "results/benchmark"
+  recall_k: [1, 3, 5, 10]
+  ndcg_k: 10

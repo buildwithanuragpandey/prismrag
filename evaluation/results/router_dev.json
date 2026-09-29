@@ -1,0 +1,3274 @@
+{
+  "dataset": "evaluation\\datasets\\router_dev_control_180.json",
+  "summary": {
+    "total": 180,
+    "query_type_accuracy": 0.6722222222222223,
+    "strategy_accuracy": 1.0,
+    "rerank_accuracy": 1.0,
+    "mmr_accuracy": 1.0,
+    "exact_decision_accuracy": 0.6722222222222223,
+    "simple_route_precision": 1.0,
+    "simple_route_recall": 1.0,
+    "hard_to_dense_error_rate": 0.0,
+    "route_distribution": {
+      "simple|dense|rerank=False|mmr=False": 60,
+      "multihop|hybrid|rerank=True|mmr=True": 115,
+      "complex|hybrid|rerank=True|mmr=True": 5
+    },
+    "confusion_matrix": {
+      "simple": {
+        "simple": 60
+      },
+      "multihop": {
+        "multihop": 58,
+        "complex": 2
+      },
+      "complex": {
+        "multihop": 57,
+        "complex": 3
+      }
+    }
+  },
+  "predictions": [
+    {
+      "id": "router_simple_000",
+      "question": "Who wrote the article \"Monday Night Football DraftKings Picks: NFL DFS lineup advice for Week 15 Eagles-Seahawks Showdown tournaments\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_001",
+      "question": "When was the article \"IPL 2024 Auction Live: Starc, Cummins in spotlight as Dubai set for ‘richie-rich’ carnival\" published?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_002",
+      "question": "Which source published the article \"Ten Hag responds to Carra: Man Utd have actually improved\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_003",
+      "question": "Who wrote the article \"Dissecting impact of Israel-Hamas conflict on markets \"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_004",
+      "question": "When was the article \"The Crown: What is fact and what is fiction on season 6?\" published?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_005",
+      "question": "Which source published the article \"Another cruel comeback sees Newcastle perish in group of death\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_006",
+      "question": "Who wrote the article \"Fifth Third 1.67% Cash/Back Card: One of the simplest cash back credit cards with an above-average return\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_007",
+      "question": "When was the article \"The best Black Friday deals you can get for under $25\" published?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_008",
+      "question": "Which source published the article \"SBF’s trial starts soon, but how did he — and FTX — get here?\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_009",
+      "question": "Who wrote the article \"England thrash Scotland but cannot avoid Team GB Olympic heartbreak\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_010",
+      "question": "When was the article \"Biden’s AI EO hailed as broad, but not deep without legislation to match\" published?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_011",
+      "question": "Which source published the article \"Meta turned a blind eye to kids on its platforms for years, unredacted lawsuit alleges\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_012",
+      "question": "Who wrote the article \"7 of the best luxury ski resorts for a five-star experience\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_013",
+      "question": "When was the article \"Spill toasts one year with a 2.7M seed extension, Kerry Washington and champagne\" published?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_014",
+      "question": "Which source published the article \"Gen Z just saw the worst war in Israel in 50 years break out all over the internet, but they were raised on 'disturbing images'\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_015",
+      "question": "Who wrote the article \"9 great movies to watch on Tubi for free right now\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_016",
+      "question": "When was the article \"Connecticut moms prowl neighborhood as zombies to raise money for breast cancer research\" published?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_017",
+      "question": "Which source published the article \"What about the Mediterranean lifestyle reduces mortality? Scientists find out\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_018",
+      "question": "Who wrote the article \"World Series Game 2: Arizona Diamondbacks v Texas Rangers – live\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_019",
+      "question": "When was the article \"Theatre producer and Everton chairman Kenwright dies\" published?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_020",
+      "question": "Which source published the article \"Looking for a book to read? Here are 14 tips for October\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_021",
+      "question": "Who wrote the article \"This Christmas let your home be the centre of the celebrations with these festive ideas from The White Company\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_022",
+      "question": "When was the article \"Sex, Signal messages, and sabotaging FTX's code: SBF execs and Bahamas roommates tell all in court\" published?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_023",
+      "question": "Which source published the article \"‘Bleeds green and gold’: Ballsy career-saving call that’s delivered Arnie a record-breaking moment\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_024",
+      "question": "Who wrote the article \"The best apps and tools for managing your money online\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_025",
+      "question": "When was the article \"The best shows to stream in December\" published?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_026",
+      "question": "Which source published the article \"Nobel Prize winner shocked by early morning phone call from Sweden: 'It was ringing during the night, but I didn’t answer it because I’m trying to get some sleep, basically'\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_027",
+      "question": "Who wrote the article \"Fantasy Injury Updates Week 10: News on Justin Jefferson, Ja'Marr Chase, T.J. Hockenson & Curtis Samuel\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_028",
+      "question": "When was the article \"Is Google Search better than the rest? And is that fair?\" published?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_029",
+      "question": "Which source published the article \"RA set to announce local as high-performance director – and how it could help land Schmidt as Wallabies coach\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_030",
+      "question": "Who wrote the article \"Uber’s Q3 numbers include impressive profitability gains, slower-than-expected growth\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_031",
+      "question": "When was the article \"6 VCs explain how startups can capture and defend marketshare in the AI era\" published?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_032",
+      "question": "Which source published the article \"A timeline of Will Smith and Jada Pinkett Smith’s relationship amid separation\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_033",
+      "question": "Who wrote the article \"The housing winter arrives early as existing home sales crash to Great Recession levels and the long-feared ‘deep freeze’ sets in\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_034",
+      "question": "When was the article \"Raiders vs. Lions live score, updates, highlights from NFL 'Monday Night Football' game\" published?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_035",
+      "question": "Which source published the article \"Ten Hag demands both positivity and pragmatism from erratic Onana\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_036",
+      "question": "Who wrote the article \"Keep Labs’ smart storage redefines medication management\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_037",
+      "question": "When was the article \"Chicago Fire vs Inter Miami live score, result, updates, highlights from Lionel Messi in MLS match\" published?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_038",
+      "question": "Which source published the article \"5 things we learned so far about the Google antitrust case\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_039",
+      "question": "Who wrote the article \"West Indies v England: fifth and deciding men’s T20 cricket international – live\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_040",
+      "question": "When was the article \"EU says incoming rules for general purpose AIs can evolve over time\" published?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_041",
+      "question": "Which source published the article \"Rogue Trader’s role-playing embraces the brutality and freedom of Warhammer 40K\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_042",
+      "question": "Who wrote the article \"Donald Trump defrauded banks with 'fantasy' to build his real estate empire, judge rules in a major repudiation against the former president\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_043",
+      "question": "When was the article \"Buckle up for more ‘turbulence’ in the housing market, BofA says—it’s a housing recession, 1980s style\" published?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_044",
+      "question": "Which source published the article \"NFL Fantasy Football Week 5 Lineup Decisions: Starts, Sits, Sleepers, Busts to know for every game\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_045",
+      "question": "Who wrote the article \"Charlie Sheen is 'single dad' to twins, follows John Travolta, Liam Neeson raising kids solo\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_046",
+      "question": "When was the article \"The best Barbarian builds and skills in Diablo 4\" published?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_047",
+      "question": "Which source published the article \"Yankees Gear Up for 2024 Season After Horrendous Year, But Could Letting This Star Go Spell Another Big Mistake?\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_048",
+      "question": "Who wrote the article \"EU commissioner sidesteps MEPs’ questions about CSAM microtargeting\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_049",
+      "question": "When was the article \"Epic v. Google, explained\" published?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_050",
+      "question": "Which source published the article \"The best places to see the Northern Lights in the UK\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_051",
+      "question": "Who wrote the article \"The best movies of 2023 so far\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_052",
+      "question": "When was the article \"Baker Mayfield stats today: Buccaneers QB keeps Tampa Bay atop NFC South with sparkling showing vs. Packers\" published?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_053",
+      "question": "Which source published the article \"Fundamental Investing: The Art of Relative Valuation\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_054",
+      "question": "Who wrote the article \"49ers cap space 2024: Why Chase Young trade may not be a pure rental for San Francisco\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_055",
+      "question": "When was the article \"Why Mozilla is betting on a decentralized social networking future\" published?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_056",
+      "question": "Which source published the article \"MLB Winter Meetings tracker: Live updates on news, rumors, signings and trades for 2023 free agency\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_057",
+      "question": "Who wrote the article \"Showtime Boxing to take final 10-count: Top 5 greatest fights revisited\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_058",
+      "question": "When was the article \"The obsessive tormenter who made professors’ lives miserable\" published?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_simple_059",
+      "question": "Which source published the article \"Unraveling Potential Reasons Why the Dodgers May Not Pursue Shohei Ohtani and Mike Trout in Free Agency Despite Their Availability\"?",
+      "source": "synthetic_single_document_control",
+      "gold": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "predicted": {
+        "query_type": "simple",
+        "retrieval_strategy": "dense",
+        "rerank": false,
+        "mmr": false
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_000",
+      "question": "Which NFL team, featured in articles from both 'Sporting News' and 'CBSSports.com', faced the potential of being closely followed in the wild card race by three other teams, might have opted for a field goal in a 'Monday Night Football' game, recently changed their passing game strategy, and has seen comparable offensive production from Josh Dobbs and Kirk Cousins?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_001",
+      "question": "Which company, known for ranking local search results based on relevance, distance, and prominence according to an article from The Verge, is also mentioned in two TechCrunch articles, one discussing the lack of planned additional measures for a video platform in the next six months, and the other citing a class action antitrust suit for siphoning off content, readers, and ad revenue from news publishers?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_002",
+      "question": "Which company is at the center of allegations related to manipulating search results for profit as reported by 'The Age' and is also accused by news publishers in a class action lawsuit covered by 'TechCrunch' for harming their business through anticompetitive practices?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_003",
+      "question": "Who is the individual whose legal and public persona as a trustworthy figure in the cryptocurrency industry is under scrutiny, with allegations of fraud for personal gain and conflicting statements about governance plans for a company, all of which are being dissected before a jury?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_004",
+      "question": "Who is the individual that, prior to a major cryptocurrency platform's downfall, was seen as a credible figure within the industry, but is now accused by the prosecution of utilizing a colleague for covert control over customer funds and is facing legal scrutiny for not addressing a significant financial shortfall, as reported by Fortune, The Verge, and TechCrunch?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_005",
+      "question": "Who is the individual associated with FTX that was portrayed differently by The Verge and TechCrunch, persuaded a former Jane Street colleague to join his trading and development ventures, and is facing allegations of fraud by the prosecution?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_006",
+      "question": "Which organization, discussed in articles from 'The Roar | Sports Writers Blog', is likely to receive support from Super Rugby franchises for a potential coaching appointment and is also being encouraged to reinstate annual funding of $1.7 million to these franchises?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_007",
+      "question": "Who is the individual whose legal and financial conduct is under scrutiny, with contrasting narratives presented in court, not-guilty pleas entered against multiple charges, an admission of being informed about significant financial discrepancies, and allegations of committing fraud for personal gain, as reported by sources including Fortune, TechCrunch, and The Verge?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_multihop_008",
+      "question": "Which leading AI development company, known as the generative AI poster child behind ChatGPT and mentioned by TechCrunch, is expected to release GPT-4 with vision alongside the launch of GPT-4 Turbo API?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_009",
+      "question": "Which country, recently discussed in articles from Fortune, Globes English | Israel Business Arena, and Business Today | Latest Stock Market And Economy News India, has faced challenges such as a blockade leading to relocation warnings in Gaza, reached understandings to cease hostilities with Hamas, and has been the subject of discussions regarding intelligence failures in the context of surprise attacks?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_010",
+      "question": "What type of establishments, as reported by Sporting News, are known to modify their betting lines and odds in response to team news, player injuries, or roster changes, and can still secure profit irrespective of the wager's result, while also specifically altering NBA Rookie of the Year betting odds based on new information?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_011",
+      "question": "Who is the individual that persuaded Adam Yedidia to join him in financial ventures, admitted to challenges in managing two major financial entities due to significant growth, was informed about a financial discrepancy after a judge's intervention, and is accused by the prosecution of committing fraud for personal gain, as reported by Fortune, The Verge, and TechCrunch?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_012",
+      "question": "Which company, facing a recent antitrust lawsuit that affected its stock value as reported by The Sydney Morning Herald, also offers a two-pack of USB-C-to-USB-C cables for purchase as mentioned by Polygon, and is considered by sellers to provide life-changing opportunities according to Cnbc | World Business News Leader?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_013",
+      "question": "Who is the individual associated with FTX and Alameda Research, as reported by The Verge, who pleaded not guilty to charges as per TechCrunch, and is accused by the prosecution of committing fraud for personal gain, with further allegations involving instructing a colleague to use customer funds to repay debts?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_014",
+      "question": "What football club would have been in an improved league position without a ten-point penalty, has recently experienced a significant change in league standing due to a streak of six wins in nine games, scored more than once in a Premier League match only eight times in the past year, and was brought to the attention of its current chairman by the late Bill Kenwright, as reported by sources including 'The Roar | Sports Writers Blog', 'The Guardian', and 'BBC News - Entertainment & Arts'?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_015",
+      "question": "Who is the individual that was once likened to a prominent investor, admitted to challenges in overseeing a rapidly expanding crypto company, faced allegations of fraud in a legal setting, and discussed corporate governance intentions with a venture firm, as reported by TechCrunch, The Verge, Cnbc, and TechCrunch respectively?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_016",
+      "question": "Who is the individual that, despite being likened to a prominent investor and once hailed as a savior in the cryptocurrency world by some, not TechCrunch, is accused of using a colleague as a cover for illicit access to customer funds and faced challenges in overseeing the rapid expansion of a crypto exchange and a research firm, leading to allegations of intentional fraud for personal gain?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_017",
+      "question": "What company is at the center of concerns from news publishers about anticompetitive practices that affect their bottom line, is involved in deals to be the default search engine on major tech platforms, and is perceived by the public as potentially engaging in foul play, as reported by The Age, The Verge, and TechCrunch?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_018",
+      "question": "Which company, reported by both The Verge and TechCrunch, is at the center of various legal and market dynamics, including being the default search engine on major platforms, influencing Android app distribution and in-app payment systems, potentially winning a court case depending on the market definition, and facing a class action antitrust suit for allegedly harming news publishers' revenues?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_019",
+      "question": "Which basketball team, recently commended by Yardbarker for their draft choices of Jonathan Kuminga and Moses Moody, would also lead to a successful point spread bet as per Sporting News if they were to win by 10 or more points?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_020",
+      "question": "Who is the individual whose alleged fraudulent path to success, including the creation of a thriving crypto exchange, is under judicial scrutiny, with testimonies from legal representatives revealing contrasting narratives and an admission of awareness of financial discrepancies? This person is also implicated by the prosecution in seeking wealth, power, and influence through deceitful means, as reported by sources such as Fortune, The Verge, and TechCrunch.",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_021",
+      "question": "Who is the individual being tried for fraud and conspiracy, as reported by TechCrunch, accused by Fortune of using a colleague as a front for unauthorized financial activities, and alleged by another TechCrunch article to have instructed the transfer of $14 billion from customers to cover debts, all while facing allegations of seeking wealth, power, and influence through fraudulent means?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_022",
+      "question": "Which company, covered by Engadget and Polygon, is set to release an updated gaming hardware with over 300 improvements on November 16, emphasizing a singular performance target for developers?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_023",
+      "question": "Which company is at the center of allegations involving manipulation of search results to maximize ad revenue according to 'The Age', is portrayed as the antagonist in a legal battle highlighted by 'The Verge', and is accused by news publishers in a 'TechCrunch' article of harming their bottom line through anticompetitive practices?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_024",
+      "question": "Who is the individual being tried for seven counts of fraud and conspiracy, whose portrayal has ranged from a financial guru compared to Warren Buffet to a fraudulent actor seeking wealth, power, and influence, and is currently at the center of a legal battle with contrasting narratives presented by his defense and the government in sources including Fortune and TechCrunch?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_025",
+      "question": "Who is the individual under 30, once compared to Warren Buffet and seen as the white horse of crypto by some, but not by TechCrunch, who reportedly intended to use his wealth to save humanity from extinction and told another trader that withdrawing money from a certain account was permissible as long as it didn't exceed the trading revenue of his company, which is the same individual the prosecution alleges committed fraud for wealth, power, and influence, as discussed in articles from The Verge and TechCrunch?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_026",
+      "question": "Who, according to articles in Sporting News, stand to make a profit by predicting outcomes such as a team's lead at the end of a quarter or the total points scored, and can also capitalize on event hype, like putting $130 on the Cowboys to potentially gain $100?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_027",
+      "question": "Which company, discussed in articles from both 'The Verge' and 'TechCrunch', has been the subject of legal scrutiny for its default search engine deals with other corporations and for its alleged anticompetitive behavior affecting news publishers' content and revenue?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_028",
+      "question": "Which company, covered by The Verge and TechCrunch, has influenced the internet's appearance, local search result rankings, and is accused of harming news publishers' bottom lines through its practices?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_029",
+      "question": "Which individual is connected to persuading a former Jane Street trader to join him at Alameda and FTX, making a billion-dollar decision involving customer funds to buy out a competitor, instructing a colleague to use billions from customers to repay debts, and is alleged by the prosecution to have committed fraud for personal gain, with these actions being reported by sources including Fortune, The Verge, and TechCrunch?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_030",
+      "question": "What institution, as reported by The Sydney Morning Herald, has the power to significantly influence global financial markets with its interest rate decisions, which are currently anticipated by investors to remain steady based on weak US economic data and the institution's commitment to data-dependent policymaking?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_031",
+      "question": "Who is the individual associated with the significant impact of generative AI technology on public awareness, reportedly had no intentions of being removed by the co-founders of Anthropic from an AI research company, and is at the center of shocking news about their departure as well as allegations of dishonesty with the board, as reported by Fortune, The Age, and TechCrunch?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_032",
+      "question": "Who is the individual under 30, once considered the richest in that age bracket, who has pleaded not guilty to fraud and conspiracy charges and is accused by the prosecution of committing fraud to achieve wealth, power, and influence, as reported by TechCrunch?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_033",
+      "question": "What company, known for its significant presence in the e-reader space through its Kindle lineup as mentioned by The Verge, also offers life-changing selling opportunities according to Cnbc | World Business News Leader, and was the focus of a Cyber Monday sale with deals reported by Mashable?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_034",
+      "question": "Which company is at the center of antitrust legal challenges, where it is accused of both monopolizing search engine services according to a court defense by a major tech competitor and harming news publishers' revenue through its business practices, as reported by TechCrunch and The Verge?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_035",
+      "question": "Who was described by TechCrunch as one of the most brilliant and impactful individuals in the industry and is known for his significant voice in Silicon Valley on artificial intelligence, but is also suggested by the same source to have possibly withheld full truth from the board, leading to his departure from a CEO position?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_036",
+      "question": "Who is the individual under 30 who became the wealthiest in the world, proposed the creation of an expert board for FTX without investor directors, found it challenging to manage FTX and Alameda Research due to their growth, and is accused by the prosecution of committing fraud for wealth, power, and influence, as reported by Cnbc | World Business News Leader, The Verge, and TechCrunch?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_037",
+      "question": "Who is the individual under 30, previously reported by TechCrunch as the richest in the world, who is alleged by the prosecution to have committed fraud for wealth and influence, discussed governance structures with Paradigm for a company, and is connected to a $14 billion customer fund misuse as reported by Cnbc | World Business News Leader and TechCrunch?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_038",
+      "question": "Who is the individual facing a criminal trial on fraud and conspiracy charges, accused of using a front to secretly access customer funds at Alameda Research, and was once compared to Warren Buffet but not by TechCrunch, and is alleged by the prosecution to have committed fraud for wealth, power, and influence, according to articles from TechCrunch and Fortune?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_039",
+      "question": "Who is the individual that persuaded Adam Yedidia to leave Jane Street and join both Alameda and FTX, and is also accused by the prosecution of committing fraud for personal gain, as reported by Fortune and TechCrunch?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_040",
+      "question": "Which sports betting platform, reported by both Sporting News and CBSSports.com, provides a sign-up incentive that could include a $1,000 Bonus Bet for new users in Vermont and also caters to fans of the NBA and PGA Tour with various promotions and betting options?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_041",
+      "question": "Which company, according to different reports by TechCrunch and The Verge, both released a restricted version of an AI model and was considered the only valid option for search engine services during a negotiation, while also being accused of harming news publishers' revenue and content through anticompetitive practices?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_042",
+      "question": "Which company, covered by TechCrunch for not switching to a browser competitor during iPhone setup, by Engadget for focusing on Macs and new chipsets at an event, and twice by The Verge for defending a search deal in court and for enforcing uniform terms on developers, OEMs, and carriers through its store and payment system?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_043",
+      "question": "Which NFL quarterback, featured in articles from Sporting News, Sportskeeda, and CBSSports.com, threw four touchdowns against the Cowboys, has accumulated significant fantasy points over recent games, boasts an undefeated start to the season, but struggles with a decreased completion rate and yards per attempt when under pressure?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_044",
+      "question": "Which company, recently mentioned in articles by both TechCrunch and The Verge, is not planning new measures for a major video platform in the next six months, secures default search engine positions through deals with other tech giants, and is accused of harming news publishers' revenue through anticompetitive practices?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_045",
+      "question": "Who is the individual associated with the FTX collapse that was portrayed as a trustworthy figure in the cryptocurrency industry by The Verge and is alleged by the prosecution to have committed fraud for personal gain according to TechCrunch?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_046",
+      "question": "Which company, featured in TechCrunch articles, is prioritizing the development of ChatGPT, planning to introduce an \"app store for AI\" to overshadow competitors, and will release GPT-4 with vision capabilities alongside a Turbo API?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_047",
+      "question": "Which company, featured in articles from Polygon, Wired, and CNBC | World Business News Leader, is not only the platform where a two-pack of USB-C-to-USB-C cables can be purchased for $15.99 but has also created a Prime-themed sale day and is considered to provide a life-changing opportunity for sellers?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_048",
+      "question": "What company, featured in articles from both The Verge and TechCrunch, is responsible for ranking local search results, recently showcased new hardware developments at an annual event, and has been accused in a class action antitrust suit of harming news publishers' bottom lines?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_049",
+      "question": "Who is the figure associated with generative AI technology whose departure from OpenAI was considered shocking according to Fortune, and is also the subject of a prevailing theory suggesting a lack of full truthfulness with the board as reported by TechCrunch?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_050",
+      "question": "Which company is at the center of concerns from different sectors, where 'The Verge' reports on its control over app distribution and payment systems, 'The Age' discusses its alleged manipulation of Search for ad revenue, and 'TechCrunch' details a class action suit for its impact on news publishers' content and revenue?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_051",
+      "question": "Which company has been reported by both The Verge and TechCrunch to spend billions to secure its position as the default search engine on multiple platforms and has also faced a class action antitrust suit for its impact on news publishers' content and revenue?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_multihop_052",
+      "question": "Who is the individual whose trial involves contrasting legal narratives presented to a jury, as reported by Fortune, was previously likened to a prominent investor but not by TechCrunch, admitted to being aware of a significant financial discrepancy after a judge's intervention according to The Verge, and is accused of intentional fraud for personal gain as per allegations mentioned in a second TechCrunch article?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_053",
+      "question": "Who is the individual facing a jury's judgment regarding contrasting narratives of his actions, once likened to Warren Buffet and dubbed the white horse of crypto, not by TechCrunch, but now stands accused by the prosecution of committing fraud for personal gain, power, and influence?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_054",
+      "question": "Which company, recently compared for its product's performance with OpenAI's GPT-3.5 by TechCrunch, is also accused by The Age of manipulating its primary service to maximize ad revenue and is the subject of a class-action antitrust suit reported by TechCrunch for harming news publishers' bottom lines through anticompetitive practices?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_055",
+      "question": "What is the name of the OpenAI-developed, general-purpose chatbot reported by TechCrunch to have a wide range of capabilities such as debugging code and composing essays, which Engadget noted had a significant usage spike in December 2022, and has been identified by TechCrunch as achieving 100 million weekly active users nearly a year after its launch?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_056",
+      "question": "Who is the individual associated with the cryptocurrency industry who, before the collapse of FTX, portrayed himself as a reliable figure, planned to establish a board with experts for the company without investor directors, was accused of using customer funds to buy out a competitor, and is alleged by the prosecution to have committed fraud for personal gain, with these events being reported by The Verge, CNBC, and TechCrunch?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_057",
+      "question": "Which company, known for its e-reader lineup dominance and hosting sale events like Prime-themed and Cyber Monday sales that feature deals from Black Friday, provides a platform described by sellers as a life-changing opportunity, and has been covered by Wired, Mashable, The Verge, and Cnbc | World Business News Leader?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_058",
+      "question": "Which company, recently compared for its Gemini Pro's performance to OpenAI's GPT-3.5 by TechCrunch, is also the subject of a class action antitrust lawsuit by news publishers for allegedly harming their bottom line and siphoning off their content, readers, and ad revenue?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_multihop_059",
+      "question": "Which company, according to Eddy Cue, had no valid alternative for search engine services at the time of a negotiation, is reported by The Verge to have spent $26.3 billion in 2021 to secure its default search engine status across various platforms as mentioned by TechCrunch, and is also accused by news publishers in a class action antitrust suit of siphoning off content, readers, and ad revenue through anticompetitive means as cited by TechCrunch?",
+      "source": "multihoprag_inference",
+      "gold": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_complex_000",
+      "question": "Does 'The Guardian' describe Shai Hope's performance against legspin bowling in the first T20 international differently from how 'The Guardian' describes his role in the fifth T20 international?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_001",
+      "question": "Does 'The Guardian' article about the 'Everton team' suggest they are in a better position in the Premier League compared to 'Bayern Munich' as discussed in another 'The Guardian' article, based on their respective league standings and points?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_002",
+      "question": "Does the 'Sporting News' article report a different type of athletic performance for Jung Hoo Lee than the 'Zee Business' article reports for Ravindra Jadeja, with one discussing batting statistics and the other discussing bowling statistics?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_003",
+      "question": "Did the report from Cnbc | World Business News Leader on sales in Nike's Latin America and Asia Pacific unit and the article from The Sydney Morning Herald on the S&P 500 both report an increase in their respective financial metrics?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_004",
+      "question": "Does the article from Sporting News involving Luciano Acosta mention the same type of game interruption as the article from The Roar | Sports Writers Blog involving Marcus Lee, with both discussing a foul resulting in a free-kick?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_005",
+      "question": "Does the article from The Verge suggest that Google's influence on the internet's appearance is a different aspect of its impact compared to the financial influence on platforms described in the TechCrunch article about Google's spending, and is the anticompetitive behavior towards news publishers mentioned in another TechCrunch article a separate issue from these influences?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_006",
+      "question": "Does the FOX News - Health article linking Influenza to serious health complications agree with the FOX News - Health article on GLP-1 agonist medications concerning the potential for rare but serious health complications from medical conditions or treatments?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_007",
+      "question": "Does 'The Guardian' article about the 'Everton team' suggest they are in a worse position in the Premier League compared to 'Bayern Munich' as discussed in another 'The Guardian' article, based on their respective league standings and points?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_008",
+      "question": "Does the Polygon post focus on keeping readers updated with the latest series liked by the authors on each major streaming platform, while The Sydney Morning Herald article discusses the trend of entertainment companies creating their own exclusive streaming platforms over the past five years?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_009",
+      "question": "Does the Sporting News article on Bet365's bonus offer for NFL Monday Night Football specify a different bonus amount for new users than the Sporting News article on Caesars Sportsbook's expected offer for new sign-ups in Vermont?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_010",
+      "question": "Did 'The Verge' article imply that Alameda Research was treated the same as other accounts at FTX without any special financial privileges, while the 'Fortune' article claims that Alameda Research's business practices with FTX were illegal, suggesting an undue advantage?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_011",
+      "question": "Does 'The Guardian' article suggest that Manchester United's recent performances in the Champions League have been unconvincing, while the 'Sporting News' article states that Manchester United are out of European competitions after a loss to Bayern, indicating a specific outcome in a European competition?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_012",
+      "question": "Does the 'Business World' article suggest that the 'Finance department of the Philippines' is taking measures to reduce debt, while the 'Globes English | Israel Business Arena' article indicates that the 'high-tech industry' is experiencing a reduction in spending?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_013",
+      "question": "Do the articles from 'Science News For Students' and 'Fortune' both suggest that 'Scientists' have made no advancements in their respective fields, with one investigating the learning mechanisms in animals and the other manufacturing quantum dots in a lab?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_014",
+      "question": "Does the 'Fortune' article suggest the same perspective on Sam Bankman-Fried's legal situation as the 'TechCrunch' articles, with 'Fortune' focusing on the jury's determination of truthfulness and 'TechCrunch' alleging fraudulent intentions for personal gain?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_015",
+      "question": "Does the article from The Verge discussing the Microsoft Elite Series 2 “Core” version mention an increase in features compared to the standard model, and does the article from The Verge on MacBook Pros indicate a reduction in prices for the new models?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_016",
+      "question": "Do the 'Business Line' article's views on the actions of central bankers in response to supply disruptions align with 'The Sydney Morning Herald' article's depiction of the measures taken by The Federal Reserve to combat inflation?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_017",
+      "question": "Does the TechCrunch article discussing the SBF trial suggest that Caroline Ellison acted under the instruction of Sam Bankman-Fried in the misuse of customer funds, while the other TechCrunch article on Sam Bankman-Fried's plea deal only mention his not-guilty plea to fraud and conspiracy, without specifying involvement in directing others?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_018",
+      "question": "Does the Yahoo News article attribute the ineffectiveness on climate issues to the Biden administration's cluelessness, while the Engadget article suggests that society is being negatively impacted by the interconnectedness of climate change, the modern internet, and authoritarianism?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_019",
+      "question": "Does the TechCrunch article suggest that Google's release of the Gemini Pro model was incomplete in comparison to the full Gemini Ultra model, while the other TechCrunch article and the article from The Age both imply misconduct on Google's part, with the former accusing Google of anticompetitive behavior towards news publishers and the latter suggesting a general acceptance of foul play allegations against Google?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_complex_020",
+      "question": "Does the article from The Verge suggest that Apple's choice of Google as a search engine provider was due to a lack of alternatives, while the TechCrunch articles allege that Google's practices in app distribution, payment processing, and news publishing are anticompetitive, implying that there are alternatives that are being suppressed by Google's behavior?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_021",
+      "question": "Does the Sporting News article suggest that T.J. Hockenson's participation in Week 10 is expected under similar circumstances as Dalton Kincaid's anticipated play in the Saturday game, with both being less than fully fit but still likely to play?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_022",
+      "question": "Does the TechCrunch article suggest that Apple has restrictive practices regarding browser selection on iPhones, while The Verge articles indicate that Apple is facing legal challenges both for its Apple Watch and for enforcing uniform terms through its store and payment system?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_023",
+      "question": "Does the Fortune article suggest that Sam Bankman-Fried was responsible for the alleged deceit behind FTX's success, while the TechCrunch article focuses on Gary Wang and Caroline Ellison's admission of guilt to federal criminal charges in relation to the FTX collapse?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_024",
+      "question": "Did the article from The Roar | Sports Writers Blog attribute the Tasmania JackJumpers' game-high lead over the Sydney Kings to player losses, while the Sporting News article reported a lead for the Texas Rangers without mentioning player losses?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_025",
+      "question": "Does the Sporting News article on the Chiefs vs. Packers game report a successful first down completion involving A.J. Dillon in a similar manner to how the Sporting News describes The Saints' achievement of a first down in the Jaguars vs. Saints game?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_complex_026",
+      "question": "Does the Sporting News article suggest that the Oregon football team is no longer in contention for the College Football Playoff following a specific game outcome, in contrast to the CBSSports.com article which discusses the LSU football team's status after losing two games?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_027",
+      "question": "Does the 'Fortune' article suggest that the foundation of FTX's success was based on dishonest practices in a similar way to how 'TechCrunch' alleges Sam Bankman-Fried sought personal gain through fraudulent means, or do these articles present different reasons for the controversy surrounding Sam Bankman-Fried?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_028",
+      "question": "Does the article from 'The Independent - Life and Style' suggest the same reason for \"Britney Spears and Justin Timberlake's breakup\" as the reason for \"Dillon Danis and Savannah Montano's relationship\" ending as reported by 'Essentially Sports'?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_029",
+      "question": "Does the TalkSport article suggest that Manchester United's defensive performance in the Champions League group stages was worse than in previous seasons, while The Independent - Sports article implies that Erik ten Hag's past experience in the Champions League with Ajax was more successful?",
+      "source": "comparison_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_030",
+      "question": "Was there no change in the assessment of Tyreek Hill's likelihood to reach the milestone of 2,000 receiving yards for the season between the Sporting News report published after December 5, 2023, and the CBSSports.com report on his required average yards per game to achieve his goal?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_031",
+      "question": "After the report from CBSSports.com on October 12, 2023, about Taylor Swift's activities at Arrowhead Stadium, and the subsequent report from The Independent - Life and Style on November 25, 2023, regarding Travis Kelce's invitation to Taylor Swift, was the news about Taylor Swift's relationship with Travis Kelce consistent with the later report from The Independent - Life and Style on December 6, 2023?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_032",
+      "question": "Between the TechCrunch article on December 7, 2023, comparing Google's Gemini to OpenAI's GPT-3.5 and the TechCrunch article on the same date claiming Gemini's superiority over OpenAI's GPT-4, was there consistency in the reporting of Google's claims about Gemini's performance relative to OpenAI's models?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_033",
+      "question": "Has the portrayal of Google's market practices in reports by The Age after October 22, 2023, remained consistent with the depiction in The Verge's coverage of the Epic v. Google case, and with TechCrunch's report on the class action antitrust suit filed against Google?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_034",
+      "question": "Did the report from The Verge on Apple's defense of its Google Search deal published on September 25, 2023, and the TechCrunch article detailing what was learned about the Google antitrust case involving Apple published on October 31, 2023, show a consistency in the portrayal of Apple's actions regarding its choice of search engine and browser options for iPhone users?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_035",
+      "question": "After TechCrunch reported on Google's annual hardware event on October 7, 2023, and then on Google's expenditure to be the default search engine on various platforms on November 13, 2023, did TechCrunch's subsequent report on December 15, 2023, regarding a class action antitrust suit against Google indicate a consistent or inconsistent portrayal of Google's business practices?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_036",
+      "question": "After the report by The Age on October 22, 2023, suggesting people suspect Google of foul play, did TechCrunch's reporting on October 31, 2023, and December 15, 2023, regarding Google's antitrust issues and the impact on news publishers show a consistent perspective on Google's market behavior?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_037",
+      "question": "Has the portrayal of Google's business practices in TechCrunch articles shown inconsistency after the report on Epic Games' antitrust battle with Google on November 6, 2023, compared to the subsequent class action antitrust suit reported on December 15, 2023?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_038",
+      "question": "Has the focus of the European Commission's actions reported by TechCrunch remained solely on addressing unfair practices in Meta's ad-free subscription model without shifting to concerns about illegal content and disinformation in Elon Musk's X platform?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_039",
+      "question": "Did the 'Diablo 4 guide' from Polygon change its approach in providing simplified builds for different character classes in Diablo 4 season 2 after publishing the Sorcerer guide on October 18th with the subsequent Barbarian guide on October 19th?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_040",
+      "question": "Between the TechCrunch report on Google's AI demo involving the Gemini Ultra model and the TechCrunch report on the antitrust suit filed against Google, was there a change in the nature of the issues reported concerning Google's practices?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_041",
+      "question": "Between the Sporting News report on T.J. Hockenson's expected play in Week 10 published on November 11, 2023, and the Sporting News report on Dalton Kincaid's expected play in the Saturday game published on December 21, 2023, was the consistency in reporting the likelihood of injured players participating in upcoming games maintained?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_042",
+      "question": "Did CBSSports.com change its reporting on the performance of Jessica Andrade by November 11, 2023, stating she has suffered two submission losses during her current three-fight winning streak?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_043",
+      "question": "Did the reporting style on player achievements during NFL 'Sunday Night Football' games by Sporting News change between the article featuring Samaje Perine on November 19, 2023, and the one highlighting A.J. Dillon on December 3, 2023?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_044",
+      "question": "Between the report from TalkSport on Andy Robertson's shoulder injury and the CBSSports.com article on Kenneth Walker III's oblique injury, which news source reported on a player's injury sustained during international duty?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_045",
+      "question": "Did Mashable report on the Echelon Connect Sport being on sale for over $400 off during Black Friday before Fortune mentioned that Delta SkyMiles® Gold Business American Express Card cardholders receive a 20% statement credit on eligible in-flight purchases with Delta?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_046",
+      "question": "Between the report by The Verge on Apple's defense of its Google Search deal published on September 26, 2023, and the report by TechCrunch on the class action antitrust suit against Google published on December 15, 2023, was there a change in the portrayal of Google's business practices with respect to their impact on other companies?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_047",
+      "question": "Between the TechCrunch report on Sam Bankman-Fried's trial published on October 1, 2023, and the TechCrunch report on the allegations against Sam Bankman-Fried published on October 7, 2023, was the portrayal of Sam Bankman-Fried's legal situation consistent?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_048",
+      "question": "Between the article from 'The Independent - Life and Style' published at 13:55 on December 6, 2023, stating Taylor Swift's openness about her relationship with Travis Kelce, and the subsequent article from 'The Independent - Life and Style' published at 14:23 on the same day discussing Taylor Swift's attitude towards paparazzi and her outings, was there consistency in the portrayal of Taylor Swift's approach to personal privacy and media attention?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_049",
+      "question": "Did the Sporting News report on Elijah Garcia's 16th victory before The Roar | Sports Writers Blog covered the first-round knockout by Jai Opetaia against Ellis Zorro?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_050",
+      "question": "Before the Sporting News report on December 12, 2023, detailing Manchester United's exit from European competitions, and The Roar | Sports Writers Blog report on December 23, 2023, discussing Manchester United's performance in the English Premier League, was the news regarding Manchester United's performance consistent?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_051",
+      "question": "Between the report from The Independent - Life and Style published on October 30, 2023, stating Taylor Swift's commitment to her tour schedule, and the report from The Independent - Life and Style published on December 6, 2023, revealing her openness about her relationship with Travis Kelce, was there a change in the narrative regarding her personal life and professional commitments?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_052",
+      "question": "Between the TalkSport report on the Manchester United takeover published on October 18, 2023, and the Sporting News report on Manchester United's status in European competitions published on December 12, 2023, was there no change in Manchester United's circumstances as reported by the two news sources?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_053",
+      "question": "Was there inconsistency in the portrayal of Sam Bankman-Fried's legal situation according to the 'Fortune' article on October 4, 2023, discussing his actions and the state of FTX, or the 'TechCrunch' article mentioning the prosecution's allegations against him?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_054",
+      "question": "Did 'Sport Grill' report on Tessa Wullaert missing a decisive penalty before 'The Roar | Sports Writers Blog' reported on Cole Palmer scoring a penalty to secure a draw for Chelsea?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_055",
+      "question": "Has Polygon's coverage of Spider-themed characters in 'Spider-Man: Across the Spider-Verse' remained consistent with their earlier report on 'Spider-Man 2 (game)' which featured stories of multiple Spider-Men?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": true
+    },
+    {
+      "id": "router_complex_056",
+      "question": "Has the status of Richelle Cranston's AFLW career as reported by 'The Age' changed between the article published on 2023-10-20 and the one on 2023-11-03?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_057",
+      "question": "Did Yardbarker's coverage on December 24, 2023, contradict The Age's report on Travis Kelce's Super Bowl victories on September 26, 2023, regarding Travis Kelce's performance expectations?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_058",
+      "question": "Has the reporting style regarding live score updates and highlights from NFL games by Sporting News remained consistent between the article featuring \"Jaguars vs. Saints\" on October 19, 2023, and the one covering \"Chiefs vs. Packers\" on December 3, 2023, considering the excerpts mentioning a player achieving a first down?",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    },
+    {
+      "id": "router_complex_059",
+      "question": "Considering the excerpts from 'The Age' published on October 12, 2023, stating a potential return to profit growth for S&P 500 companies after three straight quarters of declines, and the report from 'Seeking Alpha' on October 22, 2023, predicting a more than 50% profit increase for Cleveland-Cliffs, is the financial outlook for Cleveland-Cliffs consistent with the broader trend anticipated for S&P 500 companies as reported by 'The Age' after the earlier date? (consistent/inconsistent)",
+      "source": "temporal_query",
+      "gold": {
+        "query_type": "complex",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "predicted": {
+        "query_type": "multihop",
+        "retrieval_strategy": "hybrid",
+        "rerank": true,
+        "mmr": true
+      },
+      "correct": false
+    }
+  ]
+}

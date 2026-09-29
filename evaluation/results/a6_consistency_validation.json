@@ -1,0 +1,26 @@
+{
+  "configuration_identical": true,
+  "metric_definitions_identical": false,
+  "metric_definition_discrepancy_explanation": "In run_final_evaluation.py, abstained was taken directly from gen_result.abstained (yielding 39 answered cases). In run_final_ablation.py, a6_abstained explicitly checked if direct_answer in (None, 'UNKNOWN'), correctly treating the 12 semantic-verifier abstention cases as abstained (yielding 27 answered cases). When evaluated over the 39 pre-verifier answered cases (A5), citation precision is 0.8846 (88.5%). When evaluated over the 27 post-verifier answered cases (A6), citation precision is 0.8704 (87.0%).",
+  "per_example_outputs": {
+    "total_examples": 100,
+    "identical_retrieval": true,
+    "identical_routing": true,
+    "identical_answers": true,
+    "identical_citations": true,
+    "different_abstention_decisions_count": 12
+  },
+  "citation_precision_comparison": {
+    "final_eval_adaptive_agentic_answered_count": 39,
+    "final_eval_citation_precision": 0.8846153846153846,
+    "ablation_a5_pre_verifier_answered_count": 39,
+    "ablation_a5_citation_precision": 0.8846153846153846,
+    "ablation_a6_post_verifier_answered_count": 27,
+    "ablation_a6_citation_precision": 0.8703703703703703
+  },
+  "latency_comparison": {
+    "final_eval_mean_latency_sec": 3.3266951509999854,
+    "ablation_a6_mean_latency_sec": 2.9969494219999957,
+    "is_ordinary_runtime_variance": true
+  }
+}

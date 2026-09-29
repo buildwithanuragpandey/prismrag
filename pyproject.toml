@@ -1,0 +1,35 @@
+[project]
+name = "adaptive-agentic-rag"
+version = "1.0.1.dev0"
+description = "Adaptive Agentic RAG with Hybrid Retrieval, Reranking & Self-Correction"
+readme = "README.md"
+authors = [
+    { name = "mmnsrti", email = "mmnsrti@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "anyio>=4.14.0",
+    "datasets>=5.0.1",
+    "fastapi>=0.141.0",
+    "langchain-text-splitters>=1.1.2",
+    "langgraph>=1.2.11",
+    "matplotlib>=3.11.1",
+    "pydantic>=2.13.0",
+    "qdrant-client>=1.19.0",
+    "rank-bm25>=0.2.2",
+    "sentence-transformers>=6.0.0",
+    "uvicorn>=0.52.0",
+]
+
+[project.scripts]
+adaptive-agentic-rag = "adaptive_agentic_rag:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.0",
+    "pytest>=9.1.1",
+]

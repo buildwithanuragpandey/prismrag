@@ -1,0 +1,106 @@
+{
+  "audit_timestamp": "2026-09-02T01:13:00Z",
+  "branch": "master",
+  "commit": "5dbf9160baa3953cf809d68e2038aa8257560d21",
+  "executive_verdict": "READY_AFTER_MINOR_FIXES",
+  "regression_status": {
+    "passed": 179,
+    "failed": 0,
+    "skipped": 0,
+    "runtime_sec": 187.77
+  },
+  "canonical_architecture": {
+    "version": "V2-A",
+    "corpus_file": "data/processed/processed_corpus_v2.json",
+    "chunk_count": 8173,
+    "chunk_size_chars": 1000,
+    "chunk_overlap_chars": 100,
+    "qdrant_collection": "multihop_chunks_v2",
+    "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+    "reranker_model": "BAAI/bge-reranker-base",
+    "generator_model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "nli_model": "cross-encoder/nli-deberta-v3-small"
+  },
+  "benchmark_integrity": {
+    "dataset": "evaluation/datasets/final_untouched_test.json",
+    "total_cases": 100,
+    "answerable_cases": 86,
+    "null_cases": 14,
+    "disjoint_with_dev_500": true,
+    "metrics_consistent_across_artifacts": true
+  },
+  "findings_summary": {
+    "P0": 0,
+    "P1": 2,
+    "P2": 3,
+    "P3": 2
+  },
+  "findings_details": [
+    {
+      "id": "P1-1",
+      "severity": "P1",
+      "category": "Dependencies",
+      "file": "pyproject.toml",
+      "issue": "FastAPI production dependencies (fastapi, uvicorn, pydantic, anyio) are installed in the venv but not declared in pyproject.toml dependencies table."
+    },
+    {
+      "id": "P1-2",
+      "severity": "P1",
+      "category": "Architecture Fallbacks",
+      "file": "src/adaptive_agentic_rag/retrieval/{dense_retriever,bm25_retriever,hybrid_retriever,reranked_retriever}.py",
+      "issue": "Stand-alone default fallback constants point to legacy V1 (multihop_chunks / processed_corpus.json) if initialized outside AdaptiveRetriever/RAGNodes."
+    },
+    {
+      "id": "P2-1",
+      "severity": "P2",
+      "category": "Documentation",
+      "file": "docs/final_technical_report.md",
+      "issue": "Section 8 and Section 7 on master branch still describe legacy V1 corpus values (3,860 chunks, 2000 chars, multihop_chunks)."
+    },
+    {
+      "id": "P2-2",
+      "severity": "P2",
+      "category": "Documentation",
+      "file": "README.md",
+      "issue": "Link to LICENSE file fails because LICENSE is not present in repository root."
+    },
+    {
+      "id": "P2-3",
+      "severity": "P2",
+      "category": "Git Hygiene",
+      "file": ".gitignore",
+      "issue": ".gitignore does not explicitly ignore .pytest_cache/, *.log, .env."
+    },
+    {
+      "id": "P3-1",
+      "severity": "P3",
+      "category": "Test Warnings",
+      "file": "tests/test_api_*.py",
+      "issue": "StarletteDeprecationWarning for httpx testclient integration."
+    },
+    {
+      "id": "P3-2",
+      "severity": "P3",
+      "category": "Repository Polish",
+      "file": "evaluation/results/",
+      "issue": "Intermediate exploration diagnostic JSON files can be archived or documented in an appendix."
+    }
+  ],
+  "category_scores": {
+    "canonical_architecture_consistency": "PASS",
+    "production_code_integrity": "PASS",
+    "benchmark_integrity": "PASS",
+    "final_dataset_integrity": "PASS",
+    "test_suite": "PASS",
+    "fastapi": "PASS",
+    "dependencies": "PASS WITH MINOR FIXES",
+    "reproducibility": "PASS",
+    "readme": "PASS WITH MINOR FIXES",
+    "technical_report": "PASS WITH MINOR FIXES",
+    "figures": "PASS",
+    "git_hygiene": "PASS WITH MINOR FIXES",
+    "secret_privacy_safety": "PASS",
+    "public_github_readiness": "READY AFTER MINOR FIXES"
+  }
+}
+

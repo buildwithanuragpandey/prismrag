@@ -1,0 +1,717 @@
+{
+  "records": [
+    {
+      "target": "taylor_kelce",
+      "example_id": "eval_b80b5654cdcc",
+      "question": "Was the news about Taylor Swift's relationship with Travis Kelce inconsistent with the later report from The Independent - Life and Style on December 6, 2023?",
+      "gold_answer": "no",
+      "question_type": "temporal_query",
+      "evidence_attempts": [
+        {
+          "attempt": 0,
+          "query": "Was the news about Taylor Swift's relationship with Travis Kelce inconsistent with the later report from The Independent - Life and Style on December 6, 2023?",
+          "evidence_sufficient": true,
+          "evidence_score": 0.89,
+          "evidence_reasons": [
+            "Evidence appears sufficient."
+          ],
+          "context": {
+            "total_words": 1132,
+            "items": [
+              {
+                "citation_id": 1,
+                "chunk_id": "doc_0295_chunk_1",
+                "document_id": "doc_0295",
+                "title": "Taylor Swift reveals secret start to her relationship with Travis Kelce",
+                "source": "The Independent - Life and Style",
+                "url": "https://www.independent.co.uk/life-style/taylor-swift-travis-kelce-relationship-b2459441.html",
+                "score": 6.30129337310791,
+                "text": "Taylor Swift has revealed when her relationship with Travis Kelce really started. The 33-year-old singer spoke candidly about the romance during a recent interview with Time after she was named the magazine’s 2023 Person of the Year. Speaking to the publication, she said she connected with Kelce in July, after he confessed on his podcast that he tried and failed to give her a friendship bracelet with his phone number on it during one of her Eras Tour shows.\n\n“This all started when Travis very adorably put me on blast on his podcast, which I thought was metal as hell,” she explained. “We started hanging out right after that. So we actually had a significant amount of time that no one knew, which I’m grateful for, because we got to get to know each other.”\n\nSwift also confirmed that when she famously first attended Kelce’s game at Arrowhead Stadium in September, she was already dating the NFL star."
+              },
+              {
+                "citation_id": 2,
+                "chunk_id": "doc_0021_chunk_0",
+                "document_id": "doc_0021",
+                "title": "Fans spot Travis Kelce wearing Taylor Swift-themed friendship bracelet before she attended his game",
+                "source": "The Independent - Life and Style",
+                "url": "https://www.independent.co.uk/life-style/travis-kelce-taylor-swift-friendship-bracelet-b2419065.html",
+                "score": -0.9035011529922485,
+                "text": "Stay ahead of the trend in fashion and beyond with our free weekly Lifestyle Edit newsletter Stay ahead of the trend in fashion and beyond with our free weekly Lifestyle Edit newsletter Please enter a valid email address Please enter a valid email address SIGN UP I would like to be emailed about offers, events and updates from The Independent. Read our privacy notice Thanks for signing up to the\n\nLifestyle Edit email {{ #verifyErrors }} {{ message }} {{ /verifyErrors }} {{ ^verifyErrors }} Something went wrong. Please try again later {{ /verifyErrors }}\n\nFans have spotted Travis Kelce wearing a friendship bracelet with Taylor Swift lyrics on it, just days before she attended his Kansas City Chiefs game."
+              },
+              {
+                "citation_id": 3,
+                "chunk_id": "doc_0311_chunk_0",
+                "document_id": "doc_0311",
+                "title": "FanDuel 'Prop Stars' Picks: Best bets for Travis Kelce & Taylor Swift-inspired props for Chiefs-Jets Week 4",
+                "source": "Sporting News",
+                "url": "https://www.sportingnews.com/us/nfl/news/best-chiefs-jets-prop-stars-bets-fanduel-kelce-swift-snf/581275901fe0e3011cdcb562",
+                "score": 3.0663230419158936,
+                "text": "Travis Kelce has been catching a lot more than footballs lately, and fans everywhere have been swift to hop on the Taylor Swift bandwagon. The celebrity couple has been in the news for well over a week now, and despite the fatigue from many -- Chris 'Mad Dog' Russo's rant being among the most vocal -- companies like FanDuel just can't help but lean into a profitable storyline. Are they for real or is this \"Love Story\" just some extravagant publicity stunt?"
+              },
+              {
+                "citation_id": 4,
+                "chunk_id": "doc_0174_chunk_4",
+                "document_id": "doc_0174",
+                "title": "Travis Kelce faces backlash after comments about ‘finding a breeder’ resurface amid Taylor Swift romance",
+                "source": "The Independent - Life and Style",
+                "url": "https://www.independent.co.uk/life-style/travis-kelce-taylor-swift-children-b2438558.html",
+                "score": 5.27121114730835,
+                "text": "Many other people went on to criticise claims about Swift and Travis having children soon, since the singer is about to return to her Eras Tour until November 2024.\n\n“Well I know for DAMN SURE that s*** about ‘having kids within the next year’ is NOT coming from Taylor’s side,” one claimed. “She’s got the Eras Tour booked all through next year, and she’d rather die than cancel a show. But we do know who’s been public about looking for a ‘BREEDER.’”\n\nThe comments about Travis and Swift’s romance came days after they seemingly confirmed their relationship. On 22 October, Swift made her return to Arrowhead Stadium to watch as the Kansas City Chiefs won their game against the Los Angeles Chargers. The occasion marked Swift’s fourth time attending one of Kelce’s games, amid ongoing reports that they are dating."
+              },
+              {
+                "citation_id": 5,
+                "chunk_id": "doc_0059_chunk_0",
+                "document_id": "doc_0059",
+                "title": "Taylor Swift-Travis Kelce timeline: Everything to know about rumored romance between pop star, Chiefs TE",
+                "source": "CBSSports.com",
+                "url": "https://www.cbssports.com/nfl/news/taylor-swift-travis-kelce-timeline-everything-to-know-about-rumored-romance-between-pop-star-chiefs-te/",
+                "score": 4.981910705566406,
+                "text": "Singer Taylor Swift has a blank space, and she's writing Travis Kelce's name. There were rumors the two were dating for weeks, and those talks only intensified with swift attending five Chiefs games so far this season, including Sunday's game agains the Chargers.\n\nThe Era's Tour singer was seen chatting with the tight end's mom, Donna Kelce, and cheering emphatically when No. 87 scored a touchdown in the first game she attended last month. Last week, she was in attendance to watch the Chiefs as they defeated the Denver Broncos in Week 6 on \"Thursday Night Football.\"\n\nShe is once again at Arrowhead Stadium, this time to watch the Chiefs take on another AFC West opponent, the Los Angeles Chargers.\n\nFor those wondering how this apparent relationship came to be, wonder no longer. We have created an extensive timeline of the high-profile couple that is currently the talk of the league, and even added some Swift lyrics to go along with some of the highlights."
+              },
+              {
+                "citation_id": 6,
+                "chunk_id": "doc_0045_chunk_1",
+                "document_id": "doc_0045",
+                "title": "Travis Kelce says he tried to delete his ‘nonsense’ tweets before they went viral",
+                "source": "The Independent - Life and Style",
+                "url": "https://www.independent.co.uk/life-style/taylor-swift-travis-kelce-tweets-b2453410.html",
+                "score": 2.9485485553741455,
+                "text": "Travis Kelce has hilariously confessed that he attempted to delete some of his tweets before they went viral. The 34-year-old football star spoke candidly about his previous posts on X - formerly known as Twitter - during an episode of his New Heights podcast with brother Jason Kelce, which aired on 22 November. The comments came after some of Kelce’s funny tweets from 2010 and 2011 resurfaced amid his rumoured relationship with Taylor Swift.\n\nWhen Jason quipped that everyone is “a big fan of college Travis on Twitter”, the Kansas City Chiefs star acknowledged that his posts weren’t really noticed back then. However, Kelce explained that he was trying to remove his tweets from social media even before they went viral.\n\n“What’s hilarious is that nobody followed me back then,” he said. “But I will say I have been trying to get all those tweets deleted. Like since I got into the league, I’m like: ‘Gosh, I just want all those things to get deleted.’”"
+              },
+              {
+                "citation_id": 7,
+                "chunk_id": "doc_0559_chunk_1",
+                "document_id": "doc_0559",
+                "title": "Travis Kelce admits the NFL is overdoing it with their Taylor Swift coverage",
+                "source": "The Independent - Life and Style",
+                "url": "https://www.independent.co.uk/life-style/travis-kelce-nfl-taylor-swift-coverage-b2423936.html",
+                "score": 1.7565333843231201,
+                "text": "Travis Kelce believes the National Football League’s coverage of his rumoured girlfriend Taylor Swift is a bit too much. Following his game against the New York Jets on 1 October, the 33-year-old Kansas City Chiefs tight end opened up about the NFL broadcast on the most recent episode of his podcast, New Heights with Jason and Travis Kelce. In conversation with his brother Jason, 35, the two addressed concerns from longtime football enthusiasts who were frustrated by the constant Swift references throughout Sunday’s game at MetLife Stadium.\n\nNot only did the football league promote last Sunday’s game by speculating whether the Grammy winner will attend the Chiefs-Jets match, but cameras were constantly panning to the star-studded suite. During the game, Swift was joined an A-list group of guests, including her best friends Blake Lively and Ryan Reynolds, Game of Thrones star Sophie Turner, and actor Hugh Jackman."
+              },
+              {
+                "citation_id": 8,
+                "chunk_id": "doc_0044_chunk_0",
+                "document_id": "doc_0044",
+                "title": "When pop culture and sport collide: A timeline of Taylor Swift’s NFL takeover",
+                "source": "The Age",
+                "url": "https://www.theage.com.au/culture/music/when-pop-culture-and-sport-collide-a-timeline-of-taylor-swift-s-nfl-takeover-20230926-p5e7lu.html?ref=rss&utm_medium=rss&utm_source=rss_culture",
+                "score": 3.415083408355713,
+                "text": "The first link between Swift and Kelce was established in 2016, when Kelce – who helped bring his team to Super Bowl victory in both 2020 and 2023 – played the classic game “Kiss, Marry, Kill”. Speaking with AfterBuzz TV, Kelce was given the options of Swift, Katy Perry and Ariana Grande. He said he’d ultimately kill Grande, marry Perry and kiss Swift. That was about six years ago, but it has more recently set tongues wagging as fans wondered how long the plan for them to meet has been in the works. Cruel Summer Fast-forward seven years, and things started to heat up. In July, speaking on the podcast he shares with his brother, New Heights, Kelce said he intended to give Swift a friendship bracelet with his number on it during her Eras Tour concert in Kansas City. Unfortunately, the bracelet never made it to her wrist or his digits to her phone."
+              }
+            ]
+          }
+        }
+      ],
+      "final_evidence_sufficient": true,
+      "generation": {
+        "raw_answer": "DIRECT_ANSWER: Yes\n\nFACTS:\n- Taylor Swift revealed her connection with Travis Kelce in July after he confessed on his podcast.\n- Fans spotted Travis Kelce wearing a friendship bracelet with Taylor Swift lyrics on it days before she attended his game.\n- Taylor Swift confirmed that she first attended Kelce's game at Arrowhead Stadium in September while dating him.",
+        "extracted_claim_count": 4,
+        "supported_count": 3,
+        "unsupported_count": 1,
+        "relevant_count": 2,
+        "filtered_relevant_count": 1,
+        "claims": [
+          {
+            "claim": "DIRECT_ANSWER: Yes.",
+            "supported": false,
+            "citation_id": null,
+            "label": "neutral",
+            "entailment_score": 0.0145,
+            "supporting_text": "During the game, Swift was joined an A-list group of guests, including her best friends Blake Lively and Ryan Reynolds, Game of Thrones star Sophie Turner, and actor Hugh Jackman.",
+            "relevance_score": null,
+            "relevance_decision": "NOT_RANKED"
+          },
+          {
+            "claim": "Taylor Swift revealed her connection with Travis Kelce in July after he confessed on his podcast.",
+            "supported": true,
+            "citation_id": 1,
+            "label": "entailment",
+            "entailment_score": 0.9968,
+            "supporting_text": "Source: The Independent - Life and Style. Title: Taylor Swift reveals secret start to her relationship with Travis Kelce. Evidence: Speaking to the publication, she said she connected with Kelce in July, after he confessed on his podcast that he tried and failed to give her a friendship bracelet with his phone number on it during one of her Eras Tour shows.",
+            "relevance_score": 0.1334,
+            "relevance_decision": "KEEP"
+          },
+          {
+            "claim": "Fans spotted Travis Kelce wearing a friendship bracelet with Taylor Swift lyrics on it days before she attended his game.",
+            "supported": true,
+            "citation_id": 2,
+            "label": "entailment",
+            "entailment_score": 0.9923,
+            "supporting_text": "Please try again later {{ /verifyErrors }} Fans have spotted Travis Kelce wearing a friendship bracelet with Taylor Swift lyrics on it, just days before she attended his Kansas City Chiefs game.",
+            "relevance_score": -1.6562,
+            "relevance_decision": "FILTER"
+          },
+          {
+            "claim": "Taylor Swift confirmed that she first attended Kelce's game at Arrowhead Stadium in September while dating him.",
+            "supported": true,
+            "citation_id": 1,
+            "label": "entailment",
+            "entailment_score": 0.9968,
+            "supporting_text": "Source: The Independent - Life and Style. Title: Taylor Swift reveals secret start to her relationship with Travis Kelce. Evidence: “We started hanging out right after that. So we actually had a significant amount of time that no one knew, which I’m grateful for, because we got to get to know each other.” Swift also confirmed that when she famously first attended Kelce’s game at Arrowhead Stadium in September, she was already dating the NFL star.",
+            "relevance_score": 0.9666,
+            "relevance_decision": "KEEP"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sam_altman",
+      "example_id": "eval_e11c54f5cc35",
+      "question": "Did the Fortune article published later on the same day contradict the TechCrunch article from November 18, 2023, regarding the circumstances surrounding Sam Altman's departure from OpenAI?",
+      "gold_answer": "no",
+      "question_type": "temporal_query",
+      "evidence_attempts": [
+        {
+          "attempt": 0,
+          "query": "Did the Fortune article published later on the same day contradict the TechCrunch article from November 18, 2023, regarding the circumstances surrounding Sam Altman's departure from OpenAI?",
+          "evidence_sufficient": true,
+          "evidence_score": 0.7861,
+          "evidence_reasons": [
+            "Evidence appears sufficient.",
+            "Potentially weak evidence citations: [6]"
+          ],
+          "context": {
+            "total_words": 931,
+            "items": [
+              {
+                "citation_id": 1,
+                "chunk_id": "doc_0415_chunk_10",
+                "document_id": "doc_0415",
+                "title": "A timeline of Sam Altman’s firing from OpenAI — and the fallout",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2023/11/18/a-timeline-of-sam-altmans-firing-from-openai-and-the-fallout/",
+                "score": 0.7179832458496094,
+                "text": "Altman’s firing publicly announced OpenAI published a post on its blog announcing the executive shake-up. The company’s management team was aware shortly after. i loved my time at openai. it was transformative for me personally, and hopefully the world a little bit. most of all i loved working with such talented people. will have more to say about what’s next later. 🫡 — Sam Altman (@sama) November 17, 2023\n\nAll-hands meeting OpenAI held an all-hands meeting Friday afternoon during which Sutskever defended Altman’s ouster. He dismissed suggestions that pushing Altman out amounted to a “hostile takeover,” and claimed that it was necessary to protect OpenAI’s mission of “making AI beneficial to humanity.”\n\nMicrosoft releases a statement Satya Nadella, the CEO of Microsoft, a major investor in — and partner with — OpenAI, published a statement about Altman’s firing:"
+              },
+              {
+                "citation_id": 2,
+                "chunk_id": "doc_0516_chunk_0",
+                "document_id": "doc_0516",
+                "title": "Sam Altman ousted as OpenAI’s CEO",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2023/11/17/sam-altman-is-out-as-openais-ceo/",
+                "score": 6.960106372833252,
+                "text": "Sam Altman has been fired from OpenAI, Inc., the 501(c)(3) nonprofit that acts as the governing body for OpenAI, the AI startup behind ChatGPT, DALL-E 3, GPT-4 and other highly capable generative AI systems. He’ll both leave the company’s board of directors and step down as CEO.\n\nIn a post on OpenAI’s official blog, the company writes that Altman’s departure follows a “deliberative review process by the board” that concluded that Altman “wasn’t consistently candid in his communications” with other board members, “hindering its ability to exercise its responsibilities.”\n\nTip TechCrunch Do you work at OpenAI and know more about Sam Altman’s departure? Do you work at OpenAI and know more about Sam Altman’s departure? Get in touch with TechCrunch “The board no longer has confidence in [Altman’s] ability to continue leading OpenAI,” the blog post reads. In a post on X (formerly Twitter), Altman wrote that he “loved his time at OpenAI” and will have “more to say about what’s next later.”"
+              },
+              {
+                "citation_id": 3,
+                "chunk_id": "doc_0048_chunk_11",
+                "document_id": "doc_0048",
+                "title": "ChatGPT: Everything you need to know about the AI-powered chatbot",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2023/09/28/chatgpt-everything-to-know-about-the-ai-chatbot/",
+                "score": 2.1515402793884277,
+                "text": "Sam Altman might return, but it’s complicated The only constant within OpenAI right now is change, and in a series of interviews, Nadella hedged on earlier reporting that Altman and Brockman were headed to Microsoft.\n\n“Obviously, we want Sam and Greg to have a fantastic home if they’re not going to be in OpenAI,” Nadella said in an interview with CNBC, saying that we was “open” to them settling at Microsoft or returning to OpenAI should the board and employees support the move.\n\nConfirmation Sam Altman will not return as OpenAI’s CEO A number of investors and OpenAI employees tried to bring back Altman after his sudden firing by the company’s board, but following a weekend of negotiations, it was confirmed that Altman would not return to OpenAI and new leadership would take hold. What this means for ChatGPT’s future, and for the OpenAI Dev Day announcements, remains to be seen."
+              },
+              {
+                "citation_id": 4,
+                "chunk_id": "doc_0333_chunk_0",
+                "document_id": "doc_0333",
+                "title": "WTF is going on at OpenAI? We have theories",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2023/11/17/wtf-is-going-on-at-openai-sam-altman-fired/",
+                "score": 8.117510795593262,
+                "text": "In perhaps the most unexpected tech news of the year, billionaire and AI evangelist Sam Altman has been ejected from his CEO role at OpenAI by the company’s board after an apparent vote of no confidence. Its exact wording in a release issued this afternoon: Altman’s “departure follows a deliberative review process by the board, which concluded that he was not consistently candid in his communications with the board, hindering its ability to exercise its responsibilities.”\n\nWhat the hell is happening at the most hyped company in the world?! Here are some totally speculative theories that occurred to us and others around the web.\n\n1. Did Altman circumvent the board in a major deal? Based on the board’s language and the way these giant tech companies work, this is the prevailing theory floating around right now. “Not consistently candid” is a very diplomatic way of saying Altman lied."
+              },
+              {
+                "citation_id": 5,
+                "chunk_id": "doc_0332_chunk_1",
+                "document_id": "doc_0332",
+                "title": "OpenAI's ex-chairman accuses board of going rogue in firing Altman: 'Sam and I are shocked and saddened by what the board did'",
+                "source": "Fortune",
+                "url": "https://fortune.com/2023/11/18/how-did-openai-fire-sam-altman-greg-brockman-rogue-board/",
+                "score": 0.9842120409011841,
+                "text": "The announcement also said another OpenAI co-founder and top executive, Greg Brockman, the board’s chairman, would step down from that role but remain at the company, where he serves as president. But later on X, formerly Twitter, Brockman posted a message he sent to OpenAI employees in which he wrote, “based on today’s news, i quit.”\n\nIn another X post on Friday night, Brockman said Altman was asked to join a video meeting at noon Friday with the company’s board members, minus Brockman, during which OpenAI co-founder and Chief Scientist Ilya Sutskever informed Altman he was being fired.\n\n“Sam and I are shocked and saddened by what the board did today,” Brockman wrote, adding that he was informed of his removal from the board in a separate call with Sutskever a short time later.\n\nOpenAI declined to answer questions on what Altman’s alleged lack of candor was about. The statement said his behavior was hindering the board’s ability to exercise its responsibilities."
+              },
+              {
+                "citation_id": 6,
+                "chunk_id": "doc_0027_chunk_26",
+                "document_id": "doc_0027",
+                "title": "How ego and fear fuelled the rise of artificial intelligence",
+                "source": "The Age",
+                "url": "https://www.theage.com.au/business/entrepreneurship/how-ego-and-fear-fuelled-the-rise-of-artificial-intelligence-20231205-p5ep7j.html?ref=rss&utm_medium=rss&utm_source=rss_business",
+                "score": 4.945944309234619,
+                "text": "In late 2017, Musk hatched a plan to wrest control of the lab from Altman and the other founders and transform it into a commercial operation that would join forces with Tesla and rely on supercomputers the car company was developing, according to four people familiar with the matter. When Altman and others pushed back, Musk quit and said he would focus on his own AI work at Tesla. In February 2018, he announced his departure to OpenAI’s staff on the top floor of the startup’s offices in a converted truck factory, three people who attended the meeting said. When he said that OpenAI needed to move faster, one researcher retorted at the meeting that Musk was being reckless. Musk called the researcher a “jackass” and stormed out, taking his deep pockets with him. OpenAI suddenly needed new financing in a hurry. Altman flew to Sun Valley for a conference and ran into Satya Nadella, Microsoft’s CEO. A tie-up seemed natural. Altman knew Microsoft’s chief technology officer, Kevin Scott."
+              }
+            ]
+          }
+        }
+      ],
+      "final_evidence_sufficient": true,
+      "generation": {
+        "raw_answer": "DIRECT_ANSWER: No\n\nFACTS:\n- The Fortune article contradicts the TechCrunch article by claiming that Sam Altman was fired by the board, while the TechCrunch article states that Altman was fired by the board.\n- The Fortune article does not mention any specific reasons for Altman's departure, while the TechCrunch article provides details about the board's decision-making process and Altman's perceived lack of candor.",
+        "extracted_claim_count": 4,
+        "supported_count": 2,
+        "unsupported_count": 2,
+        "relevant_count": 2,
+        "filtered_relevant_count": 0,
+        "claims": [
+          {
+            "claim": "DIRECT_ANSWER: No.",
+            "supported": false,
+            "citation_id": null,
+            "label": "neutral",
+            "entailment_score": 0.0617,
+            "supporting_text": "When he said that OpenAI needed to move faster, one researcher retorted at the meeting that Musk was being reckless.",
+            "relevance_score": null,
+            "relevance_decision": "NOT_RANKED"
+          },
+          {
+            "claim": "The Fortune article contradicts the TechCrunch article by claiming that Sam Altman was fired by the board, while the TechCrunch article states that Altman was fired by the board.",
+            "supported": true,
+            "citation_id": 5,
+            "label": "entailment",
+            "entailment_score": 0.9369,
+            "supporting_text": "Source: Fortune. Title: OpenAI's ex-chairman accuses board of going rogue in firing Altman: 'Sam and I are shocked and saddened by what the board did'. Evidence: But later on X, formerly Twitter, Brockman posted a message he sent to OpenAI employees in which he wrote, “based on today’s news, i quit.” In another X post on Friday night, Brockman said Altman was asked to join a video meeting at noon Friday with the company’s board members, minus Brockman, during which OpenAI co-founder and Chief Scientist Ilya Sutskever informed Altman he was being fired. “Sam and I are shocked and saddened by what the board did today,” Brockman wrote, adding that he was informed of his removal from the board in a separate call with Sutskever a short time later.",
+            "relevance_score": 2.8746,
+            "relevance_decision": "KEEP"
+          },
+          {
+            "claim": "The Fortune article does not mention any specific reasons for Altman's departure, while the TechCrunch article provides details about the board's decision-making process.",
+            "supported": false,
+            "citation_id": null,
+            "label": "neutral",
+            "entailment_score": 0.0009,
+            "supporting_text": "Source: TechCrunch. Title: Sam Altman ousted as OpenAI’s CEO. Evidence: In a post on OpenAI’s official blog, the company writes that Altman’s departure follows a “deliberative review process by the board” that concluded that Altman “wasn’t consistently candid in his communications” with other board members, “hindering its ability to exercise its responsibilities.” Tip TechCrunch Do you work at OpenAI and know more about Sam Altman’s departure?",
+            "relevance_score": null,
+            "relevance_decision": "NOT_RANKED"
+          },
+          {
+            "claim": "Altman's perceived lack of candor.",
+            "supported": true,
+            "citation_id": 5,
+            "label": "entailment",
+            "entailment_score": 0.9958,
+            "supporting_text": "OpenAI declined to answer questions on what Altman’s alleged lack of candor was about.",
+            "relevance_score": -3.7592,
+            "relevance_decision": "KEEP"
+          }
+        ]
+      }
+    },
+    {
+      "target": "mctominay_haaland",
+      "example_id": "eval_090554e34f30",
+      "question": "Does the 'Sporting News' article identify Scott McTominay as Manchester United's top scorer for the season, while the 'TalkSport' article suggests Erling Haaland has the chance to become the overall top scorer in 2023, indicating a difference in the scope of their scoring achievements?",
+      "gold_answer": "Yes",
+      "question_type": "comparison_query",
+      "evidence_attempts": [
+        {
+          "attempt": 0,
+          "query": "Does the 'Sporting News' article identify Scott McTominay as Manchester United's top scorer for the season, while the 'TalkSport' article suggests Erling Haaland has the chance to become the overall top scorer in 2023, indicating a difference in the scope of their scoring achievements?",
+          "evidence_sufficient": true,
+          "evidence_score": 0.8167,
+          "evidence_reasons": [
+            "Evidence appears sufficient.",
+            "Potentially weak evidence citations: [4, 5, 6, 7]"
+          ],
+          "context": {
+            "total_words": 1248,
+            "items": [
+              {
+                "citation_id": 1,
+                "chunk_id": "doc_0129_chunk_0",
+                "document_id": "doc_0129",
+                "title": "Man United vs Chelsea final score, result and highlights as Scott McTominay brace gives Ten Hag vital win",
+                "source": "Sporting News",
+                "url": "https://www.sportingnews.com/us/soccer/news/man-united-vs-chelsea-live-score-result-premier-league/3fbd625c62445c98c3f5a559",
+                "score": 5.3159260749816895,
+                "text": "Manchester United got themselves back to winning ways thanks to a superb Scott McTominay brace against Chelsea. The victory remarkably puts them within three points of rivals Manchester City, after the reigning champions were defeated by Aston Villa, and keeps them in reach of the top four places.\n\nMcTominay is now United's top scorer for the season with six goals, one ahead of Bruno Fernandes and Rasmus Hojlund. The Red Devils' captain had a first-half penalty saved by Robert Sanchez and United's Danish striker was substituted after another Premier League game without a goal, despite making 11 appearances."
+              },
+              {
+                "citation_id": 2,
+                "chunk_id": "doc_0277_chunk_3",
+                "document_id": "doc_0277",
+                "title": "Top goalscorers of 2023: Cristiano Ronaldo brings up 50 goals with Erling Haaland and Harry Kane also high on list",
+                "source": "TalkSport",
+                "url": "https://talksport.com/football/1674719/top-goalscorers-2023-ronaldo-haaland-kane/",
+                "score": 4.227457523345947,
+                "text": "8 Lukaku ended the Euro 2024 qualifying campaign as top scorer Credit: AFP 4. Erling Haaland (Manchester City/Norway) - 50 goals No player in Premier League history has made more of an impact following their arrival than Haaland, who broke the goal record for a single season with 36 strikes last term.\n\nHe has already been firing in many top-flight goals this term - as well as being the joint-leading scorer from the Champions League group stages.\n\nJust six out of his 50 goals in 2023 have been for his national side Norway, with Haaland helping the Citizens to a historic treble last campaign.\n\nWith two games left for City in 2023, Haaland has time to be the overall top scorer, though it remains to be seen if Pep Guardiola will play him against Everton and Sheffield United.\n\nHaaland has missed City's last five games with a foot injury, but it is believed he could be in contention now to return to action."
+              },
+              {
+                "citation_id": 3,
+                "chunk_id": "doc_0571_chunk_4",
+                "document_id": "doc_0571",
+                "title": "Ten Hag responds to Carra: Man Utd have actually improved",
+                "source": "Sky Sports",
+                "url": "https://www.skysports.com/football/news/11095/12994089/man-utd-vs-man-city-erik-ten-hag-disagrees-with-jamie-carragher-that-his-team-have-gone-backwards-this-season",
+                "score": -0.2016097605228424,
+                "text": "As expected, Manchester City have the highest amount of build-up attacks in the Premier League this season, so if United do win the ball high up in Sunday's derby, they need to start taking those chances.\n\nTen Hag on misfiring strikers: We need to be better Please use Chrome browser for a more accessible video player Manchester United boss Erik ten Hag speaks on the improvement he's seen in goalkeeper Andre Onana and insists he believes Marcus Rashford can get back to scoring goals\n\nUnited go into Sunday's derby with a slight striker scoring problem. City forward Erling Haaland has scored more Premier League goals this season (9) than United's five forwards have managed in all competitions (8).\n\nUnited's top scorer this season is actually defensive midfielder Casemiro with four strikes so far. Asked if their forwards are to blame for this frontline problem, Ten Hag replied: \"Fault? It's co-operation. It has to click."
+              },
+              {
+                "citation_id": 4,
+                "chunk_id": "doc_0242_chunk_2",
+                "document_id": "doc_0242",
+                "title": "Ten Hag’s gamble pays off against Chelsea as McTominay steals show | Jonathan Liew",
+                "source": "The Guardian",
+                "url": "https://www.theguardian.com/football/2023/dec/06/ten-hags-gamble-pays-off-against-chelsea-as-mctominay-steals-show",
+                "score": -2.6718595027923584,
+                "text": "United fans will no doubt note the rich irony in the fact that these days McTominay is basically doing the job they once paid Paul Pogba to do. Marauding midfield engine and late-running goal threat; the all-action superhero who can chip in with 10 goals a season and pull off slide tackles that make the highlight reels. It never quite worked out for Pogba at United, largely – if you believe his most vehement critics – on account of his hair. McTominay is a different kind of player with a different kind of skillset. But for all the undoubted leadership qualities of Bruno Fernandes and Harry Maguire, tactically it is McTominay running the show right now: a development with numerous interesting consequences."
+              },
+              {
+                "citation_id": 5,
+                "chunk_id": "doc_0142_chunk_1",
+                "document_id": "doc_0142",
+                "title": "City old boy has final say for Chelsea in eight-goal thriller, supreme Salah leads Liverpool surge",
+                "source": "The Roar | Sports Writers Blog",
+                "url": "https://www.theroar.com.au/2023/11/13/city-old-boy-has-final-say-for-chelsea-in-eight-goal-thriller-supreme-salah-leads-liverpool-surge/",
+                "score": -2.40429949760437,
+                "text": "'I'm not going to say I work on them, because I don't. I just trust in my natural abilities' ????\n\nHe scores from the spot in the 95th minute. Then drops this in his post-match interview. C̶o̶l̶e̶ Cold Palmer.#OptusSport pic.twitter.com/pfKM5QbLxH — Optus Sport (@OptusSport) November 12, 2023 Chelsea had dented Tottenham’s title ambitions with a wild 4-1 win against Ange Postecoglou’s team on Monday and proved a challenge for City, too, by coming back from behind three times.\n\nCity lead the table on 28 points with Liverpool going into second on 27, above Arsenal on goal difference. Tottenham are fourth on 26 after successive defeats.\n\nAdvertisement Erling Haaland fired City ahead from the penalty spot in the 25th after VAR adjudged Marc Cucurella to have fouled the Norwegian."
+              },
+              {
+                "citation_id": 6,
+                "chunk_id": "doc_0400_chunk_9",
+                "document_id": "doc_0400",
+                "title": "The Soccer Star on the Verge of Breaking an 89-Year-Old Record",
+                "source": "The New York Times",
+                "url": "https://theathletic.com/5065646/2023/11/16/erling-haaland-longest-international-goal-records/",
+                "score": -2.107253313064575,
+                "text": "Even Cristiano Ronaldo, the most prolific international goalscorer of all time with 127 for Portugal, boasts ‘only’ 0.63 goals per game, a lower rate than the likes of Romelu Lukaku (Belgium), Kane and Aleksandar Mitrovic (Serbia), which owes to his early days as a winger rather than a central striker.\n\nKane and Ronaldo, two national-team record scorers still operating in 2023 (Burak Akbulut/Anadolu Agency/Getty Images) Considering how many hat-tricks Haaland scores for Manchester City, it’s not beyond the realms of possibility that he could score six goals during this international break to move level with Juve, particularly given Norway’s first fixture is a home friendly against the Faroe Islands today (Thursday), before a European Championship qualifier against Scotland in Glasgow on Sunday. That said, the Faroes’ defence is less leaky than you might expect — only twice in their last 22 outings have they conceded more than three times in a game."
+              },
+              {
+                "citation_id": 7,
+                "chunk_id": "doc_0438_chunk_0",
+                "document_id": "doc_0438",
+                "title": "Manchester divided as ten Hag pressure mounts after United Hammered, Ange-ball pays off again as Spurs sink Everton",
+                "source": "The Roar | Sports Writers Blog",
+                "url": "https://www.theroar.com.au/2023/12/24/manchester-divided-as-ten-hag-pressure-mounts-after-united-hammered-ange-ball-pays-off-again-as-spurs-sink-everton/",
+                "score": -4.740316390991211,
+                "text": "Goals from West Ham’s Jarrod Bowen and Mohammed Kudus extended Manchester United’s miserable run in the English Premier League. Bowen bundled home at the second attempt in the 72nd minute, his 11th league goal this season, and Kudus struck his fourth goal in as many games to settle matters.\n\nIt was another worrying setback for manager Erik ten Hag as United suffered a 13th defeat in 26 games in all competitions.\n\nFacebook Twitter Whatsapp Reddit Email Share A defensive howler from Manchester United and Mohammed Kudus capitalises! ???? What a finish from the West Ham man, but Kobbie Mainoo won't want to see this one back… ???? Stream LIVE, or on-demand after, here ???? https://t.co/09W1bq24Ur#OptusSport #PL pic.twitter.com/IcKGdmJv4O — Optus Sport (@OptusSport) December 23, 2023 Manchester United legend Peter Schmeichel lashed the team’s lack of a plan and blasted them for looking slow against the Hammers."
+              },
+              {
+                "citation_id": 8,
+                "chunk_id": "doc_0012_chunk_0",
+                "document_id": "doc_0012",
+                "title": "Leaky defence ‘isn’t good enough’ and ‘scars’ grow from throwing away leads – It’s all going wrong for Manchester United in Europe",
+                "source": "TalkSport",
+                "url": "https://talksport.com/football/1659923/man-utd-defending-scars-champions-league/",
+                "score": -1.205483078956604,
+                "text": "Manchester United's domestic form has certainly shown signs of improvement in recent weeks, but that's far from the case in Europe.\n\nErik ten Hag's side have once again dropped points from a winning position as they drew 3-3 with Galatasaray in the Champions League, a damaging result in their bid to reach the last 16.\n\n4 United were once again the victims of their own demise Credit: Getty Goals from Alejandro Garnacho and Bruno Fernandes fired them into a two-goal lead within 18 minutes before Chelsea loanee Hakim Ziyech struck back.\n\nScott McTominay scored what he thought would have been a crucial third shortly after the break but United failed to hold on.\n\nAnother free-kick from Ziyech caught Andre Onana off guard once again and a strong strike from Kerem Akturkoglu levelled the scoring."
+              },
+              {
+                "citation_id": 9,
+                "chunk_id": "doc_0352_chunk_1",
+                "document_id": "doc_0352",
+                "title": "European roundup: Bellingham helps Real Madrid go top while Bayern draw",
+                "source": "The Guardian",
+                "url": "https://www.theguardian.com/football/2023/sep/30/european-roundup-bellingham-helps-real-madrid-go-top-while-bayern-draw",
+                "score": -2.4882638454437256,
+                "text": "Leipzig struck twice in six minutes with Loïs Openda putting them in front in the 20th when he completed a quick break. They scored again with Castello Lukeba stabbing in after the goalkeeper Sven Ulreich misjudged a corner.\n\nBayern earned a 57th-minute penalty against the run of play for a handball and Kane cut the deficit with his eighth league goal. Only Manchester City’s Erling Haaland, when he played for Borussia Dortmund, scored more often in his first six Bundesliga games with nine goals.\n\nThe Bavarians’ comeback was complete in the 70th with Kane clearing the ball in his own half and Musiala finding Sané for the equaliser.\n\nBellingham celebrates scoring Real Madrid’s third goal during their 3-0 away league win over Girona. Photograph: David S.Bustamante/Soccrates Images/Getty Images\n\nIn Spain Real Madrid outclassed Girona 3-0 to return to the top of LaLiga, thanks to goals from Joselu, Aurélien Tchouaméni and Jude Bellingham."
+              }
+            ]
+          }
+        }
+      ],
+      "final_evidence_sufficient": true,
+      "generation": {
+        "raw_answer": "DIRECT_ANSWER: Yes\n\nFACTS:\n- Scott McTominay is identified as Manchester United's top scorer for the season according to the 'Sporting News' article.\n- Erling Haaland is mentioned as having the potential to become the overall top scorer in 2023 based on the 'TalkSport' article.",
+        "extracted_claim_count": 3,
+        "supported_count": 2,
+        "unsupported_count": 1,
+        "relevant_count": 2,
+        "filtered_relevant_count": 0,
+        "claims": [
+          {
+            "claim": "DIRECT_ANSWER: Yes.",
+            "supported": false,
+            "citation_id": null,
+            "label": "neutral",
+            "entailment_score": 0.0579,
+            "supporting_text": "Source: The Roar | Sports Writers Blog. Title: Manchester divided as ten Hag pressure mounts after United Hammered, Ange-ball pays off again as Spurs sink Everton. Evidence: Facebook Twitter Whatsapp Reddit Email Share A defensive howler from Manchester United and Mohammed Kudus capitalises!",
+            "relevance_score": null,
+            "relevance_decision": "NOT_RANKED"
+          },
+          {
+            "claim": "Scott McTominay is identified as Manchester United's top scorer for the season according to the 'Sporting News' article.",
+            "supported": true,
+            "citation_id": 1,
+            "label": "entailment",
+            "entailment_score": 0.9693,
+            "supporting_text": "Source: Sporting News. Title: Man United vs Chelsea final score, result and highlights as Scott McTominay brace gives Ten Hag vital win. Evidence: McTominay is now United's top scorer for the season with six goals, one ahead of Bruno Fernandes and Rasmus Hojlund.",
+            "relevance_score": 10.0761,
+            "relevance_decision": "KEEP"
+          },
+          {
+            "claim": "Erling Haaland is mentioned as having the potential to become the overall top scorer in 2023 based on the 'TalkSport' article.",
+            "supported": true,
+            "citation_id": 2,
+            "label": "entailment",
+            "entailment_score": 0.9907,
+            "supporting_text": "Source: TalkSport. Title: Top goalscorers of 2023: Cristiano Ronaldo brings up 50 goals with Erling Haaland and Harry Kane also high on list. Evidence: With two games left for City in 2023, Haaland has time to be the overall top scorer, though it remains to be seen if Pep Guardiola will play him against Everton and Sheffield United.",
+            "relevance_score": 10.3073,
+            "relevance_decision": "KEEP"
+          }
+        ]
+      }
+    },
+    {
+      "target": "google_youtube",
+      "example_id": "eval_0e73e16e3d82",
+      "question": "Does the TechCrunch article on the antitrust suit against Google claim that Google's behavior towards news publishers is anticompetitive, while the other TechCrunch article suggests that Google has no plans to implement additional measures on YouTube, indicating a difference in Google's approach to news publishers and content regulation on YouTube?",
+      "gold_answer": "Yes",
+      "question_type": "comparison_query",
+      "evidence_attempts": [
+        {
+          "attempt": 0,
+          "query": "Does the TechCrunch article on the antitrust suit against Google claim that Google's behavior towards news publishers is anticompetitive, while the other TechCrunch article suggests that Google has no plans to implement additional measures on YouTube, indicating a difference in Google's approach to news publishers and content regulation on YouTube?",
+          "evidence_sufficient": true,
+          "evidence_score": 0.846,
+          "evidence_reasons": [
+            "Evidence appears sufficient.",
+            "Potentially weak evidence citations: [2, 5, 6, 7, 9]"
+          ],
+          "context": {
+            "total_words": 1234,
+            "items": [
+              {
+                "citation_id": 1,
+                "chunk_id": "doc_0033_chunk_0",
+                "document_id": "doc_0033",
+                "title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2023/12/15/news-publisher-files-class-action-antitrust-suit-against-google-citing-ais-harms-to-their-bottom-line/",
+                "score": 1.1022770404815674,
+                "text": "A new class action lawsuit filed this week in the U.S. District Court in D.C. accuses Google and parent company Alphabet of anticompetitive behavior in violation of U.S. antitrust law, the Sherman Act, and others, on behalf of news publishers. The case, filed by Arkansas-based publisher Helena World Chronicle, argues that Google “siphons off” news publishers’ content, their readers and ad revenue through anticompetitive means. It also specifically cites new AI technologies like Google’s Search Generative Experience (SGE) and Bard AI chatbot as worsening the problem.\n\nIn the complaint, Helena World Chronicle, which owns and publishes two weekly newspapers in Arkansas, argues that Google is “starving the free press” by sharing publishers’ content on Google, losing them “billions of dollars.”\n\nIn addition to new AI technologies, the suit points to Google’s older question-and-answer technologies, like the “Knowledge Graph” launched in May 2012, as part of the problem."
+              },
+              {
+                "citation_id": 2,
+                "chunk_id": "doc_0015_chunk_2",
+                "document_id": "doc_0015",
+                "title": "More from the US v Google trial: vertical search, pre-installs and the case of Firefox/Yahoo",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2023/11/13/more-from-the-us-v-google-trial-vertical-search-pre-installs-and-the-case-of-firefox-yahoo/",
+                "score": -3.372910499572754,
+                "text": "even though Google is basically the God of the internet, it’s still no match for the U.S. law. The Google outcome could also have a ripple effect on other Big Tech cases. The FTC sued Amazon in September for using anticompetitive and unfair strategies to illegally maintain its monopoly power. The DOJ has been investigating Apple for years over the company’s policy for third-party apps on its devices and whether it unfairly favors its own products. There’s an ongoing case between the FTC and Facebook, wherein the agency calls on Facebook to sell Instagram and WhatsApp."
+              },
+              {
+                "citation_id": 3,
+                "chunk_id": "doc_0237_chunk_0",
+                "document_id": "doc_0237",
+                "title": "5 things we learned so far about the Google antitrust case",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2023/10/30/5-things-we-learned-so-far-about-the-google-antitrust-case/",
+                "score": -0.13291892409324646,
+                "text": "Google CEO Sundar Pichai testified Monday in the U.S. government’s antitrust trial against the company. The executive defended Google’s business tactics, including its deal with Apple and other partners to make Google the default search engine.\n\nThe lawsuit stems from a 2020 antitrust claim over Google’s dominance in the online search market. The claim is separate from one filed in January by the Department of Justice, along with eight states including New York, California and Colorado, that aims to “halt Google’s anticompetitive scheme, unwind Google’s monopolistic grip on the market and restore competition to digital advertising.”\n\nThe government has argued that Google uses its platforms and deals with partners to block out any competition in search or advertising, thus hindering competitors from accessing the data they’d need to improve their products."
+              },
+              {
+                "citation_id": 4,
+                "chunk_id": "doc_0042_chunk_0",
+                "document_id": "doc_0042",
+                "title": "What to know about Fortnite maker Epic Games’ antitrust battle with Google, starting today",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2023/11/06/what-to-know-about-fortnite-maker-epic-games-antitrust-battle-with-google-starting-today/",
+                "score": -1.8806934356689453,
+                "text": "Match may have settled its antitrust lawsuit with Google last week, but Fortnite maker Epic Games is still set to go to trial with the tech giant today, November 6, in hopes of convincing a jury that Google engages in anticompetitive behavior with regard to its Android app store, Google Play, and its commission structure. This case will differ slightly from Epic’s battle with Apple on the same topic because, this time, Epic can’t allege there’s no other way to load apps onto Android devices, as it could with Apple, because Android does allow for sideloading apps. Though Epic will suggest Google makes that process cumbersome, the bulk of its arguments will center around what it believes are anticompetitive agreements between Google and device manufacturers and developers."
+              },
+              {
+                "citation_id": 5,
+                "chunk_id": "doc_0381_chunk_13",
+                "document_id": "doc_0381",
+                "title": "Sony Music’s artists aren’t involved in YouTube’s new voice-cloning AI experiment. Not unrelated: Google’s recent filing with the US Copyright Office.",
+                "source": "Music Business Worldwide",
+                "url": "https://www.musicbusinessworldwide.com/sony-musics-artists-arent-involved-in-youtubes-new-cloned-voice-ai-experiment-not-unrelated-googles-recent-filing-with-the-us-copyright-office/",
+                "score": -5.30254602432251,
+                "text": "Yet it could clearly be argued that Google’s take on copyright “harvesting” by generative AI models sits in odd contrast to the copyright-related reassurances that YouTube has been careful to make to the music industry during the pre-development, development, and trial launch of ‘Dream Track’.\n\nA final thought… MBW’s sources close to Sony Music were keen to point out that the company’s general ongoing relationship with YouTube and YouTube Music is a harmonious one.\n\n(YouTube is, after all, now the second largest commercial partner of the major record companies – with a stated ambition to catch up with Spotify in the years ahead. YouTube says it paid out over USD $6 billion to music rightsholders in the year to end of June 2022, with around $2 billion of that coming just from ads on user-generated content.)"
+              },
+              {
+                "citation_id": 6,
+                "chunk_id": "doc_0355_chunk_11",
+                "document_id": "doc_0355",
+                "title": "Epic v. Google, explained",
+                "source": "The Verge",
+                "url": "https://www.theverge.com/23944251/epic-google-antitrust-trial-explainer-monopoly",
+                "score": -3.972160816192627,
+                "text": "Plus, there’s evidence Google deleted potentially incriminating messages to keep them out of a court’s hands. Enough that the judge has decided to explicitly tell the jury we’re not seeing all the evidence, because Google employees all the way up to CEO Sundar Pichai were caught setting those conversations to auto-delete. This issue has come up in the US v. Google antitrust trial in Washington, DC — still ongoing at the start of Epic’s trial — as well.\n\nAnd the dirt isn’t all on Google’s side. Epic was caught straight-up admitting it premeditated the whole plan to bypass Google’s payment systems. Since Google is countersuing over that, it could be a big deal.\n\nWhen you say “straight-up admitting...” Here is an email from Epic CEO Tim Sweeney that, I think, speaks for itself: “Here is our official plan for communicating with Google about bypassing the Google Play Store: SAY NOTHING TILL IT SHIPS” Image via Epic v. Apple"
+              },
+              {
+                "citation_id": 7,
+                "chunk_id": "doc_0384_chunk_1",
+                "document_id": "doc_0384",
+                "title": "Temu was the most-downloaded iPhone app in the U.S. in 2023",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2023/12/12/temu-was-the-most-downloaded-iphone-app-in-the-u-s-in-2023/",
+                "score": -4.372767448425293,
+                "text": "Google, meanwhile, had dominated last year’s list with the No. 2 app YouTube, just behind TikTok, as well as No. 5 Google Maps, No. 6 Google Search and No. 7 Gmail. In 2023, however, Google’s only two apps in the top 10 by downloads included No. 7 Google Search and No. 8 YouTube, both also slipping in ranking from last year.\n\nThe shift in downloads could represent that U.S. tech giants are nearly at a market saturation point, where their apps aren’t as in demand as they were in previous years because many already have them installed. It also points to the growing demand for apps from Chinese firms, like ByteDance, which are attracting younger users’ attention along with government scrutiny, with TikTok being banned from a number of government devices over concerns about its China ties. Montana also attempted to ban TikTok in its state, but that ruling was put on hold by the courts for the time being as TikTok’s lawsuit progresses."
+              },
+              {
+                "citation_id": 8,
+                "chunk_id": "doc_0248_chunk_7",
+                "document_id": "doc_0248",
+                "title": "Deepfake election risks trigger EU call for more generative AI safeguards",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2023/09/26/generative-ai-disinformation-risks/",
+                "score": 6.44301700592041,
+                "text": "Over the next six months Google’s report states it has no additional measures planned for YouTube. But, with generative image capabilities rolling out internally over the next year, it commits Google Search to leveraging IPTC Photo Metadata Standard to add metadata tags to images that are generated by Google AI.\n\n“Creators and publishers will be able to add a similar markup to their own images, so a label can be displayed in Search to indicate the images as AI generated,” Google’s report further notes.\n\nMicrosoft Microsoft — a major investor in OpenAI which has also baked generative AI capabilities into its own search engine — claims it’s taking “a cross product whole of company approach to ensure the responsible implementation of AI”.\n\nIts report flags its “Responsible AI Principles” which it says it’s developed into a Responsible AI standard v.2 and Information Integrity Principles “to help set baseline standards and guidance across product teams”."
+              },
+              {
+                "citation_id": 9,
+                "chunk_id": "doc_0196_chunk_0",
+                "document_id": "doc_0196",
+                "title": "With Amo, the founder of Zenly wants to make social apps social again",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2023/11/19/with-amo-the-founder-of-zenly-wants-to-make-social-apps-social-again/",
+                "score": -5.189225196838379,
+                "text": "With Amo, the founder of Zenly wants to make social apps social again The startup raised $20 million and is launching ID today\n\nIn 2018, I wrote a TechCrunch article stating that 2018 was “the year social networks were no longer social.” Reflecting on that article, I’m not sure that 2018 was the turning point. But the premise of the article still holds up well.\n\nAt some point, social networks were no longer about connecting with your closest friends, keeping up with long-distance family members and feeling a special connection with people you love.\n\nTikTok, Instagram, Snapchat, Facebook, YouTube and X (formerly Twitter) are all slowly evolving to become the same infinite scrollable feed of algorithm-optimized short videos from top performers."
+              }
+            ]
+          }
+        }
+      ],
+      "final_evidence_sufficient": true,
+      "generation": {
+        "raw_answer": "DIRECT_ANSWER: Yes\n\nFACTS:\n- The first TechCrunch article mentions Google's anticompetitive behavior towards news publishers through AI technologies like SGE and Bard AI chatbot.\n- The second TechCrunch article indicates that Google has no plans to implement additional measures on YouTube regarding content regulation.",
+        "extracted_claim_count": 3,
+        "supported_count": 0,
+        "unsupported_count": 3,
+        "relevant_count": 0,
+        "filtered_relevant_count": 0,
+        "claims": [
+          {
+            "claim": "DIRECT_ANSWER: Yes.",
+            "supported": false,
+            "citation_id": null,
+            "label": "contradiction",
+            "entailment_score": 0.0456,
+            "supporting_text": "The FTC sued Amazon in September for using anticompetitive and unfair strategies to illegally maintain its monopoly power.",
+            "relevance_score": null,
+            "relevance_decision": "NOT_RANKED"
+          },
+          {
+            "claim": "The first TechCrunch article mentions Google's anticompetitive behavior towards news publishers through AI technologies like SGE and Bard AI chatbot.",
+            "supported": false,
+            "citation_id": null,
+            "label": "neutral",
+            "entailment_score": 0.1072,
+            "supporting_text": "Source: TechCrunch. Title: News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line. Evidence: It also specifically cites new AI technologies like Google’s Search Generative Experience (SGE) and Bard AI chatbot as worsening the problem. In the complaint, Helena World Chronicle, which owns and publishes two weekly newspapers in Arkansas, argues that Google is “starving the free press” by sharing publishers’ content on Google, losing them “billions of dollars.” In addition to new AI technologies, the suit points to Google’s older question-and-answer technologies, like the “Knowledge Graph” launched in May 2012, as part of the problem.",
+            "relevance_score": null,
+            "relevance_decision": "NOT_RANKED"
+          },
+          {
+            "claim": "The second TechCrunch article indicates that Google has no plans to implement additional measures on YouTube regarding content regulation.",
+            "supported": false,
+            "citation_id": null,
+            "label": "neutral",
+            "entailment_score": 0.0004,
+            "supporting_text": "Source: TechCrunch. Title: Deepfake election risks trigger EU call for more generative AI safeguards. Evidence: Over the next six months Google’s report states it has no additional measures planned for YouTube. But, with generative image capabilities rolling out internally over the next year, it commits Google Search to leveraging IPTC Photo Metadata Standard to add metadata tags to images that are generated by Google AI.",
+            "relevance_score": null,
+            "relevance_decision": "NOT_RANKED"
+          }
+        ]
+      }
+    },
+    {
+      "target": "google_epic",
+      "example_id": "eval_2f9aa5a9983c",
+      "question": "Between the report from The Verge on the Epic v. Google case and the subsequent report from TechCrunch on the same case, was there agreement on the nature of Epic Games' arguments against Google?",
+      "gold_answer": "Yes",
+      "question_type": "temporal_query",
+      "evidence_attempts": [
+        {
+          "attempt": 0,
+          "query": "Between the report from The Verge on the Epic v. Google case and the subsequent report from TechCrunch on the same case, was there agreement on the nature of Epic Games' arguments against Google?",
+          "evidence_sufficient": true,
+          "evidence_score": 0.8429,
+          "evidence_reasons": [
+            "Evidence appears sufficient."
+          ],
+          "context": {
+            "total_words": 708,
+            "items": [
+              {
+                "citation_id": 1,
+                "chunk_id": "doc_0299_chunk_9",
+                "document_id": "doc_0299",
+                "title": "The Epic v. Google trial may come down to simple v. complicated",
+                "source": "The Verge",
+                "url": "https://www.theverge.com/2023/11/7/23949849/epic-google-trial-day-one-recap-summary",
+                "score": -0.31819382309913635,
+                "text": "“It’s true that Google could have automatically saved all chats for all relevant employees, but just because Google didn’t save some chats didn’t mean it violated antitrust laws,” Pomerantz argued.\n\nEpic’s opening statements seemed to paint a clearer picture for the jury than those from Google. But things got complicated for both parties when the first two witnesses — Epic Games Store head Steve Allison and Yoga Buddhi CEO Benjamin Simon, who also appeared in the earlier Epic v. Apple trial — took the stand.\n\nBoth Epic and Google spent a long, long time on subtle lines of questioning. You really had to read between the lines to see that Epic was trying to make a point about how Google’s 70/30 revenue split is probably based on an arbitrary decision Valve made two decades ago with Steam or how Google was trying to make a point that Epic, too, likely believed that an app store provides more value than just payment processing and maybe deserves more money."
+              },
+              {
+                "citation_id": 2,
+                "chunk_id": "doc_0355_chunk_0",
+                "document_id": "doc_0355",
+                "title": "Epic v. Google, explained",
+                "source": "The Verge",
+                "url": "https://www.theverge.com/23944251/epic-google-antitrust-trial-explainer-monopoly",
+                "score": -0.14725704491138458,
+                "text": "On Monday, Fortnite publisher Epic Games will drag a tech giant into court, alleging that its mobile app store is an illegal monopoly. You may be feeling some déjà vu!\n\nAfter all, didn’t Epic already go to trial with Apple, resulting in a ruling where Apple (mostly) won? Didn’t Epic fail to #FreeFortnite with its Llamacorn legal gambit? Didn’t that all happen years ago? What are we doing here again?\n\nThe short answer: while Epic’s antitrust claims against Apple got their day in court, a similar lawsuit against Google never did. On November 6th, Epic v. Google will finally go to trial... a mere 1,180 days after Epic originally sued.\n\nHi, I’m Sean, and I’ll be your guide to this whole delightful mess. Update, December 15th, 2023: It’s basically over now. What happened? Read this, this, and this to get the whole picture."
+              },
+              {
+                "citation_id": 3,
+                "chunk_id": "doc_0033_chunk_4",
+                "document_id": "doc_0033",
+                "title": "News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2023/12/15/news-publisher-files-class-action-antitrust-suit-against-google-citing-ais-harms-to-their-bottom-line/",
+                "score": 0.6194504499435425,
+                "text": "The case points to other concerns, too, like changing AdSense rates and evidence of improper spoliation of evidence on Google’s part, by its destruction of chat messages — an issue raised in the recent Epic Games lawsuit against Google over app store antitrust issues, which Epic won.\n\nIn addition to damages, the suit is asking for an injunction that would require Google to obtain consent from publishers to use their website data to train its general artificial intelligence products including Google’s own and those of rivals. It also asks Google to allow publishers who opt out of SGE to still show up in Google search results, among other things."
+              },
+              {
+                "citation_id": 4,
+                "chunk_id": "doc_0042_chunk_0",
+                "document_id": "doc_0042",
+                "title": "What to know about Fortnite maker Epic Games’ antitrust battle with Google, starting today",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2023/11/06/what-to-know-about-fortnite-maker-epic-games-antitrust-battle-with-google-starting-today/",
+                "score": 3.686471939086914,
+                "text": "Match may have settled its antitrust lawsuit with Google last week, but Fortnite maker Epic Games is still set to go to trial with the tech giant today, November 6, in hopes of convincing a jury that Google engages in anticompetitive behavior with regard to its Android app store, Google Play, and its commission structure. This case will differ slightly from Epic’s battle with Apple on the same topic because, this time, Epic can’t allege there’s no other way to load apps onto Android devices, as it could with Apple, because Android does allow for sideloading apps. Though Epic will suggest Google makes that process cumbersome, the bulk of its arguments will center around what it believes are anticompetitive agreements between Google and device manufacturers and developers."
+              },
+              {
+                "citation_id": 5,
+                "chunk_id": "doc_0170_chunk_22",
+                "document_id": "doc_0170",
+                "title": "Tim Sweeney on Epic’s victory royale over Google",
+                "source": "The Verge",
+                "url": "https://www.theverge.com/23996474/epic-tim-sweeney-interview-win-google-antitrust-lawsuit-district-court",
+                "score": -1.494882583618164,
+                "text": "There’s no linkage between the cases and law, so it would just come down to whether the court is in any way following current events on this topic. But there’s no legal connection between the two. It really comes down to the decisions of the humans involved: the justices and the support teams involved when considering the appeal.\n\nGoogle will appeal this; they’ve told us they’re going to challenge the verdict. Will Epic rely on this ruling in the meantime?\n\nWe’re not going to wait. We’re going to do absolutely everything we can as quickly as we can to start changing the world. We not only have this verdict here in the United States, it is a worldwide verdict, right? We established a market worldwide, excluding China. So any remedies, we would presume, would be worldwide. We also have the European DMA; we have Epic v. Apple and Epic v. Google cases coming up in Australia, and another one in the UK."
+              }
+            ]
+          }
+        }
+      ],
+      "final_evidence_sufficient": true,
+      "generation": {
+        "raw_answer": "DIRECT_ANSWER: No\n\nFACTS:\n- The Verge reports that Epic Games argues that Google's 70/30 revenue split is arbitrary and that Epic believes an app store should provide more value than just payment processing.\n- TechCrunch notes that the Epic v. Google case involves allegations of antitrust violations related to Google's practices in the app store industry, specifically regarding the handling of chat logs and potential unfair pricing policies.",
+        "extracted_claim_count": 3,
+        "supported_count": 2,
+        "unsupported_count": 1,
+        "relevant_count": 2,
+        "filtered_relevant_count": 0,
+        "claims": [
+          {
+            "claim": "DIRECT_ANSWER: No.",
+            "supported": false,
+            "citation_id": null,
+            "label": "neutral",
+            "entailment_score": 0.0211,
+            "supporting_text": "Source: The Verge. Title: Tim Sweeney on Epic’s victory royale over Google. Evidence: But there’s no legal connection between the two. It really comes down to the decisions of the humans involved: the justices and the support teams involved when considering the appeal.",
+            "relevance_score": null,
+            "relevance_decision": "NOT_RANKED"
+          },
+          {
+            "claim": "The Verge reports that Epic Games argues that Google's 70/30 revenue split is arbitrary and that Epic believes an app store should provide more value than just payment processing.",
+            "supported": true,
+            "citation_id": 1,
+            "label": "entailment",
+            "entailment_score": 0.9944,
+            "supporting_text": "Source: The Verge. Title: The Epic v. Google trial may come down to simple v. complicated. Evidence: You really had to read between the lines to see that Epic was trying to make a point about how Google’s 70/30 revenue split is probably based on an arbitrary decision Valve made two decades ago with Steam or how Google was trying to make a point that Epic, too, likely believed that an app store provides more value than just payment processing and maybe deserves more money.",
+            "relevance_score": 1.1271,
+            "relevance_decision": "KEEP"
+          },
+          {
+            "claim": "TechCrunch notes that the Epic v. Google case involves allegations of antitrust violations related to Google's practices in the app store industry, specifically regarding the handling of chat logs and potential unfair pricing policies.",
+            "supported": true,
+            "citation_id": 3,
+            "label": "entailment",
+            "entailment_score": 0.9948,
+            "supporting_text": "Source: TechCrunch. Title: News publisher files class action antitrust suit against Google, citing AI’s harms to their bottom line. Evidence: The case points to other concerns, too, like changing AdSense rates and evidence of improper spoliation of evidence on Google’s part, by its destruction of chat messages — an issue raised in the recent Epic Games lawsuit against Google over app store antitrust issues, which Epic won.",
+            "relevance_score": 4.1196,
+            "relevance_decision": "KEEP"
+          }
+        ]
+      }
+    }
+  ]
+}

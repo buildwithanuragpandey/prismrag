@@ -1,0 +1,2958 @@
+{
+  "policies": {
+    "strict": {
+      "minimum_requirement_coverage": 0.45,
+      "required_requirement_fraction": 1.0,
+      "minimum_mean_coverage": 0.5
+    },
+    "balanced": {
+      "minimum_requirement_coverage": 0.4,
+      "required_requirement_fraction": 0.75,
+      "minimum_mean_coverage": 0.48
+    },
+    "relaxed": {
+      "minimum_requirement_coverage": 0.35,
+      "required_requirement_fraction": 0.67,
+      "minimum_mean_coverage": 0.45
+    }
+  },
+  "summary": {
+    "v2": {
+      "answerable_accepts": 9,
+      "answerable_rejects": 6,
+      "answerable_accept_rate": 0.6,
+      "complete_gold_context_rejected": 3,
+      "high_gold_context_rejected": 4,
+      "null_rejects": 4,
+      "null_false_accepts": 1,
+      "null_reject_rate": 0.8,
+      "by_question_type": {
+        "comparison_query": {
+          "count": 5,
+          "accepted": 4,
+          "rejected": 1
+        },
+        "inference_query": {
+          "count": 5,
+          "accepted": 2,
+          "rejected": 3
+        },
+        "null_query": {
+          "count": 5,
+          "accepted": 1,
+          "rejected": 4
+        },
+        "temporal_query": {
+          "count": 5,
+          "accepted": 3,
+          "rejected": 2
+        }
+      }
+    },
+    "strict": {
+      "answerable_accepts": 4,
+      "answerable_rejects": 11,
+      "answerable_accept_rate": 0.26666666666666666,
+      "complete_gold_context_rejected": 6,
+      "high_gold_context_rejected": 7,
+      "null_rejects": 5,
+      "null_false_accepts": 0,
+      "null_reject_rate": 1.0,
+      "by_question_type": {
+        "comparison_query": {
+          "count": 5,
+          "accepted": 1,
+          "rejected": 4
+        },
+        "inference_query": {
+          "count": 5,
+          "accepted": 1,
+          "rejected": 4
+        },
+        "null_query": {
+          "count": 5,
+          "accepted": 0,
+          "rejected": 5
+        },
+        "temporal_query": {
+          "count": 5,
+          "accepted": 2,
+          "rejected": 3
+        }
+      }
+    },
+    "balanced": {
+      "answerable_accepts": 5,
+      "answerable_rejects": 10,
+      "answerable_accept_rate": 0.3333333333333333,
+      "complete_gold_context_rejected": 5,
+      "high_gold_context_rejected": 6,
+      "null_rejects": 5,
+      "null_false_accepts": 0,
+      "null_reject_rate": 1.0,
+      "by_question_type": {
+        "comparison_query": {
+          "count": 5,
+          "accepted": 2,
+          "rejected": 3
+        },
+        "inference_query": {
+          "count": 5,
+          "accepted": 1,
+          "rejected": 4
+        },
+        "null_query": {
+          "count": 5,
+          "accepted": 0,
+          "rejected": 5
+        },
+        "temporal_query": {
+          "count": 5,
+          "accepted": 2,
+          "rejected": 3
+        }
+      }
+    },
+    "relaxed": {
+      "answerable_accepts": 6,
+      "answerable_rejects": 9,
+      "answerable_accept_rate": 0.4,
+      "complete_gold_context_rejected": 5,
+      "high_gold_context_rejected": 6,
+      "null_rejects": 5,
+      "null_false_accepts": 0,
+      "null_reject_rate": 1.0,
+      "by_question_type": {
+        "comparison_query": {
+          "count": 5,
+          "accepted": 2,
+          "rejected": 3
+        },
+        "inference_query": {
+          "count": 5,
+          "accepted": 2,
+          "rejected": 3
+        },
+        "null_query": {
+          "count": 5,
+          "accepted": 0,
+          "rejected": 5
+        },
+        "temporal_query": {
+          "count": 5,
+          "accepted": 2,
+          "rejected": 3
+        }
+      }
+    }
+  },
+  "records": [
+    {
+      "id": "eval_1679afa42c30",
+      "question": "Who is the individual under 30 who was once considered the trustworthy face of the cryptocurrency industry according to The Verge, and is alleged by the prosecution for committing fraud for wealth and influence as reported by TechCrunch, and was also reported by The Verge to have permitted withdrawals from a trading account up to the limit of total trading revenue?",
+      "question_type": "inference_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Sam Bankman-Fried",
+      "gold_document_ids": [
+        "doc_0121",
+        "doc_0175",
+        "doc_0030",
+        "doc_0011"
+      ],
+      "context_document_ids": [
+        "doc_0031",
+        "doc_0030",
+        "doc_0226",
+        "doc_0175",
+        "doc_0162",
+        "doc_0009",
+        "doc_0086",
+        "doc_0375",
+        "doc_0010",
+        "doc_0121"
+      ],
+      "context_gold_recall": 0.75,
+      "context_gold_complete": false,
+      "v2": {
+        "sufficient": false,
+        "score": 0.7643,
+        "query_term_coverage": 0.5714,
+        "reasons": [
+          "Query term coverage is too low: 0.57 < 0.60 (soft signal only)",
+          "Evidence score is too low: 0.76 < 0.78",
+          "Potentially weak evidence citations: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+        ]
+      },
+      "requirements": [
+        {
+          "requirement": "Who is the individual under 30 who was once considered the trustworthy face of the cryptocurrency industry according to The Verge",
+          "query_terms": [
+            "30",
+            "according",
+            "considered",
+            "cryptocurrency",
+            "face",
+            "individual",
+            "industry",
+            "once",
+            "trustworthy",
+            "under",
+            "verge"
+          ],
+          "critical_terms": [
+            "verge"
+          ],
+          "best_document_id": "doc_0175",
+          "best_coverage": 0.2727,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 1.0,
+          "anchor_ok": true
+        },
+        {
+          "requirement": "is alleged by the prosecution for committing fraud for wealth and influence as reported by TechCrunch",
+          "query_terms": [
+            "alleged",
+            "committing",
+            "fraud",
+            "influence",
+            "prosecution",
+            "reported",
+            "techcrunch",
+            "wealth"
+          ],
+          "critical_terms": [
+            "techcrunch"
+          ],
+          "best_document_id": "doc_0010",
+          "best_coverage": 0.25,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 1.0,
+          "anchor_ok": true
+        },
+        {
+          "requirement": "was also reported by The Verge to have permitted withdrawals from a trading account up to the limit of total trading revenue",
+          "query_terms": [
+            "account",
+            "also",
+            "limit",
+            "permitted",
+            "reported",
+            "revenue",
+            "total",
+            "trading",
+            "up",
+            "verge",
+            "withdrawals"
+          ],
+          "critical_terms": [
+            "verge"
+          ],
+          "best_document_id": "doc_0121",
+          "best_coverage": 0.4545,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 1.0,
+          "anchor_ok": true
+        }
+      ],
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "policies": {
+        "strict": {
+          "sufficient": false,
+          "supported_requirements": 1,
+          "requirement_count": 3,
+          "supported_fraction": 0.3333,
+          "mean_coverage": 0.3257,
+          "minimum_coverage": 0.25,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "balanced": {
+          "sufficient": false,
+          "supported_requirements": 1,
+          "requirement_count": 3,
+          "supported_fraction": 0.3333,
+          "mean_coverage": 0.3257,
+          "minimum_coverage": 0.25,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "relaxed": {
+          "sufficient": false,
+          "supported_requirements": 1,
+          "requirement_count": 3,
+          "supported_fraction": 0.3333,
+          "mean_coverage": 0.3257,
+          "minimum_coverage": 0.25,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        }
+      }
+    },
+    {
+      "id": "eval_59af1023e6cf",
+      "question": "Who is the individual whose legal team and the government's attorneys are presenting conflicting narratives in court, who acknowledged being aware of a significant financial discrepancy post a judge's inquiry, and is accused of instructing a subordinate to use billions of customer funds to settle debts, all while facing allegations of committing fraud for personal gain?",
+      "question_type": "inference_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Sam Bankman-Fried",
+      "gold_document_ids": [
+        "doc_0031",
+        "doc_0083",
+        "doc_0009",
+        "doc_0011"
+      ],
+      "context_document_ids": [
+        "doc_0226",
+        "doc_0529",
+        "doc_0031",
+        "doc_0097",
+        "doc_0175",
+        "doc_0293",
+        "doc_0121",
+        "doc_0030",
+        "doc_0053",
+        "doc_0086"
+      ],
+      "context_gold_recall": 0.25,
+      "context_gold_complete": false,
+      "v2": {
+        "sufficient": false,
+        "score": 0.6603,
+        "query_term_coverage": 0.3824,
+        "reasons": [
+          "Query term coverage is too low: 0.38 < 0.60 (soft signal only)",
+          "Evidence score is too low: 0.66 < 0.78",
+          "Potentially weak evidence citations: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+        ]
+      },
+      "requirements": [
+        {
+          "requirement": "Who is the individual whose legal team and the government's attorneys are presenting conflicting narratives in court",
+          "query_terms": [
+            "attorneys",
+            "conflicting",
+            "court",
+            "government",
+            "individual",
+            "legal",
+            "narratives",
+            "presenting",
+            "team",
+            "whose"
+          ],
+          "critical_terms": [],
+          "best_document_id": "doc_0097",
+          "best_coverage": 0.3,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.0,
+          "anchor_ok": true
+        },
+        {
+          "requirement": "who acknowledged being aware of a significant financial discrepancy post a judge's inquiry",
+          "query_terms": [
+            "acknowledged",
+            "aware",
+            "discrepancy",
+            "financial",
+            "inquiry",
+            "judge",
+            "post",
+            "significant"
+          ],
+          "critical_terms": [],
+          "best_document_id": "doc_0529",
+          "best_coverage": 0.25,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.0,
+          "anchor_ok": true
+        },
+        {
+          "requirement": "is accused of instructing a subordinate to use billions of customer funds to settle debts",
+          "query_terms": [
+            "accused",
+            "billions",
+            "customer",
+            "debts",
+            "funds",
+            "instructing",
+            "settle",
+            "subordinate",
+            "use"
+          ],
+          "critical_terms": [],
+          "best_document_id": "doc_0293",
+          "best_coverage": 0.3333,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.0,
+          "anchor_ok": true
+        },
+        {
+          "requirement": "all while facing allegations of committing fraud for personal gain",
+          "query_terms": [
+            "all",
+            "allegations",
+            "committing",
+            "facing",
+            "fraud",
+            "gain",
+            "personal"
+          ],
+          "critical_terms": [],
+          "best_document_id": "doc_0226",
+          "best_coverage": 0.4286,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.0,
+          "anchor_ok": true
+        }
+      ],
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.0,
+      "global_anchor_ok": true,
+      "policies": {
+        "strict": {
+          "sufficient": false,
+          "supported_requirements": 0,
+          "requirement_count": 4,
+          "supported_fraction": 0.0,
+          "mean_coverage": 0.328,
+          "minimum_coverage": 0.25,
+          "required_supported_count": 4,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "balanced": {
+          "sufficient": false,
+          "supported_requirements": 1,
+          "requirement_count": 4,
+          "supported_fraction": 0.25,
+          "mean_coverage": 0.328,
+          "minimum_coverage": 0.25,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "relaxed": {
+          "sufficient": false,
+          "supported_requirements": 1,
+          "requirement_count": 4,
+          "supported_fraction": 0.25,
+          "mean_coverage": 0.328,
+          "minimum_coverage": 0.25,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        }
+      }
+    },
+    {
+      "id": "eval_5cd0e3b824db",
+      "question": "Which company, covered by The Verge and TechCrunch, has influenced the internet's appearance, local search result rankings, and is accused of harming news publishers' bottom lines through its practices?",
+      "question_type": "inference_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Google",
+      "gold_document_ids": [
+        "doc_0127",
+        "doc_0115",
+        "doc_0033"
+      ],
+      "context_document_ids": [
+        "doc_0033",
+        "doc_0115",
+        "doc_0076",
+        "doc_0032",
+        "doc_0237",
+        "doc_0026",
+        "doc_0608",
+        "doc_0015",
+        "doc_0170"
+      ],
+      "context_gold_recall": 0.6666666666666666,
+      "context_gold_complete": false,
+      "v2": {
+        "sufficient": false,
+        "score": 0.7395,
+        "query_term_coverage": 0.5263,
+        "reasons": [
+          "Query term coverage is too low: 0.53 < 0.60 (soft signal only)",
+          "Evidence score is too low: 0.74 < 0.78",
+          "Potentially weak evidence citations: [2, 3, 4, 5, 6, 7, 8, 9]"
+        ]
+      },
+      "requirements": [
+        {
+          "requirement": "covered by The Verge and TechCrunch is accused of harming news publishers' bottom lines through its practices",
+          "query_terms": [
+            "accused",
+            "bottom",
+            "covered",
+            "harming",
+            "lines",
+            "news",
+            "practices",
+            "publishers",
+            "techcrunch",
+            "through",
+            "verge"
+          ],
+          "critical_terms": [
+            "techcrunch",
+            "verge"
+          ],
+          "best_document_id": "doc_0033",
+          "best_coverage": 0.4545,
+          "critical_coverage": 0.5,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": false
+        }
+      ],
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "policies": {
+        "strict": {
+          "sufficient": false,
+          "supported_requirements": 0,
+          "requirement_count": 1,
+          "supported_fraction": 0.0,
+          "mean_coverage": 0.4545,
+          "minimum_coverage": 0.4545,
+          "required_supported_count": 1,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "balanced": {
+          "sufficient": false,
+          "supported_requirements": 0,
+          "requirement_count": 1,
+          "supported_fraction": 0.0,
+          "mean_coverage": 0.4545,
+          "minimum_coverage": 0.4545,
+          "required_supported_count": 1,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "relaxed": {
+          "sufficient": false,
+          "supported_requirements": 0,
+          "requirement_count": 1,
+          "supported_fraction": 0.0,
+          "mean_coverage": 0.4545,
+          "minimum_coverage": 0.4545,
+          "required_supported_count": 1,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        }
+      }
+    },
+    {
+      "id": "eval_c5a0d98021ee",
+      "question": "Which organization, discussed in articles from 'The Roar | Sports Writers Blog', is likely to receive support from Super Rugby franchises for a potential coaching appointment and is also being encouraged to reinstate annual funding of $1.7 million to these franchises?",
+      "question_type": "inference_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Rugby Australia",
+      "gold_document_ids": [
+        "doc_0493",
+        "doc_0492"
+      ],
+      "context_document_ids": [
+        "doc_0492",
+        "doc_0316",
+        "doc_0493",
+        "doc_0108",
+        "doc_0545",
+        "doc_0344",
+        "doc_0407",
+        "doc_0008"
+      ],
+      "context_gold_recall": 1.0,
+      "context_gold_complete": true,
+      "v2": {
+        "sufficient": true,
+        "score": 0.85,
+        "query_term_coverage": 0.7273,
+        "reasons": [
+          "Evidence appears sufficient.",
+          "Potentially weak evidence citations: [2, 3, 4, 5, 6, 7, 8]"
+        ]
+      },
+      "requirements": [
+        {
+          "requirement": "discussed in articles from 'The Roar | Sports Writers Blog'",
+          "query_terms": [
+            "articles",
+            "blog",
+            "discussed",
+            "roar",
+            "sports",
+            "writers"
+          ],
+          "critical_terms": [
+            "blog",
+            "roar",
+            "sports",
+            "writers"
+          ],
+          "best_document_id": "doc_0492",
+          "best_coverage": 0.6667,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": true
+        },
+        {
+          "requirement": "is likely to receive support from Super Rugby franchises for a potential coaching appointment and is also being encouraged to reinstate annual funding of $1.7 million to these franchises",
+          "query_terms": [
+            "also",
+            "annual",
+            "appointment",
+            "coaching",
+            "encouraged",
+            "franchises",
+            "funding",
+            "likely",
+            "million",
+            "potential",
+            "receive",
+            "reinstate",
+            "rugby",
+            "super",
+            "support"
+          ],
+          "critical_terms": [
+            "rugby",
+            "super"
+          ],
+          "best_document_id": "doc_0492",
+          "best_coverage": 0.6,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": true
+        }
+      ],
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "policies": {
+        "strict": {
+          "sufficient": true,
+          "supported_requirements": 2,
+          "requirement_count": 2,
+          "supported_fraction": 1.0,
+          "mean_coverage": 0.6333,
+          "minimum_coverage": 0.6,
+          "required_supported_count": 2,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "balanced": {
+          "sufficient": true,
+          "supported_requirements": 2,
+          "requirement_count": 2,
+          "supported_fraction": 1.0,
+          "mean_coverage": 0.6333,
+          "minimum_coverage": 0.6,
+          "required_supported_count": 2,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "relaxed": {
+          "sufficient": true,
+          "supported_requirements": 2,
+          "requirement_count": 2,
+          "supported_fraction": 1.0,
+          "mean_coverage": 0.6333,
+          "minimum_coverage": 0.6,
+          "required_supported_count": 2,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        }
+      }
+    },
+    {
+      "id": "eval_ff33914e9156",
+      "question": "Which leading AI development company, known as the generative AI poster child behind ChatGPT and mentioned by TechCrunch, is expected to release GPT-4 with vision alongside the launch of GPT-4 Turbo API?",
+      "question_type": "inference_query",
+      "router_query_type": "multihop",
+      "gold_answer": "OpenAI",
+      "gold_document_ids": [
+        "doc_0117",
+        "doc_0054",
+        "doc_0048"
+      ],
+      "context_document_ids": [
+        "doc_0048",
+        "doc_0047",
+        "doc_0525",
+        "doc_0116",
+        "doc_0099",
+        "doc_0516",
+        "doc_0054"
+      ],
+      "context_gold_recall": 0.6666666666666666,
+      "context_gold_complete": false,
+      "v2": {
+        "sufficient": true,
+        "score": 0.8625,
+        "query_term_coverage": 0.75,
+        "reasons": [
+          "Evidence appears sufficient."
+        ]
+      },
+      "requirements": [
+        {
+          "requirement": "Which leading AI development company known as the generative AI poster child behind ChatGPT and mentioned by TechCrunch",
+          "query_terms": [
+            "ai",
+            "behind",
+            "chatgpt",
+            "child",
+            "company",
+            "development",
+            "generative",
+            "known",
+            "leading",
+            "mentioned",
+            "poster",
+            "techcrunch"
+          ],
+          "critical_terms": [
+            "ai",
+            "chatgpt",
+            "techcrunch"
+          ],
+          "best_document_id": "doc_0054",
+          "best_coverage": 0.6667,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": true
+        },
+        {
+          "requirement": "is expected to release GPT-4 with vision alongside the launch of GPT-4 Turbo API",
+          "query_terms": [
+            "alongside",
+            "api",
+            "expected",
+            "gpt",
+            "launch",
+            "release",
+            "turbo",
+            "vision"
+          ],
+          "critical_terms": [
+            "api",
+            "gpt-4",
+            "turbo"
+          ],
+          "best_document_id": "doc_0116",
+          "best_coverage": 0.375,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": true
+        }
+      ],
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "policies": {
+        "strict": {
+          "sufficient": false,
+          "supported_requirements": 1,
+          "requirement_count": 2,
+          "supported_fraction": 0.5,
+          "mean_coverage": 0.5209,
+          "minimum_coverage": 0.375,
+          "required_supported_count": 2,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "balanced": {
+          "sufficient": false,
+          "supported_requirements": 1,
+          "requirement_count": 2,
+          "supported_fraction": 0.5,
+          "mean_coverage": 0.5209,
+          "minimum_coverage": 0.375,
+          "required_supported_count": 2,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "relaxed": {
+          "sufficient": true,
+          "supported_requirements": 2,
+          "requirement_count": 2,
+          "supported_fraction": 1.0,
+          "mean_coverage": 0.5209,
+          "minimum_coverage": 0.375,
+          "required_supported_count": 2,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        }
+      }
+    },
+    {
+      "id": "eval_1e7d390adde0",
+      "question": "Does the article from The Verge suggest that Google's influence on the internet's appearance is a different aspect of its impact compared to the financial influence on platforms described in the TechCrunch article about Google's spending, and is the anticompetitive behavior towards news publishers mentioned in another TechCrunch article a separate issue from these influences?",
+      "question_type": "comparison_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Yes",
+      "gold_document_ids": [
+        "doc_0115",
+        "doc_0015",
+        "doc_0033"
+      ],
+      "context_document_ids": [
+        "doc_0033",
+        "doc_0115",
+        "doc_0032",
+        "doc_0237",
+        "doc_0015",
+        "doc_0299",
+        "doc_0042"
+      ],
+      "context_gold_recall": 1.0,
+      "context_gold_complete": true,
+      "v2": {
+        "sufficient": false,
+        "score": 0.7556,
+        "query_term_coverage": 0.5556,
+        "reasons": [
+          "Query term coverage is too low: 0.56 < 0.60 (soft signal only)",
+          "Evidence score is too low: 0.76 < 0.78",
+          "Potentially weak evidence citations: [1, 2, 3, 4, 5, 6, 7]"
+        ]
+      },
+      "requirements": [
+        {
+          "requirement": "Does the article from The Verge suggest that Google's influence on the internet's appearance is a different aspect of its impact compared to the financial influence on platforms described in the TechCrunch article about Google's spending",
+          "query_terms": [
+            "about",
+            "appearance",
+            "article",
+            "aspect",
+            "compared",
+            "described",
+            "different",
+            "financial",
+            "google",
+            "impact",
+            "influence",
+            "internet",
+            "platforms",
+            "spending",
+            "suggest",
+            "techcrunch",
+            "verge"
+          ],
+          "critical_terms": [
+            "google",
+            "techcrunch",
+            "verge"
+          ],
+          "best_document_id": "doc_0237",
+          "best_coverage": 0.2941,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": true
+        },
+        {
+          "requirement": "is the anticompetitive behavior towards news publishers mentioned in another TechCrunch article a separate issue from these influences",
+          "query_terms": [
+            "another",
+            "anticompetitive",
+            "article",
+            "behavior",
+            "influences",
+            "issue",
+            "mentioned",
+            "news",
+            "publishers",
+            "separate",
+            "techcrunch",
+            "towards"
+          ],
+          "critical_terms": [
+            "techcrunch"
+          ],
+          "best_document_id": "doc_0033",
+          "best_coverage": 0.4167,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 1.0,
+          "anchor_ok": true
+        }
+      ],
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "policies": {
+        "strict": {
+          "sufficient": false,
+          "supported_requirements": 0,
+          "requirement_count": 2,
+          "supported_fraction": 0.0,
+          "mean_coverage": 0.3554,
+          "minimum_coverage": 0.2941,
+          "required_supported_count": 2,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "balanced": {
+          "sufficient": false,
+          "supported_requirements": 1,
+          "requirement_count": 2,
+          "supported_fraction": 0.5,
+          "mean_coverage": 0.3554,
+          "minimum_coverage": 0.2941,
+          "required_supported_count": 2,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "relaxed": {
+          "sufficient": false,
+          "supported_requirements": 1,
+          "requirement_count": 2,
+          "supported_fraction": 0.5,
+          "mean_coverage": 0.3554,
+          "minimum_coverage": 0.2941,
+          "required_supported_count": 2,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        }
+      }
+    },
+    {
+      "id": "eval_4e23afea1f81",
+      "question": "Does the article from Wired suggest that Sony headphones offer the best value in their class during the Walmart Cyber Monday Deals, while the article from Music Business Worldwide indicates that Artists are seeking deals that offer more control and better economics, or do both articles suggest a common trend in seeking value and control in their respective fields?",
+      "question_type": "comparison_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Yes",
+      "gold_document_ids": [
+        "doc_0320",
+        "doc_0211"
+      ],
+      "context_document_ids": [
+        "doc_0404",
+        "doc_0455",
+        "doc_0595",
+        "doc_0320",
+        "doc_0584",
+        "doc_0211",
+        "doc_0250",
+        "doc_0369",
+        "doc_0558",
+        "doc_0222"
+      ],
+      "context_gold_recall": 1.0,
+      "context_gold_complete": true,
+      "v2": {
+        "sufficient": true,
+        "score": 0.835,
+        "query_term_coverage": 0.7,
+        "reasons": [
+          "Evidence appears sufficient.",
+          "Potentially weak evidence citations: [1, 3, 5, 7, 10]"
+        ]
+      },
+      "requirements": [
+        {
+          "requirement": "Does the article from Wired suggest that Sony headphones offer the best value in their class during the Walmart Cyber Monday Deals",
+          "query_terms": [
+            "article",
+            "best",
+            "class",
+            "cyber",
+            "deals",
+            "during",
+            "headphones",
+            "monday",
+            "offer",
+            "sony",
+            "suggest",
+            "value",
+            "walmart",
+            "wired"
+          ],
+          "critical_terms": [
+            "cyber",
+            "deals",
+            "monday",
+            "sony",
+            "walmart",
+            "wired"
+          ],
+          "best_document_id": "doc_0320",
+          "best_coverage": 0.4286,
+          "critical_coverage": 0.8333,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": true
+        },
+        {
+          "requirement": "the article from Music Business Worldwide indicates that Artists are seeking deals that offer more control and better economics",
+          "query_terms": [
+            "article",
+            "artists",
+            "better",
+            "business",
+            "control",
+            "deals",
+            "economics",
+            "indicates",
+            "more",
+            "music",
+            "offer",
+            "seeking",
+            "worldwide"
+          ],
+          "critical_terms": [
+            "artists",
+            "business",
+            "music",
+            "worldwide"
+          ],
+          "best_document_id": "doc_0211",
+          "best_coverage": 0.7692,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": true
+        },
+        {
+          "requirement": "or do both articles suggest a common trend in seeking value and control in their respective fields",
+          "query_terms": [
+            "articles",
+            "both",
+            "common",
+            "control",
+            "fields",
+            "respective",
+            "seeking",
+            "suggest",
+            "trend",
+            "value"
+          ],
+          "critical_terms": [],
+          "best_document_id": "doc_0455",
+          "best_coverage": 0.1,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.0,
+          "anchor_ok": true
+        }
+      ],
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "policies": {
+        "strict": {
+          "sufficient": false,
+          "supported_requirements": 1,
+          "requirement_count": 3,
+          "supported_fraction": 0.3333,
+          "mean_coverage": 0.4326,
+          "minimum_coverage": 0.1,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "balanced": {
+          "sufficient": false,
+          "supported_requirements": 2,
+          "requirement_count": 3,
+          "supported_fraction": 0.6667,
+          "mean_coverage": 0.4326,
+          "minimum_coverage": 0.1,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "relaxed": {
+          "sufficient": false,
+          "supported_requirements": 2,
+          "requirement_count": 3,
+          "supported_fraction": 0.6667,
+          "mean_coverage": 0.4326,
+          "minimum_coverage": 0.1,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        }
+      }
+    },
+    {
+      "id": "eval_5c7fab04046b",
+      "question": "Does 'The Guardian' article about the 'Everton team' suggest they are in a worse position in the Premier League compared to 'Bayern Munich' as discussed in another 'The Guardian' article, based on their respective league standings and points?",
+      "question_type": "comparison_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Yes",
+      "gold_document_ids": [
+        "doc_0092",
+        "doc_0093"
+      ],
+      "context_document_ids": [
+        "doc_0315",
+        "doc_0300",
+        "doc_0542",
+        "doc_0093",
+        "doc_0092",
+        "doc_0541",
+        "doc_0012",
+        "doc_0370",
+        "doc_0352",
+        "doc_0546"
+      ],
+      "context_gold_recall": 1.0,
+      "context_gold_complete": true,
+      "v2": {
+        "sufficient": true,
+        "score": 0.7974,
+        "query_term_coverage": 0.6316,
+        "reasons": [
+          "Evidence appears sufficient.",
+          "Potentially weak evidence citations: [2, 3, 4, 8]"
+        ]
+      },
+      "requirements": [
+        {
+          "requirement": "Does 'The Guardian' article about the 'Everton team' suggest they are in a worse position in the Premier League compared to 'Bayern Munich' as discussed in another 'The Guardian' article",
+          "query_terms": [
+            "about",
+            "another",
+            "article",
+            "bayern",
+            "compared",
+            "discussed",
+            "everton",
+            "guardian",
+            "league",
+            "munich",
+            "position",
+            "premier",
+            "suggest",
+            "team",
+            "worse"
+          ],
+          "critical_terms": [
+            "bayern",
+            "everton",
+            "guardian",
+            "league",
+            "munich",
+            "premier"
+          ],
+          "best_document_id": "doc_0012",
+          "best_coverage": 0.5333,
+          "critical_coverage": 0.5,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": false
+        },
+        {
+          "requirement": "based on their respective league standings and points",
+          "query_terms": [
+            "based",
+            "league",
+            "points",
+            "respective",
+            "standings"
+          ],
+          "critical_terms": [],
+          "best_document_id": "doc_0092",
+          "best_coverage": 0.4,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.0,
+          "anchor_ok": true
+        }
+      ],
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "policies": {
+        "strict": {
+          "sufficient": false,
+          "supported_requirements": 0,
+          "requirement_count": 2,
+          "supported_fraction": 0.0,
+          "mean_coverage": 0.4667,
+          "minimum_coverage": 0.4,
+          "required_supported_count": 2,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "balanced": {
+          "sufficient": false,
+          "supported_requirements": 1,
+          "requirement_count": 2,
+          "supported_fraction": 0.5,
+          "mean_coverage": 0.4667,
+          "minimum_coverage": 0.4,
+          "required_supported_count": 2,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "relaxed": {
+          "sufficient": false,
+          "supported_requirements": 1,
+          "requirement_count": 2,
+          "supported_fraction": 0.5,
+          "mean_coverage": 0.4667,
+          "minimum_coverage": 0.4,
+          "required_supported_count": 2,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        }
+      }
+    },
+    {
+      "id": "eval_eb1a6bb45cb4",
+      "question": "Does the Fortune article suggest that Sam Bankman-Fried was responsible for the alleged deceit behind FTX's success, while the TechCrunch article focuses on Gary Wang and Caroline Ellison's admission of guilt to federal criminal charges in relation to the FTX collapse?",
+      "question_type": "comparison_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Yes",
+      "gold_document_ids": [
+        "doc_0031",
+        "doc_0010"
+      ],
+      "context_document_ids": [
+        "doc_0226",
+        "doc_0010",
+        "doc_0293",
+        "doc_0375",
+        "doc_0305",
+        "doc_0175",
+        "doc_0086",
+        "doc_0083",
+        "doc_0030",
+        "doc_0031"
+      ],
+      "context_gold_recall": 1.0,
+      "context_gold_complete": true,
+      "v2": {
+        "sufficient": true,
+        "score": 0.846,
+        "query_term_coverage": 0.72,
+        "reasons": [
+          "Evidence appears sufficient."
+        ]
+      },
+      "requirements": [
+        {
+          "requirement": "Does the Fortune article suggest that Sam Bankman-Fried was responsible for the alleged deceit behind FTX's success",
+          "query_terms": [
+            "alleged",
+            "article",
+            "bankman",
+            "behind",
+            "deceit",
+            "fortune",
+            "fried",
+            "ftx",
+            "responsible",
+            "sam",
+            "success",
+            "suggest"
+          ],
+          "critical_terms": [
+            "bankman-fried",
+            "fortune",
+            "ftx",
+            "sam"
+          ],
+          "best_document_id": "doc_0031",
+          "best_coverage": 0.5,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": true
+        },
+        {
+          "requirement": "the TechCrunch article focuses on Gary Wang and Caroline Ellison's admission of guilt to federal criminal charges in relation to the FTX collapse",
+          "query_terms": [
+            "admission",
+            "article",
+            "caroline",
+            "charges",
+            "collapse",
+            "criminal",
+            "ellison",
+            "federal",
+            "focuses",
+            "ftx",
+            "gary",
+            "guilt",
+            "relation",
+            "techcrunch",
+            "wang"
+          ],
+          "critical_terms": [
+            "caroline",
+            "ellison",
+            "ftx",
+            "gary",
+            "techcrunch",
+            "wang"
+          ],
+          "best_document_id": "doc_0010",
+          "best_coverage": 0.7333,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": true
+        }
+      ],
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "policies": {
+        "strict": {
+          "sufficient": true,
+          "supported_requirements": 2,
+          "requirement_count": 2,
+          "supported_fraction": 1.0,
+          "mean_coverage": 0.6166,
+          "minimum_coverage": 0.5,
+          "required_supported_count": 2,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "balanced": {
+          "sufficient": true,
+          "supported_requirements": 2,
+          "requirement_count": 2,
+          "supported_fraction": 1.0,
+          "mean_coverage": 0.6166,
+          "minimum_coverage": 0.5,
+          "required_supported_count": 2,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "relaxed": {
+          "sufficient": true,
+          "supported_requirements": 2,
+          "requirement_count": 2,
+          "supported_fraction": 1.0,
+          "mean_coverage": 0.6166,
+          "minimum_coverage": 0.5,
+          "required_supported_count": 2,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        }
+      }
+    },
+    {
+      "id": "eval_f3e9235ece5a",
+      "question": "Does the Mashable article suggest that Amazon's Cyber Monday includes both continued and new deals, while The Sydney Morning Herald article focuses on the impact of an antitrust lawsuit on Amazon's stock price, and the Cnbc | World Business News Leader article discusses the opportunity of selling on Amazon, without mentioning any legal or promotional events?",
+      "question_type": "comparison_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Yes",
+      "gold_document_ids": [
+        "doc_0000",
+        "doc_0001",
+        "doc_0002"
+      ],
+      "context_document_ids": [
+        "doc_0000",
+        "doc_0002",
+        "doc_0338",
+        "doc_0222",
+        "doc_0091",
+        "doc_0520",
+        "doc_0574",
+        "doc_0584",
+        "doc_0558",
+        "doc_0001"
+      ],
+      "context_gold_recall": 1.0,
+      "context_gold_complete": true,
+      "v2": {
+        "sufficient": true,
+        "score": 0.8221,
+        "query_term_coverage": 0.6765,
+        "reasons": [
+          "Evidence appears sufficient.",
+          "Potentially weak evidence citations: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+        ]
+      },
+      "requirements": [
+        {
+          "requirement": "Does the Mashable article suggest that Amazon's Cyber Monday includes both continued and new deals",
+          "query_terms": [
+            "amazon",
+            "article",
+            "both",
+            "continued",
+            "cyber",
+            "deals",
+            "includes",
+            "mashable",
+            "monday",
+            "new",
+            "suggest"
+          ],
+          "critical_terms": [
+            "amazon",
+            "cyber",
+            "mashable",
+            "monday"
+          ],
+          "best_document_id": "doc_0000",
+          "best_coverage": 0.4545,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": true
+        },
+        {
+          "requirement": "The Sydney Morning Herald article focuses on the impact of an antitrust lawsuit on Amazon's stock price",
+          "query_terms": [
+            "amazon",
+            "antitrust",
+            "article",
+            "focuses",
+            "herald",
+            "impact",
+            "lawsuit",
+            "morning",
+            "price",
+            "stock",
+            "sydney"
+          ],
+          "critical_terms": [
+            "amazon",
+            "herald",
+            "morning",
+            "sydney"
+          ],
+          "best_document_id": "doc_0001",
+          "best_coverage": 0.5455,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": true
+        },
+        {
+          "requirement": "the Cnbc | World Business News Leader article discusses the opportunity of selling on Amazon",
+          "query_terms": [
+            "amazon",
+            "article",
+            "business",
+            "cnbc",
+            "discusses",
+            "leader",
+            "news",
+            "opportunity",
+            "selling",
+            "world"
+          ],
+          "critical_terms": [
+            "amazon",
+            "business",
+            "cnbc",
+            "leader",
+            "world"
+          ],
+          "best_document_id": "doc_0002",
+          "best_coverage": 0.8,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": true
+        },
+        {
+          "requirement": "without mentioning any legal or promotional events",
+          "query_terms": [
+            "any",
+            "events",
+            "legal",
+            "mentioning",
+            "promotional",
+            "without"
+          ],
+          "critical_terms": [],
+          "best_document_id": "doc_0584",
+          "best_coverage": 0.1667,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.0,
+          "anchor_ok": true
+        }
+      ],
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "policies": {
+        "strict": {
+          "sufficient": false,
+          "supported_requirements": 3,
+          "requirement_count": 4,
+          "supported_fraction": 0.75,
+          "mean_coverage": 0.4917,
+          "minimum_coverage": 0.1667,
+          "required_supported_count": 4,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "balanced": {
+          "sufficient": true,
+          "supported_requirements": 3,
+          "requirement_count": 4,
+          "supported_fraction": 0.75,
+          "mean_coverage": 0.4917,
+          "minimum_coverage": 0.1667,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "relaxed": {
+          "sufficient": true,
+          "supported_requirements": 3,
+          "requirement_count": 4,
+          "supported_fraction": 0.75,
+          "mean_coverage": 0.4917,
+          "minimum_coverage": 0.1667,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        }
+      }
+    },
+    {
+      "id": "eval_093af83d0219",
+      "question": "Between the report from 'The Roar | Sports Writers Blog' on October 19, 2023, detailing the Tasmania JackJumpers' lead over the Sydney Kings, and the update from 'Sporting News' on October 31, 2023, about the Texas Rangers' lead over the Arizona Diamondbacks, which news source reported a larger point/lead difference in a game, 'The Roar | Sports Writers Blog' or 'Sporting News'?",
+      "question_type": "temporal_query",
+      "router_query_type": "complex",
+      "gold_answer": "The Roar | Sports Writers Blog",
+      "gold_document_ids": [
+        "doc_0406",
+        "doc_0408"
+      ],
+      "context_document_ids": [
+        "doc_0406",
+        "doc_0495",
+        "doc_0408",
+        "doc_0240",
+        "doc_0512",
+        "doc_0505",
+        "doc_0492",
+        "doc_0180"
+      ],
+      "context_gold_recall": 1.0,
+      "context_gold_complete": true,
+      "v2": {
+        "sufficient": true,
+        "score": 0.8581,
+        "query_term_coverage": 0.7419,
+        "reasons": [
+          "Evidence appears sufficient.",
+          "Potentially weak evidence citations: [3, 4, 5, 6, 7, 8]"
+        ]
+      },
+      "requirements": [
+        {
+          "requirement": "Between the report from 'The Roar | Sports Writers Blog' on October 19",
+          "query_terms": [
+            "19",
+            "between",
+            "blog",
+            "october",
+            "report",
+            "roar",
+            "sports",
+            "writers"
+          ],
+          "critical_terms": [
+            "blog",
+            "roar",
+            "sports",
+            "writers"
+          ],
+          "best_document_id": "doc_0406",
+          "best_coverage": 0.625,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": true
+        },
+        {
+          "requirement": "detailing the Tasmania JackJumpers' lead over the Sydney Kings",
+          "query_terms": [
+            "detailing",
+            "jackjumpers",
+            "kings",
+            "lead",
+            "over",
+            "sydney",
+            "tasmania"
+          ],
+          "critical_terms": [
+            "jackjumpers",
+            "kings",
+            "sydney",
+            "tasmania"
+          ],
+          "best_document_id": "doc_0406",
+          "best_coverage": 0.8571,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": true
+        },
+        {
+          "requirement": "the update from 'Sporting News' on October 31",
+          "query_terms": [
+            "31",
+            "news",
+            "october",
+            "sporting",
+            "update"
+          ],
+          "critical_terms": [
+            "sporting"
+          ],
+          "best_document_id": "doc_0180",
+          "best_coverage": 0.8,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 1.0,
+          "anchor_ok": true
+        },
+        {
+          "requirement": "about the Texas Rangers' lead over the Arizona Diamondbacks",
+          "query_terms": [
+            "about",
+            "arizona",
+            "diamondbacks",
+            "lead",
+            "over",
+            "rangers",
+            "texas"
+          ],
+          "critical_terms": [
+            "arizona",
+            "diamondbacks",
+            "rangers",
+            "texas"
+          ],
+          "best_document_id": "doc_0408",
+          "best_coverage": 0.8571,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": true
+        }
+      ],
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "policies": {
+        "strict": {
+          "sufficient": true,
+          "supported_requirements": 4,
+          "requirement_count": 4,
+          "supported_fraction": 1.0,
+          "mean_coverage": 0.7848,
+          "minimum_coverage": 0.625,
+          "required_supported_count": 4,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "balanced": {
+          "sufficient": true,
+          "supported_requirements": 4,
+          "requirement_count": 4,
+          "supported_fraction": 1.0,
+          "mean_coverage": 0.7848,
+          "minimum_coverage": 0.625,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "relaxed": {
+          "sufficient": true,
+          "supported_requirements": 4,
+          "requirement_count": 4,
+          "supported_fraction": 1.0,
+          "mean_coverage": 0.7848,
+          "minimum_coverage": 0.625,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        }
+      }
+    },
+    {
+      "id": "eval_5f40fab8ea55",
+      "question": "Has the reporting style regarding live score updates and highlights from NFL games by Sporting News remained consistent between the article featuring \"Jaguars vs. Saints\" on October 19, 2023, and the one covering \"Chiefs vs. Packers\" on December 3, 2023, considering the excerpts mentioning a player achieving a first down?",
+      "question_type": "temporal_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Yes",
+      "gold_document_ids": [
+        "doc_0034",
+        "doc_0035"
+      ],
+      "context_document_ids": [
+        "doc_0035",
+        "doc_0034",
+        "doc_0294",
+        "doc_0489",
+        "doc_0439"
+      ],
+      "context_gold_recall": 1.0,
+      "context_gold_complete": true,
+      "v2": {
+        "sufficient": false,
+        "score": 0.7412,
+        "query_term_coverage": 0.5294,
+        "reasons": [
+          "Query term coverage is too low: 0.53 < 0.60 (soft signal only)",
+          "Evidence score is too low: 0.74 < 0.78",
+          "Potentially weak evidence citations: [3, 4, 5]"
+        ]
+      },
+      "requirements": [
+        {
+          "requirement": "Has the reporting style regarding live score updates and highlights from NFL games by Sporting News remained consistent between the article featuring \"Jaguars vs. Saints\" on October 19",
+          "query_terms": [
+            "19",
+            "article",
+            "between",
+            "consistent",
+            "featuring",
+            "games",
+            "highlights",
+            "jaguars",
+            "live",
+            "news",
+            "nfl",
+            "october",
+            "regarding",
+            "remained",
+            "reporting",
+            "saints",
+            "score",
+            "sporting",
+            "style",
+            "updates",
+            "vs"
+          ],
+          "critical_terms": [
+            "jaguars",
+            "nfl",
+            "saints",
+            "sporting"
+          ],
+          "best_document_id": "doc_0035",
+          "best_coverage": 0.4762,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": true
+        },
+        {
+          "requirement": "the one covering \"Chiefs vs. Packers\" on December 3",
+          "query_terms": [
+            "chiefs",
+            "covering",
+            "december",
+            "one",
+            "packers",
+            "vs"
+          ],
+          "critical_terms": [
+            "chiefs",
+            "packers"
+          ],
+          "best_document_id": "doc_0034",
+          "best_coverage": 0.8333,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": true
+        },
+        {
+          "requirement": "considering the excerpts mentioning a player achieving a first down",
+          "query_terms": [
+            "achieving",
+            "considering",
+            "down",
+            "excerpts",
+            "first",
+            "mentioning",
+            "player"
+          ],
+          "critical_terms": [],
+          "best_document_id": "doc_0294",
+          "best_coverage": 0.2857,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.0,
+          "anchor_ok": true
+        }
+      ],
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "policies": {
+        "strict": {
+          "sufficient": false,
+          "supported_requirements": 2,
+          "requirement_count": 3,
+          "supported_fraction": 0.6667,
+          "mean_coverage": 0.5317,
+          "minimum_coverage": 0.2857,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "balanced": {
+          "sufficient": false,
+          "supported_requirements": 2,
+          "requirement_count": 3,
+          "supported_fraction": 0.6667,
+          "mean_coverage": 0.5317,
+          "minimum_coverage": 0.2857,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "relaxed": {
+          "sufficient": false,
+          "supported_requirements": 2,
+          "requirement_count": 3,
+          "supported_fraction": 0.6667,
+          "mean_coverage": 0.5317,
+          "minimum_coverage": 0.2857,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        }
+      }
+    },
+    {
+      "id": "eval_733c08d301e8",
+      "question": "After the report by The Age on October 22, 2023, suggesting people suspect Google of foul play, did TechCrunch's reporting on October 31, 2023, and December 15, 2023, regarding Google's antitrust issues and the impact on news publishers show a consistent perspective on Google's market behavior?",
+      "question_type": "temporal_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Yes",
+      "gold_document_ids": [
+        "doc_0032",
+        "doc_0237",
+        "doc_0033"
+      ],
+      "context_document_ids": [
+        "doc_0033",
+        "doc_0170",
+        "doc_0015",
+        "doc_0032",
+        "doc_0237",
+        "doc_0042"
+      ],
+      "context_gold_recall": 1.0,
+      "context_gold_complete": true,
+      "v2": {
+        "sufficient": false,
+        "score": 0.6857,
+        "query_term_coverage": 0.4286,
+        "reasons": [
+          "Query term coverage is too low: 0.43 < 0.60 (soft signal only)",
+          "Evidence score is too low: 0.69 < 0.78",
+          "Potentially weak evidence citations: [1, 2, 3, 4, 5, 6]"
+        ]
+      },
+      "requirements": [
+        {
+          "requirement": "After the report by The Age on October 22",
+          "query_terms": [
+            "22",
+            "after",
+            "age",
+            "october",
+            "report"
+          ],
+          "critical_terms": [],
+          "best_document_id": "doc_0032",
+          "best_coverage": 0.2,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.0,
+          "anchor_ok": true
+        },
+        {
+          "requirement": "suggesting people suspect Google of foul play did TechCrunch's reporting on October 31 December 15",
+          "query_terms": [
+            "15",
+            "31",
+            "december",
+            "foul",
+            "google",
+            "october",
+            "people",
+            "play",
+            "reporting",
+            "suggesting",
+            "suspect",
+            "techcrunch"
+          ],
+          "critical_terms": [
+            "google",
+            "techcrunch"
+          ],
+          "best_document_id": "doc_0032",
+          "best_coverage": 0.3333,
+          "critical_coverage": 0.5,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": false
+        },
+        {
+          "requirement": "regarding Google's antitrust issues and the impact on news publishers show a consistent perspective on Google's market behavior",
+          "query_terms": [
+            "antitrust",
+            "behavior",
+            "consistent",
+            "google",
+            "impact",
+            "issues",
+            "market",
+            "news",
+            "perspective",
+            "publishers",
+            "regarding",
+            "show"
+          ],
+          "critical_terms": [
+            "google"
+          ],
+          "best_document_id": "doc_0033",
+          "best_coverage": 0.4167,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 1.0,
+          "anchor_ok": true
+        }
+      ],
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "policies": {
+        "strict": {
+          "sufficient": false,
+          "supported_requirements": 0,
+          "requirement_count": 3,
+          "supported_fraction": 0.0,
+          "mean_coverage": 0.3167,
+          "minimum_coverage": 0.2,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "balanced": {
+          "sufficient": false,
+          "supported_requirements": 1,
+          "requirement_count": 3,
+          "supported_fraction": 0.3333,
+          "mean_coverage": 0.3167,
+          "minimum_coverage": 0.2,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "relaxed": {
+          "sufficient": false,
+          "supported_requirements": 1,
+          "requirement_count": 3,
+          "supported_fraction": 0.3333,
+          "mean_coverage": 0.3167,
+          "minimum_coverage": 0.2,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        }
+      }
+    },
+    {
+      "id": "eval_b80b5654cdcc",
+      "question": "Was the news about Taylor Swift's relationship with Travis Kelce inconsistent with the later report from The Independent - Life and Style on December 6, 2023?",
+      "question_type": "temporal_query",
+      "router_query_type": "multihop",
+      "gold_answer": "no",
+      "gold_document_ids": [
+        "doc_0045",
+        "doc_0059",
+        "doc_0046"
+      ],
+      "context_document_ids": [
+        "doc_0295",
+        "doc_0021",
+        "doc_0311",
+        "doc_0174",
+        "doc_0059",
+        "doc_0045",
+        "doc_0559",
+        "doc_0044"
+      ],
+      "context_gold_recall": 0.6666666666666666,
+      "context_gold_complete": false,
+      "v2": {
+        "sufficient": true,
+        "score": 0.89,
+        "query_term_coverage": 0.8,
+        "reasons": [
+          "Evidence appears sufficient."
+        ]
+      },
+      "requirements": [
+        {
+          "requirement": "Was the news about Taylor Swift's relationship with Travis Kelce inconsistent with the later report from The Independent - Life and Style on December 6",
+          "query_terms": [
+            "about",
+            "december",
+            "inconsistent",
+            "independent",
+            "kelce",
+            "later",
+            "life",
+            "news",
+            "relationship",
+            "report",
+            "style",
+            "swift",
+            "taylor",
+            "travis"
+          ],
+          "critical_terms": [
+            "independent",
+            "kelce",
+            "swift",
+            "taylor",
+            "travis"
+          ],
+          "best_document_id": "doc_0295",
+          "best_coverage": 0.6429,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": true
+        }
+      ],
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "policies": {
+        "strict": {
+          "sufficient": true,
+          "supported_requirements": 1,
+          "requirement_count": 1,
+          "supported_fraction": 1.0,
+          "mean_coverage": 0.6429,
+          "minimum_coverage": 0.6429,
+          "required_supported_count": 1,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "balanced": {
+          "sufficient": true,
+          "supported_requirements": 1,
+          "requirement_count": 1,
+          "supported_fraction": 1.0,
+          "mean_coverage": 0.6429,
+          "minimum_coverage": 0.6429,
+          "required_supported_count": 1,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "relaxed": {
+          "sufficient": true,
+          "supported_requirements": 1,
+          "requirement_count": 1,
+          "supported_fraction": 1.0,
+          "mean_coverage": 0.6429,
+          "minimum_coverage": 0.6429,
+          "required_supported_count": 1,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        }
+      }
+    },
+    {
+      "id": "eval_be412cb54feb",
+      "question": "Has the portrayal of Google's market practices in reports by The Age after October 22, 2023, remained consistent with the depiction in The Verge's coverage of the Epic v. Google case, and with TechCrunch's report on the class action antitrust suit filed against Google?",
+      "question_type": "temporal_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Yes",
+      "gold_document_ids": [
+        "doc_0355",
+        "doc_0032",
+        "doc_0033"
+      ],
+      "context_document_ids": [
+        "doc_0033",
+        "doc_0355",
+        "doc_0015",
+        "doc_0170",
+        "doc_0299",
+        "doc_0237",
+        "doc_0042",
+        "doc_0014"
+      ],
+      "context_gold_recall": 0.6666666666666666,
+      "context_gold_complete": false,
+      "v2": {
+        "sufficient": true,
+        "score": 0.78,
+        "query_term_coverage": 0.6,
+        "reasons": [
+          "Evidence appears sufficient.",
+          "Potentially weak evidence citations: [4, 5, 7, 8]"
+        ]
+      },
+      "requirements": [
+        {
+          "requirement": "Has the portrayal of Google's market practices in reports by The Age after October 22",
+          "query_terms": [
+            "22",
+            "after",
+            "age",
+            "google",
+            "market",
+            "october",
+            "portrayal",
+            "practices",
+            "reports"
+          ],
+          "critical_terms": [
+            "google"
+          ],
+          "best_document_id": "doc_0355",
+          "best_coverage": 0.2222,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 1.0,
+          "anchor_ok": true
+        },
+        {
+          "requirement": "remained consistent with the depiction in The Verge's coverage of the Epic v. Google case",
+          "query_terms": [
+            "case",
+            "consistent",
+            "coverage",
+            "depiction",
+            "epic",
+            "google",
+            "remained",
+            "verge"
+          ],
+          "critical_terms": [
+            "epic",
+            "google",
+            "verge"
+          ],
+          "best_document_id": "doc_0355",
+          "best_coverage": 0.375,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": true
+        },
+        {
+          "requirement": "with TechCrunch's report on the class action antitrust suit filed against Google",
+          "query_terms": [
+            "action",
+            "against",
+            "antitrust",
+            "class",
+            "filed",
+            "google",
+            "report",
+            "suit",
+            "techcrunch"
+          ],
+          "critical_terms": [
+            "google",
+            "techcrunch"
+          ],
+          "best_document_id": "doc_0033",
+          "best_coverage": 0.8889,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": true
+        }
+      ],
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "policies": {
+        "strict": {
+          "sufficient": false,
+          "supported_requirements": 1,
+          "requirement_count": 3,
+          "supported_fraction": 0.3333,
+          "mean_coverage": 0.4954,
+          "minimum_coverage": 0.2222,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "balanced": {
+          "sufficient": false,
+          "supported_requirements": 1,
+          "requirement_count": 3,
+          "supported_fraction": 0.3333,
+          "mean_coverage": 0.4954,
+          "minimum_coverage": 0.2222,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "relaxed": {
+          "sufficient": false,
+          "supported_requirements": 2,
+          "requirement_count": 3,
+          "supported_fraction": 0.6667,
+          "mean_coverage": 0.4954,
+          "minimum_coverage": 0.2222,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        }
+      }
+    },
+    {
+      "id": "eval_2fa0f63fd209",
+      "question": "Considering the environmental initiatives discussed in a Bloomberg article and the new seasonal drink flavors introduced according to a CNN report, which letter represents both the first character of the initiative aimed at reducing waste at Starbucks and the initial of the primary spice used in Starbucks' latest autumn-themed beverage?",
+      "question_type": "null_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Insufficient information.",
+      "gold_document_ids": [],
+      "context_document_ids": [
+        "doc_0526",
+        "doc_0190",
+        "doc_0045",
+        "doc_0533",
+        "doc_0323",
+        "doc_0469",
+        "doc_0285",
+        "doc_0257",
+        "doc_0549",
+        "doc_0415"
+      ],
+      "context_gold_recall": null,
+      "context_gold_complete": null,
+      "v2": {
+        "sufficient": false,
+        "score": 0.5703,
+        "query_term_coverage": 0.2188,
+        "reasons": [
+          "Query term coverage is too low: 0.22 < 0.60 (soft signal only)",
+          "Critical query anchors are missing from the evidence: coverage=0.67 < 0.75; missing=['cnn']",
+          "Evidence score is too low: 0.57 < 0.78",
+          "Potentially weak evidence citations: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+        ]
+      },
+      "requirements": [
+        {
+          "requirement": "Considering the environmental initiatives discussed in a Bloomberg article and the new seasonal drink flavors introduced according to a CNN report",
+          "query_terms": [
+            "according",
+            "article",
+            "bloomberg",
+            "cnn",
+            "considering",
+            "discussed",
+            "drink",
+            "environmental",
+            "flavors",
+            "initiatives",
+            "introduced",
+            "new",
+            "report",
+            "seasonal"
+          ],
+          "critical_terms": [
+            "bloomberg",
+            "cnn"
+          ],
+          "best_document_id": "doc_0415",
+          "best_coverage": 0.2857,
+          "critical_coverage": 0.5,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": false
+        },
+        {
+          "requirement": "which letter represents both the first character of the initiative aimed at reducing waste at Starbucks and the initial of the primary spice used in Starbucks' latest autumn-themed beverage",
+          "query_terms": [
+            "aimed",
+            "autumn",
+            "beverage",
+            "both",
+            "character",
+            "first",
+            "initial",
+            "initiative",
+            "latest",
+            "letter",
+            "primary",
+            "reducing",
+            "represents",
+            "spice",
+            "starbucks",
+            "themed",
+            "used",
+            "waste"
+          ],
+          "critical_terms": [
+            "starbucks"
+          ],
+          "best_document_id": "doc_0549",
+          "best_coverage": 0.1111,
+          "critical_coverage": 0.0,
+          "required_critical_coverage": 1.0,
+          "anchor_ok": false
+        }
+      ],
+      "global_critical_coverage": 0.6667,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": false,
+      "policies": {
+        "strict": {
+          "sufficient": false,
+          "supported_requirements": 0,
+          "requirement_count": 2,
+          "supported_fraction": 0.0,
+          "mean_coverage": 0.1984,
+          "minimum_coverage": 0.1111,
+          "required_supported_count": 2,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": false
+        },
+        "balanced": {
+          "sufficient": false,
+          "supported_requirements": 0,
+          "requirement_count": 2,
+          "supported_fraction": 0.0,
+          "mean_coverage": 0.1984,
+          "minimum_coverage": 0.1111,
+          "required_supported_count": 2,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": false
+        },
+        "relaxed": {
+          "sufficient": false,
+          "supported_requirements": 0,
+          "requirement_count": 2,
+          "supported_fraction": 0.0,
+          "mean_coverage": 0.1984,
+          "minimum_coverage": 0.1111,
+          "required_supported_count": 2,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": false
+        }
+      }
+    },
+    {
+      "id": "eval_36827e3d0adf",
+      "question": "Considering the economic forecast from a Bloomberg article and the agricultural developments discussed in a Reuters report, which country in West Africa, expected to see a significant growth in its GDP, also launched an initiative to become self-sufficient in rice production by 2025?",
+      "question_type": "null_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Insufficient information.",
+      "gold_document_ids": [],
+      "context_document_ids": [
+        "doc_0456",
+        "doc_0532",
+        "doc_0410",
+        "doc_0218",
+        "doc_0298",
+        "doc_0306",
+        "doc_0216",
+        "doc_0125",
+        "doc_0215",
+        "doc_0087"
+      ],
+      "context_gold_recall": null,
+      "context_gold_complete": null,
+      "v2": {
+        "sufficient": true,
+        "score": 0.7963,
+        "query_term_coverage": 0.6296,
+        "reasons": [
+          "Evidence appears sufficient.",
+          "Potentially weak evidence citations: [1, 3, 4, 5, 6, 7, 9, 10]"
+        ]
+      },
+      "requirements": [
+        {
+          "requirement": "Considering the economic forecast from a Bloomberg article and the agricultural developments discussed in a Reuters report which country in West Africa",
+          "query_terms": [
+            "africa",
+            "agricultural",
+            "article",
+            "bloomberg",
+            "considering",
+            "country",
+            "developments",
+            "discussed",
+            "economic",
+            "forecast",
+            "report",
+            "reuters",
+            "west"
+          ],
+          "critical_terms": [
+            "africa",
+            "bloomberg",
+            "reuters",
+            "west"
+          ],
+          "best_document_id": "doc_0218",
+          "best_coverage": 0.2308,
+          "critical_coverage": 0.5,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": false
+        },
+        {
+          "requirement": "expected to see a significant growth in its GDP",
+          "query_terms": [
+            "expected",
+            "gdp",
+            "growth",
+            "see",
+            "significant"
+          ],
+          "critical_terms": [
+            "gdp"
+          ],
+          "best_document_id": "doc_0456",
+          "best_coverage": 0.6,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 1.0,
+          "anchor_ok": true
+        },
+        {
+          "requirement": "also launched an initiative to become self-sufficient in rice production by 2025",
+          "query_terms": [
+            "2025",
+            "also",
+            "become",
+            "initiative",
+            "launched",
+            "production",
+            "rice",
+            "self",
+            "sufficient"
+          ],
+          "critical_terms": [],
+          "best_document_id": "doc_0532",
+          "best_coverage": 0.3333,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.0,
+          "anchor_ok": true
+        }
+      ],
+      "global_critical_coverage": 1.0,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": true,
+      "policies": {
+        "strict": {
+          "sufficient": false,
+          "supported_requirements": 1,
+          "requirement_count": 3,
+          "supported_fraction": 0.3333,
+          "mean_coverage": 0.388,
+          "minimum_coverage": 0.2308,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "balanced": {
+          "sufficient": false,
+          "supported_requirements": 1,
+          "requirement_count": 3,
+          "supported_fraction": 0.3333,
+          "mean_coverage": 0.388,
+          "minimum_coverage": 0.2308,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        },
+        "relaxed": {
+          "sufficient": false,
+          "supported_requirements": 1,
+          "requirement_count": 3,
+          "supported_fraction": 0.3333,
+          "mean_coverage": 0.388,
+          "minimum_coverage": 0.2308,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": true
+        }
+      }
+    },
+    {
+      "id": "eval_52bfece07a6c",
+      "question": "Considering the economic reforms discussed in a Bloomberg article and the cultural festival highlighted by Reuters, which letter of the alphabet begins the name of the Bahraini city that is both a focal point for these economic changes and the host of the cultural event?",
+      "question_type": "null_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Insufficient information.",
+      "gold_document_ids": [],
+      "context_document_ids": [
+        "doc_0469",
+        "doc_0532",
+        "doc_0410",
+        "doc_0462",
+        "doc_0448",
+        "doc_0218",
+        "doc_0385",
+        "doc_0298",
+        "doc_0135",
+        "doc_0488"
+      ],
+      "context_gold_recall": null,
+      "context_gold_complete": null,
+      "v2": {
+        "sufficient": false,
+        "score": 0.675,
+        "query_term_coverage": 0.4091,
+        "reasons": [
+          "Query term coverage is too low: 0.41 < 0.60 (soft signal only)",
+          "Critical query anchors are missing from the evidence: coverage=0.67 < 0.75; missing=['bahraini']",
+          "Evidence score is too low: 0.68 < 0.78",
+          "Potentially weak evidence citations: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+        ]
+      },
+      "requirements": [
+        {
+          "requirement": "Considering the economic reforms discussed in a Bloomberg article and the cultural festival highlighted by Reuters",
+          "query_terms": [
+            "article",
+            "bloomberg",
+            "considering",
+            "cultural",
+            "discussed",
+            "economic",
+            "festival",
+            "highlighted",
+            "reforms",
+            "reuters"
+          ],
+          "critical_terms": [
+            "bloomberg",
+            "reuters"
+          ],
+          "best_document_id": "doc_0218",
+          "best_coverage": 0.3,
+          "critical_coverage": 0.5,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": false
+        },
+        {
+          "requirement": "which letter of the alphabet begins the name of the Bahraini city that is both a focal point for these economic changes and the host of the cultural event",
+          "query_terms": [
+            "alphabet",
+            "bahraini",
+            "begins",
+            "both",
+            "changes",
+            "city",
+            "cultural",
+            "economic",
+            "event",
+            "focal",
+            "host",
+            "letter",
+            "name",
+            "point"
+          ],
+          "critical_terms": [
+            "bahraini"
+          ],
+          "best_document_id": "doc_0385",
+          "best_coverage": 0.1429,
+          "critical_coverage": 0.0,
+          "required_critical_coverage": 1.0,
+          "anchor_ok": false
+        }
+      ],
+      "global_critical_coverage": 0.6667,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": false,
+      "policies": {
+        "strict": {
+          "sufficient": false,
+          "supported_requirements": 0,
+          "requirement_count": 2,
+          "supported_fraction": 0.0,
+          "mean_coverage": 0.2214,
+          "minimum_coverage": 0.1429,
+          "required_supported_count": 2,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": false
+        },
+        "balanced": {
+          "sufficient": false,
+          "supported_requirements": 0,
+          "requirement_count": 2,
+          "supported_fraction": 0.0,
+          "mean_coverage": 0.2214,
+          "minimum_coverage": 0.1429,
+          "required_supported_count": 2,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": false
+        },
+        "relaxed": {
+          "sufficient": false,
+          "supported_requirements": 0,
+          "requirement_count": 2,
+          "supported_fraction": 0.0,
+          "mean_coverage": 0.2214,
+          "minimum_coverage": 0.1429,
+          "required_supported_count": 2,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": false
+        }
+      }
+    },
+    {
+      "id": "eval_5457d2a4c687",
+      "question": "Considering the information from an article by Forbes about Min Kao's philanthropic efforts and another by Bloomberg discussing his business strategies, which university, known for its engineering program and having received significant donations from Min Kao, is also the institution where a business school case study was developed based on his company's market expansion tactics?",
+      "question_type": "null_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Insufficient information.",
+      "gold_document_ids": [],
+      "context_document_ids": [
+        "doc_0027",
+        "doc_0463",
+        "doc_0321",
+        "doc_0216",
+        "doc_0030",
+        "doc_0374",
+        "doc_0530",
+        "doc_0418",
+        "doc_0397",
+        "doc_0417"
+      ],
+      "context_gold_recall": null,
+      "context_gold_complete": null,
+      "v2": {
+        "sufficient": false,
+        "score": 0.7735,
+        "query_term_coverage": 0.5882,
+        "reasons": [
+          "Query term coverage is too low: 0.59 < 0.60 (soft signal only)",
+          "Critical query anchors are missing from the evidence: coverage=0.50 < 0.75; missing=['kao', 'min']",
+          "Evidence score is too low: 0.77 < 0.78",
+          "Potentially weak evidence citations: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+        ]
+      },
+      "requirements": [
+        {
+          "requirement": "Considering the information from an article by Forbes about Min Kao's philanthropic efforts and another by Bloomberg discussing his business strategies",
+          "query_terms": [
+            "about",
+            "another",
+            "article",
+            "bloomberg",
+            "business",
+            "considering",
+            "discussing",
+            "efforts",
+            "forbes",
+            "his",
+            "information",
+            "kao",
+            "min",
+            "philanthropic",
+            "strategies"
+          ],
+          "critical_terms": [
+            "bloomberg",
+            "forbes",
+            "kao",
+            "min"
+          ],
+          "best_document_id": "doc_0321",
+          "best_coverage": 0.2667,
+          "critical_coverage": 0.25,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": false
+        },
+        {
+          "requirement": "known for its engineering program and having received significant donations from Min Kao",
+          "query_terms": [
+            "donations",
+            "engineering",
+            "having",
+            "kao",
+            "known",
+            "min",
+            "program",
+            "received",
+            "significant"
+          ],
+          "critical_terms": [
+            "kao",
+            "min"
+          ],
+          "best_document_id": "doc_0417",
+          "best_coverage": 0.3333,
+          "critical_coverage": 0.0,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": false
+        },
+        {
+          "requirement": "is also the institution where a business school case study was developed based on his company's market expansion tactics",
+          "query_terms": [
+            "also",
+            "based",
+            "business",
+            "case",
+            "company",
+            "developed",
+            "expansion",
+            "his",
+            "institution",
+            "market",
+            "school",
+            "study",
+            "tactics"
+          ],
+          "critical_terms": [],
+          "best_document_id": "doc_0374",
+          "best_coverage": 0.3846,
+          "critical_coverage": 1.0,
+          "required_critical_coverage": 0.0,
+          "anchor_ok": true
+        }
+      ],
+      "global_critical_coverage": 0.5,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": false,
+      "policies": {
+        "strict": {
+          "sufficient": false,
+          "supported_requirements": 0,
+          "requirement_count": 3,
+          "supported_fraction": 0.0,
+          "mean_coverage": 0.3282,
+          "minimum_coverage": 0.2667,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": false
+        },
+        "balanced": {
+          "sufficient": false,
+          "supported_requirements": 0,
+          "requirement_count": 3,
+          "supported_fraction": 0.0,
+          "mean_coverage": 0.3282,
+          "minimum_coverage": 0.2667,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": false
+        },
+        "relaxed": {
+          "sufficient": false,
+          "supported_requirements": 1,
+          "requirement_count": 3,
+          "supported_fraction": 0.3333,
+          "mean_coverage": 0.3282,
+          "minimum_coverage": 0.2667,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": false
+        }
+      }
+    },
+    {
+      "id": "eval_f1e3e6ebe75c",
+      "question": "Considering the information from a Times of India article stating that Zoya Akhtar's film was selected for an international film festival, and a Hindustan Times report detailing her collaboration with a famous Hollywood actor for her next project, which character from the English alphabet is common to the initials of the international film festival and the first name of the Hollywood actor?",
+      "question_type": "null_query",
+      "router_query_type": "multihop",
+      "gold_answer": "Insufficient information.",
+      "gold_document_ids": [],
+      "context_document_ids": [
+        "doc_0347",
+        "doc_0597",
+        "doc_0419",
+        "doc_0154",
+        "doc_0265",
+        "doc_0165",
+        "doc_0578",
+        "doc_0094",
+        "doc_0192",
+        "doc_0532"
+      ],
+      "context_gold_recall": null,
+      "context_gold_complete": null,
+      "v2": {
+        "sufficient": false,
+        "score": 0.7345,
+        "query_term_coverage": 0.5172,
+        "reasons": [
+          "Query term coverage is too low: 0.52 < 0.60 (soft signal only)",
+          "Critical query anchors are missing from the evidence: coverage=0.43 < 0.75; missing=['akhtar', 'english', 'hindustan', 'zoya']",
+          "Evidence score is too low: 0.73 < 0.78",
+          "Potentially weak evidence citations: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+        ]
+      },
+      "requirements": [
+        {
+          "requirement": "Considering the information from a Times of India article stating that Zoya Akhtar's film was selected for an international film festival",
+          "query_terms": [
+            "akhtar",
+            "article",
+            "considering",
+            "festival",
+            "film",
+            "india",
+            "information",
+            "international",
+            "selected",
+            "stating",
+            "times",
+            "zoya"
+          ],
+          "critical_terms": [
+            "akhtar",
+            "india",
+            "times",
+            "zoya"
+          ],
+          "best_document_id": "doc_0347",
+          "best_coverage": 0.3333,
+          "critical_coverage": 0.0,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": false
+        },
+        {
+          "requirement": "a Hindustan Times report detailing her collaboration with a famous Hollywood actor for her next project",
+          "query_terms": [
+            "actor",
+            "collaboration",
+            "detailing",
+            "famous",
+            "her",
+            "hindustan",
+            "hollywood",
+            "next",
+            "project",
+            "report",
+            "times"
+          ],
+          "critical_terms": [
+            "hindustan",
+            "hollywood",
+            "times"
+          ],
+          "best_document_id": "doc_0419",
+          "best_coverage": 0.2727,
+          "critical_coverage": 0.6667,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": false
+        },
+        {
+          "requirement": "which character from the English alphabet is common to the initials of the international film festival and the first name of the Hollywood actor",
+          "query_terms": [
+            "actor",
+            "alphabet",
+            "character",
+            "common",
+            "english",
+            "festival",
+            "film",
+            "first",
+            "hollywood",
+            "initials",
+            "international",
+            "name"
+          ],
+          "critical_terms": [
+            "english",
+            "hollywood"
+          ],
+          "best_document_id": "doc_0347",
+          "best_coverage": 0.3333,
+          "critical_coverage": 0.0,
+          "required_critical_coverage": 0.75,
+          "anchor_ok": false
+        }
+      ],
+      "global_critical_coverage": 0.4286,
+      "global_required_critical_coverage": 0.75,
+      "global_anchor_ok": false,
+      "policies": {
+        "strict": {
+          "sufficient": false,
+          "supported_requirements": 0,
+          "requirement_count": 3,
+          "supported_fraction": 0.0,
+          "mean_coverage": 0.3131,
+          "minimum_coverage": 0.2727,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": false
+        },
+        "balanced": {
+          "sufficient": false,
+          "supported_requirements": 0,
+          "requirement_count": 3,
+          "supported_fraction": 0.0,
+          "mean_coverage": 0.3131,
+          "minimum_coverage": 0.2727,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": false
+        },
+        "relaxed": {
+          "sufficient": false,
+          "supported_requirements": 0,
+          "requirement_count": 3,
+          "supported_fraction": 0.0,
+          "mean_coverage": 0.3131,
+          "minimum_coverage": 0.2727,
+          "required_supported_count": 3,
+          "enough_documents": true,
+          "enough_chunks": true,
+          "global_anchor_ok": false
+        }
+      }
+    }
+  ]
+}

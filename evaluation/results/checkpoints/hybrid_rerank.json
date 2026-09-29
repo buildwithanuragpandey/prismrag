@@ -1,0 +1,2540 @@
+[
+  {
+    "id": "test_902d9dbe4562",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.6462302129493456,
+    "retrieved_doc_count": 15,
+    "answer": "No [2][8]\n- The TechCrunch article suggested that Sam Bankman-Fried offered a financial incentive to influence political decisions. [2]\n- The Fortune article alleges that he used a proxy for authorized access to funds. [8]",
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0030",
+      "doc_0031"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.6666666666666666,
+    "latency_retrieval_sec": 2.070457099998748,
+    "latency_generation_sec": 11.114635299996735,
+    "latency_total_sec": 13.185305700000754
+  },
+  {
+    "id": "test_b318075a526b",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.8772153153380493,
+    "retrieved_doc_count": 20,
+    "answer": "Uber [1]\n- The ride-hail company claims that the rate of sexual assault reported on the app decreased 38% between its first and second reports. [1]\n- Uber has published two safety reports — one containing data from 2017 to 2018 and another with data from 2019 to 2020. [1]",
+    "direct_answer": "Uber",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0367"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.5446985000016866,
+    "latency_generation_sec": 12.569078299999092,
+    "latency_total_sec": 14.113975800002663
+  },
+  {
+    "id": "test_b65ae8525976",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.6934264036172708,
+    "retrieved_doc_count": 17,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.5524211000010837,
+    "latency_generation_sec": 3.912908199999947,
+    "latency_total_sec": 5.465638800000306
+  },
+  {
+    "id": "test_a3fd5df2936c",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.5,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.1,
+    "ndcg@10": 0.17723928678404774,
+    "retrieved_doc_count": 20,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "No, there was no significant change in the portrayal of Tyreek Hill's performance.",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.6942105000016454,
+    "latency_generation_sec": 13.660848100000294,
+    "latency_total_sec": 15.35542969999733
+  },
+  {
+    "id": "test_4b7f7d493622",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.75,
+      "recall@20": 0.75
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.715696758318853,
+    "retrieved_doc_count": 17,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "Sam Bankman-Fried",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.4464203000025009,
+    "latency_generation_sec": 6.688892399997712,
+    "latency_total_sec": 8.135497300001589
+  },
+  {
+    "id": "test_147a5b35ad3f",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "recall@20": 0.5
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.6131471927654584,
+    "retrieved_doc_count": 16,
+    "answer": "UNKNOWN [1]\n- The 'Essentially Sports' article suggests that Canelo Alvarez's wealth accumulation is on a different trajectory than Floyd Mayweather's. [1]",
+    "direct_answer": "UNKNOWN",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0194"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.9290062000000034,
+    "latency_generation_sec": 5.1857122000001254,
+    "latency_total_sec": 7.114989300000161
+  },
+  {
+    "id": "test_49ecc0090a79",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "retrieved_doc_count": 20,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "NASDAQ",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 2.332021899997926,
+    "latency_generation_sec": 9.680370099998981,
+    "latency_total_sec": 12.0125816999971
+  },
+  {
+    "id": "test_d9a664e7bd64",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.3333333333333333,
+      "recall@10": 0.6666666666666666,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.6105456988825855,
+    "retrieved_doc_count": 16,
+    "answer": "Sam Altman [1]\n- Altman was accused of misleading the board regarding his ability to lead OpenAI effectively. [1]",
+    "direct_answer": "Sam Altman",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0332"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.3333333333333333,
+    "latency_retrieval_sec": 1.8759477000021434,
+    "latency_generation_sec": 9.410732199998165,
+    "latency_total_sec": 11.28687600000194
+  },
+  {
+    "id": "test_58e06aeee450",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.75,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.6975637657739948,
+    "retrieved_doc_count": 16,
+    "answer": "Sam Bankman-Fried [2]\n- His legal and financial actions are under scrutiny based on various reports and testimonies. [2]",
+    "direct_answer": "Sam Bankman-Fried",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0009"
+    ],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.9770112999976845,
+    "latency_generation_sec": 4.794106299999839,
+    "latency_total_sec": 6.771333600001526
+  },
+  {
+    "id": "test_8b3f2dded59b",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 0.6666666666666666,
+      "recall@20": 0.6666666666666666
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.7653606369886217,
+    "retrieved_doc_count": 12,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.4613533000010648,
+    "latency_generation_sec": 4.601420800001506,
+    "latency_total_sec": 6.063066599999729
+  },
+  {
+    "id": "test_5c800232f8f9",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "retrieved_doc_count": 20,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "India",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 2.1879068999987794,
+    "latency_generation_sec": 17.35867060000237,
+    "latency_total_sec": 19.54679810000016
+  },
+  {
+    "id": "test_5a061a4998b2",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.5,
+      "recall@20": 0.5
+    },
+    "mrr@10": 0.1,
+    "ndcg@10": 0.17723928678404774,
+    "retrieved_doc_count": 20,
+    "answer": "I don't have enough evidence in the provided sources to answer reliably.",
+    "direct_answer": null,
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.70060260000173,
+    "latency_generation_sec": 3.740380900002492,
+    "latency_total_sec": 5.441265299999941
+  },
+  {
+    "id": "test_1ccaa5c864ab",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "recall@20": 0.75
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.5855700749881525,
+    "retrieved_doc_count": 19,
+    "answer": "Sam Bankman-Fried [1]\n- He founded FTX, a crypto exchange, and was described as someone who promised safety to customers. [1]",
+    "direct_answer": "Sam Bankman-Fried",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0031"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.25,
+    "latency_retrieval_sec": 1.6125729999985197,
+    "latency_generation_sec": 11.173717199999373,
+    "latency_total_sec": 12.786512400001811
+  },
+  {
+    "id": "test_f607616b59ce",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.9217868789962071,
+    "retrieved_doc_count": 11,
+    "answer": "Google [6][9]\n- Google is portrayed as an antagonist by Epic Games. [6]\n- Google is accused of using its financial power to maintain default search engine status. [9]",
+    "direct_answer": "Google",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0042",
+      "doc_0014"
+    ],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 0.7119027000007918,
+    "latency_generation_sec": 11.211998099999619,
+    "latency_total_sec": 11.924382900000637
+  },
+  {
+    "id": "test_2d3beb381073",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "retrieved_doc_count": 20,
+    "answer": "UNKNOWN [3]\n- Visa plans to invest $100 million in companies developing generative AI technologies and applications \"that will impact the future of commerce and payments.\". [3]",
+    "direct_answer": "UNKNOWN",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0075"
+    ],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.7704973999971116,
+    "latency_generation_sec": 6.298386300000857,
+    "latency_total_sec": 8.069031099999847
+  },
+  {
+    "id": "test_6833d3555cd1",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.75,
+      "recall@10": 0.75,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.8318724637288826,
+    "retrieved_doc_count": 19,
+    "answer": "Google [1][5]\n- [TechCrunch article mentions Google's anticompetitive practices towards news publishers]. [1]\n- [TechCrunch article highlights Google's dominance through deals]. [5]",
+    "direct_answer": "Google",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0033",
+      "doc_0237"
+    ],
+    "dataset_evidence_citation_precision": 0.5,
+    "dataset_evidence_citation_recall": 0.25,
+    "latency_retrieval_sec": 1.8643404000031296,
+    "latency_generation_sec": 4.581460800000059,
+    "latency_total_sec": 6.445999699997628
+  },
+  {
+    "id": "test_e728c9d5ecda",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.3333333333333333,
+    "ndcg@10": 0.5706417189553201,
+    "retrieved_doc_count": 11,
+    "answer": "No [4]\n- The other CBSSports.com article suggests that the Chiefs' star rookie has scored at least 14 PPR Fantasy points in each of his four consecutive games with at least nine targets. [4]\n- The Chiefs' star rookie, who is mentioned in another CBSSports.com article, has shown consistent performance in the past few weeks. [4]",
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0146"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 0.9971995999985666,
+    "latency_generation_sec": 7.29104549999829,
+    "latency_total_sec": 8.28842529999747
+  },
+  {
+    "id": "test_610e0f68430a",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "retrieved_doc_count": 17,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "Sam Smith",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 2.355272900000273,
+    "latency_generation_sec": 4.936228300000948,
+    "latency_total_sec": 7.291703400002007
+  },
+  {
+    "id": "test_63906019ced3",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "retrieved_doc_count": 20,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "The Philippines",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 2.46084079999855,
+    "latency_generation_sec": 5.007894099999248,
+    "latency_total_sec": 7.468907200000103
+  },
+  {
+    "id": "test_5f596b10e595",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.8194270280062366,
+    "retrieved_doc_count": 8,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.4120728999987477,
+    "latency_generation_sec": 3.6479663999998593,
+    "latency_total_sec": 5.060194600002433
+  },
+  {
+    "id": "test_ef246814bfc4",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 0.6666666666666666,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.3333333333333333,
+    "ndcg@10": 0.4367467095119258,
+    "retrieved_doc_count": 15,
+    "answer": "Sam Bankman-Fried [2]\n- Bankman-Fried and Fried were living together in a Bahamas house purchased with FTX investor funds. [2]\n- Bankman-Fried's father, Joe Bankman, was among the people included in the \"small group chat\" discussing FTX's inner circle strategies. [2]",
+    "direct_answer": "Sam Bankman-Fried",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0121"
+    ],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 2.269733699999051,
+    "latency_generation_sec": 13.35012640000059,
+    "latency_total_sec": 15.620054900002287
+  },
+  {
+    "id": "test_d0422f4b87fc",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.6934264036172708,
+    "retrieved_doc_count": 10,
+    "answer": "No [3]\n- The Sporting News article on prop betting suggests that sportsbooks generally refund player prop bets if the player doesn't play, while the article on BetRivers specifies that BetRivers offers a refund in bonus bets of a certain amount if the first bet loses. [3]",
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0202"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.6036256000006688,
+    "latency_generation_sec": 12.467940999998973,
+    "latency_total_sec": 14.071789400000853
+  },
+  {
+    "id": "test_4b0dbf27f169",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "retrieved_doc_count": 20,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "Gogoro",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 2.519644600000902,
+    "latency_generation_sec": 4.501883400000224,
+    "latency_total_sec": 7.021749299998191
+  },
+  {
+    "id": "test_b917c1268dc8",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.3333333333333333,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.2,
+    "ndcg@10": 0.4967432029864875,
+    "retrieved_doc_count": 18,
+    "answer": "Epic Games [1][6]\n- Epic v. Google, explained - The Verge. [1]\n- 5 things we learned so far about the Google antitrust case - TechCrunch. [6]",
+    "direct_answer": "Epic Games",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0355",
+      "doc_0237"
+    ],
+    "dataset_evidence_citation_precision": 0.5,
+    "dataset_evidence_citation_recall": 0.3333333333333333,
+    "latency_retrieval_sec": 2.351806499998929,
+    "latency_generation_sec": 3.0023923000007926,
+    "latency_total_sec": 5.354380500000843
+  },
+  {
+    "id": "test_603d3b2573bf",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.3333333333333333,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.2,
+    "ndcg@10": 0.5051284895111403,
+    "retrieved_doc_count": 18,
+    "answer": "UNKNOWN [10]\n- Amari Cooper is expected to play through a rib injury he suffered last week. [10]",
+    "direct_answer": "UNKNOWN",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0057"
+    ],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.7413640999984636,
+    "latency_generation_sec": 11.81640459999835,
+    "latency_total_sec": 13.558186499998556
+  },
+  {
+    "id": "test_5a71b684a834",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "retrieved_doc_count": 19,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.2504951000009896,
+    "latency_generation_sec": 3.270258999997168,
+    "latency_total_sec": 4.520943600000464
+  },
+  {
+    "id": "test_4092ab36cb3f",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.8710785440003369,
+    "retrieved_doc_count": 15,
+    "answer": "UNKNOWN [6]\n- The subsequent Fortune article on the same day accused the board of going rogue in firing Altman, not maintaining consistency. [6]",
+    "direct_answer": "UNKNOWN",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0332"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.3333333333333333,
+    "latency_retrieval_sec": 1.784268700001121,
+    "latency_generation_sec": 4.07913660000122,
+    "latency_total_sec": 5.863592300000164
+  },
+  {
+    "id": "test_f4778f710c6d",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "retrieved_doc_count": 20,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "Singapore",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 2.253456999998889,
+    "latency_generation_sec": 3.405921199999284,
+    "latency_total_sec": 5.659544399997685
+  },
+  {
+    "id": "test_233e08a081e8",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "retrieved_doc_count": 19,
+    "answer": "UNKNOWN [1]\n- The 'Essentially Sports' article discusses Canelo Alvarez's potential to surpass Floyd Mayweather's net worth through a match, focusing on the possibility of McGregor vs. Canelo. [1]",
+    "direct_answer": "UNKNOWN",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0194"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.4364667000008922,
+    "latency_generation_sec": 4.357889900002192,
+    "latency_total_sec": 5.794558400000824
+  },
+  {
+    "id": "test_b8aa36b4cb61",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "retrieved_doc_count": 14,
+    "answer": "No [2]\n- : A loss by the Minnesota Vikings would affect the wild card race differently compared to the previous year. [2]\n- : The loss by the Vikings impacts the playoff chances of the Rams, Saints. [2]",
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0144"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 0.7879619999985152,
+    "latency_generation_sec": 6.225377800001297,
+    "latency_total_sec": 7.013477899999998
+  },
+  {
+    "id": "test_112e014e82ee",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "retrieved_doc_count": 4,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 0.5988850000030652,
+    "latency_generation_sec": 2.7560771999997087,
+    "latency_total_sec": 3.355064699997456
+  },
+  {
+    "id": "test_1a69c136767d",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "retrieved_doc_count": 8,
+    "answer": "No [1][4]\n- Argentina were reported by The Roar | Sports Writers Blog. [1]\n- The All Blacks' defeats to Ireland, South Africa. [4]",
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0023",
+      "doc_0176"
+    ],
+    "dataset_evidence_citation_precision": 0.5,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.523128099997848,
+    "latency_generation_sec": 3.6045749000004434,
+    "latency_total_sec": 5.127868199997465
+  },
+  {
+    "id": "test_f3420990a23e",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "retrieved_doc_count": 3,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 0.47752630000104546,
+    "latency_generation_sec": 3.166647099998954,
+    "latency_total_sec": 3.6442553000015323
+  },
+  {
+    "id": "test_1340470503a6",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.3333333333333333,
+      "recall@10": 0.3333333333333333,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.3333333333333333,
+    "ndcg@10": 0.23463936301137822,
+    "retrieved_doc_count": 17,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "Adam Yedidia",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.7340792000031797,
+    "latency_generation_sec": 3.3451176999988093,
+    "latency_total_sec": 5.079395200002182
+  },
+  {
+    "id": "test_647a865ffb8d",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.3333333333333333,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.619668607939653,
+    "retrieved_doc_count": 16,
+    "answer": "No [2][6]\n- [Another TechCrunch article accuses Google of anticompetitive behavior towards news publishers.]. [2]\n- [The Verge article focuses on Google's criteria for ranking local search results.]. [6]",
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0033",
+      "doc_0127"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.6666666666666666,
+    "latency_retrieval_sec": 1.5009850999995251,
+    "latency_generation_sec": 4.958737799999653,
+    "latency_total_sec": 6.4599034999992
+  },
+  {
+    "id": "test_0be3cb068450",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "retrieved_doc_count": 20,
+    "answer": "UNKNOWN [3]\n- In Europe, the Middle East and Africa, sales were up 8% at $3.61 billion. [3]",
+    "direct_answer": "UNKNOWN",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0215"
+    ],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 2.1644483000018226,
+    "latency_generation_sec": 7.378677600001538,
+    "latency_total_sec": 9.543299400000251
+  },
+  {
+    "id": "test_addc2db5c8e4",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "retrieved_doc_count": 20,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "Google",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 2.4699041999992914,
+    "latency_generation_sec": 2.7231528000011167,
+    "latency_total_sec": 5.193224700000428
+  },
+  {
+    "id": "test_67b0342ea1a2",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "retrieved_doc_count": 20,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "Shreyana Patil played for Mumbai Indians in her most recent professional match.",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.8433833999988565,
+    "latency_generation_sec": 11.481580399999075,
+    "latency_total_sec": 13.325351800001954
+  },
+  {
+    "id": "test_ddfb7ced4c4d",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.9197207891481876,
+    "retrieved_doc_count": 4,
+    "answer": "No [1]\n- Will Smith's marital status. [1]",
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0018"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 0.6854385000006005,
+    "latency_generation_sec": 3.418780100000731,
+    "latency_total_sec": 4.104311799997959
+  },
+  {
+    "id": "test_aed1519f6180",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.25,
+      "recall@10": 0.5,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.35914753008966527,
+    "retrieved_doc_count": 18,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "Sam Bankman-Fried",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.3518822000005457,
+    "latency_generation_sec": 4.591061600000103,
+    "latency_total_sec": 5.943149800001265
+  },
+  {
+    "id": "test_462650b29f61",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.7328286204777911,
+    "retrieved_doc_count": 10,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "Both articles suggest Caroline Ellison engaged in mismanagement during her tenure at Alameda Research.",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 0.9243774999995367,
+    "latency_generation_sec": 5.5849153000017395,
+    "latency_total_sec": 6.509484800000791
+  },
+  {
+    "id": "test_4b519d81af30",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 0.6666666666666666,
+      "recall@20": 0.6666666666666666
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.49818925746641285,
+    "retrieved_doc_count": 5,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.0028897000011057,
+    "latency_generation_sec": 5.010028299999249,
+    "latency_total_sec": 6.0130422000002
+  },
+  {
+    "id": "test_f6e8a1150b7a",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "retrieved_doc_count": 20,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.791592199999286,
+    "latency_generation_sec": 9.589400699998805,
+    "latency_total_sec": 11.381196499998623
+  },
+  {
+    "id": "test_1411ae219ac5",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.6934264036172708,
+    "retrieved_doc_count": 16,
+    "answer": "Google [1][2]\n- [TechCrunch article mentions Google investing $26.3 billion]. [1]\n- [TechCrunch article reports Google being accused of anticompetitive practices]. [2]",
+    "direct_answer": "Google",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0015",
+      "doc_0033"
+    ],
+    "dataset_evidence_citation_precision": 0.5,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.4370694999997795,
+    "latency_generation_sec": 3.1474730000009004,
+    "latency_total_sec": 4.5847509000013815
+  },
+  {
+    "id": "test_26f57c3e7832",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.25,
+      "recall@10": 0.5,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.2,
+    "ndcg@10": 0.29007579773858083,
+    "retrieved_doc_count": 19,
+    "answer": "Sam Bankman-Fried [1]\n- FTX was a fraudulent exchange \"from the start\" and diverted customer funds to Alameda. [1]",
+    "direct_answer": "Sam Bankman-Fried",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0175"
+    ],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.6223260000006121,
+    "latency_generation_sec": 4.897639800001343,
+    "latency_total_sec": 6.5201472000007925
+  },
+  {
+    "id": "test_b2d2b1421c30",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 0.6666666666666666,
+      "recall@20": 0.6666666666666666
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.49818925746641285,
+    "retrieved_doc_count": 19,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "Gary Wang",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.8548803000012413,
+    "latency_generation_sec": 3.5573246000021754,
+    "latency_total_sec": 5.412391800000478
+  },
+  {
+    "id": "test_0fcd2729c084",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.8072467605676945,
+    "retrieved_doc_count": 12,
+    "answer": "UNKNOWN [7]\n- The TechCrunch article mentions Google's attempts to maintain dominance through various means. [7]",
+    "direct_answer": "UNKNOWN",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0033"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.3333333333333333,
+    "latency_retrieval_sec": 1.5316167999990284,
+    "latency_generation_sec": 4.594951499999297,
+    "latency_total_sec": 6.126803099999961
+  },
+  {
+    "id": "test_9674a9da97ea",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "retrieved_doc_count": 8,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.4768466999994416,
+    "latency_generation_sec": 4.734012699998857,
+    "latency_total_sec": 6.211040000001958
+  },
+  {
+    "id": "test_16257649fa17",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.75,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.9178287402913377,
+    "retrieved_doc_count": 7,
+    "answer": "Taylor Swift [6][2]\n- She supported a football team at Arrowhead Stadium. [6]\n- Taylor Swift was recognized by Time as Person of the Year. [2]",
+    "direct_answer": "Taylor Swift",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0021",
+      "doc_0046"
+    ],
+    "dataset_evidence_citation_precision": 0.5,
+    "dataset_evidence_citation_recall": 0.25,
+    "latency_retrieval_sec": 1.0562413999978162,
+    "latency_generation_sec": 4.366399800001091,
+    "latency_total_sec": 5.422862399998849
+  },
+  {
+    "id": "test_fe16afe10883",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "retrieved_doc_count": 20,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "Nikki Haley belongs to the Republican Party.",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 2.129349300001195,
+    "latency_generation_sec": 2.636354599999322,
+    "latency_total_sec": 4.7660284000012325
+  },
+  {
+    "id": "test_287855839292",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 0.6666666666666666,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.6713860725233041,
+    "retrieved_doc_count": 14,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.2670356999988144,
+    "latency_generation_sec": 10.586938199998258,
+    "latency_total_sec": 11.854123000000982
+  },
+  {
+    "id": "test_a693488a5cce",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.3333333333333333,
+      "recall@10": 0.3333333333333333,
+      "recall@20": 0.6666666666666666
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.46927872602275644,
+    "retrieved_doc_count": 19,
+    "answer": "Sam Bankman-Fried [1]\n- He is on trial for allegedly stealing customer funds to facilitate his lifestyle and finance risky bets. [1]",
+    "direct_answer": "Sam Bankman-Fried",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0031"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.3333333333333333,
+    "latency_retrieval_sec": 2.185951600000408,
+    "latency_generation_sec": 4.764785100000154,
+    "latency_total_sec": 6.950934400003462
+  },
+  {
+    "id": "test_0ac164a31eac",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.3333333333333333,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.2,
+    "ndcg@10": 0.4967432029864875,
+    "retrieved_doc_count": 14,
+    "answer": "UNKNOWN [1]\n- Taylor Swift has publicly stated that her relationship with Travis Kelce started in July. [1]",
+    "direct_answer": "UNKNOWN",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0295"
+    ],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.81196689999706,
+    "latency_generation_sec": 4.888122899999871,
+    "latency_total_sec": 6.700266199997714
+  },
+  {
+    "id": "test_328be2867854",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "retrieved_doc_count": 11,
+    "answer": "No [1][2]\n- They're looking for another speaker candidate - Fortune. [1]\n- Republicans dump Jim Jordan as House Speaker nominee, leaving Congress in crisis yet again - Fortune. [2]",
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0377",
+      "doc_0223"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 1.0,
+    "latency_retrieval_sec": 1.1016665999995894,
+    "latency_generation_sec": 3.6604632000016863,
+    "latency_total_sec": 4.762442200000805
+  },
+  {
+    "id": "test_fd1a35b2f67f",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "retrieved_doc_count": 5,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.0534138999973948,
+    "latency_generation_sec": 4.316685599998891,
+    "latency_total_sec": 5.370231099997909
+  },
+  {
+    "id": "test_1ecd1f05ee04",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 0.6666666666666666,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.5307212739772434,
+    "retrieved_doc_count": 18,
+    "answer": "UNKNOWN [3]\n- The articles discuss different aspects of Swift's public presence, such as her openness about a personal relationship and her engagement with a viral TikTok video. [3]",
+    "direct_answer": "UNKNOWN",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0128"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.3333333333333333,
+    "latency_retrieval_sec": 1.8992987999990874,
+    "latency_generation_sec": 11.631227600002603,
+    "latency_total_sec": 13.53087140000207
+  },
+  {
+    "id": "test_07811c8b55a6",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.25,
+    "ndcg@10": 0.45749452618986164,
+    "retrieved_doc_count": 19,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.582310800000414,
+    "latency_generation_sec": 4.231725900001038,
+    "latency_total_sec": 5.814423199997691
+  },
+  {
+    "id": "test_b2ef33c347b8",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.3333333333333333,
+      "recall@10": 0.6666666666666666,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.431733884398313,
+    "retrieved_doc_count": 16,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "There was no significant change in the portrayal of Sam Bankman-Fried's actions related to the FTX situation between the TechCrunch reports.",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.6421547999998438,
+    "latency_generation_sec": 11.455398000001878,
+    "latency_total_sec": 13.097800499999721
+  },
+  {
+    "id": "test_0e624a603de6",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.7122630665145961,
+    "retrieved_doc_count": 10,
+    "answer": "UNKNOWN [5]\n- The Fortune article mentions that Bankman-Fried accused Ellison of not adequately protecting her hedge fund from the inherent risk of the crypto markets. [5]",
+    "direct_answer": "UNKNOWN",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0031"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.3333333333333333,
+    "latency_retrieval_sec": 1.0006969999994908,
+    "latency_generation_sec": 7.45417400000224,
+    "latency_total_sec": 8.455054499998369
+  },
+  {
+    "id": "test_ba2b63ddf126",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.9197207891481876,
+    "retrieved_doc_count": 16,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 2.039046199999575,
+    "latency_generation_sec": 4.838087399999495,
+    "latency_total_sec": 6.87744290000046
+  },
+  {
+    "id": "test_e3f3b15c5172",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "retrieved_doc_count": 19,
+    "answer": "Sam Bankman-Fried [2][8]\n- Sam Bankman-Fried is alleged by the prosecution in a 'TechCrunch' article to have committed fraud for personal gain. [2]\n- Sam Bankman-Fried is accused of using a front for secret access to customer funds. [8]",
+    "direct_answer": "Sam Bankman-Fried",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0011",
+      "doc_0293"
+    ],
+    "dataset_evidence_citation_precision": 0.5,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 2.0863239000027534,
+    "latency_generation_sec": 5.128435400001763,
+    "latency_total_sec": 7.215042699997866
+  },
+  {
+    "id": "test_bc225b00b250",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.3333333333333333,
+    "ndcg@10": 0.3065735963827292,
+    "retrieved_doc_count": 16,
+    "answer": "UNKNOWN [8]\n- Sam Altman is associated with YCombinator, a startup incubator. [8]\n- Sam Altman is described as \"one of the smartest people I know\" by Paul Graham. [8]",
+    "direct_answer": "UNKNOWN",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0332"
+    ],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.9087682999997924,
+    "latency_generation_sec": 5.97164839999823,
+    "latency_total_sec": 7.880613799999992
+  },
+  {
+    "id": "test_4960847cea24",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.8772153153380493,
+    "retrieved_doc_count": 4,
+    "answer": "UNKNOWN [1]\n- The Guardian article discusses Britney Spears' experience with media pressure and insecurities at 16. [1]",
+    "direct_answer": "UNKNOWN",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0052"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.2912663999995857,
+    "latency_generation_sec": 3.632416899999953,
+    "latency_total_sec": 4.923774099999719
+  },
+  {
+    "id": "test_1e8744dc316d",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.75,
+      "recall@20": 0.75
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.7541985434892589,
+    "retrieved_doc_count": 20,
+    "answer": "Google [9]\n- [TechCrunch article mentions Google's market practices]. [9]\n- [TechCrunch articles discuss Google's involvement in various aspects of the tech industry]. [9]",
+    "direct_answer": "Google",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0033"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.25,
+    "latency_retrieval_sec": 2.597292099999322,
+    "latency_generation_sec": 3.651762699999381,
+    "latency_total_sec": 6.249344800002291
+  },
+  {
+    "id": "test_ee0ce0192a07",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "retrieved_doc_count": 6,
+    "answer": "No [1][2]\n- Gen Z's distress is primarily attributed to climate change, as mentioned in the Fortune article. [1]\n- The article from Eos: Earth And Space Science News discusses the importance of understanding sea surface temperature patterns in climate science. [2]",
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0138",
+      "doc_0139"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 1.0,
+    "latency_retrieval_sec": 1.8120018000008713,
+    "latency_generation_sec": 4.041912400000001,
+    "latency_total_sec": 5.854186199998367
+  },
+  {
+    "id": "test_6375f422ab9b",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "retrieved_doc_count": 18,
+    "answer": "The Australian Rugby Union (ARU), reported by 'The Roar | Sports Writers Blog', is attempting to centralize Super Rugby's high-performance programs, supports franchises for a potential coaching appointment, and urges reinstatement of annual funding to these franchises. [2][1]\n- The ARU wants to integrate all of Super Rugby's high-performance programs under one centralized direction. [2]\n- They want Rugby Australia to reinstate the annual $1.7 million in funding to each of the Super Rugby franchises affected by the pandemic. [1]",
+    "direct_answer": "The Australian Rugby Union (ARU), reported by 'The Roar | Sports Writers Blog', is attempting to centralize Super Rugby's high-performance programs, supports franchises for a potential coaching appointment, and urges reinstatement of annual funding to these franchises.",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0493",
+      "doc_0492"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 1.0,
+    "latency_retrieval_sec": 1.7980429000017466,
+    "latency_generation_sec": 10.371694800000114,
+    "latency_total_sec": 12.170463200000086
+  },
+  {
+    "id": "test_58a0669f7d95",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "retrieved_doc_count": 20,
+    "answer": "L [2]\n- From an industrial design perspective, not much has changed here from the 2021 model. [2]",
+    "direct_answer": "L",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0526"
+    ],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 2.58110139999917,
+    "latency_generation_sec": 5.427541700002621,
+    "latency_total_sec": 8.008925300000556
+  },
+  {
+    "id": "test_2c37fd107825",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.5,
+      "recall@20": 0.5
+    },
+    "mrr@10": 0.16666666666666666,
+    "ndcg@10": 0.21840743681816419,
+    "retrieved_doc_count": 11,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.9653644999998505,
+    "latency_generation_sec": 5.531792300000234,
+    "latency_total_sec": 7.497355499999685
+  },
+  {
+    "id": "test_dd27cdbff6d8",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "retrieved_doc_count": 13,
+    "answer": "No [2]\n- The Sporting News article on the Pittsburgh Penguins' game reported a successful penalty kill. [2]",
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0483"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.4648873000005551,
+    "latency_generation_sec": 13.799461900001916,
+    "latency_total_sec": 15.2646485999976
+  },
+  {
+    "id": "test_cb2885e8d14e",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "retrieved_doc_count": 14,
+    "answer": "No [2][1]\n- The Roar mentions that the All Blacks had a specific in-game failure to release on their goal line during the match. [2]\n- The Roar suggests that the All Blacks are playing for themselves rather than for their country. [1]",
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0022",
+      "doc_0176"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.6666666666666666,
+    "latency_retrieval_sec": 2.449915199998941,
+    "latency_generation_sec": 12.81344689999969,
+    "latency_total_sec": 15.263939300002676
+  },
+  {
+    "id": "test_8e108f9683db",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "recall@20": 0.5
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.38685280723454163,
+    "retrieved_doc_count": 12,
+    "answer": "No [2]\n- Best Golf Betting Sites details various betting options in team golf events. [2]",
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0207"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.770658800000092,
+    "latency_generation_sec": 4.3270953000028385,
+    "latency_total_sec": 6.097927999999229
+  },
+  {
+    "id": "test_ad187b6f2edb",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.6934264036172708,
+    "retrieved_doc_count": 15,
+    "answer": "UNKNOWN [2]\n- The Insidesport article mentions potential player availability issues during the playoffs. [2]",
+    "direct_answer": "UNKNOWN",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0307"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.52504670000053,
+    "latency_generation_sec": 10.629673500003264,
+    "latency_total_sec": 12.154903299997386
+  },
+  {
+    "id": "test_322a8f748a1a",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "retrieved_doc_count": 11,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "The Houston Astros",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.2806194000004325,
+    "latency_generation_sec": 10.294116900000517,
+    "latency_total_sec": 11.57492959999945
+  },
+  {
+    "id": "test_22a01d8c6325",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "retrieved_doc_count": 20,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "M-KOPA",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 2.3567427000016323,
+    "latency_generation_sec": 4.231808600001386,
+    "latency_total_sec": 6.588921800001117
+  },
+  {
+    "id": "test_525d0fb2717a",
+    "question_type": "null_query",
+    "is_answerable": false,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "recall@20": 0.0
+    },
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "retrieved_doc_count": 20,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "Epic Games",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 2.118989899998269,
+    "latency_generation_sec": 3.148977000000741,
+    "latency_total_sec": 5.268213499999547
+  },
+  {
+    "id": "test_704706a923fd",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.6131471927654584,
+    "retrieved_doc_count": 20,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "Flexport",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 2.1543706999982533,
+    "latency_generation_sec": 4.155757399999857,
+    "latency_total_sec": 6.310328600000503
+  },
+  {
+    "id": "test_2de53b1adeee",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.14285714285714285,
+    "ndcg@10": 0.39780880120575696,
+    "retrieved_doc_count": 16,
+    "answer": "No [7][8]\n- [TechCrunch article mentions TikTok, Instagram, Snapchat, Facebook, YouTube, and X]. [7]\n- [TechCrunch article discusses microblogging and public discourse platforms]. [8]",
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0196",
+      "doc_0195"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 1.0,
+    "latency_retrieval_sec": 1.1000949000008404,
+    "latency_generation_sec": 4.711608500001603,
+    "latency_total_sec": 5.811895699996967
+  },
+  {
+    "id": "test_5c3750b07224",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 0.6666666666666666,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.6508205185601091,
+    "retrieved_doc_count": 20,
+    "answer": "None [4][5]\n- Allegations of committing these acts to gain wealth, power, and influence. [4]\n- SBF was currently facing a criminal trial on charges of fraud and conspiracy. [5]",
+    "direct_answer": "None",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0009",
+      "doc_0010"
+    ],
+    "dataset_evidence_citation_precision": 0.5,
+    "dataset_evidence_citation_recall": 0.3333333333333333,
+    "latency_retrieval_sec": 1.9908818999974756,
+    "latency_generation_sec": 4.965170400002535,
+    "latency_total_sec": 6.9562433999999485
+  },
+  {
+    "id": "test_eb09f70a1154",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.38685280723454163,
+    "retrieved_doc_count": 20,
+    "answer": "UNKNOWN [2]\n- The Yardbarker article describes Alex Verdugo's offensive performance as league-average. [2]",
+    "direct_answer": "UNKNOWN",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0118"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 2.2672626999992644,
+    "latency_generation_sec": 10.718832500002463,
+    "latency_total_sec": 12.986367299999984
+  },
+  {
+    "id": "test_678f22a9c545",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.7106752765782569,
+    "retrieved_doc_count": 17,
+    "answer": "Sam Altman [2]\n- Sam Altman is the ex-chairman of OpenAI. [2]",
+    "direct_answer": "Sam Altman",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0332"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.25,
+    "latency_retrieval_sec": 1.898330600000918,
+    "latency_generation_sec": 5.178981600001862,
+    "latency_total_sec": 7.077522799998405
+  },
+  {
+    "id": "test_d879b62b46e1",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.3333333333333333,
+      "recall@10": 0.3333333333333333,
+      "recall@20": 0.6666666666666666
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.2960819109658652,
+    "retrieved_doc_count": 12,
+    "answer": "OpenAI [8]\n- OpenAI mentions in both TechCrunch articles. [8]",
+    "direct_answer": "OpenAI",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0116"
+    ],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.3774749000003794,
+    "latency_generation_sec": 10.524111800001265,
+    "latency_total_sec": 11.901788499999384
+  },
+  {
+    "id": "test_3cd12236dc2b",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "retrieved_doc_count": 20,
+    "answer": "No [1]\n- Scott Hurff discusses his experiences as a product maker and designer in \"Designing Products People Love.\". [1]",
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0243"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 2.145016000002215,
+    "latency_generation_sec": 3.9634098000024096,
+    "latency_total_sec": 6.108589599996776
+  },
+  {
+    "id": "test_ee9b19084238",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.25,
+    "ndcg@10": 0.2640681225725909,
+    "retrieved_doc_count": 20,
+    "answer": "Sam Altman [4][7]\n- Altman is at the center of controversy over allegations of not being fully truthful with the board. [4]\n- Sam Altman was a notable figure in generative AI technology. [7]",
+    "direct_answer": "Sam Altman",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0332",
+      "doc_0011"
+    ],
+    "dataset_evidence_citation_precision": 0.5,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 2.15626870000051,
+    "latency_generation_sec": 4.8161526000003505,
+    "latency_total_sec": 6.972772299999633
+  },
+  {
+    "id": "test_e18b56a833fb",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "retrieved_doc_count": 15,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.3124007000005804,
+    "latency_generation_sec": 5.071569499999896,
+    "latency_total_sec": 6.384221000000252
+  },
+  {
+    "id": "test_75e32829a971",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "retrieved_doc_count": 12,
+    "answer": "No [2][1]\n- The Fortune article indicates that the inspiration for engineers to build human-like and useful robots has been ongoing for decades. [2]\n- The TechCrunch article suggests that the emergence of multi-purpose robots in the industrial automation world is a current trend. [1]",
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0421",
+      "doc_0420"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 1.0,
+    "latency_retrieval_sec": 1.7661951999980374,
+    "latency_generation_sec": 3.6168171999997867,
+    "latency_total_sec": 5.3832039999979315
+  },
+  {
+    "id": "test_a6ece7a4e961",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "retrieved_doc_count": 9,
+    "answer": "No [6]\n- The Sporting News published articles on Moneyline betting and Totals Betting. [6]",
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0060"
+    ],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.9046603999995568,
+    "latency_generation_sec": 4.0547211000011885,
+    "latency_total_sec": 5.959868699999788
+  },
+  {
+    "id": "test_0328220123da",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.6978817289434457,
+    "retrieved_doc_count": 12,
+    "answer": "No [3][6]\n- The Verge report discusses Apple's defense of its Google Search deal. [3]\n- The TechCrunch article details the Google antitrust case. [6]",
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0014",
+      "doc_0033"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.6666666666666666,
+    "latency_retrieval_sec": 1.4317706000001635,
+    "latency_generation_sec": 4.138689300001715,
+    "latency_total_sec": 5.570661099998688
+  },
+  {
+    "id": "test_5d64d1ba76af",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 0.6666666666666666,
+      "recall@20": 0.6666666666666666
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.6508205185601091,
+    "retrieved_doc_count": 7,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.148488200000429,
+    "latency_generation_sec": 3.223120700000436,
+    "latency_total_sec": 4.371781900001224
+  },
+  {
+    "id": "test_133ae3c6cc93",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.9197207891481876,
+    "retrieved_doc_count": 6,
+    "answer": "No [1][3]\n- The 'Yahoo News' report discusses a mysterious dog respiratory illness and its potential connection to antibiotics. [1]\n- The 'Live Science: The Most Interesting Articles' article focuses on the dangers of drug-resistant bacteria and the lack of new antibiotics in development. [3]",
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0565",
+      "doc_0566"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 1.0,
+    "latency_retrieval_sec": 0.9528548000016599,
+    "latency_generation_sec": 4.740539499998704,
+    "latency_total_sec": 5.6935029000014765
+  },
+  {
+    "id": "test_2a6fabb5a0a5",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "recall@20": 0.5
+    },
+    "mrr@10": 0.5,
+    "ndcg@10": 0.38685280723454163,
+    "retrieved_doc_count": 12,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.8474623000001884,
+    "latency_generation_sec": 4.515759400001116,
+    "latency_total_sec": 6.3634093000000576
+  },
+  {
+    "id": "test_da30dcc77963",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.9674679834891693,
+    "retrieved_doc_count": 9,
+    "answer": "There was inconsistency in the portrayal of Google's legal challenges related to anticompetitive practices. [1]\n- Google is also involved in another antitrust lawsuit with the Department of Justice over its alleged search monopoly. [1]\n- Epic's lawsuit originally involved Match and several U.S. attorneys general, but Google reached a settlement with the latter last month and with Match last week. [1]",
+    "direct_answer": "There was inconsistency in the portrayal of Google's legal challenges related to anticompetitive practices.",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0042"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.3333333333333333,
+    "latency_retrieval_sec": 1.7609250999994401,
+    "latency_generation_sec": 6.650549200003297,
+    "latency_total_sec": 8.411696600000141
+  },
+  {
+    "id": "test_7210ac5ab116",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.6666666666666666,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.86034433104172,
+    "retrieved_doc_count": 14,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 1.9355307000005268,
+    "latency_generation_sec": 4.82823190000272,
+    "latency_total_sec": 6.764018300000316
+  },
+  {
+    "id": "test_80b154bb9352",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "retrieved_doc_count": 19,
+    "answer": "The role of social media as highlighted by FOX News - Health in the \"Save Lucas\" campaign by The Goeller family on December 9, 2023, remained consistent with the importance of social media's role as mentioned in the TechCrunch article. [1]\n- The TechCrunch article mentions the shutdown of Pebble, a Twitter alternative. [1]",
+    "direct_answer": "The role of social media as highlighted by FOX News - Health in the \"Save Lucas\" campaign by The Goeller family on December 9, 2023, remained consistent with the importance of social media's role as mentioned in the TechCrunch article.",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0593"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 2.1825294999980542,
+    "latency_generation_sec": 7.666825599997537,
+    "latency_total_sec": 9.849544400000013
+  },
+  {
+    "id": "test_9e581faca239",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.8065735963827293,
+    "retrieved_doc_count": 20,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "Uber",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 2.2389177000004565,
+    "latency_generation_sec": 13.505328700000973,
+    "latency_total_sec": 15.744508200001292
+  },
+  {
+    "id": "test_22233cbac36a",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.3333333333333333,
+    "ndcg@10": 0.610960349354296,
+    "retrieved_doc_count": 17,
+    "answer": "Amazon [7][3]\n- Amazon experienced a 4% stock drop after an antitrust lawsuit reported by The Sydney Morning Herald. [7]\n- Amazon dominates the e-reader space according to The Verge. [3]",
+    "direct_answer": "Amazon",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0001",
+      "doc_0521"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.8798415999990539,
+    "latency_generation_sec": 3.26320659999692,
+    "latency_total_sec": 5.143435199999658
+  },
+  {
+    "id": "test_b5efaf5625b6",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "recall@20": 0.5
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.6131471927654584,
+    "retrieved_doc_count": 6,
+    "answer": "No [1]\n- - Sporting News explains that totals betting involves predicting the combined score of both teams in a game. [1]\n- Totals Betting - What is an Over/Under Bet? [1]",
+    "direct_answer": "No",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0554"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 0.9985119999982999,
+    "latency_generation_sec": 5.940136499997607,
+    "latency_total_sec": 6.93880899999931
+  },
+  {
+    "id": "test_aa1ca9de397d",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 1.0,
+    "retrieved_doc_count": 20,
+    "answer": "Consistent [2]\n- They highlight potential risks associated with cannabis use during pregnancy. [2]\n- Both sources emphasize the importance of maternal health interventions during pregnancy. [2]",
+    "direct_answer": "Consistent",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0604"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.93939809999938,
+    "latency_generation_sec": 4.076216800000111,
+    "latency_total_sec": 6.015832599998248
+  },
+  {
+    "id": "test_7318ae1f54f1",
+    "question_type": "temporal_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 0.2,
+    "ndcg@10": 0.45560514958746035,
+    "retrieved_doc_count": 7,
+    "answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+    "direct_answer": "No",
+    "abstained": true,
+    "answer_correct": false,
+    "citation_valid": false,
+    "cited_document_ids": [],
+    "dataset_evidence_citation_precision": 0.0,
+    "dataset_evidence_citation_recall": 0.0,
+    "latency_retrieval_sec": 0.8745956000020669,
+    "latency_generation_sec": 5.211207299998932,
+    "latency_total_sec": 6.086129899998923
+  },
+  {
+    "id": "test_ee318558c165",
+    "question_type": "comparison_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "recall@20": 1.0
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.9197207891481876,
+    "retrieved_doc_count": 15,
+    "answer": "UNKNOWN [3]\n- The Yahoo News article criticizes the Biden administration's approach to addressing climate change. [3]",
+    "direct_answer": "UNKNOWN",
+    "abstained": false,
+    "answer_correct": false,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0233"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.5,
+    "latency_retrieval_sec": 1.8378784999986237,
+    "latency_generation_sec": 3.4954858999990392,
+    "latency_total_sec": 5.3335275999997975
+  },
+  {
+    "id": "test_0a4f65f3afdb",
+    "question_type": "inference_query",
+    "is_answerable": true,
+    "retrieval_metrics": {
+      "recall@5": 0.5,
+      "recall@10": 0.75,
+      "recall@20": 0.75
+    },
+    "mrr@10": 1.0,
+    "ndcg@10": 0.7598336331031966,
+    "retrieved_doc_count": 16,
+    "answer": "Sam Bankman-Fried [1]\n- Sam Bankman-Fried is the former CEO of FTX. [1]",
+    "direct_answer": "Sam Bankman-Fried",
+    "abstained": false,
+    "answer_correct": true,
+    "citation_valid": true,
+    "cited_document_ids": [
+      "doc_0031"
+    ],
+    "dataset_evidence_citation_precision": 1.0,
+    "dataset_evidence_citation_recall": 0.25,
+    "latency_retrieval_sec": 1.7149551999973482,
+    "latency_generation_sec": 5.864046100003179,
+    "latency_total_sec": 7.579184099999111
+  }
+]

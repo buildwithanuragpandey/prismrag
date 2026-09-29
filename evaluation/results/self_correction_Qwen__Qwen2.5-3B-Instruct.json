@@ -1,0 +1,240 @@
+{
+  "summary": {
+    "cases": 5,
+    "evidence_sufficient": 5,
+    "answers_generated": 0,
+    "abstentions": 5,
+    "draft_scored": 4,
+    "draft_correct": 1,
+    "final_scored": 0,
+    "final_correct": 0,
+    "corrected_errors": 0,
+    "introduced_errors": 0,
+    "preserved_correct": 0,
+    "preserved_wrong": 0,
+    "runtime_passes": 0,
+    "supported_claims": 6,
+    "unsupported_claims": 5,
+    "relevant_claims": 6,
+    "draft_accuracy": 0.25,
+    "final_accuracy": null,
+    "self_correction_gain": null,
+    "mean_generation_seconds": 163.65215348000055,
+    "max_generation_seconds": 228.35486100000708
+  },
+  "records": [
+    {
+      "target": "taylor_kelce",
+      "example_id": "eval_b80b5654cdcc",
+      "question": "Was the news about Taylor Swift's relationship with Travis Kelce inconsistent with the later report from The Independent - Life and Style on December 6, 2023?",
+      "gold_answer": "no",
+      "evidence_attempts": [
+        {
+          "attempt": 0,
+          "query": "Was the news about Taylor Swift's relationship with Travis Kelce inconsistent with the later report from The Independent - Life and Style on December 6, 2023?",
+          "evidence_sufficient": true,
+          "evidence_score": 0.89,
+          "evidence_reasons": [
+            "Evidence appears sufficient."
+          ]
+        }
+      ],
+      "evidence_sufficient": true,
+      "raw_answer": "DIRECT_ANSWER: INSUFFICIENT_EVIDENCE\n\nFACTS:\n- \n-",
+      "draft_direct_answer": "INSUFFICIENT_EVIDENCE",
+      "final_direct_answer": null,
+      "draft_correct": null,
+      "final_correct": null,
+      "self_correction_outcome": "unscored",
+      "final_answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+      "abstained": true,
+      "citation_valid": false,
+      "cited_ids": [],
+      "draft_claims": 1,
+      "supported_claims": 0,
+      "unsupported_claims": 0,
+      "relevant_claims": 0,
+      "filtered_irrelevant_claims": 0,
+      "runtime_grade": {
+        "passed": false,
+        "supported_claim_ratio": 0.0,
+        "relevance_score": null,
+        "reasons": [
+          "Generation abstained even though evidence was considered sufficient."
+        ]
+      },
+      "generation_seconds": 228.3549
+    },
+    {
+      "target": "sam_altman",
+      "example_id": "eval_e11c54f5cc35",
+      "question": "Did the Fortune article published later on the same day contradict the TechCrunch article from November 18, 2023, regarding the circumstances surrounding Sam Altman's departure from OpenAI?",
+      "gold_answer": "no",
+      "evidence_attempts": [
+        {
+          "attempt": 0,
+          "query": "Did the Fortune article published later on the same day contradict the TechCrunch article from November 18, 2023, regarding the circumstances surrounding Sam Altman's departure from OpenAI?",
+          "evidence_sufficient": true,
+          "evidence_score": 0.7861,
+          "evidence_reasons": [
+            "Evidence appears sufficient.",
+            "Potentially weak evidence citations: [6]"
+          ]
+        }
+      ],
+      "evidence_sufficient": true,
+      "raw_answer": "DIRECT_ANSWER: No\n\nFACTS:\n- The Fortune article contradicts the TechCrunch article by providing details about Sam Altman's alleged lack of candor.\n- The Fortune article states that Altman was asked to join a video meeting with the board, while the TechCrunch article does not mention such a meeting.\n- The Fortune article mentions that Brockman quit after learning of Altman's firing, which is not stated in the TechCrunch article.",
+      "draft_direct_answer": "No",
+      "final_direct_answer": null,
+      "draft_correct": true,
+      "final_correct": null,
+      "self_correction_outcome": "unscored",
+      "final_answer": "I couldn't find enough supported and relevant claims in the retrieved evidence to answer reliably.",
+      "abstained": true,
+      "citation_valid": false,
+      "cited_ids": [],
+      "draft_claims": 3,
+      "supported_claims": 0,
+      "unsupported_claims": 3,
+      "relevant_claims": 0,
+      "filtered_irrelevant_claims": 0,
+      "runtime_grade": {
+        "passed": false,
+        "supported_claim_ratio": 0.0,
+        "relevance_score": null,
+        "reasons": [
+          "Generation abstained even though evidence was considered sufficient."
+        ]
+      },
+      "generation_seconds": 151.6257
+    },
+    {
+      "target": "mctominay_haaland",
+      "example_id": "eval_090554e34f30",
+      "question": "Does the 'Sporting News' article identify Scott McTominay as Manchester United's top scorer for the season, while the 'TalkSport' article suggests Erling Haaland has the chance to become the overall top scorer in 2023, indicating a difference in the scope of their scoring achievements?",
+      "gold_answer": "Yes",
+      "evidence_attempts": [
+        {
+          "attempt": 0,
+          "query": "Does the 'Sporting News' article identify Scott McTominay as Manchester United's top scorer for the season, while the 'TalkSport' article suggests Erling Haaland has the chance to become the overall top scorer in 2023, indicating a difference in the scope of their scoring achievements?",
+          "evidence_sufficient": true,
+          "evidence_score": 0.8167,
+          "evidence_reasons": [
+            "Evidence appears sufficient.",
+            "Potentially weak evidence citations: [4, 5, 6, 7]"
+          ]
+        }
+      ],
+      "evidence_sufficient": true,
+      "raw_answer": "DIRECT_ANSWER: No\n\nFACTS:\n- Erling Haaland has scored 50 goals in the Premier League this season.\n- Scott McTominay is Manchester United's top scorer with 6 goals this season.",
+      "draft_direct_answer": "No",
+      "final_direct_answer": null,
+      "draft_correct": false,
+      "final_correct": null,
+      "self_correction_outcome": "unscored",
+      "final_answer": "I don't have enough evidence in the provided sources to answer reliably.",
+      "abstained": true,
+      "citation_valid": true,
+      "cited_ids": [],
+      "draft_claims": 2,
+      "supported_claims": 2,
+      "unsupported_claims": 0,
+      "relevant_claims": 2,
+      "filtered_irrelevant_claims": 0,
+      "runtime_grade": {
+        "passed": false,
+        "supported_claim_ratio": 0.0,
+        "relevance_score": null,
+        "reasons": [
+          "Generation abstained even though evidence was considered sufficient."
+        ]
+      },
+      "generation_seconds": 141.5091
+    },
+    {
+      "target": "google_youtube",
+      "example_id": "eval_0e73e16e3d82",
+      "question": "Does the TechCrunch article on the antitrust suit against Google claim that Google's behavior towards news publishers is anticompetitive, while the other TechCrunch article suggests that Google has no plans to implement additional measures on YouTube, indicating a difference in Google's approach to news publishers and content regulation on YouTube?",
+      "gold_answer": "Yes",
+      "evidence_attempts": [
+        {
+          "attempt": 0,
+          "query": "Does the TechCrunch article on the antitrust suit against Google claim that Google's behavior towards news publishers is anticompetitive, while the other TechCrunch article suggests that Google has no plans to implement additional measures on YouTube, indicating a difference in Google's approach to news publishers and content regulation on YouTube?",
+          "evidence_sufficient": true,
+          "evidence_score": 0.846,
+          "evidence_reasons": [
+            "Evidence appears sufficient.",
+            "Potentially weak evidence citations: [2, 5, 6, 7, 9]"
+          ]
+        }
+      ],
+      "evidence_sufficient": true,
+      "raw_answer": "DIRECT_ANSWER: No\n\nFACTS:\n- The TechCrunch article on the antitrust suit against Google claims that Google's behavior towards news publishers is anticompetitive.\n- The other TechCrunch article suggests that Google has no plans to implement additional measures on YouTube.\n- These articles do not present a unified approach to Google's behavior towards news publishers and content regulation on YouTube.",
+      "draft_direct_answer": "No",
+      "final_direct_answer": null,
+      "draft_correct": false,
+      "final_correct": null,
+      "self_correction_outcome": "unscored",
+      "final_answer": "I don't have enough evidence in the provided sources to answer reliably.",
+      "abstained": true,
+      "citation_valid": true,
+      "cited_ids": [],
+      "draft_claims": 3,
+      "supported_claims": 2,
+      "unsupported_claims": 1,
+      "relevant_claims": 2,
+      "filtered_irrelevant_claims": 0,
+      "runtime_grade": {
+        "passed": false,
+        "supported_claim_ratio": 0.0,
+        "relevance_score": null,
+        "reasons": [
+          "Generation abstained even though evidence was considered sufficient."
+        ]
+      },
+      "generation_seconds": 176.4187
+    },
+    {
+      "target": "google_epic",
+      "example_id": "eval_2f9aa5a9983c",
+      "question": "Between the report from The Verge on the Epic v. Google case and the subsequent report from TechCrunch on the same case, was there agreement on the nature of Epic Games' arguments against Google?",
+      "gold_answer": "Yes",
+      "evidence_attempts": [
+        {
+          "attempt": 0,
+          "query": "Between the report from The Verge on the Epic v. Google case and the subsequent report from TechCrunch on the same case, was there agreement on the nature of Epic Games' arguments against Google?",
+          "evidence_sufficient": true,
+          "evidence_score": 0.8429,
+          "evidence_reasons": [
+            "Evidence appears sufficient."
+          ]
+        }
+      ],
+      "evidence_sufficient": true,
+      "raw_answer": "DIRECT_ANSWER: NO\n\nFACTS:\n- The nature of Epic Games' arguments against Google varied significantly compared to their arguments against Apple.\n- Both parties spent a long time on subtle lines of questioning during the trial.\n- Epic's arguments focused on Google's 70/30 revenue split and improper spoliation of evidence, unlike the simpler focus on automatic chat saving in the Apple case.",
+      "draft_direct_answer": "NO",
+      "final_direct_answer": null,
+      "draft_correct": false,
+      "final_correct": null,
+      "self_correction_outcome": "unscored",
+      "final_answer": "I don't have enough evidence in the provided sources to answer reliably.",
+      "abstained": true,
+      "citation_valid": true,
+      "cited_ids": [],
+      "draft_claims": 3,
+      "supported_claims": 2,
+      "unsupported_claims": 1,
+      "relevant_claims": 2,
+      "filtered_irrelevant_claims": 0,
+      "runtime_grade": {
+        "passed": false,
+        "supported_claim_ratio": 0.0,
+        "relevance_score": null,
+        "reasons": [
+          "Generation abstained even though evidence was considered sufficient."
+        ]
+      },
+      "generation_seconds": 120.3525
+    }
+  ]
+}

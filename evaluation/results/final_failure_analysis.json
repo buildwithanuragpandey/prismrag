@@ -1,0 +1,3596 @@
+{
+  "summary": {
+    "total_test_cases": 100,
+    "answerable_cases": 86,
+    "null_cases": 14,
+    "answerable_correct_count": 12,
+    "answerable_wrong_count": 15,
+    "answerable_abstained_count": 59,
+    "answered_accuracy": 0.4444444444444444,
+    "overall_answerable_accuracy": 0.13953488372093023,
+    "answer_coverage": 0.313953488372093,
+    "false_abstention_rate": 0.686046511627907,
+    "null_correct_abstention_count": 13,
+    "null_abstention_rate": 0.9285714285714286,
+    "answered_null_count": 1,
+    "answered_null_rate": 0.07142857142857142,
+    "retrieval_rooted_failures": 28,
+    "downstream_failures": 46
+  },
+  "breakdown_by_question_type": {
+    "comparison_query": {
+      "total": 29,
+      "correct": 4,
+      "wrong": 8,
+      "abstained": 17
+    },
+    "inference_query": {
+      "total": 29,
+      "correct": 4,
+      "wrong": 3,
+      "abstained": 22
+    },
+    "temporal_query": {
+      "total": 28,
+      "correct": 4,
+      "wrong": 4,
+      "abstained": 20
+    },
+    "null_query": {
+      "total": 14,
+      "correct": 0,
+      "wrong": 1,
+      "abstained": 13
+    }
+  },
+  "primary_taxonomy_counts": {
+    "RETRIEVAL_INSUFFICIENT": 28,
+    "CORRECT_ANSWER": 12,
+    "EVIDENCE_GATE_FALSE_ABSTENTION": 16,
+    "CORRECT_ABSTENTION": 13,
+    "SEMANTIC_WRONG_ANSWER": 13,
+    "CONSERVATIVE_FALSE_ABSTENTION": 5,
+    "GROUNDING_REJECTION": 9,
+    "SEMANTIC_SAFETY_ABSTENTION": 3,
+    "INCORRECT_ANSWERED_NULL": 1
+  },
+  "answerable_failure_distribution": {
+    "RETRIEVAL_INSUFFICIENT": {
+      "count": 28,
+      "pct_of_failures": 0.3783783783783784
+    },
+    "EVIDENCE_GATE_FALSE_ABSTENTION": {
+      "count": 16,
+      "pct_of_failures": 0.21621621621621623
+    },
+    "SEMANTIC_WRONG_ANSWER": {
+      "count": 13,
+      "pct_of_failures": 0.17567567567567569
+    },
+    "CONSERVATIVE_FALSE_ABSTENTION": {
+      "count": 5,
+      "pct_of_failures": 0.06756756756756757
+    },
+    "GROUNDING_REJECTION": {
+      "count": 9,
+      "pct_of_failures": 0.12162162162162163
+    },
+    "SEMANTIC_SAFETY_ABSTENTION": {
+      "count": 3,
+      "pct_of_failures": 0.04054054054054054
+    }
+  },
+  "representative_cases": [
+    {
+      "id": "test_902d9dbe4562",
+      "question": "Did the TechCrunch article suggest that Sam Bankman-Fried offered a financial incentive to influence political decisions, while the Fortune article alleges he used a proxy for authorized access to funds, and does the second TechCrunch piece claim that his motivation for alleged fraud was personal gain, thus presenting different aspects of his actions?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "no",
+      "gold_evidence_document_ids": [
+        "doc_0011",
+        "doc_0031",
+        "doc_0030"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.3333333333333333,
+        "recall@10": 0.6666666666666666,
+        "recall@20": 0.6666666666666666
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 0.6666666666666666,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_b65ae8525976",
+      "question": "After the TechCrunch report on October 7, 2023, concerning Dave Clark's comments on Flexport, and the subsequent TechCrunch article on October 30, 2023, regarding Ryan Petersen's actions at Flexport, was there a change in the nature of the events reported?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0011",
+        "doc_0537"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "EVIDENCE_GATE_FALSE_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_e728c9d5ecda",
+      "question": "Does the CBSSports.com article suggest that Terry McLaurin's performance in specific games was more variable compared to the consistent performance of The Chiefs' star rookie as mentioned in another CBSSports.com article?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0149",
+        "doc_0146"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": false,
+      "is_abstained": false,
+      "primary_root_cause": "SEMANTIC_WRONG_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_603d3b2573bf",
+      "question": "Who is the player that, according to articles from both 'Sporting News' and 'CBSSports.com', suffered an oblique injury affecting his ability to play in Week 14 and provided a chance for a rookie to shine in his potential absence during Week 12?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Kenneth Walker III",
+      "gold_evidence_document_ids": [
+        "doc_0113",
+        "doc_0317",
+        "doc_0494"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.6666666666666666,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "De'Von Achane",
+      "a5_grounded_direct_answer": "De'Von Achane",
+      "a6_final_direct_answer": "UNKNOWN",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "CONSERVATIVE_FALSE_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_233e08a081e8",
+      "question": "Does the 'Essentially Sports' article suggest that Canelo Alvarez's net worth is closer to Floyd Mayweather's due to profitable boxing matches, while the 'Sporting News' article focuses on the strategy behind a specific knockdown in a fight involving Canelo Alvarez, without discussing his financial status?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0194",
+        "doc_0245"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "GROUNDING_REJECTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": false,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_1ecd1f05ee04",
+      "question": "Did 'The Age' article claim that Taylor Swift was at Wembley Stadium, while 'The Independent - Life and Style' discusses her openness about a personal relationship, and 'FOX News - Lifestyle' mentions her engagement with a viral TikTok video, indicating different aspects of her public presence?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "no",
+      "gold_evidence_document_ids": [
+        "doc_0046",
+        "doc_0128",
+        "doc_0044"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.6666666666666666,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "UNKNOWN",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "SEMANTIC_SAFETY_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    }
+  ],
+  "all_case_traces": [
+    {
+      "id": "test_902d9dbe4562",
+      "question": "Did the TechCrunch article suggest that Sam Bankman-Fried offered a financial incentive to influence political decisions, while the Fortune article alleges he used a proxy for authorized access to funds, and does the second TechCrunch piece claim that his motivation for alleged fraud was personal gain, thus presenting different aspects of his actions?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "no",
+      "gold_evidence_document_ids": [
+        "doc_0011",
+        "doc_0031",
+        "doc_0030"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.3333333333333333,
+        "recall@10": 0.6666666666666666,
+        "recall@20": 0.6666666666666666
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 0.6666666666666666,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_b318075a526b",
+      "question": "What company, according to TechCrunch, experienced a 38% decrease in reported sexual assault rates between its first and second safety reports, faces criticism for inadequate background checks aimed at quick driver sign-up, and reported $394 million in operating income and $219 million in net income in the third quarter?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Uber",
+      "gold_evidence_document_ids": [
+        "doc_0367",
+        "doc_0337"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "Uber",
+      "a5_grounded_direct_answer": "Uber",
+      "a6_final_direct_answer": "Uber",
+      "is_correct": true,
+      "is_abstained": false,
+      "primary_root_cause": "CORRECT_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_b65ae8525976",
+      "question": "After the TechCrunch report on October 7, 2023, concerning Dave Clark's comments on Flexport, and the subsequent TechCrunch article on October 30, 2023, regarding Ryan Petersen's actions at Flexport, was there a change in the nature of the events reported?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0011",
+        "doc_0537"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "EVIDENCE_GATE_FALSE_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_a3fd5df2936c",
+      "question": "After the Sporting News report on Tyreek Hill's chances of achieving 2,000-plus receiving yards published on December 5, 2023, and the Sporting News report on Tyreek Hill being the league's leading receiver published on December 7, 2023, was there a change in the portrayal of Tyreek Hill's performance?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "No",
+      "gold_evidence_document_ids": [
+        "doc_0197",
+        "doc_0145"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.5,
+        "recall@20": 0.5
+      },
+      "a4_draft_direct_answer": "No, there was no significant change in the portrayal of Tyreek Hill's performance after the reports.",
+      "a5_grounded_direct_answer": "No, there was no significant change in the portrayal of Tyreek Hill's performance after the reports.",
+      "a6_final_direct_answer": "No, there was no significant change in the portrayal of Tyreek Hill's performance after the reports.",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 0.5,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": false,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_4b7f7d493622",
+      "question": "Who is the individual under 30, previously considered the richest in the world, who faced allegations of committing fraud for personal gain, discussed board compositions with Paradigm, and was reported by The Verge, CNBC, TechCrunch, and TechCrunch to have allowed withdrawals from a trading account under specific conditions?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Sam Bankman-Fried",
+      "gold_evidence_document_ids": [
+        "doc_0121",
+        "doc_0011",
+        "doc_0226",
+        "doc_0030"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "recall@20": 0.5
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 4,
+        "retrieved_recall_10": 0.5,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_147a5b35ad3f",
+      "question": "Does the 'Essentially Sports' article suggest that Canelo Alvarez's wealth accumulation is on a different trajectory than Floyd Mayweather's, while the 'TechCrunch' article discusses Sam Bankman-Fried's wealth in the context of his altruistic intentions, without comparing it to another individual's wealth trajectory?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "no",
+      "gold_evidence_document_ids": [
+        "doc_0194",
+        "doc_0030"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "recall@20": 0.5
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "UNKNOWN",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 0.5,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_49ecc0090a79",
+      "question": "Considering the information from a CNBC article detailing Garmin's latest earnings report and a Forbes article discussing Garmin's strategic partnerships, which letter, representing a stock market index, would Garmin's performance and collaborations most likely impact, as reported by these two sources?",
+      "question_type": "null_query",
+      "is_answerable": false,
+      "gold_answer": "Insufficient information.",
+      "gold_evidence_document_ids": [],
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "recall@20": 0.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "CORRECT_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 0,
+        "retrieved_recall_10": 0.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_d9a664e7bd64",
+      "question": "Who became a significant figure in generative AI due to ChatGPT, is considered one of the most brilliant and impactful people in the tech industry, and has been accused by sources from both Fortune and TechCrunch of being ousted from a board that he allegedly misled?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Sam Altman",
+      "gold_evidence_document_ids": [
+        "doc_0333",
+        "doc_0332",
+        "doc_0516"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.3333333333333333,
+        "recall@10": 0.6666666666666666,
+        "recall@20": 0.6666666666666666
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 0.6666666666666666,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_58e06aeee450",
+      "question": "Who is the individual whose legal and financial actions are being scrutinized, as evidenced by the jury's evaluation of contrasting legal narratives in Fortune, the decision to use FTX customer funds reported by The Verge, and the prosecution's allegations of fraud for personal gain mentioned in TechCrunch?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Sam Bankman-Fried",
+      "gold_evidence_document_ids": [
+        "doc_0011",
+        "doc_0083",
+        "doc_0086",
+        "doc_0031"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.75,
+        "recall@10": 0.75,
+        "recall@20": 0.75
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 4,
+        "retrieved_recall_10": 0.75,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_8b3f2dded59b",
+      "question": "Did The Age report on October 23, 2023, that Google manipulates Search to maximize ad revenue, and did TechCrunch report on December 15, 2023, that Google \"siphons off\" news publishers' content and ad revenue through anticompetitive means, resulting in inconsistent reporting on Google's alleged anticompetitive behavior between these two news sources?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "no",
+      "gold_evidence_document_ids": [
+        "doc_0033",
+        "doc_0032",
+        "doc_0355"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.6666666666666666,
+        "recall@10": 0.6666666666666666,
+        "recall@20": 0.6666666666666666
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 0.6666666666666666,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_5c800232f8f9",
+      "question": "Considering the information from an ESPN article detailing the performance of a cricket team at the DY Patil Sports Academy and a Cricbuzz report on the same team's historical achievements, which team, known for its blue jersey, won a significant match at the DY Patil Sports Academy and also secured a championship title in an ICC event held in 2011?",
+      "question_type": "null_query",
+      "is_answerable": false,
+      "gold_answer": "Insufficient information.",
+      "gold_evidence_document_ids": [],
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "recall@20": 0.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "CORRECT_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 0,
+        "retrieved_recall_10": 0.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_5a061a4998b2",
+      "question": "Between the article from Polygon published on September 26, 2023, highlighting individuals using online platforms for marketing, and the piece from Music Business Worldwide on December 7, 2023, discussing digital marketing strategies in the music industry, have the reported applications of digital marketing strategies by individuals and companies remained consistent or inconsistent?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "Consistent",
+      "gold_evidence_document_ids": [
+        "doc_0212",
+        "doc_0586"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.5,
+        "recall@20": 0.5
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 0.5,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_1ccaa5c864ab",
+      "question": "Who is the individual under 30, previously considered the richest in the world, who is accused of building a crypto exchange empire on falsehoods, using customer funds to buy out a competitor, and seeking to exert influence with his fortune, as reported by Fortune, The Verge, and TechCrunch?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Sam Bankman-Fried",
+      "gold_evidence_document_ids": [
+        "doc_0011",
+        "doc_0086",
+        "doc_0031",
+        "doc_0030"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 0.75,
+        "recall@20": 0.75
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 4,
+        "retrieved_recall_10": 0.75,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_f607616b59ce",
+      "question": "Which company, highlighted in articles by both TechCrunch and The Verge, has been portrayed as using its financial power to maintain default search engine status and accused of anticompetitive practices affecting news publishers and portrayed as an antagonist by Epic Games?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Google",
+      "gold_evidence_document_ids": [
+        "doc_0033",
+        "doc_0237",
+        "doc_0299"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.6666666666666666,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "EVIDENCE_GATE_FALSE_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_2d3beb381073",
+      "question": "Considering the financial performance outlined in the Bloomberg article and the strategic partnerships mentioned in the Reuters report on Visa Inc., which letter grade would you assign to Visa's overall business health and future prospects?",
+      "question_type": "null_query",
+      "is_answerable": false,
+      "gold_answer": "Insufficient information.",
+      "gold_evidence_document_ids": [],
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "recall@20": 0.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "CORRECT_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 0,
+        "retrieved_recall_10": 0.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_6833d3555cd1",
+      "question": "Which company, recently criticized in a TechCrunch article for its anticompetitive practices towards news publishers and for the underwhelming architecture of its Gemini AI according to another TechCrunch report, also ensures its search engine's dominance through deals as mentioned by The Verge, and has been highlighted by TechCrunch for introducing new hardware at an annual event?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Google",
+      "gold_evidence_document_ids": [
+        "doc_0033",
+        "doc_0011",
+        "doc_0126",
+        "doc_0014"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.75,
+        "recall@10": 0.75,
+        "recall@20": 0.75
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 4,
+        "retrieved_recall_10": 0.75,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_e728c9d5ecda",
+      "question": "Does the CBSSports.com article suggest that Terry McLaurin's performance in specific games was more variable compared to the consistent performance of The Chiefs' star rookie as mentioned in another CBSSports.com article?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0149",
+        "doc_0146"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": false,
+      "is_abstained": false,
+      "primary_root_cause": "SEMANTIC_WRONG_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_610e0f68430a",
+      "question": "Considering the BBC Sound articles on the recent updates in the music industry and the latest achievements in music technology, which artist, featured in both articles for their innovative use of new sound mixing techniques and for winning a prestigious music award, has a name that starts with the letter 'S'?",
+      "question_type": "null_query",
+      "is_answerable": false,
+      "gold_answer": "Insufficient information.",
+      "gold_evidence_document_ids": [],
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "recall@20": 0.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "CORRECT_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 0,
+        "retrieved_recall_10": 0.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_63906019ced3",
+      "question": "Based on the information from two separate articles on The Associated Press, which country, known for its diplomatic tensions with Country A as reported in the first article, also experienced a significant natural disaster that affected its capital city as detailed in the second article?",
+      "question_type": "null_query",
+      "is_answerable": false,
+      "gold_answer": "Insufficient information.",
+      "gold_evidence_document_ids": [],
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "recall@20": 0.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "CORRECT_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 0,
+        "retrieved_recall_10": 0.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_5f596b10e595",
+      "question": "Does the TechCrunch article on Epic Games' antitrust battle with Google suggest a different level of transparency in legal discovery compared to the TechCrunch article on the class action antitrust suit filed by a news publisher against Google, with the former discussing Google's disclosure of evidence and the latter addressing Google's alleged anticompetitive behavior?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "No",
+      "gold_evidence_document_ids": [
+        "doc_0033",
+        "doc_0042",
+        "doc_0126"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.6666666666666666,
+        "recall@10": 0.6666666666666666,
+        "recall@20": 0.6666666666666666
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 0.6666666666666666,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": false,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_ef246814bfc4",
+      "question": "Who is the individual associated with the companies FTX and Alameda, who, according to sources from both Fortune and TechCrunch, built a business on deceit, influenced a colleague to leave Jane Street for his ventures, and is accused of directing a multi-billion dollar misappropriation of customer funds to cover debts, all for personal gain in wealth and influence?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Sam Bankman-Fried",
+      "gold_evidence_document_ids": [
+        "doc_0011",
+        "doc_0009",
+        "doc_0031"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.3333333333333333,
+        "recall@10": 0.6666666666666666,
+        "recall@20": 0.6666666666666666
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 0.6666666666666666,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_d0422f4b87fc",
+      "question": "Does the Sporting News article on prop betting suggest that sportsbooks generally refund player prop bets if the player doesn't play, while the Sporting News article on BetRivers specifies that BetRivers offers a refund in bonus bets of a certain amount if the first bet loses?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0202",
+        "doc_0201"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": false,
+      "is_abstained": false,
+      "primary_root_cause": "SEMANTIC_WRONG_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_4b0dbf27f169",
+      "question": "Considering the information from an article by The Economic Times and another by Business Standard on the Indian Cellular and Electronics Association, which company, identified as a significant contributor to the local manufacturing ecosystem in one article, also announced a new CEO who has a name starting with the first letter of the alphabet in the other article?",
+      "question_type": "null_query",
+      "is_answerable": false,
+      "gold_answer": "Insufficient information.",
+      "gold_evidence_document_ids": [],
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "recall@20": 0.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "CORRECT_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 0,
+        "retrieved_recall_10": 0.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_b917c1268dc8",
+      "question": "Which company, covered by TechCrunch for not allowing users to select their browser during iPhone setup, is also the focus of Engadget's rumors about concentrating on Macs and new chipsets at an upcoming event, and has been reported by The Verge to enforce uniform terms on developers, OEMs, and carriers through its store and payment system?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Apple",
+      "gold_evidence_document_ids": [
+        "doc_0237",
+        "doc_0170",
+        "doc_0287"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.3333333333333333,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "Epic Games, TechCrunch, and Engadget",
+      "a5_grounded_direct_answer": "Epic Games, TechCrunch, and Engadget",
+      "a6_final_direct_answer": "Epic Games, TechCrunch, and Engadget",
+      "is_correct": false,
+      "is_abstained": false,
+      "primary_root_cause": "SEMANTIC_WRONG_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_603d3b2573bf",
+      "question": "Who is the player that, according to articles from both 'Sporting News' and 'CBSSports.com', suffered an oblique injury affecting his ability to play in Week 14 and provided a chance for a rookie to shine in his potential absence during Week 12?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Kenneth Walker III",
+      "gold_evidence_document_ids": [
+        "doc_0113",
+        "doc_0317",
+        "doc_0494"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.6666666666666666,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "De'Von Achane",
+      "a5_grounded_direct_answer": "De'Von Achane",
+      "a6_final_direct_answer": "UNKNOWN",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "CONSERVATIVE_FALSE_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_5a71b684a834",
+      "question": "Does the 'Sporting News' article suggest that Patrick Kane's move was motivated by a desire to join a playoff contender, while the 'Fortune' article implies that Egypt's policy decisions are driven by the prospect of economic rewards from international and regional partners?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0218",
+        "doc_0356"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "UNKNOWN",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "CONSERVATIVE_FALSE_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_4092ab36cb3f",
+      "question": "After the TechCrunch report on November 18, 2023, suggesting that Sam Altman was not being fully truthful with the board, and the subsequent Fortune article on the same day accusing the board of going rogue in firing Altman, did the TechCrunch report published later on November 18, 2023, maintain consistency in the narrative regarding Sam Altman's future plans?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0415",
+        "doc_0332",
+        "doc_0333"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.6666666666666666,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "EVIDENCE_GATE_FALSE_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_f4778f710c6d",
+      "question": "Considering the information from a BBC News article and a Reuters report on the Asia-Pacific Economic Cooperation, which country, identified as a key player in regional trade by BBC News, also announced new sustainability initiatives during the summit as per Reuters?",
+      "question_type": "null_query",
+      "is_answerable": false,
+      "gold_answer": "Insufficient information.",
+      "gold_evidence_document_ids": [],
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "recall@20": 0.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "CORRECT_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 0,
+        "retrieved_recall_10": 0.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_233e08a081e8",
+      "question": "Does the 'Essentially Sports' article suggest that Canelo Alvarez's net worth is closer to Floyd Mayweather's due to profitable boxing matches, while the 'Sporting News' article focuses on the strategy behind a specific knockdown in a fight involving Canelo Alvarez, without discussing his financial status?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0194",
+        "doc_0245"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "GROUNDING_REJECTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": false,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_b8aa36b4cb61",
+      "question": "Does the Sporting News article stating the Los Angeles Rams and Seattle Seahawks as the worst candidates for the wild-card spots align with the same publication's claim regarding the impact of a Minnesota Vikings loss on the wild card race standings for the Los Angeles Rams, New Orleans Saints, and Green Bay Packers?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "no",
+      "gold_evidence_document_ids": [
+        "doc_0040",
+        "doc_0144"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": true,
+      "is_abstained": false,
+      "primary_root_cause": "CORRECT_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_112e014e82ee",
+      "question": "Was Owen Teale's career impact discussed in The Sydney Morning Herald before Tate McRae's breakthrough performance on Saturday Night Live was reported by The Age?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0578",
+        "doc_0579"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "GROUNDING_REJECTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": false,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_1a69c136767d",
+      "question": "After The Independent - Sports reported on the All Blacks' home defeats to Ireland, South Africa, and Argentina last summer on October 14, 2023, and The Roar | Sports Writers Blog reported on Argentina's victories over the All Blacks in Christchurch last year and their first victory in 2020 in Sydney on October 18, 2023, was the reporting on the All Blacks' defeats by Argentina consistent?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0023",
+        "doc_0538"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "EVIDENCE_GATE_FALSE_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_f3420990a23e",
+      "question": "Did 'The Independent - Travel' report on Tremblant Ski Resort before 'Essentially Sports' mentioned Jeff Shiffrin's skiing habits?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0585",
+        "doc_0572"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": false,
+      "is_abstained": false,
+      "primary_root_cause": "SEMANTIC_WRONG_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_1340470503a6",
+      "question": "Who is the individual that, according to reports from The Verge, Fortune, and TechCrunch, faced challenges in managing the growth of his cryptocurrency exchange, was accused of using a colleague as a cover for unauthorized access to customer funds, and is alleged by prosecutors to have committed fraud for personal gain?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Sam Bankman-Fried",
+      "gold_evidence_document_ids": [
+        "doc_0011",
+        "doc_0031",
+        "doc_0053"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.3333333333333333,
+        "recall@10": 0.3333333333333333,
+        "recall@20": 0.3333333333333333
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 0.3333333333333333,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_647a865ffb8d",
+      "question": "Does the TechCrunch article claim that Google's release of the Gemini Pro model was incomplete compared to the full Gemini Ultra model, while The Verge article focuses on Google's criteria for ranking local search results, and another TechCrunch article accuses Google of anticompetitive behavior towards news publishers?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0033",
+        "doc_0334",
+        "doc_0127"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.6666666666666666,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": false,
+      "is_abstained": false,
+      "primary_root_cause": "SEMANTIC_WRONG_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_0be3cb068450",
+      "question": "Considering the information from a BBC News article detailing TomTom's latest strategic partnership and a Reuters report on TomTom's financial performance in the last quarter, which European country, home to TomTom's headquarters, is both the location of the new strategic partner's primary operations and also where TomTom reported a significant increase in consumer sales?",
+      "question_type": "null_query",
+      "is_answerable": false,
+      "gold_answer": "Insufficient information.",
+      "gold_evidence_document_ids": [],
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "recall@20": 0.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "CORRECT_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 0,
+        "retrieved_recall_10": 0.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_addc2db5c8e4",
+      "question": "Considering the information from an article by Forbes and another by The Wall Street Journal about Rajat Taneja, which company, known for its electronic payment services as per Forbes, has an executive named Rajat Taneja who, according to The Wall Street Journal, played a significant role in a major acquisition deal in the year prior to the article's publication?",
+      "question_type": "null_query",
+      "is_answerable": false,
+      "gold_answer": "Insufficient information.",
+      "gold_evidence_document_ids": [],
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "recall@20": 0.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "CORRECT_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 0,
+        "retrieved_recall_10": 0.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_67b0342ea1a2",
+      "question": "Considering the information from an article by The Times of India and another by The Hindu on Shreyanka Patil, which team did she play for in her most recent professional match, and what was the outcome of that match as reported by both sources?",
+      "question_type": "null_query",
+      "is_answerable": false,
+      "gold_answer": "Insufficient information.",
+      "gold_evidence_document_ids": [],
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "recall@20": 0.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "CORRECT_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 0,
+        "retrieved_recall_10": 0.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_ddfb7ced4c4d",
+      "question": "Did \"The Independent - Life and Style\" article on \"Jada Pinkett Smith and Will Smith's marriage\" disagree with the same publication's report on \"Jada and Will Smith's marital status\" regarding the year they began their separation?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "no",
+      "gold_evidence_document_ids": [
+        "doc_0018",
+        "doc_0036"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": true,
+      "is_abstained": false,
+      "primary_root_cause": "CORRECT_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_aed1519f6180",
+      "question": "Who is the individual implicated by reports from both The Verge and TechCrunch for directing the misuse of billions of dollars of customer funds and for committing fraud, which came to light following judicial proceedings and the collapse of a cryptocurrency exchange?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Sam Bankman-Fried",
+      "gold_evidence_document_ids": [
+        "doc_0009",
+        "doc_0011",
+        "doc_0083",
+        "doc_0086"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.75,
+        "recall@20": 0.75
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 4,
+        "retrieved_recall_10": 0.75,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_462650b29f61",
+      "question": "Does the article from The Verge claiming that Caroline Ellison confessed to the theft of customer funds differ from the Fortune article's claim that Caroline Ellison adequately protected her hedge fund from risks, or do they both suggest a form of mismanagement by Caroline Ellison during her tenure at Alameda Research?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "no",
+      "gold_evidence_document_ids": [
+        "doc_0121",
+        "doc_0293",
+        "doc_0031"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "EVIDENCE_GATE_FALSE_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_4b519d81af30",
+      "question": "Was there disagreement on Google's strategy to secure its position as the default search engine on various platforms between the report from The Verge on Apple's defense of its Google Search deal published after September 26, 2023, and the TechCrunch article discussing Google's expenditures to be the default search engine published before November 13, 2023?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "no",
+      "gold_evidence_document_ids": [
+        "doc_0033",
+        "doc_0014",
+        "doc_0015"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.6666666666666666,
+        "recall@10": 0.6666666666666666,
+        "recall@20": 0.6666666666666666
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 0.6666666666666666,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": false,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_f6e8a1150b7a",
+      "question": "Did the 'Sporting News' article mention Kevin Behrens, Chris Fuhrich, and Robert Andrich receiving their first national team call-ups, while 'The Independent - Sports' article indicate that Cole Palmer did not consider an England call-up when moving to Chelsea?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0444",
+        "doc_0445"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "EVIDENCE_GATE_FALSE_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_1411ae219ac5",
+      "question": "Which company, reported by TechCrunch, has both invested $26.3 billion to maintain its default search engine status across devices and platforms in 2021, and has been accused in a class action lawsuit of harming news publishers' revenues and readership through anticompetitive practices?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Google",
+      "gold_evidence_document_ids": [
+        "doc_0033",
+        "doc_0237"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "Google",
+      "a5_grounded_direct_answer": "Google",
+      "a6_final_direct_answer": "Google",
+      "is_correct": true,
+      "is_abstained": false,
+      "primary_root_cause": "CORRECT_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_26f57c3e7832",
+      "question": "Who is the individual implicated in the FTX collapse, accused of building a cryptocurrency exchange on deceit, failing to manage its rapid expansion alongside a research firm, and directing the misuse of billions in customer funds to cover debts, as reported by Fortune, The Verge, and TechCrunch?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Sam Bankman-Fried",
+      "gold_evidence_document_ids": [
+        "doc_0011",
+        "doc_0009",
+        "doc_0031",
+        "doc_0053"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.25,
+        "recall@10": 0.5,
+        "recall@20": 0.5
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 4,
+        "retrieved_recall_10": 0.5,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_b2d2b1421c30",
+      "question": "Who is the individual that, according to 'Fortune', constructed his crypto exchange empire on falsehoods, was once likened to Warren Buffet but not by 'TechCrunch', convinced a former colleague from Jane Street to join his ventures, and is now facing allegations of intentional fraud as per 'TechCrunch'?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Sam Bankman-Fried",
+      "gold_evidence_document_ids": [
+        "doc_0011",
+        "doc_0031",
+        "doc_0010"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.6666666666666666,
+        "recall@10": 0.6666666666666666,
+        "recall@20": 0.6666666666666666
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 0.6666666666666666,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_0fcd2729c084",
+      "question": "Between the article from The Verge on October 26, 2023, discussing Google's local search ranking criteria and the TechCrunch article on October 31, 2023, regarding Google's expenditures to remain the default search engine, was there inconsistency in the portrayal of Google's influence over search-related practices?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "no",
+      "gold_evidence_document_ids": [
+        "doc_0033",
+        "doc_0237",
+        "doc_0127"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.6666666666666666,
+        "recall@10": 0.6666666666666666,
+        "recall@20": 0.6666666666666666
+      },
+      "a4_draft_direct_answer": "There was consistency in the portrayal of Google's influence over search-related practices.",
+      "a5_grounded_direct_answer": "There was consistency in the portrayal of Google's influence over search-related practices.",
+      "a6_final_direct_answer": "UNKNOWN",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 0.6666666666666666,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_9674a9da97ea",
+      "question": "Did The Independent - Sports report on the All Blacks' home victories against Ireland, South Africa, and Argentina last summer on October 14, 2023, and did The Roar | Sports Writers Blog report on Argentina's victories over the All Blacks in Christchurch last year and their first victory in 2020 in Sydney on October 18, 2023, making the reporting on the All Blacks' defeats by Argentina consistent?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "no",
+      "gold_evidence_document_ids": [
+        "doc_0023",
+        "doc_0538"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "EVIDENCE_GATE_FALSE_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_16257649fa17",
+      "question": "Which pop star, recognized by Time as Person of the Year, was seen supporting a football team at Arrowhead Stadium where she was personally invited by a player who also made her a friendship bracelet with his number on it, as reported by 'The Age', 'The Independent - Life and Style', and 'CBSSports.com'?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Taylor Swift",
+      "gold_evidence_document_ids": [
+        "doc_0046",
+        "doc_0044",
+        "doc_0059",
+        "doc_0045"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.75,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "Taylor Swift",
+      "a5_grounded_direct_answer": "Taylor Swift",
+      "a6_final_direct_answer": "Taylor Swift",
+      "is_correct": true,
+      "is_abstained": false,
+      "primary_root_cause": "CORRECT_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 4,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_fe16afe10883",
+      "question": "Considering the information from a New York Times article and a Washington Post article on Nikki Haley, which political party does she belong to if the New York Times discusses her tenure as a former governor and the Washington Post covers her announcement to run for a national office?",
+      "question_type": "null_query",
+      "is_answerable": false,
+      "gold_answer": "Insufficient information.",
+      "gold_evidence_document_ids": [],
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "recall@20": 0.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "CORRECT_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 0,
+        "retrieved_recall_10": 0.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_287855839292",
+      "question": "Between the Sporting News report on Kenneth Walker III's injury impact for fantasy football published on November 21, 2023, and the Sporting News report on the fantasy implications if Kenneth Walker III remains out with his oblique injury published on December 7, 2023, was there consistency in how the potential absence of Kenneth Walker III was addressed in terms of fantasy football strategy?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0113",
+        "doc_0317",
+        "doc_0494"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.6666666666666666,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "GROUNDING_REJECTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": false,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_a693488a5cce",
+      "question": "Who is the individual implicated by allegations in articles from Fortune, The Verge, and TechCrunch, suggesting he built a successful crypto exchange on falsehoods, used a proxy for unauthorized access to customer funds, struggled with managing rapid company growth, and is accused of committing fraud for personal gain?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Sam Bankman-Fried",
+      "gold_evidence_document_ids": [
+        "doc_0011",
+        "doc_0031",
+        "doc_0053"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.3333333333333333,
+        "recall@10": 0.6666666666666666,
+        "recall@20": 0.6666666666666666
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 0.6666666666666666,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_0ac164a31eac",
+      "question": "Between the report from CBSSports.com published on October 12, 2023, regarding Taylor Swift and Travis Kelce's rumored romance, and the report from The Independent - Life and Style published on December 6, 2023, about Taylor Swift's relationship status with Travis Kelce, was there a change in the reporting of their relationship status?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0046",
+        "doc_0059",
+        "doc_0045"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.3333333333333333,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": false,
+      "is_abstained": false,
+      "primary_root_cause": "SEMANTIC_WRONG_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_328be2867854",
+      "question": "Does the 'Fortune' article that discusses Republicans dumping Jim Jordan as House Speaker nominee suggest that 'Rep. Patrick McHenry' has dismissed efforts to secure him in the role of speaker more permanently, while another 'Fortune' article indicates that 'Bipartisan groups of lawmakers' are considering proposals to empower 'Rep. Patrick McHenry' or another temporary speaker?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0377",
+        "doc_0223"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": false,
+      "is_abstained": false,
+      "primary_root_cause": "SEMANTIC_WRONG_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_fd1a35b2f67f",
+      "question": "Was the Zee Business report on the India national cricket team's performance in the ICC World Cup semi-finals published on November 18, 2023, and the Zee Business report on the India national cricket team's head-to-head record with Australia in ODI World Cup matches published on November 11, 2023, inconsistent in their reporting on India's past encounters with Australia in the World Cup?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "no",
+      "gold_evidence_document_ids": [
+        "doc_0246",
+        "doc_0133"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": true,
+      "is_abstained": false,
+      "primary_root_cause": "CORRECT_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_1ecd1f05ee04",
+      "question": "Did 'The Age' article claim that Taylor Swift was at Wembley Stadium, while 'The Independent - Life and Style' discusses her openness about a personal relationship, and 'FOX News - Lifestyle' mentions her engagement with a viral TikTok video, indicating different aspects of her public presence?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "no",
+      "gold_evidence_document_ids": [
+        "doc_0046",
+        "doc_0128",
+        "doc_0044"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.6666666666666666,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "UNKNOWN",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "SEMANTIC_SAFETY_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_07811c8b55a6",
+      "question": "Between the Sporting News report on the Minnesota Vikings' offensive performance published on November 13, 2023, and the Sporting News report on the Minnesota Vikings' strategic options during the 'Monday Night Football' game published on November 27, 2023, was there a change in the reporting on the team's ability to influence the game's outcome?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0144",
+        "doc_0119"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "There was no significant change in the reporting on the Minnesota Vikings' ability to influence the game's outcome between the two reports.",
+      "a5_grounded_direct_answer": "There was no significant change in the reporting on the Minnesota Vikings' ability to influence the game's outcome between the two reports.",
+      "a6_final_direct_answer": "There was no significant change in the reporting on the Minnesota Vikings' ability to influence the game's outcome between the two reports.",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "GROUNDING_REJECTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": false,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_b2ef33c347b8",
+      "question": "Between the TechCrunch report on Sam Bankman-Fried's trial and the subsequent TechCrunch report on the allegations against him, was there no change in the portrayal of his actions related to the FTX situation?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "no",
+      "gold_evidence_document_ids": [
+        "doc_0011",
+        "doc_0010",
+        "doc_0053"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.3333333333333333,
+        "recall@10": 0.6666666666666666,
+        "recall@20": 0.6666666666666666
+      },
+      "a4_draft_direct_answer": "Yes",
+      "a5_grounded_direct_answer": "Yes",
+      "a6_final_direct_answer": "Yes",
+      "is_correct": false,
+      "is_abstained": false,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 0.6666666666666666,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_0e624a603de6",
+      "question": "Does the article from The Verge claiming that Caroline Ellison confessed the theft of customer funds differ from the Fortune article's claim that Caroline Ellison did not adequately protect her hedge fund from risks, or do they both suggest a form of mismanagement by Caroline Ellison during her tenure at Alameda Research?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0121",
+        "doc_0293",
+        "doc_0031"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": false,
+      "is_abstained": false,
+      "primary_root_cause": "SEMANTIC_WRONG_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_ba2b63ddf126",
+      "question": "Has the portrayal of the 'vampire cause' in Polygon articles remained consistent between the November 9, 2023, article discussing the undermining of vampires' menacing air and the November 15, 2023, article highlighting vampires as a hidden presence in the best versions of stories?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0452",
+        "doc_0453"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "EVIDENCE_GATE_FALSE_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_e3f3b15c5172",
+      "question": "Who is the individual being judged for their actions in a legal case, where contrasting stories are presented in 'Fortune', is accused of using a front for secret access to customer funds, and is alleged by the prosecution in a 'TechCrunch' article to have committed fraud for personal gain?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Sam Bankman-Fried",
+      "gold_evidence_document_ids": [
+        "doc_0011",
+        "doc_0031"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "EVIDENCE_GATE_FALSE_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_bc225b00b250",
+      "question": "Does the TechCrunch article suggest that Sam Altman is involved in a new venture, while the Fortune article discusses the roles of Matt Huang and Gary Wang in the context of venture capital and FTX, without indicating any new venture involvement for them?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0415",
+        "doc_0031"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "UNKNOWN",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "CONSERVATIVE_FALSE_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_4960847cea24",
+      "question": "Does the article from The Guardian suggest that Britney Spears had more control over her privacy at the age of 16 compared to the control over privacy that the BBC News - Entertainment & Arts article implies Taylor Swift has over her personal experiences?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "no",
+      "gold_evidence_document_ids": [
+        "doc_0052",
+        "doc_0257"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "EVIDENCE_GATE_FALSE_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_1e8744dc316d",
+      "question": "Which company, as reported by TechCrunch, is facing scrutiny for its market practices in areas ranging from app distribution and advertising to search engine defaults and content sharing, without planning new measures for its video platform in the next six months?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Google",
+      "gold_evidence_document_ids": [
+        "doc_0033",
+        "doc_0248",
+        "doc_0042",
+        "doc_0015"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "recall@20": 0.5
+      },
+      "a4_draft_direct_answer": "Google",
+      "a5_grounded_direct_answer": "Google",
+      "a6_final_direct_answer": "Google",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 4,
+        "retrieved_recall_10": 0.5,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": false,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_ee0ce0192a07",
+      "question": "Does the article from Fortune suggest that Generation Z experiences distress primarily due to climate change, while the article from Eos: Earth And Space Science News calls for a deeper understanding of sea surface temperature patterns as a significant climate driver?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0139",
+        "doc_0138"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "EVIDENCE_GATE_FALSE_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_6375f422ab9b",
+      "question": "Which organization, reported by 'The Roar | Sports Writers Blog', is attempting to centralize Super Rugby's high-performance programs, is supported by franchises for a potential coaching appointment, and is being urged to reinstate annual funding to these franchises?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Rugby Australia",
+      "gold_evidence_document_ids": [
+        "doc_0492",
+        "doc_0493"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "The Queensland Rugby Union (QRU) is attempting to centralize Super Rugby's high-performance programs, is supported by franchises for a potential coaching appointment, and is being urged to reinstate annual funding to these franchises.",
+      "a5_grounded_direct_answer": "The Queensland Rugby Union (QRU) is attempting to centralize Super Rugby's high-performance programs, is supported by franchises for a potential coaching appointment, and is being urged to reinstate annual funding to these franchises.",
+      "a6_final_direct_answer": "The Queensland Rugby Union (QRU) is attempting to centralize Super Rugby's high-performance programs, is supported by franchises for a potential coaching appointment, and is being urged to reinstate annual funding to these franchises.",
+      "is_correct": false,
+      "is_abstained": false,
+      "primary_root_cause": "SEMANTIC_WRONG_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_58a0669f7d95",
+      "question": "Considering the design changes reported by The Verge and the performance upgrades mentioned by CNET in their latest articles on the Apple iMac, which single letter of the alphabet is commonly used to denote the model that encompasses both of these updates?",
+      "question_type": "null_query",
+      "is_answerable": false,
+      "gold_answer": "Insufficient information.",
+      "gold_evidence_document_ids": [],
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "recall@20": 0.0
+      },
+      "a4_draft_direct_answer": "L",
+      "a5_grounded_direct_answer": "L",
+      "a6_final_direct_answer": "L",
+      "is_correct": false,
+      "is_abstained": false,
+      "primary_root_cause": "INCORRECT_ANSWERED_NULL",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 0,
+        "retrieved_recall_10": 0.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_2c37fd107825",
+      "question": "Does the article from The Verge suggest that Alameda Research was involved in manipulating FTX's balance sheet, while the article from Cnbc | World Business News Leader indicates Sam Bankman-Fried's intentions regarding the composition of FTX's board, and are these claims about different aspects of FTX's corporate governance?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0226",
+        "doc_0293"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.5,
+        "recall@20": 0.5
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "UNKNOWN",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 0.5,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_dd27cdbff6d8",
+      "question": "Did the Sporting News article on the Pittsburgh Penguins' game report a successful penalty kill, while the Sporting News article on the Ole Miss vs. Georgia game mention a penalty committed by Ole Miss's offensive line on the first play?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "True",
+      "gold_evidence_document_ids": [
+        "doc_0484",
+        "doc_0483"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": false,
+      "is_abstained": false,
+      "primary_root_cause": "SEMANTIC_WRONG_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_cb2885e8d14e",
+      "question": "Does 'The Roar | Sports Writers Blog' suggest that 'The All Blacks' motivation for playing is more altruistic compared to the Springboks, while also indicating that 'The All Blacks' had a specific in-game failure to release on their goal line, and acknowledging 'The All Blacks' previous losses to Argentina, or are the motivations, in-game actions, and historical outcomes described identically for 'The All Blacks' in each article?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "no",
+      "gold_evidence_document_ids": [
+        "doc_0023",
+        "doc_0022",
+        "doc_0176"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": true,
+      "is_abstained": false,
+      "primary_root_cause": "CORRECT_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_8e108f9683db",
+      "question": "Do both articles from Sporting News suggest that bettors have a variety of betting options, with one discussing prop bets for a specific NFL game and the other detailing betting options in team golf events?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0207",
+        "doc_0311"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "recall@20": 0.5
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 0.5,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_ad187b6f2edb",
+      "question": "Does the Insidesport article suggest that English players in the IPL may not be available for the playoffs, while The New York Times article discusses the Los Angeles Dodgers' performance in the 2020 expanded playoffs without mentioning any player availability issues?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0008",
+        "doc_0307"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "UNKNOWN",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "CONSERVATIVE_FALSE_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_322a8f748a1a",
+      "question": "Which Major League Baseball team, covered by both 'Essentially Sports' for a sign-stealing controversy during a period of success and 'The New York Times' for its home field adjustment that led to a 1-5 performance, is known for undermining the values of the sport?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Houston Astros",
+      "gold_evidence_document_ids": [
+        "doc_0007",
+        "doc_0008"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "The Texas Rangers",
+      "a5_grounded_direct_answer": "The Texas Rangers",
+      "a6_final_direct_answer": "The Texas Rangers",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "GROUNDING_REJECTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": false,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_22a01d8c6325",
+      "question": "Considering the information from a BBC News article and a feature on Bloomberg, which letter of the alphabet begins the name of the M-KOPA product that was highlighted for its innovative approach to providing solar energy solutions in one article and was mentioned for its significant impact on the lives of low-income households in another?",
+      "question_type": "null_query",
+      "is_answerable": false,
+      "gold_answer": "Insufficient information.",
+      "gold_evidence_document_ids": [],
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "recall@20": 0.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "CORRECT_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 0,
+        "retrieved_recall_10": 0.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_525d0fb2717a",
+      "question": "What is the first letter of the name of the company that, according to an article from The Financial Times, received the most European patents in 2021, and is also mentioned in a Bloomberg article as having faced a significant legal challenge at the European Patent Office over one of its key patents?",
+      "question_type": "null_query",
+      "is_answerable": false,
+      "gold_answer": "Insufficient information.",
+      "gold_evidence_document_ids": [],
+      "retrieval_metrics": {
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "recall@20": 0.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "CORRECT_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 0,
+        "retrieved_recall_10": 0.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_704706a923fd",
+      "question": "Which company, featured in articles from both Wired and Cnbc | World Business News Leader, introduced an invite-only deal system during a summer event for its members and is also considered to provide a life-changing opportunity for its sellers?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Amazon",
+      "gold_evidence_document_ids": [
+        "doc_0520",
+        "doc_0002"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "Flexport",
+      "a5_grounded_direct_answer": "Flexport",
+      "a6_final_direct_answer": "Flexport",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "GROUNDING_REJECTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": false,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_2de53b1adeee",
+      "question": "Does the TechCrunch article discussing microblogging and public discourse platforms list a narrower range of platforms excluding startups and new applications from larger tech companies compared to the TechCrunch article that mentions the homogenization of content on Social media platforms (TikTok, Instagram, Snapchat, Facebook, YouTube, and X)?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "no",
+      "gold_evidence_document_ids": [
+        "doc_0196",
+        "doc_0195"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": true,
+      "is_abstained": false,
+      "primary_root_cause": "CORRECT_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_5c3750b07224",
+      "question": "Who, according to TechCrunch, was the world's wealthiest individual under 30 with intentions of using his fortune for humanitarian purposes and is currently facing a criminal trial on charges of fraud and conspiracy, with allegations of committing these acts to gain wealth, power, and influence?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Sam Bankman-Fried",
+      "gold_evidence_document_ids": [
+        "doc_0011",
+        "doc_0030",
+        "doc_0010"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.6666666666666666,
+        "recall@10": 0.6666666666666666,
+        "recall@20": 0.6666666666666666
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 0.6666666666666666,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_eb09f70a1154",
+      "question": "Did the Yardbarker article describe Alex Verdugo's offensive performance as league-average, while the Sporting News article reported the San Francisco 49ers' offensive performance as strong, despite Christian McCaffrey not scoring?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0118",
+        "doc_0119"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": false,
+      "is_abstained": false,
+      "primary_root_cause": "SEMANTIC_WRONG_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_678f22a9c545",
+      "question": "Who is the individual associated with OpenAI, recognized for both his vision of AI's future and his philanthropic nature, who also invested in a teen's startup and was subject to controversy involving the board as reported by Fortune and multiple TechCrunch articles?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Sam Altman",
+      "gold_evidence_document_ids": [
+        "doc_0333",
+        "doc_0332",
+        "doc_0011",
+        "doc_0516"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.75,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "EVIDENCE_GATE_FALSE_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 4,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_d879b62b46e1",
+      "question": "Which organization, known as the generative AI poster child for creating ChatGPT and mentioned in both TechCrunch articles, was founded in late 2015 and is set to release GPT-4 with vision alongside the launch of GPT-4 Turbo API?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "OpenAI",
+      "gold_evidence_document_ids": [
+        "doc_0048",
+        "doc_0027",
+        "doc_0054"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.3333333333333333,
+        "recall@10": 0.6666666666666666,
+        "recall@20": 0.6666666666666666
+      },
+      "a4_draft_direct_answer": "Anthropic",
+      "a5_grounded_direct_answer": "Anthropic",
+      "a6_final_direct_answer": "Anthropic",
+      "is_correct": false,
+      "is_abstained": false,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 0.6666666666666666,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_3cd12236dc2b",
+      "question": "Did TechCrunch's portrayal of Scott Hurff's perspective on product design remain consistent between the article published on December 1, 2023, which discussed his experience as a product maker and designer, and the article published on December 21, 2023, which emphasized the importance of decision-making in product design?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0496",
+        "doc_0243"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "GROUNDING_REJECTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": false,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_ee9b19084238",
+      "question": "Who is the individual who has been a notable figure in generative AI technology, was considered a prodigy in Silicon Valley from a young age, and is at the center of controversy over allegations of not being fully truthful with the board, according to articles from both Fortune and TechCrunch?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Sam Altman",
+      "gold_evidence_document_ids": [
+        "doc_0333",
+        "doc_0332"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "Sam Altman",
+      "a5_grounded_direct_answer": "Sam Altman",
+      "a6_final_direct_answer": "UNKNOWN",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "SEMANTIC_SAFETY_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_e18b56a833fb",
+      "question": "Does the 'Business Line' article claim that 'Leqembi (lecanemab)' is the only approved drug for Alzheimer's as of July 2023, while 'The Guardian' article discusses the time required to realize 'recent scientific developments in tackling dementia' without specifying any particular drug approval?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0239",
+        "doc_0427"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "EVIDENCE_GATE_FALSE_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_75e32829a971",
+      "question": "Does the TechCrunch article suggest that the emergence of multi-purpose robots in the industrial automation world is a current trend, while the Fortune article indicates that the inspiration for engineers to build human-like and useful robots has been ongoing for decades?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0421",
+        "doc_0420"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": false,
+      "is_abstained": false,
+      "primary_root_cause": "SEMANTIC_WRONG_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_a6ece7a4e961",
+      "question": "Did the Sporting News publish an article on Moneyline betting at 21:25, stating that betting $130 on the Cowboys to win would result in a $100 loss if they win, and did the same news source maintain consistency in their explanation of betting mechanics in a subsequent article about Totals Betting at 22:08, which mentioned that bets placed on \"the over\" win if the combined score exceeds the sportsbook's set total?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "no",
+      "gold_evidence_document_ids": [
+        "doc_0061",
+        "doc_0554"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "GROUNDING_REJECTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": false,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_0328220123da",
+      "question": "Between the report from The Verge on Apple's defense of its Google Search deal published on September 26, 2023, and the TechCrunch article detailing the Google antitrust case published on October 31, 2023, was there disagreement on the financial impact of Google's deals to maintain its default search engine status on various platforms?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "no",
+      "gold_evidence_document_ids": [
+        "doc_0033",
+        "doc_0237",
+        "doc_0014"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "There was no clear disagreement on the financial impact of Google's deals to maintain its default search engine status on various platforms based on the available evidence.",
+      "a5_grounded_direct_answer": "There was no clear disagreement on the financial impact of Google's deals to maintain its default search engine status on various platforms based on the available evidence.",
+      "a6_final_direct_answer": "UNKNOWN",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "CONSERVATIVE_FALSE_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_5d64d1ba76af",
+      "question": "Was there inconsistency in the TechCrunch report on the Google antitrust case published after November 5, 2023, or in the TechCrunch report on the class action antitrust suit against Google in reporting Google's anticompetitive behavior?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "no",
+      "gold_evidence_document_ids": [
+        "doc_0033",
+        "doc_0237",
+        "doc_0355"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.6666666666666666,
+        "recall@10": 0.6666666666666666,
+        "recall@20": 0.6666666666666666
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 0.6666666666666666,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": false,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_133ae3c6cc93",
+      "question": "Was the concern about antibiotics' effectiveness against certain diseases reported by 'Yahoo News' before 'Live Science: The Most Interesting Articles,' considering the 'Live Science: The Most Interesting Articles' report on the susceptibility of 'Antibiotics in development' to resistance and the 'Yahoo News' report on 'Inflammation in dogs' being highly responsive to antibiotics?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "no",
+      "gold_evidence_document_ids": [
+        "doc_0566",
+        "doc_0565"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "EVIDENCE_GATE_FALSE_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_2a6fabb5a0a5",
+      "question": "Does the TechCrunch article suggest that Sam Bankman-Fried's actions were motivated by personal gain, while The Verge article focuses on the specific use of FTX customer funds by Sam Bankman-Fried?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0011",
+        "doc_0086"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "recall@20": 0.5
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "UNKNOWN",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 0.5,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_da30dcc77963",
+      "question": "After TechCrunch reported on Google's antitrust battle with Epic Games on November 6, 2023, and then reported on a class action antitrust suit against Google on December 15, 2023, was there consistency in the portrayal of Google's legal challenges related to anticompetitive practices?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0033",
+        "doc_0042",
+        "doc_0355"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": false,
+      "is_abstained": false,
+      "primary_root_cause": "SEMANTIC_WRONG_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_7210ac5ab116",
+      "question": "Was there no change in the reporting of Taylor Swift's approach to personal disclosures between the report from BBC News - Entertainment & Arts published on October 13, 2023, regarding Taylor Swift's experiences with the media, and the report from The Independent - Life and Style published on December 6, 2023, concerning Taylor Swift's openness about her relationship?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "no",
+      "gold_evidence_document_ids": [
+        "doc_0046",
+        "doc_0174",
+        "doc_0257"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "UNKNOWN",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "SEMANTIC_SAFETY_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 3,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_80b154bb9352",
+      "question": "After TechCrunch reported on the shutdown of Pebble, the Twitter alternative previously known as T2, on October 24, 2023, did the role of social media as highlighted by FOX News - Health in the \"Save Lucas\" campaign by The Goeller family on December 9, 2023, remain consistent or inconsistent with the importance of social media's role as mentioned in the TechCrunch article?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "Consistent",
+      "gold_evidence_document_ids": [
+        "doc_0594",
+        "doc_0593"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "The role of social media as highlighted by FOX News - Health in the \"Save Lucas\" campaign by The Goeller family on December 9, 2023, remains consistent with the importance of social media's role as mentioned in the TechCrunch article.",
+      "a5_grounded_direct_answer": "The role of social media as highlighted by FOX News - Health in the \"Save Lucas\" campaign by The Goeller family on December 9, 2023, remains consistent with the importance of social media's role as mentioned in the TechCrunch article.",
+      "a6_final_direct_answer": "The role of social media as highlighted by FOX News - Health in the \"Save Lucas\" campaign by The Goeller family on December 9, 2023, remains consistent with the importance of social media's role as mentioned in the TechCrunch article.",
+      "is_correct": true,
+      "is_abstained": false,
+      "primary_root_cause": "CORRECT_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_9e581faca239",
+      "question": "What company, covered by TechCrunch, has reported a 38% decrease in the rate of sexual assault on its app between its first and second safety reports, while also facing criticism for inadequate background checks designed for quick driver sign-up, and despite being aware of sexual assaults by its drivers since 2014, has still managed to generate substantial profitability with $394 million in operating income and $219 million in net income in the third quarter?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Uber",
+      "gold_evidence_document_ids": [
+        "doc_0367",
+        "doc_0337"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "EVIDENCE_GATE_FALSE_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_22233cbac36a",
+      "question": "Which company, known for its Prime-themed sale day as reported by Wired and its dominance in the e-reader space according to The Verge, experienced a 4 percent stock drop after an antitrust lawsuit reported by The Sydney Morning Herald and offers a life-changing opportunity for sellers as discussed by Cnbc | World Business News Leader?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Amazon",
+      "gold_evidence_document_ids": [
+        "doc_0001",
+        "doc_0521",
+        "doc_0527",
+        "doc_0002"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.75,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "Amazon",
+      "a5_grounded_direct_answer": "Amazon",
+      "a6_final_direct_answer": "Amazon",
+      "is_correct": true,
+      "is_abstained": false,
+      "primary_root_cause": "CORRECT_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 4,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_b5efaf5625b6",
+      "question": "Did the 'Sporting News' change its explanation of betting terms to bettors regarding what positive betting odds indicate or alter the definition of an \"over\" bet in totals betting between the article published on 2023-10-02 and the one on 2023-11-01?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "no",
+      "gold_evidence_document_ids": [
+        "doc_0497",
+        "doc_0554"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "recall@20": 0.5
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": true,
+      "is_abstained": false,
+      "primary_root_cause": "CORRECT_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 0.5,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_aa1ca9de397d",
+      "question": "After TechCrunch reported on Daye's tampon-based STI screening for GBS testing in pregnant women on November 6, 2023, and Live Science: The Most Interesting Articles highlighted the risks of cannabis use during pregnancy on December 13, 2023, does the advice from both sources regarding the importance of maternal health interventions during pregnancy remain consistent or inconsistent?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "Consistent",
+      "gold_evidence_document_ids": [
+        "doc_0603",
+        "doc_0604"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "Consistent",
+      "a5_grounded_direct_answer": "Consistent",
+      "a6_final_direct_answer": "Consistent",
+      "is_correct": true,
+      "is_abstained": false,
+      "primary_root_cause": "CORRECT_ANSWER",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": true,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": true
+      }
+    },
+    {
+      "id": "test_7318ae1f54f1",
+      "question": "Has the focus of Taylor Swift coverage by 'The Independent - Life and Style' and 'FOX News - Lifestyle' changed from the National Football League's (NFL) perspective to personal fan experiences involving individuals like Annika?",
+      "question_type": "temporal_query",
+      "is_answerable": true,
+      "gold_answer": "Yes",
+      "gold_evidence_document_ids": [
+        "doc_0128",
+        "doc_0559"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.5,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": "No",
+      "a5_grounded_direct_answer": "No",
+      "a6_final_direct_answer": "No",
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "GROUNDING_REJECTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": true,
+        "fact_generated": true,
+        "claim_grounded": false,
+        "survived_relevance_filter": true,
+        "visible_to_semantic_verifier": true,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_ee318558c165",
+      "question": "Does the Yahoo News article praise the Biden administration's effectiveness on climate issues, while the Engadget article suggests that society is being positively impacted by the interconnectedness of climate change, the modern internet, and authoritarianism?",
+      "question_type": "comparison_query",
+      "is_answerable": true,
+      "gold_answer": "no",
+      "gold_evidence_document_ids": [
+        "doc_0234",
+        "doc_0233"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "recall@20": 1.0
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "EVIDENCE_GATE_FALSE_ABSTENTION",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 2,
+        "retrieved_recall_10": 1.0,
+        "retrieval_complete": true,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    },
+    {
+      "id": "test_0a4f65f3afdb",
+      "question": "Who is the individual implicated in the FTX collapse, accused of building a successful crypto exchange through deceit, acknowledged being informed about financial discrepancies after a judge's intervention, and is alleged by the prosecution to have directed the misappropriation of $14 billion from customers for debt repayment and committed fraud for personal gain, as reported by Fortune, The Verge, and TechCrunch?",
+      "question_type": "inference_query",
+      "is_answerable": true,
+      "gold_answer": "Sam Bankman-Fried",
+      "gold_evidence_document_ids": [
+        "doc_0011",
+        "doc_0083",
+        "doc_0009",
+        "doc_0031"
+      ],
+      "retrieval_metrics": {
+        "recall@5": 0.25,
+        "recall@10": 0.5,
+        "recall@20": 0.5
+      },
+      "a4_draft_direct_answer": null,
+      "a5_grounded_direct_answer": null,
+      "a6_final_direct_answer": null,
+      "is_correct": false,
+      "is_abstained": true,
+      "primary_root_cause": "RETRIEVAL_INSUFFICIENT",
+      "semantic_survival_trace": {
+        "gold_evidence_count": 4,
+        "retrieved_recall_10": 0.5,
+        "retrieval_complete": false,
+        "evidence_gate_accepted": false,
+        "fact_generated": false,
+        "claim_grounded": false,
+        "survived_relevance_filter": false,
+        "visible_to_semantic_verifier": false,
+        "final_answer_asserted": false
+      }
+    }
+  ]
+}

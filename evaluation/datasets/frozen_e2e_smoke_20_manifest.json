@@ -1,0 +1,34 @@
+{
+  "source": "evaluation\\datasets\\frozen_eval_500.json",
+  "output": "evaluation\\datasets\\frozen_e2e_smoke_20.json",
+  "seed": 26,
+  "total": 20,
+  "distribution": {
+    "inference_query": 5,
+    "comparison_query": 5,
+    "temporal_query": 5,
+    "null_query": 5
+  },
+  "ids": [
+    "eval_1679afa42c30",
+    "eval_59af1023e6cf",
+    "eval_5cd0e3b824db",
+    "eval_c5a0d98021ee",
+    "eval_ff33914e9156",
+    "eval_1e7d390adde0",
+    "eval_4e23afea1f81",
+    "eval_5c7fab04046b",
+    "eval_eb1a6bb45cb4",
+    "eval_f3e9235ece5a",
+    "eval_093af83d0219",
+    "eval_5f40fab8ea55",
+    "eval_733c08d301e8",
+    "eval_b80b5654cdcc",
+    "eval_be412cb54feb",
+    "eval_2fa0f63fd209",
+    "eval_36827e3d0adf",
+    "eval_52bfece07a6c",
+    "eval_5457d2a4c687",
+    "eval_f1e3e6ebe75c"
+  ]
+}

@@ -1,0 +1,982 @@
+{
+  "summary": {
+    "total_records": 20,
+    "answerable_records": 15,
+    "answered_answerable": 9,
+    "runtime_passed_answered": 9,
+    "correct_runtime_passes": 4,
+    "wrong_runtime_passes": 5,
+    "semantic_false_positive_rate": 0.5555555555555556,
+    "wrong_by_family": {
+      "entity_selection": 1,
+      "abstract_comparison": 1,
+      "conjunction": 1,
+      "absence_condition": 1,
+      "consistency": 1
+    },
+    "wrong_by_stage": {
+      "publisher_entity_collision": 1,
+      "requirement_undercoverage": 4
+    },
+    "all_failure_stages": {
+      "retrieval_insufficient": 4,
+      "relevance_filtered": 1,
+      "publisher_entity_collision": 1,
+      "no_failure": 3,
+      "requirement_undercoverage": 4,
+      "grounding_rejection": 1,
+      "safe_resolution_success": 1,
+      "null_query_handled": 5
+    },
+    "all_relation_families": {
+      "entity_selection": 4,
+      "conjunction": 4,
+      "abstract_comparison": 1,
+      "absence_condition": 1,
+      "temporal": 1,
+      "consistency": 4,
+      "null_query": 5
+    },
+    "wrong_cases_detail": [
+      {
+        "id": "eval_c5a0d98021ee",
+        "family": "entity_selection",
+        "failure_stage": "publisher_entity_collision",
+        "draft_answer": "The Roar | Sports Writers Blog",
+        "gold_answer": "Rugby Australia",
+        "required_sources": [
+          "The Roar | Sports Writers Blog"
+        ],
+        "covered_sources": [
+          "The Roar | Sports Writers Blog"
+        ],
+        "candidate_mechanism": "AnswerTypeGuard / PublisherEntityGuard"
+      },
+      {
+        "id": "eval_4e23afea1f81",
+        "family": "abstract_comparison",
+        "failure_stage": "requirement_undercoverage",
+        "draft_answer": "No",
+        "gold_answer": "Yes",
+        "required_sources": [
+          "Wired suggest",
+          "Music Business Worldwide"
+        ],
+        "covered_sources": [
+          "Music Business Worldwide"
+        ],
+        "candidate_mechanism": "RequirementCoverageGuard (Abstain/Unknown on missing required sources)"
+      },
+      {
+        "id": "eval_eb1a6bb45cb4",
+        "family": "conjunction",
+        "failure_stage": "requirement_undercoverage",
+        "draft_answer": "No",
+        "gold_answer": "Yes",
+        "required_sources": [
+          "Fortune",
+          "TechCrunch"
+        ],
+        "covered_sources": [
+          "TechCrunch"
+        ],
+        "candidate_mechanism": "RequirementCoverageGuard (Abstain/Unknown on missing required sources)"
+      },
+      {
+        "id": "eval_f3e9235ece5a",
+        "family": "absence_condition",
+        "failure_stage": "requirement_undercoverage",
+        "draft_answer": "No",
+        "gold_answer": "Yes",
+        "required_sources": [
+          "Mashable",
+          "The Sydney Morning Herald",
+          "Cnbc | World Business News Leader"
+        ],
+        "covered_sources": [
+          "Mashable",
+          "The Sydney Morning Herald"
+        ],
+        "candidate_mechanism": "RequirementCoverageGuard (Abstain/Unknown on missing required sources)"
+      },
+      {
+        "id": "eval_be412cb54feb",
+        "family": "consistency",
+        "failure_stage": "requirement_undercoverage",
+        "draft_answer": "No",
+        "gold_answer": "Yes",
+        "required_sources": [
+          "The Age",
+          "The Verge",
+          "TechCrunch"
+        ],
+        "covered_sources": [
+          "TechCrunch"
+        ],
+        "candidate_mechanism": "RequirementCoverageGuard (Abstain/Unknown on missing required sources)"
+      }
+    ]
+  },
+  "records": [
+    {
+      "id": "eval_1679afa42c30",
+      "question_type": "inference_query",
+      "question": "Who is the individual under 30 who was once considered the trustworthy face of the cryptocurrency industry according to The Verge, and is alleged by the prosecution for committing fraud for wealth and influence as reported by TechCrunch, and was also reported by The Verge to have permitted withdrawals from a trading account up to the limit of total trading revenue?",
+      "gold_answer": "Sam Bankman-Fried",
+      "draft_direct_answer": null,
+      "final_direct_answer": null,
+      "answer_form": "short_entity_or_value",
+      "relation_family": "entity_selection",
+      "gold_yes_no": null,
+      "draft_yes_no": null,
+      "final_yes_no": null,
+      "polarity_correct": null,
+      "abstained": true,
+      "runtime_grader_passed": true,
+      "smoke_answer_correct": false,
+      "draft_claim_count": 0,
+      "grounded_claim_count": 0,
+      "unsupported_claim_count": 0,
+      "relevant_claim_count": 0,
+      "filtered_claim_count": 0,
+      "required_sources": [
+        "The Verge"
+      ],
+      "required_source_count": 1,
+      "covered_sources": [],
+      "covered_source_count": 0,
+      "missing_sources": [
+        "The Verge"
+      ],
+      "source_coverage_satisfied": false,
+      "has_absence_requirement": false,
+      "publisher_collision": {
+        "has_collision": false,
+        "matched_source": null,
+        "reason": "No draft direct answer"
+      },
+      "failure_stage": "retrieval_insufficient",
+      "safe_resolution_candidate": false,
+      "candidate_mechanism": null,
+      "raw_answer": ""
+    },
+    {
+      "id": "eval_59af1023e6cf",
+      "question_type": "inference_query",
+      "question": "Who is the individual whose legal team and the government's attorneys are presenting conflicting narratives in court, who acknowledged being aware of a significant financial discrepancy post a judge's inquiry, and is accused of instructing a subordinate to use billions of customer funds to settle debts, all while facing allegations of committing fraud for personal gain?",
+      "gold_answer": "Sam Bankman-Fried",
+      "draft_direct_answer": "Donald Trump",
+      "final_direct_answer": "Donald Trump",
+      "answer_form": "short_entity_or_value",
+      "relation_family": "entity_selection",
+      "gold_yes_no": null,
+      "draft_yes_no": null,
+      "final_yes_no": null,
+      "polarity_correct": null,
+      "abstained": true,
+      "runtime_grader_passed": false,
+      "smoke_answer_correct": false,
+      "draft_claim_count": 2,
+      "grounded_claim_count": 1,
+      "unsupported_claim_count": 1,
+      "relevant_claim_count": 0,
+      "filtered_claim_count": 1,
+      "required_sources": [],
+      "required_source_count": 0,
+      "covered_sources": [],
+      "covered_source_count": 0,
+      "missing_sources": [],
+      "source_coverage_satisfied": true,
+      "has_absence_requirement": false,
+      "publisher_collision": {
+        "has_collision": false,
+        "matched_source": null,
+        "reason": "Draft answer is not a source/publisher name"
+      },
+      "failure_stage": "relevance_filtered",
+      "safe_resolution_candidate": false,
+      "candidate_mechanism": null,
+      "raw_answer": "DIRECT_ANSWER: Donald Trump\n\nFACTS:\n- Donald Trump defrauded banks with 'fantasy' to build his real estate empire, judge rules in a major repudiation against the former president - Fortune\n- The FTX trial is bigger than Sam Bankman-Fried - The Verge"
+    },
+    {
+      "id": "eval_5cd0e3b824db",
+      "question_type": "inference_query",
+      "question": "Which company, covered by The Verge and TechCrunch, has influenced the internet's appearance, local search result rankings, and is accused of harming news publishers' bottom lines through its practices?",
+      "gold_answer": "Google",
+      "draft_direct_answer": null,
+      "final_direct_answer": null,
+      "answer_form": "short_entity_or_value",
+      "relation_family": "entity_selection",
+      "gold_yes_no": null,
+      "draft_yes_no": null,
+      "final_yes_no": null,
+      "polarity_correct": null,
+      "abstained": true,
+      "runtime_grader_passed": true,
+      "smoke_answer_correct": false,
+      "draft_claim_count": 0,
+      "grounded_claim_count": 0,
+      "unsupported_claim_count": 0,
+      "relevant_claim_count": 0,
+      "filtered_claim_count": 0,
+      "required_sources": [],
+      "required_source_count": 0,
+      "covered_sources": [],
+      "covered_source_count": 0,
+      "missing_sources": [],
+      "source_coverage_satisfied": true,
+      "has_absence_requirement": false,
+      "publisher_collision": {
+        "has_collision": false,
+        "matched_source": null,
+        "reason": "No draft direct answer"
+      },
+      "failure_stage": "retrieval_insufficient",
+      "safe_resolution_candidate": false,
+      "candidate_mechanism": null,
+      "raw_answer": ""
+    },
+    {
+      "id": "eval_c5a0d98021ee",
+      "question_type": "inference_query",
+      "question": "Which organization, discussed in articles from 'The Roar | Sports Writers Blog', is likely to receive support from Super Rugby franchises for a potential coaching appointment and is also being encouraged to reinstate annual funding of $1.7 million to these franchises?",
+      "gold_answer": "Rugby Australia",
+      "draft_direct_answer": "The Roar | Sports Writers Blog",
+      "final_direct_answer": "The Roar | Sports Writers Blog",
+      "answer_form": "short_entity_or_value",
+      "relation_family": "entity_selection",
+      "gold_yes_no": null,
+      "draft_yes_no": null,
+      "final_yes_no": null,
+      "polarity_correct": null,
+      "abstained": false,
+      "runtime_grader_passed": true,
+      "smoke_answer_correct": false,
+      "draft_claim_count": 2,
+      "grounded_claim_count": 2,
+      "unsupported_claim_count": 0,
+      "relevant_claim_count": 2,
+      "filtered_claim_count": 0,
+      "required_sources": [
+        "The Roar | Sports Writers Blog"
+      ],
+      "required_source_count": 1,
+      "covered_sources": [
+        "The Roar | Sports Writers Blog"
+      ],
+      "covered_source_count": 1,
+      "missing_sources": [],
+      "source_coverage_satisfied": true,
+      "has_absence_requirement": false,
+      "publisher_collision": {
+        "has_collision": true,
+        "matched_source": "The Roar | Sports Writers Blog",
+        "reason": "Draft answer 'The Roar | Sports Writers Blog' is identical to context source 'The Roar | Sports Writers Blog'"
+      },
+      "failure_stage": "publisher_entity_collision",
+      "safe_resolution_candidate": true,
+      "candidate_mechanism": "AnswerTypeGuard / PublisherEntityGuard",
+      "raw_answer": "DIRECT_ANSWER: The Roar | Sports Writers Blog\n\nFACTS:\n- The Roar | Sports Writers Blog discusses the Wallabies' World Cup flop and expresses strong support for Rugby Australia to conduct a \"fully independent and transparent top-to-bottom review\" of the Wallabies program.\n- The Roar | Sports Writers Blog mentions that the QRU wants Rugby Australia to reinstate the annual $1.7 million in funding to each of the Super Rugby franchises."
+    },
+    {
+      "id": "eval_ff33914e9156",
+      "question_type": "inference_query",
+      "question": "Which leading AI development company, known as the generative AI poster child behind ChatGPT and mentioned by TechCrunch, is expected to release GPT-4 with vision alongside the launch of GPT-4 Turbo API?",
+      "gold_answer": "OpenAI",
+      "draft_direct_answer": "OpenAI",
+      "final_direct_answer": "OpenAI",
+      "answer_form": "short_entity_or_value",
+      "relation_family": "conjunction",
+      "gold_yes_no": null,
+      "draft_yes_no": null,
+      "final_yes_no": null,
+      "polarity_correct": null,
+      "abstained": false,
+      "runtime_grader_passed": true,
+      "smoke_answer_correct": true,
+      "draft_claim_count": 3,
+      "grounded_claim_count": 3,
+      "unsupported_claim_count": 0,
+      "relevant_claim_count": 2,
+      "filtered_claim_count": 1,
+      "required_sources": [
+        "TechCrunch"
+      ],
+      "required_source_count": 1,
+      "covered_sources": [
+        "TechCrunch"
+      ],
+      "covered_source_count": 1,
+      "missing_sources": [],
+      "source_coverage_satisfied": true,
+      "has_absence_requirement": false,
+      "publisher_collision": {
+        "has_collision": false,
+        "matched_source": null,
+        "reason": "Draft answer is not a source/publisher name"
+      },
+      "failure_stage": "no_failure",
+      "safe_resolution_candidate": false,
+      "candidate_mechanism": null,
+      "raw_answer": "DIRECT_ANSWER: OpenAI\n\nFACTS:\n- OpenAI launched ChatGPT.\n- OpenAI is known as the generative AI poster child behind ChatGPT.\n- OpenAI is mentioned by TechCrunch."
+    },
+    {
+      "id": "eval_1e7d390adde0",
+      "question_type": "comparison_query",
+      "question": "Does the article from The Verge suggest that Google's influence on the internet's appearance is a different aspect of its impact compared to the financial influence on platforms described in the TechCrunch article about Google's spending, and is the anticompetitive behavior towards news publishers mentioned in another TechCrunch article a separate issue from these influences?",
+      "gold_answer": "Yes",
+      "draft_direct_answer": null,
+      "final_direct_answer": null,
+      "answer_form": "yes_no",
+      "relation_family": "conjunction",
+      "gold_yes_no": "yes",
+      "draft_yes_no": null,
+      "final_yes_no": null,
+      "polarity_correct": null,
+      "abstained": true,
+      "runtime_grader_passed": true,
+      "smoke_answer_correct": false,
+      "draft_claim_count": 0,
+      "grounded_claim_count": 0,
+      "unsupported_claim_count": 0,
+      "relevant_claim_count": 0,
+      "filtered_claim_count": 0,
+      "required_sources": [
+        "The Verge suggest",
+        "TechCrunch"
+      ],
+      "required_source_count": 2,
+      "covered_sources": [],
+      "covered_source_count": 0,
+      "missing_sources": [
+        "The Verge suggest",
+        "TechCrunch"
+      ],
+      "source_coverage_satisfied": false,
+      "has_absence_requirement": false,
+      "publisher_collision": {
+        "has_collision": false,
+        "matched_source": null,
+        "reason": "No draft direct answer"
+      },
+      "failure_stage": "retrieval_insufficient",
+      "safe_resolution_candidate": false,
+      "candidate_mechanism": null,
+      "raw_answer": ""
+    },
+    {
+      "id": "eval_4e23afea1f81",
+      "question_type": "comparison_query",
+      "question": "Does the article from Wired suggest that Sony headphones offer the best value in their class during the Walmart Cyber Monday Deals, while the article from Music Business Worldwide indicates that Artists are seeking deals that offer more control and better economics, or do both articles suggest a common trend in seeking value and control in their respective fields?",
+      "gold_answer": "Yes",
+      "draft_direct_answer": "No",
+      "final_direct_answer": "No",
+      "answer_form": "yes_no",
+      "relation_family": "abstract_comparison",
+      "gold_yes_no": "yes",
+      "draft_yes_no": "no",
+      "final_yes_no": "no",
+      "polarity_correct": false,
+      "abstained": false,
+      "runtime_grader_passed": true,
+      "smoke_answer_correct": false,
+      "draft_claim_count": 2,
+      "grounded_claim_count": 1,
+      "unsupported_claim_count": 1,
+      "relevant_claim_count": 1,
+      "filtered_claim_count": 0,
+      "required_sources": [
+        "Wired suggest",
+        "Music Business Worldwide"
+      ],
+      "required_source_count": 2,
+      "covered_sources": [
+        "Music Business Worldwide"
+      ],
+      "covered_source_count": 1,
+      "missing_sources": [
+        "Wired suggest"
+      ],
+      "source_coverage_satisfied": false,
+      "has_absence_requirement": false,
+      "publisher_collision": {
+        "has_collision": false,
+        "matched_source": null,
+        "reason": "Draft answer is not a source/publisher name"
+      },
+      "failure_stage": "requirement_undercoverage",
+      "safe_resolution_candidate": true,
+      "candidate_mechanism": "RequirementCoverageGuard (Abstain/Unknown on missing required sources)",
+      "raw_answer": "DIRECT_ANSWER: No\n\nFACTS:\n- The article from Wired suggests that Latin artists seek deals that offer more control and better economics.\n- The article from Music Business Worldwide indicates that Artists are seeking deals that offer more control and better economics."
+    },
+    {
+      "id": "eval_5c7fab04046b",
+      "question_type": "comparison_query",
+      "question": "Does 'The Guardian' article about the 'Everton team' suggest they are in a worse position in the Premier League compared to 'Bayern Munich' as discussed in another 'The Guardian' article, based on their respective league standings and points?",
+      "gold_answer": "Yes",
+      "draft_direct_answer": "No",
+      "final_direct_answer": "No",
+      "answer_form": "yes_no",
+      "relation_family": "conjunction",
+      "gold_yes_no": "yes",
+      "draft_yes_no": "no",
+      "final_yes_no": "no",
+      "polarity_correct": false,
+      "abstained": true,
+      "runtime_grader_passed": false,
+      "smoke_answer_correct": false,
+      "draft_claim_count": 2,
+      "grounded_claim_count": 0,
+      "unsupported_claim_count": 2,
+      "relevant_claim_count": 0,
+      "filtered_claim_count": 0,
+      "required_sources": [
+        "The Guardian"
+      ],
+      "required_source_count": 1,
+      "covered_sources": [],
+      "covered_source_count": 0,
+      "missing_sources": [
+        "The Guardian"
+      ],
+      "source_coverage_satisfied": false,
+      "has_absence_requirement": false,
+      "publisher_collision": {
+        "has_collision": false,
+        "matched_source": null,
+        "reason": "Draft answer is not a source/publisher name"
+      },
+      "failure_stage": "grounding_rejection",
+      "safe_resolution_candidate": false,
+      "candidate_mechanism": null,
+      "raw_answer": "DIRECT_ANSWER: No\n\nFACTS:\n- The 'The Guardian' article does not provide information comparing Everton's position in the Premier League to Bayern Munich's.\n- The article discusses Everton's recent performances and the upcoming match against Liverpool, but does not mention comparisons to Bayern Munich."
+    },
+    {
+      "id": "eval_eb1a6bb45cb4",
+      "question_type": "comparison_query",
+      "question": "Does the Fortune article suggest that Sam Bankman-Fried was responsible for the alleged deceit behind FTX's success, while the TechCrunch article focuses on Gary Wang and Caroline Ellison's admission of guilt to federal criminal charges in relation to the FTX collapse?",
+      "gold_answer": "Yes",
+      "draft_direct_answer": "No",
+      "final_direct_answer": "No",
+      "answer_form": "yes_no",
+      "relation_family": "conjunction",
+      "gold_yes_no": "yes",
+      "draft_yes_no": "no",
+      "final_yes_no": "no",
+      "polarity_correct": false,
+      "abstained": false,
+      "runtime_grader_passed": true,
+      "smoke_answer_correct": false,
+      "draft_claim_count": 2,
+      "grounded_claim_count": 2,
+      "unsupported_claim_count": 1,
+      "relevant_claim_count": 2,
+      "filtered_claim_count": 0,
+      "required_sources": [
+        "Fortune",
+        "TechCrunch"
+      ],
+      "required_source_count": 2,
+      "covered_sources": [
+        "TechCrunch"
+      ],
+      "covered_source_count": 1,
+      "missing_sources": [
+        "Fortune"
+      ],
+      "source_coverage_satisfied": false,
+      "has_absence_requirement": false,
+      "publisher_collision": {
+        "has_collision": false,
+        "matched_source": null,
+        "reason": "Draft answer is not a source/publisher name"
+      },
+      "failure_stage": "requirement_undercoverage",
+      "safe_resolution_candidate": true,
+      "candidate_mechanism": "RequirementCoverageGuard (Abstain/Unknown on missing required sources)",
+      "raw_answer": "DIRECT_ANSWER: No\n\nFACTS:\n- The Fortune article does not mention Sam Bankman-Fried being responsible for the alleged deceit behind FTX's success.\n- The TechCrunch article focuses on Gary Wang and Caroline Ellison's admission of guilt to federal criminal charges in relation to the FTX collapse."
+    },
+    {
+      "id": "eval_f3e9235ece5a",
+      "question_type": "comparison_query",
+      "question": "Does the Mashable article suggest that Amazon's Cyber Monday includes both continued and new deals, while The Sydney Morning Herald article focuses on the impact of an antitrust lawsuit on Amazon's stock price, and the Cnbc | World Business News Leader article discusses the opportunity of selling on Amazon, without mentioning any legal or promotional events?",
+      "gold_answer": "Yes",
+      "draft_direct_answer": "No",
+      "final_direct_answer": "No",
+      "answer_form": "yes_no",
+      "relation_family": "absence_condition",
+      "gold_yes_no": "yes",
+      "draft_yes_no": "no",
+      "final_yes_no": "no",
+      "polarity_correct": false,
+      "abstained": false,
+      "runtime_grader_passed": true,
+      "smoke_answer_correct": false,
+      "draft_claim_count": 3,
+      "grounded_claim_count": 2,
+      "unsupported_claim_count": 1,
+      "relevant_claim_count": 2,
+      "filtered_claim_count": 0,
+      "required_sources": [
+        "Mashable",
+        "The Sydney Morning Herald",
+        "Cnbc | World Business News Leader"
+      ],
+      "required_source_count": 3,
+      "covered_sources": [
+        "Mashable",
+        "The Sydney Morning Herald"
+      ],
+      "covered_source_count": 2,
+      "missing_sources": [
+        "Cnbc | World Business News Leader"
+      ],
+      "source_coverage_satisfied": false,
+      "has_absence_requirement": true,
+      "publisher_collision": {
+        "has_collision": false,
+        "matched_source": null,
+        "reason": "Draft answer is not a source/publisher name"
+      },
+      "failure_stage": "requirement_undercoverage",
+      "safe_resolution_candidate": true,
+      "candidate_mechanism": "RequirementCoverageGuard (Abstain/Unknown on missing required sources)",
+      "raw_answer": "DIRECT_ANSWER: No\n\nFACTS:\n- The Mashable article suggests that Amazon's Cyber Monday includes both continued and new deals.\n- The Sydney Morning Herald article focuses on the impact of an antitrust lawsuit on Amazon's stock price.\n- The CNBC | World Business News Leader article discusses the opportunity of selling on Amazon, without mentioning any legal or promotional events."
+    },
+    {
+      "id": "eval_093af83d0219",
+      "question_type": "temporal_query",
+      "question": "Between the report from 'The Roar | Sports Writers Blog' on October 19, 2023, detailing the Tasmania JackJumpers' lead over the Sydney Kings, and the update from 'Sporting News' on October 31, 2023, about the Texas Rangers' lead over the Arizona Diamondbacks, which news source reported a larger point/lead difference in a game, 'The Roar | Sports Writers Blog' or 'Sporting News'?",
+      "gold_answer": "The Roar | Sports Writers Blog",
+      "draft_direct_answer": "The Roar | Sports Writers Blog",
+      "final_direct_answer": "The Roar | Sports Writers Blog",
+      "answer_form": "short_entity_or_value",
+      "relation_family": "temporal",
+      "gold_yes_no": null,
+      "draft_yes_no": null,
+      "final_yes_no": null,
+      "polarity_correct": null,
+      "abstained": false,
+      "runtime_grader_passed": true,
+      "smoke_answer_correct": true,
+      "draft_claim_count": 2,
+      "grounded_claim_count": 2,
+      "unsupported_claim_count": 0,
+      "relevant_claim_count": 2,
+      "filtered_claim_count": 0,
+      "required_sources": [
+        "The Roar | Sports Writers Blog",
+        "Sporting News"
+      ],
+      "required_source_count": 2,
+      "covered_sources": [
+        "The Roar | Sports Writers Blog",
+        "Sporting News"
+      ],
+      "covered_source_count": 2,
+      "missing_sources": [],
+      "source_coverage_satisfied": true,
+      "has_absence_requirement": false,
+      "publisher_collision": {
+        "has_collision": true,
+        "matched_source": "The Roar | Sports Writers Blog",
+        "reason": "Draft answer 'The Roar | Sports Writers Blog' is identical to context source 'The Roar | Sports Writers Blog'"
+      },
+      "failure_stage": "no_failure",
+      "safe_resolution_candidate": false,
+      "candidate_mechanism": null,
+      "raw_answer": "DIRECT_ANSWER: The Roar | Sports Writers Blog\n\nFACTS:\n- The Roar | Sports Writers Blog reported the Tasmanian JackJumpers' lead over the Sydney Kings.\n- Sporting News reported the Texas Rangers' lead over the Arizona Diamondbacks."
+    },
+    {
+      "id": "eval_5f40fab8ea55",
+      "question_type": "temporal_query",
+      "question": "Has the reporting style regarding live score updates and highlights from NFL games by Sporting News remained consistent between the article featuring \"Jaguars vs. Saints\" on October 19, 2023, and the one covering \"Chiefs vs. Packers\" on December 3, 2023, considering the excerpts mentioning a player achieving a first down?",
+      "gold_answer": "Yes",
+      "draft_direct_answer": "The reporting style regarding live score updates and highlights from NFL games by Sporting News did not remain consistently the same between the articles featuring \"Jaguars vs. Saints\" on October 19, 2023, and \"Chiefs vs. Packers\" on December 3, 2023.",
+      "final_direct_answer": "Yes",
+      "answer_form": "yes_no",
+      "relation_family": "consistency",
+      "gold_yes_no": "yes",
+      "draft_yes_no": null,
+      "final_yes_no": "yes",
+      "polarity_correct": true,
+      "abstained": false,
+      "runtime_grader_passed": true,
+      "smoke_answer_correct": true,
+      "draft_claim_count": 2,
+      "grounded_claim_count": 2,
+      "unsupported_claim_count": 0,
+      "relevant_claim_count": 2,
+      "filtered_claim_count": 0,
+      "required_sources": [
+        "Sporting News"
+      ],
+      "required_source_count": 1,
+      "covered_sources": [
+        "Sporting News"
+      ],
+      "covered_source_count": 1,
+      "missing_sources": [],
+      "source_coverage_satisfied": true,
+      "has_absence_requirement": false,
+      "publisher_collision": {
+        "has_collision": false,
+        "matched_source": null,
+        "reason": "Draft answer is not a source/publisher name"
+      },
+      "failure_stage": "safe_resolution_success",
+      "safe_resolution_candidate": false,
+      "candidate_mechanism": null,
+      "raw_answer": "DIRECT_ANSWER: The reporting style regarding live score updates and highlights from NFL games by Sporting News did not remain consistently the same between the articles featuring \"Jaguars vs. Saints\" on October 19, 2023, and \"Chiefs vs. Packers\" on December 3, 2023.\n\nFACTS:\n- The live score update and highlight excerpt for \"Jaguars vs. Saints\" mentioned a player achieving a first down.\n- The live score update and highlight excerpt for \"Chiefs vs. Packers\" also mentioned a player achieving a first down."
+    },
+    {
+      "id": "eval_733c08d301e8",
+      "question_type": "temporal_query",
+      "question": "After the report by The Age on October 22, 2023, suggesting people suspect Google of foul play, did TechCrunch's reporting on October 31, 2023, and December 15, 2023, regarding Google's antitrust issues and the impact on news publishers show a consistent perspective on Google's market behavior?",
+      "gold_answer": "Yes",
+      "draft_direct_answer": null,
+      "final_direct_answer": null,
+      "answer_form": "yes_no",
+      "relation_family": "consistency",
+      "gold_yes_no": "yes",
+      "draft_yes_no": null,
+      "final_yes_no": null,
+      "polarity_correct": null,
+      "abstained": true,
+      "runtime_grader_passed": true,
+      "smoke_answer_correct": false,
+      "draft_claim_count": 0,
+      "grounded_claim_count": 0,
+      "unsupported_claim_count": 0,
+      "relevant_claim_count": 0,
+      "filtered_claim_count": 0,
+      "required_sources": [
+        "The Age",
+        "TechCrunch"
+      ],
+      "required_source_count": 2,
+      "covered_sources": [],
+      "covered_source_count": 0,
+      "missing_sources": [
+        "The Age",
+        "TechCrunch"
+      ],
+      "source_coverage_satisfied": false,
+      "has_absence_requirement": false,
+      "publisher_collision": {
+        "has_collision": false,
+        "matched_source": null,
+        "reason": "No draft direct answer"
+      },
+      "failure_stage": "retrieval_insufficient",
+      "safe_resolution_candidate": false,
+      "candidate_mechanism": null,
+      "raw_answer": ""
+    },
+    {
+      "id": "eval_b80b5654cdcc",
+      "question_type": "temporal_query",
+      "question": "Was the news about Taylor Swift's relationship with Travis Kelce inconsistent with the later report from The Independent - Life and Style on December 6, 2023?",
+      "gold_answer": "no",
+      "draft_direct_answer": "No",
+      "final_direct_answer": "No",
+      "answer_form": "yes_no",
+      "relation_family": "consistency",
+      "gold_yes_no": "no",
+      "draft_yes_no": "no",
+      "final_yes_no": "no",
+      "polarity_correct": true,
+      "abstained": false,
+      "runtime_grader_passed": true,
+      "smoke_answer_correct": true,
+      "draft_claim_count": 3,
+      "grounded_claim_count": 2,
+      "unsupported_claim_count": 1,
+      "relevant_claim_count": 2,
+      "filtered_claim_count": 0,
+      "required_sources": [
+        "The Independent - Life and Style"
+      ],
+      "required_source_count": 1,
+      "covered_sources": [
+        "The Independent - Life and Style"
+      ],
+      "covered_source_count": 1,
+      "missing_sources": [],
+      "source_coverage_satisfied": true,
+      "has_absence_requirement": false,
+      "publisher_collision": {
+        "has_collision": false,
+        "matched_source": null,
+        "reason": "Draft answer is not a source/publisher name"
+      },
+      "failure_stage": "no_failure",
+      "safe_resolution_candidate": false,
+      "candidate_mechanism": null,
+      "raw_answer": "DIRECT_ANSWER: No\n\nFACTS:\n- Taylor Swift revealed her connection with Travis Kelce in July after he confessed on his podcast.\n- Swift confirmed that she attended Kelce's game at Arrowhead Stadium in September, dating him at the time.\n- The independent report from The Independent - Life and Style does not mention any conflicting information regarding Swift and Kelce's relationship."
+    },
+    {
+      "id": "eval_be412cb54feb",
+      "question_type": "temporal_query",
+      "question": "Has the portrayal of Google's market practices in reports by The Age after October 22, 2023, remained consistent with the depiction in The Verge's coverage of the Epic v. Google case, and with TechCrunch's report on the class action antitrust suit filed against Google?",
+      "gold_answer": "Yes",
+      "draft_direct_answer": "No",
+      "final_direct_answer": "No",
+      "answer_form": "yes_no",
+      "relation_family": "consistency",
+      "gold_yes_no": "yes",
+      "draft_yes_no": "no",
+      "final_yes_no": "no",
+      "polarity_correct": false,
+      "abstained": false,
+      "runtime_grader_passed": true,
+      "smoke_answer_correct": false,
+      "draft_claim_count": 3,
+      "grounded_claim_count": 1,
+      "unsupported_claim_count": 2,
+      "relevant_claim_count": 1,
+      "filtered_claim_count": 0,
+      "required_sources": [
+        "The Age",
+        "The Verge",
+        "TechCrunch"
+      ],
+      "required_source_count": 3,
+      "covered_sources": [
+        "TechCrunch"
+      ],
+      "covered_source_count": 1,
+      "missing_sources": [
+        "The Age",
+        "The Verge"
+      ],
+      "source_coverage_satisfied": false,
+      "has_absence_requirement": false,
+      "publisher_collision": {
+        "has_collision": false,
+        "matched_source": null,
+        "reason": "Draft answer is not a source/publisher name"
+      },
+      "failure_stage": "requirement_undercoverage",
+      "safe_resolution_candidate": true,
+      "candidate_mechanism": "RequirementCoverageGuard (Abstain/Unknown on missing required sources)",
+      "raw_answer": "DIRECT_ANSWER: No\n\nFACTS:\n- The Age reported on Google's market practices in relation to the Epic v. Google case, focusing on the allegations of manipulation of search queries.\n- TechCrunch covered the class action antitrust suit filed against Google, mentioning changes in AdSense rates and evidence of improper spoliation of evidence.\n- The Verge discussed Google's involvement in various antitrust lawsuits, including the Fortnite vs. Google case, without providing specific details about the portrayal of Google's market practices."
+    },
+    {
+      "id": "eval_2fa0f63fd209",
+      "question_type": "null_query",
+      "question": "Considering the environmental initiatives discussed in a Bloomberg article and the new seasonal drink flavors introduced according to a CNN report, which letter represents both the first character of the initiative aimed at reducing waste at Starbucks and the initial of the primary spice used in Starbucks' latest autumn-themed beverage?",
+      "gold_answer": "Insufficient information.",
+      "draft_direct_answer": null,
+      "final_direct_answer": null,
+      "answer_form": "short_entity_or_value",
+      "relation_family": "null_query",
+      "gold_yes_no": null,
+      "draft_yes_no": null,
+      "final_yes_no": null,
+      "polarity_correct": null,
+      "abstained": true,
+      "runtime_grader_passed": true,
+      "smoke_answer_correct": null,
+      "draft_claim_count": 0,
+      "grounded_claim_count": 0,
+      "unsupported_claim_count": 0,
+      "relevant_claim_count": 0,
+      "filtered_claim_count": 0,
+      "required_sources": [
+        "Bloomberg",
+        "CNN"
+      ],
+      "required_source_count": 2,
+      "covered_sources": [],
+      "covered_source_count": 0,
+      "missing_sources": [
+        "Bloomberg",
+        "CNN"
+      ],
+      "source_coverage_satisfied": false,
+      "has_absence_requirement": false,
+      "publisher_collision": {
+        "has_collision": false,
+        "matched_source": null,
+        "reason": "No draft direct answer"
+      },
+      "failure_stage": "null_query_handled",
+      "safe_resolution_candidate": false,
+      "candidate_mechanism": null,
+      "raw_answer": ""
+    },
+    {
+      "id": "eval_36827e3d0adf",
+      "question_type": "null_query",
+      "question": "Considering the economic forecast from a Bloomberg article and the agricultural developments discussed in a Reuters report, which country in West Africa, expected to see a significant growth in its GDP, also launched an initiative to become self-sufficient in rice production by 2025?",
+      "gold_answer": "Insufficient information.",
+      "draft_direct_answer": null,
+      "final_direct_answer": null,
+      "answer_form": "short_entity_or_value",
+      "relation_family": "null_query",
+      "gold_yes_no": null,
+      "draft_yes_no": null,
+      "final_yes_no": null,
+      "polarity_correct": null,
+      "abstained": true,
+      "runtime_grader_passed": true,
+      "smoke_answer_correct": null,
+      "draft_claim_count": 0,
+      "grounded_claim_count": 0,
+      "unsupported_claim_count": 0,
+      "relevant_claim_count": 0,
+      "filtered_claim_count": 0,
+      "required_sources": [
+        "Bloomberg",
+        "Reuters"
+      ],
+      "required_source_count": 2,
+      "covered_sources": [],
+      "covered_source_count": 0,
+      "missing_sources": [
+        "Bloomberg",
+        "Reuters"
+      ],
+      "source_coverage_satisfied": false,
+      "has_absence_requirement": false,
+      "publisher_collision": {
+        "has_collision": false,
+        "matched_source": null,
+        "reason": "No draft direct answer"
+      },
+      "failure_stage": "null_query_handled",
+      "safe_resolution_candidate": false,
+      "candidate_mechanism": null,
+      "raw_answer": ""
+    },
+    {
+      "id": "eval_52bfece07a6c",
+      "question_type": "null_query",
+      "question": "Considering the economic reforms discussed in a Bloomberg article and the cultural festival highlighted by Reuters, which letter of the alphabet begins the name of the Bahraini city that is both a focal point for these economic changes and the host of the cultural event?",
+      "gold_answer": "Insufficient information.",
+      "draft_direct_answer": null,
+      "final_direct_answer": null,
+      "answer_form": "short_entity_or_value",
+      "relation_family": "null_query",
+      "gold_yes_no": null,
+      "draft_yes_no": null,
+      "final_yes_no": null,
+      "polarity_correct": null,
+      "abstained": true,
+      "runtime_grader_passed": true,
+      "smoke_answer_correct": null,
+      "draft_claim_count": 0,
+      "grounded_claim_count": 0,
+      "unsupported_claim_count": 0,
+      "relevant_claim_count": 0,
+      "filtered_claim_count": 0,
+      "required_sources": [
+        "Bloomberg"
+      ],
+      "required_source_count": 1,
+      "covered_sources": [],
+      "covered_source_count": 0,
+      "missing_sources": [
+        "Bloomberg"
+      ],
+      "source_coverage_satisfied": false,
+      "has_absence_requirement": false,
+      "publisher_collision": {
+        "has_collision": false,
+        "matched_source": null,
+        "reason": "No draft direct answer"
+      },
+      "failure_stage": "null_query_handled",
+      "safe_resolution_candidate": false,
+      "candidate_mechanism": null,
+      "raw_answer": ""
+    },
+    {
+      "id": "eval_5457d2a4c687",
+      "question_type": "null_query",
+      "question": "Considering the information from an article by Forbes about Min Kao's philanthropic efforts and another by Bloomberg discussing his business strategies, which university, known for its engineering program and having received significant donations from Min Kao, is also the institution where a business school case study was developed based on his company's market expansion tactics?",
+      "gold_answer": "Insufficient information.",
+      "draft_direct_answer": null,
+      "final_direct_answer": null,
+      "answer_form": "short_entity_or_value",
+      "relation_family": "null_query",
+      "gold_yes_no": null,
+      "draft_yes_no": null,
+      "final_yes_no": null,
+      "polarity_correct": null,
+      "abstained": true,
+      "runtime_grader_passed": true,
+      "smoke_answer_correct": null,
+      "draft_claim_count": 0,
+      "grounded_claim_count": 0,
+      "unsupported_claim_count": 0,
+      "relevant_claim_count": 0,
+      "filtered_claim_count": 0,
+      "required_sources": [
+        "Forbes"
+      ],
+      "required_source_count": 1,
+      "covered_sources": [],
+      "covered_source_count": 0,
+      "missing_sources": [
+        "Forbes"
+      ],
+      "source_coverage_satisfied": false,
+      "has_absence_requirement": false,
+      "publisher_collision": {
+        "has_collision": false,
+        "matched_source": null,
+        "reason": "No draft direct answer"
+      },
+      "failure_stage": "null_query_handled",
+      "safe_resolution_candidate": false,
+      "candidate_mechanism": null,
+      "raw_answer": ""
+    },
+    {
+      "id": "eval_f1e3e6ebe75c",
+      "question_type": "null_query",
+      "question": "Considering the information from a Times of India article stating that Zoya Akhtar's film was selected for an international film festival, and a Hindustan Times report detailing her collaboration with a famous Hollywood actor for her next project, which character from the English alphabet is common to the initials of the international film festival and the first name of the Hollywood actor?",
+      "gold_answer": "Insufficient information.",
+      "draft_direct_answer": null,
+      "final_direct_answer": null,
+      "answer_form": "short_entity_or_value",
+      "relation_family": "null_query",
+      "gold_yes_no": null,
+      "draft_yes_no": null,
+      "final_yes_no": null,
+      "polarity_correct": null,
+      "abstained": true,
+      "runtime_grader_passed": true,
+      "smoke_answer_correct": null,
+      "draft_claim_count": 0,
+      "grounded_claim_count": 0,
+      "unsupported_claim_count": 0,
+      "relevant_claim_count": 0,
+      "filtered_claim_count": 0,
+      "required_sources": [
+        "Times of India",
+        "Hindustan Times"
+      ],
+      "required_source_count": 2,
+      "covered_sources": [],
+      "covered_source_count": 0,
+      "missing_sources": [
+        "Times of India",
+        "Hindustan Times"
+      ],
+      "source_coverage_satisfied": false,
+      "has_absence_requirement": false,
+      "publisher_collision": {
+        "has_collision": false,
+        "matched_source": null,
+        "reason": "No draft direct answer"
+      },
+      "failure_stage": "null_query_handled",
+      "safe_resolution_candidate": false,
+      "candidate_mechanism": null,
+      "raw_answer": ""
+    }
+  ]
+}
